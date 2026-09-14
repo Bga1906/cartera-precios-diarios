@@ -64,6 +64,24 @@ FONDOS_ISIN = [
 PLAN_PENSIONES_TICKER_YAHOO = "0P0001LIG7.F"
 BTC_TICKER_YAHOO = "BTC-EUR"
 
+# Añadido 14/09/2026, a petición de Brian ("el sistema de actualización
+# diaria vía github y mi pc, ¿incluye los índices en benchmark?"): este
+# repo público NO los llevaba (solo activos propios de Brian), así que
+# los días sin PC encendido el histórico de benchmarks se quedaba sin
+# ese día. Misma lista que scripts/cartera/posiciones.yaml (sección
+# `benchmarks:`) en el vault privado, y mismo criterio que
+# build_daily_snapshot.py::_activos_benchmarks() (09/09/2026, esa sí
+# corre en el PC local): no son posiciones de Brian, así que se guarda
+# el precio en su moneda nativa, sin convertir a EUR — es un nivel de
+# índice, no un importe.
+BENCHMARKS = [
+    ("msci-world", "^990100-USD-STRD"),
+    ("nasdaq-100", "^NDX"),
+    ("ibex-35", "^IBEX"),
+    ("acwi", "ACWI"),
+    ("sp500", "^GSPC"),
+]
+
 
 def _get_json(url: str):
     try:
@@ -228,6 +246,13 @@ def construir_activos():
         "price": res_pp["precio"], "price_previous_close": res_pp["cierre_anterior"], "moneda": "EUR",
         "fuente": f"Yahoo Finance ({PLAN_PENSIONES_TICKER_YAHOO})", "ok": res_pp["precio"] is not None, "error": res_pp["error"],
     }
+
+    for id_bench, ticker_yahoo in BENCHMARKS:
+        res = obtener_cotizacion_yahoo(ticker_yahoo)
+        activos[f"benchmark:{id_bench}"] = {
+            "price": res["precio"], "price_previous_close": res["cierre_anterior"], "moneda": res["moneda"],
+            "fuente": f"Yahoo Finance ({ticker_yahoo})", "ok": res["precio"] is not None, "error": res["error"],
+        }
 
     return activos
 
