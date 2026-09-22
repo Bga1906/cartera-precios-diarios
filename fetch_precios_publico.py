@@ -36,6 +36,18 @@ FX_RESPALDO_URL = "https://open.er-api.com/v6/latest/EUR"
 COINGECKO_BTC_URL = "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=eur"
 GRAMOS_POR_ONZA_TROY = 31.1034768
 
+# Pureza del oro físico de Brian (joyería, 18 quilates) — MISMO valor que
+# ORO_PUREZA en segundo-cerebro/scripts/cartera/build_daily_snapshot.py
+# (repo separado, no importable desde aquí: mismo criterio, comentario
+# cruzado en ambos sitios para no desincronizar). Bug real detectado el
+# 21-22/09/2026: este script guardaba aquí el precio del oro PURO (24k)
+# bajo el asset_id "oro-fisico:joyeria", que en el pipeline local SIEMPRE
+# lleva ya descontada la pureza de la joya real. Cuando ese dato se usaba
+# para rellenar un día sin snapshot local, quedaba en una unidad distinta
+# (24k) a la de los demás días (18k), y la "variación diaria" del oro
+# salía disparada (-25,78% falso el 21/09). Se corrige aquí, en origen.
+ORO_PUREZA = 0.750  # 18 quilates
+
 MEXEM_TICKERS = [
     ("AMZN", "AMZN"), ("APR0", "AMP.MC"), ("CRML", "CRML"), ("DMX", "DMX.V"),
     ("E5S1", "E5S1.F"), ("ERO", "ERO"), ("GOOGL", "GOOGL"), ("HUMA", "HUMA"),
@@ -170,12 +182,14 @@ def construir_activos():
     tasa_eur_cad, err_cad = obtener_tasa_fx("CAD", FX_CAD_API_URL)
 
     precio_g_eur_24k = None
+    precio_g_eur_18k = None
     if precio_oz_usd is not None and tasa_eur_usd is not None:
         precio_g_eur_24k = (precio_oz_usd / GRAMOS_POR_ONZA_TROY) / tasa_eur_usd
+        precio_g_eur_18k = precio_g_eur_24k * ORO_PUREZA
     activos["oro-fisico:joyeria"] = {
-        "price": precio_g_eur_24k, "price_previous_close": None, "moneda": "EUR",
-        "fuente": "gold-api.com (XAU/USD) + frankfurter.app (EUR/USD)",
-        "ok": precio_g_eur_24k is not None,
+        "price": precio_g_eur_18k, "price_previous_close": None, "moneda": "EUR",
+        "fuente": "gold-api.com (XAU/USD) + frankfurter.app (EUR/USD), ya con pureza 18k aplicada",
+        "ok": precio_g_eur_18k is not None,
         "error": err_oro or err_usd,
     }
 
