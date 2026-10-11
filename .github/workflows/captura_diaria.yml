@@ -3,7 +3,12 @@ name: Captura diaria de precios
 on:
   schedule:
     - cron: "0 20 * * *"
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      probar:
+        description: "Solo comprobar los benchmarks pendientes (no guarda nada)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -18,10 +23,18 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Comprobar benchmarks pendientes (modo --probar, no guarda nada)
+        if: ${{ inputs.probar }}
+        run: |
+          python3 fetch_precios_publico.py --probar | tee probar.txt
+          { echo '```'; cat probar.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+
       - name: Ejecutar captura de precios
+        if: ${{ !inputs.probar }}
         run: python3 fetch_precios_publico.py
 
       - name: Commitear el snapshot del dia
+        if: ${{ !inputs.probar }}
         run: |
           git config user.name "cartera-precios-bot"
           git config user.email "actions@users.noreply.github.com"
