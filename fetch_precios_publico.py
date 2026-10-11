@@ -14,10 +14,13 @@ dato personal.
 Uso:
     python3 fetch_precios_publico.py                # escribe precios/AAAA-MM-DD.json
     python3 fetch_precios_publico.py --pretty        # con sangria
+    python3 fetch_precios_publico.py --probar        # solo comprueba benchmarks pendientes; no escribe
 """
 import argparse
 import datetime
 import json
+import os
+import sys
 import urllib.parse
 import urllib.request
 import zoneinfo
@@ -87,13 +90,72 @@ BTC_TICKER_YAHOO = "BTC-EUR"
 # corre en el PC local): no son posiciones de Brian, así que se guarda
 # el precio en su moneda nativa, sin convertir a EUR — es un nivel de
 # índice, no un importe.
-BENCHMARKS = [
-    ("msci-world", "^990100-USD-STRD"),
-    ("nasdaq-100", "^NDX"),
-    ("ibex-35", "^IBEX"),
-    ("acwi", "ACWI"),
-    ("sp500", "^GSPC"),
+CATALOGO_PATH = HERE / "benchmarks_catalogo.json"
+ESTADOS_VALIDOS = ("verificado", "pendiente")
+# Red de seguridad: si el catalogo falta o esta roto entero, la captura diaria
+# sigue con los 5 benchmarks verificados de siempre (mismos id y tickers).
+BENCHMARKS_RESPALDO = [
+    {"id": "msci-world", "ticker": "^990100-USD-STRD"},
+    {"id": "nasdaq-100", "ticker": "^NDX"},
+    {"id": "ibex-35", "ticker": "^IBEX"},
+    {"id": "acwi", "ticker": "ACWI"},
+    {"id": "sp500", "ticker": "^GSPC"},
 ]
+
+
+def _entrada_valida(e):
+    if not isinstance(e, dict):
+        return "no es un objeto"
+    for campo in ("id", "ticker"):
+        if not isinstance(e.get(campo), str) or not e[campo].strip():
+            return f"falta '{campo}'"
+    if e.get("estado_verificacion", "pendiente") not in ESTADOS_VALIDOS:
+        return f"estado_verificacion desconocido: {e.get('estado_verificacion')!r}"
+    return None
+
+
+def cargar_catalogo(path=None, avisar=None):
+    """Lee benchmarks_catalogo.json. Si el fichero entero es JSON valido, usa su
+    lista 'benchmarks'; si no, lo lee linea a linea (una entrada por linea) y
+    SALTA las lineas mal formadas avisando por `avisar` (stderr por defecto).
+    Entradas sin id/ticker o con id repetido tambien se saltan."""
+    path = Path(path) if path else CATALOGO_PATH
+    avisar = avisar or (lambda m: print(f"AVISO catalogo: {m}", file=sys.stderr))
+    try:
+        texto = path.read_text(encoding="utf-8")
+    except OSError as e:
+        avisar(f"no se pudo leer {path.name} ({e}); se usan los 5 benchmarks de respaldo")
+        return [dict(b, estado_verificacion="verificado") for b in BENCHMARKS_RESPALDO]
+    candidatos = []  # (descripcion, entrada)
+    try:
+        crudo = json.loads(texto)
+        lista = crudo.get("benchmarks") if isinstance(crudo, dict) else crudo
+        if not isinstance(lista, list):
+            raise ValueError("no hay lista 'benchmarks'")
+        candidatos = [(f"entrada {i + 1}", e) for i, e in enumerate(lista)]
+    except ValueError:
+        for n, linea in enumerate(texto.splitlines(), 1):
+            limpia = linea.strip().rstrip(",")
+            if not limpia.startswith("{") or not limpia.endswith("}") or limpia in ("{", "}"):
+                continue
+            try:
+                candidatos.append((f"linea {n}", json.loads(limpia)))
+            except ValueError as e:
+                avisar(f"linea {n} mal formada, se salta ({e})")
+    vistos, catalogo = set(), []
+    for donde, e in candidatos:
+        motivo = _entrada_valida(e)
+        if motivo is None and e["id"] in vistos:
+            motivo = f"id repetido {e['id']!r}"
+        if motivo:
+            avisar(f"{donde}: {motivo}, se salta")
+            continue
+        vistos.add(e["id"])
+        catalogo.append(e)
+    if not catalogo:
+        avisar("catalogo vacio; se usan los 5 benchmarks de respaldo")
+        return [dict(b, estado_verificacion="verificado") for b in BENCHMARKS_RESPALDO]
+    return catalogo
 
 
 def _get_json(url: str):
@@ -254,7 +316,7 @@ def obtener_tasa_fx(moneda: str, url: str):
     return None, f"primario: {err} | respaldo: {err_resp}"
 
 
-def construir_activos(fecha=None):
+def construir_activos(fecha=None, catalogo=None):
     activos = {}
     fecha = fecha or datetime.date.today().isoformat()
 
@@ -353,8 +415,12 @@ def construir_activos(fecha=None):
         **campos_fecha_mercado(res_pp, fecha),
     }
 
-    for id_bench, ticker_yahoo in BENCHMARKS:
-        res = obtener_cotizacion_yahoo(ticker_yahoo)
+    for bench in (catalogo if catalogo is not None else cargar_catalogo()):
+        id_bench, ticker_yahoo = bench["id"], bench["ticker"]
+        try:
+            res = obtener_cotizacion_yahoo(ticker_yahoo)
+        except Exception as e:  # noqa: BLE001  (un ticker nuevo nunca rompe a los demas)
+            res = _resultado_yahoo(error=f"fallo inesperado: {type(e).__name__}: {e}")
         activos[f"benchmark:{id_bench}"] = {
             "price": res["precio"], "price_previous_close": res["cierre_anterior"], "moneda": res["moneda"],
             "fuente": f"Yahoo Finance ({ticker_yahoo})", "ok": res["precio"] is not None, "error": res["error"],
@@ -364,10 +430,61 @@ def construir_activos(fecha=None):
     return activos
 
 
+def probar_benchmarks(catalogo=None, imprimir=print):
+    """Modo --probar: descarga SOLO los benchmarks 'pendiente', imprime una tabla
+    y NO escribe nada en precios/. Devuelve las filas (para las pruebas)."""
+    pendientes = [b for b in (catalogo if catalogo is not None else cargar_catalogo())
+                  if b.get("estado_verificacion") == "pendiente"]
+    filas = []
+    for b in pendientes:
+        try:
+            res = obtener_cotizacion_yahoo(b["ticker"], rango="1mo")
+        except Exception as e:  # noqa: BLE001
+            res = _resultado_yahoo(error=f"fallo inesperado: {type(e).__name__}: {e}")
+        filas.append({
+            "id": b["id"], "ticker": b["ticker"], "existe": res["precio"] is not None,
+            "moneda": res["moneda"], "as_of": res["as_of"],
+            "puntos": res["puntos_ultima_semana"], "error": res["error"],
+        })
+    if not filas:
+        imprimir("No hay benchmarks con estado_verificacion: pendiente.")
+        return filas
+    cab = ("id", "ticker", "existe", "moneda", "ultimo as_of", "puntos 7 dias")
+    tabla = [cab] + [
+        (f["id"], f["ticker"], "si" if f["existe"] else "NO", f["moneda"] or "-", f["as_of"] or "-", str(f["puntos"]))
+        for f in filas
+    ]
+    anchos = [max(len(str(r[i])) for r in tabla) for i in range(len(cab))]
+    for n, r in enumerate(tabla):
+        imprimir("  ".join(str(c).ljust(anchos[i]) for i, c in enumerate(r)).rstrip())
+        if n == 0:
+            imprimir("  ".join("-" * a for a in anchos))
+    for f in filas:
+        if f["error"]:
+            imprimir(f"  {f['id']}: {f['error']}")
+    imprimir(f"{sum(f['existe'] for f in filas)}/{len(filas)} existen. No se ha escrito nada en precios/.")
+    return filas
+
+
+def escribir_atomico(path, texto):
+    """Escribe a un temporal y lo renombra: el fichero final nunca queda a medias."""
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    tmp = path.with_name(path.name + ".tmp")
+    tmp.write_text(texto, encoding="utf-8")
+    os.replace(tmp, path)
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--pretty", action="store_true")
+    ap.add_argument("--probar", action="store_true",
+                    help="comprueba solo los benchmarks pendientes y NO escribe en precios/")
     args = ap.parse_args()
+
+    if args.probar:
+        probar_benchmarks()
+        return
 
     hoy = datetime.date.today().isoformat()
     activos = construir_activos(hoy)
@@ -377,10 +494,9 @@ def main():
         "activos": activos,
     }
 
-    OUT_DIR.mkdir(parents=True, exist_ok=True)
     out_path = OUT_DIR / f"{hoy}.json"
     texto = json.dumps(resultado, ensure_ascii=False, indent=2 if args.pretty else None)
-    out_path.write_text(texto, encoding="utf-8")
+    escribir_atomico(out_path, texto)
     print(f"Escrito {out_path} ({sum(1 for a in activos.values() if a['ok'])}/{len(activos)} activos con precio fresco).")
 
 
