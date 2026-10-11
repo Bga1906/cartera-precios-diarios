@@ -20,6 +20,7 @@ import datetime
 import json
 import urllib.parse
 import urllib.request
+import zoneinfo
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
@@ -107,37 +108,123 @@ def _get_json(url: str):
         return None, f"{type(e).__name__}: {e}"
 
 
-def obtener_cotizacion_yahoo(ticker: str):
+# Monedas de benchmarks cuyo "currency" Yahoo devuelve vacio. Tabla minima y
+# conservadora: solo lo comprobado; si un ticker no esta aqui, la moneda se
+# deja en null (nunca se inventa).
+MONEDA_CONOCIDA = {
+    "^990100-USD-STRD": "USD",
+}
+
+SEGUNDOS_SEMANA = 7 * 24 * 3600
+
+
+def _resultado_yahoo(precio=None, moneda=None, cierre_anterior=None, error=None,
+                     as_of=None, moneda_inferida=None, puntos_ultima_semana=0):
+    return {
+        "precio": precio, "moneda": moneda, "cierre_anterior": cierre_anterior, "error": error,
+        "as_of": as_of, "moneda_inferida": moneda_inferida,
+        "puntos_ultima_semana": puntos_ultima_semana,
+    }
+
+
+def _positivo_o_none(valor):
+    try:
+        valor = float(valor)
+    except (TypeError, ValueError):
+        return None
+    return valor if valor > 0 else None
+
+
+def fecha_de_mercado(segundos, zona=None):
+    """Convierte regularMarketTime (segundos desde 1970, UTC) a 'AAAA-MM-DD' en
+    la zona horaria del mercado (exchangeTimezoneName); UTC si falta o no vale."""
+    if isinstance(segundos, bool) or not isinstance(segundos, (int, float)):
+        return None
+    tz = datetime.timezone.utc
+    if zona:
+        try:
+            tz = zoneinfo.ZoneInfo(zona)
+        except Exception:  # noqa: BLE001  (zona desconocida o sin base de zonas)
+            tz = datetime.timezone.utc
+    try:
+        return datetime.datetime.fromtimestamp(segundos, tz).date().isoformat()
+    except (OverflowError, OSError, ValueError):
+        return None
+
+
+def _puntos_ultima_semana(result, referencia):
+    """Cuantas velas diarias con cierre hay en los 7 dias previos a `referencia`."""
+    try:
+        marcas = result.get("timestamp") or []
+        cierres = (((result.get("indicators") or {}).get("quote") or [{}])[0]).get("close") or []
+        if not isinstance(referencia, (int, float)):
+            return 0
+        return sum(
+            1 for t, c in zip(marcas, cierres)
+            if c is not None and isinstance(t, (int, float)) and referencia - SEGUNDOS_SEMANA <= t <= referencia
+        )
+    except Exception:  # noqa: BLE001
+        return 0
+
+
+def obtener_cotizacion_yahoo(ticker: str, rango: str = None):
     url = YAHOO_CHART_URL.format(ticker=urllib.parse.quote(ticker, safe=""))
+    if rango:
+        url += f"?range={rango}&interval=1d"
     payload, err = _get_json(url)
     if err:
-        return {"precio": None, "moneda": None, "cierre_anterior": None, "error": err}
+        return _resultado_yahoo(error=err)
     try:
         chart = payload.get("chart") or {}
         if chart.get("error"):
-            return {"precio": None, "moneda": None, "cierre_anterior": None, "error": f"Yahoo devolvio error: {chart['error']!r}"}
+            return _resultado_yahoo(error=f"Yahoo devolvio error: {chart['error']!r}")
         result = (chart.get("result") or [None])[0]
         if result is None:
-            return {"precio": None, "moneda": None, "cierre_anterior": None, "error": f"sin 'result' para {ticker!r}"}
+            return _resultado_yahoo(error=f"sin 'result' para {ticker!r}")
         meta = result.get("meta") or {}
         precio = meta.get("regularMarketPrice")
-        moneda = meta.get("currency")
+        moneda = meta.get("currency") or None
+        moneda_inferida = None
+        if moneda is None and ticker in MONEDA_CONOCIDA:
+            moneda, moneda_inferida = MONEDA_CONOCIDA[ticker], True
+        elif moneda is None:
+            moneda_inferida = False
+        as_of = fecha_de_mercado(meta.get("regularMarketTime"), meta.get("exchangeTimezoneName"))
+        puntos = _puntos_ultima_semana(result, meta.get("regularMarketTime"))
         if precio is None:
-            return {"precio": None, "moneda": moneda, "cierre_anterior": None, "error": "sin 'regularMarketPrice'"}
+            return _resultado_yahoo(moneda=moneda, error="sin 'regularMarketPrice'", as_of=as_of,
+                                    moneda_inferida=moneda_inferida)
         precio = float(precio)
         if precio <= 0:
-            return {"precio": None, "moneda": moneda, "cierre_anterior": None, "error": f"precio no positivo: {precio!r}"}
-        cierre_anterior = meta.get("previousClose")
-        if cierre_anterior is not None:
-            try:
-                cierre_anterior = float(cierre_anterior)
-                if cierre_anterior <= 0:
-                    cierre_anterior = None
-            except (TypeError, ValueError):
-                cierre_anterior = None
-        return {"precio": precio, "moneda": moneda, "cierre_anterior": cierre_anterior, "error": None}
+            return _resultado_yahoo(moneda=moneda, error=f"precio no positivo: {precio!r}", as_of=as_of,
+                                    moneda_inferida=moneda_inferida)
+        # previousClose y, si falta, chartPreviousClose; si tampoco, null (no se calcula a mano).
+        cierre_anterior = _positivo_o_none(meta.get("previousClose"))
+        if cierre_anterior is None:
+            cierre_anterior = _positivo_o_none(meta.get("chartPreviousClose"))
+        return _resultado_yahoo(precio=precio, moneda=moneda, cierre_anterior=cierre_anterior, as_of=as_of,
+                                moneda_inferida=moneda_inferida, puntos_ultima_semana=puntos)
     except Exception as e:  # noqa: BLE001
-        return {"precio": None, "moneda": None, "cierre_anterior": None, "error": f"respuesta inesperada: {type(e).__name__}: {e}"}
+        return _resultado_yahoo(error=f"respuesta inesperada: {type(e).__name__}: {e}")
+
+
+def campos_fecha_mercado(res, fecha_fichero):
+    """Campos OPCIONALES que se anaden a cada activo de Yahoo (los lectores antiguos
+    los ignoran): as_of, as_of_fuente y, si el dato es de un dia anterior al del
+    fichero, arrastrado + dias_desfase. Informativo: no cambia 'ok'."""
+    as_of = res.get("as_of")
+    extra = {"as_of": as_of, "as_of_fuente": "regularMarketTime"}
+    if as_of is not None and fecha_fichero is not None:
+        try:
+            dias = (datetime.date.fromisoformat(fecha_fichero) - datetime.date.fromisoformat(as_of)).days
+        except ValueError:
+            dias = 0
+        if dias > 0:
+            extra["arrastrado"] = True
+            extra["dias_desfase"] = dias
+    if res.get("moneda_inferida") is not None:
+        extra["moneda_inferida"] = res["moneda_inferida"]
+    return extra
 
 
 def _tasa_respaldo_open_er_api(moneda: str):
@@ -167,8 +254,9 @@ def obtener_tasa_fx(moneda: str, url: str):
     return None, f"primario: {err} | respaldo: {err_resp}"
 
 
-def construir_activos():
+def construir_activos(fecha=None):
     activos = {}
+    fecha = fecha or datetime.date.today().isoformat()
 
     payload, err_oro = _get_json(GOLD_API_URL)
     precio_oz_usd = None
@@ -198,7 +286,7 @@ def construir_activos():
         activos["bitcoin:btc"] = {
             "price": res_btc["precio"], "price_previous_close": res_btc["cierre_anterior"],
             "moneda": "EUR", "fuente": f"Yahoo Finance ({BTC_TICKER_YAHOO})",
-            "ok": True, "error": None,
+            "ok": True, "error": None, **campos_fecha_mercado(res_btc, fecha),
         }
     else:
         payload_cg, err_cg = _get_json(COINGECKO_BTC_URL)
@@ -232,6 +320,7 @@ def construir_activos():
         activos[f"mexem:{ticker_mexem}"] = {
             "price": precio_eur, "price_previous_close": precio_prev_eur, "moneda": "EUR",
             "fuente": f"Yahoo Finance ({ticker_yahoo})", "ok": res["precio"] is not None, "error": res["error"],
+            **campos_fecha_mercado(res, fecha),
         }
 
     for nombre, ticker_yahoo in TR_ETFS:
@@ -246,6 +335,7 @@ def construir_activos():
         activos[f"trade-republic:{nombre}"] = {
             "price": precio_eur, "price_previous_close": precio_prev_eur, "moneda": "EUR",
             "fuente": f"Yahoo Finance ({ticker_yahoo})", "ok": res["precio"] is not None, "error": res["error"],
+            **campos_fecha_mercado(res, fecha),
         }
 
     for isin, ticker_yahoo in FONDOS_ISIN:
@@ -253,12 +343,14 @@ def construir_activos():
         activos[f"myinvestor-cobas:{isin}"] = {
             "price": res["precio"], "price_previous_close": res["cierre_anterior"], "moneda": "EUR",
             "fuente": f"Yahoo Finance ({ticker_yahoo})", "ok": res["precio"] is not None, "error": res["error"],
+            **campos_fecha_mercado(res, fecha),
         }
 
     res_pp = obtener_cotizacion_yahoo(PLAN_PENSIONES_TICKER_YAHOO)
     activos["myinvestor:plan-pensiones"] = {
         "price": res_pp["precio"], "price_previous_close": res_pp["cierre_anterior"], "moneda": "EUR",
         "fuente": f"Yahoo Finance ({PLAN_PENSIONES_TICKER_YAHOO})", "ok": res_pp["precio"] is not None, "error": res_pp["error"],
+        **campos_fecha_mercado(res_pp, fecha),
     }
 
     for id_bench, ticker_yahoo in BENCHMARKS:
@@ -266,6 +358,7 @@ def construir_activos():
         activos[f"benchmark:{id_bench}"] = {
             "price": res["precio"], "price_previous_close": res["cierre_anterior"], "moneda": res["moneda"],
             "fuente": f"Yahoo Finance ({ticker_yahoo})", "ok": res["precio"] is not None, "error": res["error"],
+            **campos_fecha_mercado(res, fecha),
         }
 
     return activos
@@ -277,7 +370,7 @@ def main():
     args = ap.parse_args()
 
     hoy = datetime.date.today().isoformat()
-    activos = construir_activos()
+    activos = construir_activos(hoy)
     resultado = {
         "date": hoy,
         "generado_en": datetime.datetime.now().isoformat(timespec="seconds"),
