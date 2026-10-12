@@ -43,8 +43,8 @@ Después (simulado):
 ## Resultado de la prueba del 12/10/2026 (modo `probar` en GitHub Actions)
 Analogía: era llamar a la puerta de 31 casas para ver si alguien contesta. Contestaron **29 de 31**, con moneda y fecha (`as_of`) correctas; esos 29 pasan a `verificado` en `benchmarks_catalogo.json`.
 
-Los 2 que dieron error 404 siguen en `pendiente`, con un ticker **candidato sin probar**:
+Los 2 que dieron error 404 se corrigieron con un ticker candidato y se volvieron a probar (run #36, commit e243ef0): **existen los dos**, con 5 puntos en 7 días y último dato del 12/10/2026. Ya están `verificado`:
 - `msci-em-etf-acc`: de `EIMI.AS` a `EIMI.L`, moneda USD (la línea de Londres cotiza en dólares).
 - `bloomberg-global-agg-eur-hedged-etf`: de `AGGH.L` a `AGGH.AS`, moneda EUR (versión EUR Hedged Acc en Ámsterdam).
 
-Siguiente paso: volver a lanzar `probar` desde GitHub Actions; si existen, marcarlos `verificado`.
+Resultado final: los 36 benchmarks del catálogo están `verificado`; no queda ninguno pendiente.

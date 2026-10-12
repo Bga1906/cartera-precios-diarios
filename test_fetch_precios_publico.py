@@ -264,7 +264,7 @@ def test_catalogo_real_verificados_y_pendientes():
     for id_, t in esperados.items():
         assert cat[id_]["ticker"] == t and cat[id_]["estado_verificacion"] == "verificado"
     pendientes = {i for i, b in cat.items() if b["estado_verificacion"] == "pendiente"}
-    assert pendientes == {"msci-em-etf-acc", "bloomberg-global-agg-eur-hedged-etf"}  # 404 en la prueba del 12/10
+    assert pendientes == set()  # los 36 verificados tras las pruebas del 12/10
     assert len(cat) == 36
     assert {b["tipo_retorno"] for b in cat.values()} <= {"precio", "total"}
     assert cat["msci-world-etf-acc"]["proxy_de"] == "msci-world"
@@ -330,7 +330,8 @@ def test_probar_no_escribe_nada(red, tmp_path, monkeypatch, capsys):
     f.main()
     assert not (tmp_path / "precios").exists()
     assert list(tmp_path.iterdir()) == []
-    assert "No se ha escrito nada" in capsys.readouterr().out
+    salida = capsys.readouterr().out
+    assert "No se ha escrito nada" in salida or "No hay benchmarks" in salida  # sin pendientes no hay tabla
 
 
 def test_probar_sin_pendientes():
