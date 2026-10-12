@@ -39,3 +39,12 @@ Después (simulado):
 3. Leer la tabla (en el registro o en el resumen de la ejecución): qué tickers existen, moneda y fecha.
 4. En `benchmarks_catalogo.json`, cambiar `estado_verificacion` a `verificado` para los que funcionen (y corregir/quitar los que no).
 5. Comprobar el siguiente fichero diario: debe traer `as_of` en cada activo de Yahoo.
+
+## Resultado de la prueba del 12/10/2026 (modo `probar` en GitHub Actions)
+Analogía: era llamar a la puerta de 31 casas para ver si alguien contesta. Contestaron **29 de 31**, con moneda y fecha (`as_of`) correctas; esos 29 pasan a `verificado` en `benchmarks_catalogo.json`.
+
+Los 2 que dieron error 404 siguen en `pendiente`, con un ticker **candidato sin probar**:
+- `msci-em-etf-acc`: de `EIMI.AS` a `EIMI.L`, moneda USD (la línea de Londres cotiza en dólares).
+- `bloomberg-global-agg-eur-hedged-etf`: de `AGGH.L` a `AGGH.AS`, moneda EUR (versión EUR Hedged Acc en Ámsterdam).
+
+Siguiente paso: volver a lanzar `probar` desde GitHub Actions; si existen, marcarlos `verificado`.

@@ -257,21 +257,23 @@ def test_documento_es_json_valido_y_sin_claves_personales(red):
 
 
 # ---------- catalogo ----------
-def test_catalogo_real_tiene_los_5_verificados_y_el_resto_pendiente():
+def test_catalogo_real_verificados_y_pendientes():
     cat = {b["id"]: b for b in f.cargar_catalogo()}
     esperados = {"msci-world": "^990100-USD-STRD", "nasdaq-100": "^NDX", "ibex-35": "^IBEX",
                  "acwi": "ACWI", "sp500": "^GSPC"}
     for id_, t in esperados.items():
         assert cat[id_]["ticker"] == t and cat[id_]["estado_verificacion"] == "verificado"
-    assert all(b["estado_verificacion"] == "pendiente" for i, b in cat.items() if i not in esperados)
+    pendientes = {i for i, b in cat.items() if b["estado_verificacion"] == "pendiente"}
+    assert pendientes == {"msci-em-etf-acc", "bloomberg-global-agg-eur-hedged-etf"}  # 404 en la prueba del 12/10
     assert len(cat) == 36
     assert {b["tipo_retorno"] for b in cat.values()} <= {"precio", "total"}
     assert cat["msci-world-etf-acc"]["proxy_de"] == "msci-world"
 
 
 def test_respaldo_coincide_con_los_verificados_del_catalogo():
-    verificados = {b["id"]: b["ticker"] for b in f.cargar_catalogo() if b["estado_verificacion"] == "verificado"}
-    assert {b["id"]: b["ticker"] for b in f.BENCHMARKS_RESPALDO} == verificados
+    catalogo = {b["id"]: b["ticker"] for b in f.cargar_catalogo() if b["estado_verificacion"] == "verificado"}
+    respaldo = {b["id"]: b["ticker"] for b in f.BENCHMARKS_RESPALDO}
+    assert respaldo.items() <= catalogo.items()  # los 5 de siempre siguen verificados y con el mismo ticker
 
 
 def test_catalogo_con_linea_mal_formada_se_salta_y_avisa(tmp_path):
