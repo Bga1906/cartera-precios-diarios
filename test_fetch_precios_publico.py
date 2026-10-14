@@ -1,6 +1,7 @@
 """Pruebas con respuestas de Yahoo SIMULADAS (no hay red). Ejecutar: python3 -m pytest -q"""
 import datetime
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -128,9 +129,26 @@ def test_moneda_ausente_conocida_se_rellena(red):
 
 
 def test_moneda_ausente_desconocida_queda_null(red):
+    """Sin moneda en Yahoo NI en el catalogo: queda null (nunca se inventa)."""
     red.respuestas["^NDX"] = yahoo(20000, None, ts(2026, 10, 9, 20))
-    b = f.construir_activos("2026-10-10")["benchmark:nasdaq-100"]
+    cat = [{"id": "nasdaq-100", "ticker": "^NDX", "estado_verificacion": "verificado"}]
+    b = f.construir_activos("2026-10-10", catalogo=cat)["benchmark:nasdaq-100"]
     assert b["moneda"] is None and b["moneda_inferida"] is False
+
+
+def test_moneda_ausente_se_toma_del_catalogo(red):
+    """Caso Euro Stoxx 50: Yahoo no da moneda pero el catalogo dice EUR."""
+    red.respuestas["^STOXX50E"] = yahoo(6000, None, ts(2026, 10, 9, 20))
+    cat = [{"id": "euro-stoxx-50", "ticker": "^STOXX50E", "moneda": "EUR", "estado_verificacion": "verificado"}]
+    b = f.construir_activos("2026-10-10", catalogo=cat)["benchmark:euro-stoxx-50"]
+    assert b["moneda"] == "EUR" and b["moneda_inferida"] is True
+
+
+def test_moneda_de_yahoo_manda_sobre_el_catalogo(red):
+    red.respuestas["^STOXX50E"] = yahoo(6000, "EUR", ts(2026, 10, 9, 20))
+    cat = [{"id": "euro-stoxx-50", "ticker": "^STOXX50E", "moneda": "USD", "estado_verificacion": "verificado"}]
+    b = f.construir_activos("2026-10-10", catalogo=cat)["benchmark:euro-stoxx-50"]
+    assert b["moneda"] == "EUR" and b.get("moneda_inferida") is not True
 
 
 def test_moneda_vacia_cuenta_como_ausente(red):
@@ -346,7 +364,78 @@ def test_main_escribe_json_valido_y_sin_temporales(red, tmp_path, monkeypatch):
     monkeypatch.setattr(sys, "argv", ["fetch_precios_publico.py"])
     f.main()
     ficheros = list((tmp_path / "precios").iterdir())
-    assert len(ficheros) == 1 and ficheros[0].suffix == ".json"
-    doc = json.loads(ficheros[0].read_text(encoding="utf-8"))
+    assert all(x.suffix == ".json" for x in ficheros) and not list((tmp_path / "precios").glob("*.tmp"))
+    nombres = sorted(x.name for x in ficheros)
+    assert len(nombres) == 3 and "ultimo.json" in nombres
+    con_hora = [n for n in nombres if re.fullmatch(r"\d{4}-\d{2}-\d{2}_\d{4}\.json", n)]
+    alias = [n for n in nombres if re.fullmatch(r"\d{4}-\d{2}-\d{2}\.json", n)]
+    assert len(con_hora) == 1 and len(alias) == 1
+    doc = json.loads((tmp_path / "precios" / con_hora[0]).read_text(encoding="utf-8"))
     assert set(doc) == {"date", "generado_en", "activos"}
-    assert doc["date"] == ficheros[0].stem
+    assert doc["date"] == con_hora[0][:10] == alias[0][:-5]
+    # ultimo.json y el alias del dia son identicos a la captura con hora
+    for otro in ("ultimo.json", alias[0]):
+        assert (tmp_path / "precios" / otro).read_text(encoding="utf-8") == (tmp_path / "precios" / con_hora[0]).read_text(encoding="utf-8")
+
+
+# ---------- captura con hora y archivo ----------
+def _cap(d, nombre, contenido=None):
+    d.mkdir(parents=True, exist_ok=True)
+    (d / nombre).write_text(json.dumps(contenido or {"date": nombre[:10], "activos": {}}), encoding="utf-8")
+
+
+def test_dos_capturas_el_mismo_dia_no_se_pisan(red, tmp_path, monkeypatch):
+    monkeypatch.setattr(f, "OUT_DIR", tmp_path / "precios")
+    monkeypatch.setattr(sys, "argv", ["fetch_precios_publico.py"])
+
+    class Reloj(f.datetime.datetime):
+        hora = (1, 45)
+
+        @classmethod
+        def now(cls, tz=None):
+            return cls(2026, 10, 13, *cls.hora, 0)
+
+    monkeypatch.setattr(f.datetime, "datetime", Reloj)
+    f.main()
+    Reloj.hora = (23, 33)
+    f.main()
+    nombres = sorted(x.name for x in (tmp_path / "precios").iterdir())
+    assert any(n.endswith("_0145.json") for n in nombres) and any(n.endswith("_2333.json") for n in nombres)
+
+
+def test_archivar_agrupa_por_mes_y_respeta_lo_reciente(tmp_path):
+    d = tmp_path / "precios"
+    for n in ("2026-08-30.json", "2026-09-02_0145.json", "2026-09-02_2333.json", "2026-09-20.json",
+              "2026-10-13_2333.json", "2026-10-13.json", "ultimo.json"):
+        _cap(d, n)
+    assert f.archivar_antiguos(d, "2026-10-14") == 3  # 30/08 y las dos del 02/09
+    assert sorted(x.name for x in d.glob("*.json")) == [
+        "2026-09-20.json", "2026-10-13.json", "2026-10-13_2333.json", "ultimo.json"]
+    ago = json.loads((d / "archivo" / "2026-08.json").read_text(encoding="utf-8"))
+    sep = json.loads((d / "archivo" / "2026-09.json").read_text(encoding="utf-8"))
+    assert list(ago["capturas"]) == ["2026-08-30"]
+    assert list(sep["capturas"]) == ["2026-09-02_0145", "2026-09-02_2333"]
+
+
+def test_archivar_es_idempotente_y_fusiona(tmp_path):
+    d = tmp_path / "precios"
+    _cap(d, "2026-09-02.json")
+    assert f.archivar_antiguos(d, "2026-10-14") == 1
+    _cap(d, "2026-09-03.json")
+    assert f.archivar_antiguos(d, "2026-10-14") == 1
+    assert f.archivar_antiguos(d, "2026-10-14") == 0
+    sep = json.loads((d / "archivo" / "2026-09.json").read_text(encoding="utf-8"))
+    assert list(sep["capturas"]) == ["2026-09-02", "2026-09-03"]
+
+
+def test_archivar_no_pierde_nada_si_hay_un_fichero_ilegible(tmp_path):
+    d = tmp_path / "precios"
+    _cap(d, "2026-09-02.json")
+    (d / "2026-09-03.json").write_text("{roto", encoding="utf-8")
+    assert f.archivar_antiguos(d, "2026-10-14") == 0
+    assert (d / "2026-09-02.json").exists() and (d / "2026-09-03.json").exists()
+    assert not (d / "archivo").exists()
+
+
+def test_archivar_sin_carpeta_no_falla(tmp_path):
+    assert f.archivar_antiguos(tmp_path / "no-existe", "2026-10-14") == 0

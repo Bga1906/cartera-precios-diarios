@@ -12,7 +12,7 @@ fuentes publicas. NUNCA cantidades, valores en euros, patrimonio ni ningun
 dato personal.
 
 Uso:
-    python3 fetch_precios_publico.py                # escribe precios/AAAA-MM-DD.json
+    python3 fetch_precios_publico.py                # escribe precios/AAAA-MM-DD_HHMM.json (+ ultimo.json y el alias AAAA-MM-DD.json)
     python3 fetch_precios_publico.py --pretty        # con sangria
     python3 fetch_precios_publico.py --probar        # solo comprueba benchmarks pendientes; no escribe
 """
@@ -20,6 +20,7 @@ import argparse
 import datetime
 import json
 import os
+import re
 import sys
 import urllib.parse
 import urllib.request
@@ -421,10 +422,15 @@ def construir_activos(fecha=None, catalogo=None):
             res = obtener_cotizacion_yahoo(ticker_yahoo)
         except Exception as e:  # noqa: BLE001  (un ticker nuevo nunca rompe a los demas)
             res = _resultado_yahoo(error=f"fallo inesperado: {type(e).__name__}: {e}")
+        moneda = res["moneda"]
+        extra = campos_fecha_mercado(res, fecha)
+        if moneda is None and isinstance(bench.get("moneda"), str) and bench["moneda"].strip():
+            # Yahoo no la da: se toma del catalogo y se marca como inferida.
+            moneda, extra["moneda_inferida"] = bench["moneda"].strip(), True
         activos[f"benchmark:{id_bench}"] = {
-            "price": res["precio"], "price_previous_close": res["cierre_anterior"], "moneda": res["moneda"],
+            "price": res["precio"], "price_previous_close": res["cierre_anterior"], "moneda": moneda,
             "fuente": f"Yahoo Finance ({ticker_yahoo})", "ok": res["precio"] is not None, "error": res["error"],
-            **campos_fecha_mercado(res, fecha),
+            **extra,
         }
 
     return activos
@@ -475,6 +481,56 @@ def escribir_atomico(path, texto):
     os.replace(tmp, path)
 
 
+DIAS_ARCHIVO = 30  # las capturas mas viejas se agrupan por mes en precios/archivo/AAAA-MM.json
+_PATRON_CAPTURA = re.compile(r"^(\d{4}-\d{2}-\d{2})(?:_(\d{4}))?\.json$")
+
+
+def archivar_antiguos(out_dir, hoy, dias=None):
+    """Mueve las capturas de mas de `dias` dias a precios/archivo/AAAA-MM.json
+    (un fichero por mes, con todas las capturas dentro) y borra los originales.
+    No toca ultimo.json ni nada que no tenga nombre AAAA-MM-DD[_HHMM].json.
+    Devuelve cuantos ficheros ha archivado. Es idempotente: si el mes ya existe,
+    fusiona sin duplicar."""
+    dias = DIAS_ARCHIVO if dias is None else dias
+    out_dir = Path(out_dir)
+    if not out_dir.is_dir():
+        return 0
+    limite = datetime.date.fromisoformat(hoy) - datetime.timedelta(days=dias)
+    por_mes = {}
+    for f in sorted(out_dir.glob("*.json")):
+        m = _PATRON_CAPTURA.match(f.name)
+        if not m:
+            continue
+        try:
+            dia = datetime.date.fromisoformat(m.group(1))
+        except ValueError:
+            continue
+        if dia < limite:
+            por_mes.setdefault(m.group(1)[:7], []).append(f)
+    total = 0
+    for mes, ficheros in por_mes.items():
+        destino = out_dir / "archivo" / f"{mes}.json"
+        try:
+            doc = json.loads(destino.read_text(encoding="utf-8")) if destino.exists() else {}
+        except ValueError:
+            continue  # archivo del mes ilegible: no se toca nada de ese mes
+        capturas = doc.get("capturas", {}) if isinstance(doc, dict) else {}
+        for f in ficheros:
+            try:
+                capturas[f.stem] = json.loads(f.read_text(encoding="utf-8"))
+            except ValueError:
+                capturas = None
+                break
+        if capturas is None:
+            continue  # una captura ilegible: se deja todo el mes como esta
+        escribir_atomico(destino, json.dumps({"mes": mes, "capturas": dict(sorted(capturas.items()))},
+                                             ensure_ascii=False))
+        for f in ficheros:
+            f.unlink()
+            total += 1
+    return total
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--pretty", action="store_true")
@@ -494,10 +550,16 @@ def main():
         "activos": activos,
     }
 
-    out_path = OUT_DIR / f"{hoy}.json"
     texto = json.dumps(resultado, ensure_ascii=False, indent=2 if args.pretty else None)
+    hhmm = datetime.datetime.now().strftime("%H%M")
+    out_path = OUT_DIR / f"{hoy}_{hhmm}.json"   # inmutable: dos capturas del mismo dia ya no se pisan
     escribir_atomico(out_path, texto)
+    escribir_atomico(OUT_DIR / "ultimo.json", texto)      # siempre la captura mas reciente
+    escribir_atomico(OUT_DIR / f"{hoy}.json", texto)      # alias transitorio: el dashboard del vault lo lee por fecha
+    movidos = archivar_antiguos(OUT_DIR, hoy)
     print(f"Escrito {out_path} ({sum(1 for a in activos.values() if a['ok'])}/{len(activos)} activos con precio fresco).")
+    if movidos:
+        print(f"Archivadas {movidos} capturas de mas de {DIAS_ARCHIVO} dias en precios/archivo/.")
 
 
 if __name__ == "__main__":
