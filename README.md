@@ -6,7 +6,11 @@ Este repositorio es público y solo contiene identificadores de mercado (tickers
 
 Sirve como respaldo de continuidad para un panel de seguimiento de cartera personal, que descarga estos datos para rellenar los días en los que su propio equipo estuvo apagado.
 
-Cada ejecución escribe un archivo precios/AAAA-MM-DD.json con la cotización de cada activo seguido.
+Cada ejecución escribe `precios/AAAA-MM-DD_HHMM.json` (hora UTC del runner; no se sobrescribe nunca) con la cotización de cada activo seguido, y además:
+
+- `precios/ultimo.json`: copia de la captura más reciente (el lector recomendado).
+- `precios/AAAA-MM-DD.json`: alias transitorio de la última captura del día. Existe solo porque el dashboard del vault lo pide por fecha; se retirará cuando ese lector pase a `ultimo.json`.
+- `precios/archivo/AAAA-MM.json`: las capturas de más de 30 días, agrupadas por mes (`{"mes": ..., "capturas": {"AAAA-MM-DD_HHMM": {...}}}`). Solo se abre para recalcular historia.
 
 ## Campos de cada activo
 
