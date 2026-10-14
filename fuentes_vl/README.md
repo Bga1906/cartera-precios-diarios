@@ -15,3 +15,9 @@ detrás; FT/Investing/finanzen 1–2 días. FT solo da 2 decimales. En Pictet
 (`.LU`) Yahoo etiqueta el precio con la fecha de captura, no la real.
 
 Sin secretos ni datos personales: solo ISIN y precios públicos.
+
+## Primera ejecución (14/10/2026 22:23)
+- Yahoo (API de gráficos) y FT responden bien desde Apps Script. Yahoo da la fecha real
+  también para Pictet (12/10), así que ese fallo es del script del repo, no de la API.
+- finanzen.at devuelve HTTP 403 desde los servidores de Google: no automatizable así.
+- Disparadores creados: capturarFuentes a las 09:00 y 22:00.
