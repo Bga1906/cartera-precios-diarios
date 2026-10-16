@@ -249,15 +249,20 @@ def test_compatibilidad_hacia_atras_claves_antiguas(red):
 
 
 def test_compatibilidad_con_un_fichero_real_del_repo(red):
-    """Todo id y toda clave de un fichero real previo siguen existiendo."""
-    reales = sorted((Path(__file__).parent / "precios").glob("*.json"))
+    """Todo id de un fichero real previo sigue existiendo y conserva las claves de siempre.
+
+    Solo se exigen las claves antiguas: las opcionales (as_of, moneda_inferida...) dependen de
+    lo que conteste Yahoo en cada captura (moneda_inferida solo sale si Yahoo no da moneda), y
+    aqui Yahoo esta simulado, asi que no se pueden pedir como si fueran fijas.
+    """
+    reales = sorted((Path(__file__).parent / "precios").glob("????-??-??*.json"))  # sin ultimo.json
     if not reales:
         pytest.skip("no hay ficheros reales en precios/")
     viejo = json.loads(reales[-1].read_text(encoding="utf-8"))
     nuevo = f.construir_activos(viejo["date"])
     assert set(viejo["activos"]) <= set(nuevo)
     for id_, a in viejo["activos"].items():
-        assert set(a) <= set(nuevo[id_]), id_
+        assert (set(a) & set(CLAVES_ANTIGUAS)) <= set(nuevo[id_]), id_
 
 
 def test_documento_es_json_valido_y_sin_claves_personales(red):
