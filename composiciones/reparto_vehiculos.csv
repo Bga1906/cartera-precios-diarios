@@ -1,0 +1,620 @@
+sheet,vehiculo,codigo,dimension,categoria,pct,fecha_dato,fuente,nivel
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Apple,5.5,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,NVIDIA,5.47,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Microsoft,4.17,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Amazon,2.7,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Alphabet,4.01,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Meta Platforms,1.77,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Broadcom,1.7,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Micron,1.15,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Tesla,1.14,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Eli Lilly,1.1,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,AMD,1.0,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,JPMorgan,0.98,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Berkshire Hathaway,0.81,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,ExxonMobil,0.8,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Visa,0.73,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,ASML,0.7,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Johnson & Johnson,0.67,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Walmart,0.56,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Mastercard,0.55,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,AbbVie,0.55,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Palantir,0.48,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Cisco,0.47,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Costco,0.47,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Intel,0.46,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Chevron,0.44,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,UnitedHealth,0.4,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Procter & Gamble,0.4,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Merck & Co,0.39,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Coca-Cola,0.39,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Lam Research,0.38,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Caterpillar,0.37,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Applied Materials,0.37,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Bank of America,0.37,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,GE Aerospace,0.35,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Roche,0.35,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,HSBC,0.35,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Philip Morris,0.34,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Home Depot,0.34,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Netflix,0.33,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Shell,0.33,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Palo Alto Networks,0.33,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Novartis,0.3,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Royal Bank of Canada,0.3,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Goldman Sachs,0.29,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Thermo Fisher,0.28,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Wells Fargo,0.28,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,AstraZeneca,0.28,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Texas Instruments,0.28,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,RTX,0.27,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Sin desglosar,53.29,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Liquidez,0.26,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,País,Estados Unidos,73.7051,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,País,Japón,5.7014,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,País,Reino Unido,3.4814,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,País,Canadá,3.4007,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,País,Francia,2.2402,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,País,Suiza,2.2301,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,País,Alemania,2.0989,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,País,Australia,1.5237,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,País,Países Bajos,1.332,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,País,España,0.9385,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,País,Suecia,0.8577,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,País,Italia,0.7266,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,País,Singapur,0.4238,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,País,Hong Kong,0.4036,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,País,Dinamarca,0.3936,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,País,Finlandia,0.2825,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,País,Liquidez,0.26,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Sector,Tecnología,30.56,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Sector,Servicios financieros,15.76,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Sector,Industria,10.67,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Sector,Salud,9.51,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Sector,Consumo cíclico,8.62,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Sector,Servicios de comunicación,8.22,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Sector,Consumo defensivo,5.17,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Sector,Energía,4.3,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Sector,Materiales básicos,3.09,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Sector,Servicios públicos,2.33,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Sector,Inmobiliario,1.51,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Sector,Liquidez,0.26,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,TSMC,15.89,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Samsung Electronics,7.07,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,SK Hynix,4.45,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Tencent,2.8,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Alibaba,1.95,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,MediaTek,1.61,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,China Construction Bank,0.92,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Delta Electronics,0.84,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Hon Hai (Foxconn),0.78,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,HDFC Bank,0.74,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,ICICI Bank,0.65,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Reliance Industries,0.63,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,ASE Technology,0.59,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,ICBC,0.55,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Xiaomi,0.51,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Bharti Airtel,0.47,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Bank of China,0.45,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Meituan,0.41,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Al Rajhi Bank,0.41,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Sin desglosar,57.65,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Liquidez,0.63,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,País,Taiwán,29.4723,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,País,Corea del Sur,18.1945,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,País,China,20.5373,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,País,India,11.5313,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,País,Sudáfrica,3.1237,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,País,Brasil,5.0101,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,País,Arabia Saudí,2.3631,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,País,México,1.7343,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,País,EAU,1.2779,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,País,Polonia,1.2373,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,País,Tailandia,0.9838,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,País,Malasia,0.9229,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,País,Grecia,0.6085,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,País,Kuwait,0.5578,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,País,Indonesia,0.4767,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,País,Catar,0.4564,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,País,Perú,0.4462,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,País,Chile,0.4361,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,País,Liquidez,0.63,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Sector,Tecnología,39.65,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Sector,Servicios financieros,24.6,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Sector,Consumo cíclico,7.57,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Sector,Servicios de comunicación,6.0,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Sector,Industria,5.38,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Sector,Materiales básicos,5.36,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Sector,Energía,3.18,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Sector,Salud,2.51,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Sector,Consumo defensivo,2.47,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Sector,Servicios públicos,1.66,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Sector,Inmobiliario,0.99,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Sector,Liquidez,0.63,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
+fondos,pictet-china,LU0625737910,Empresa,Tencent,13.75,2026-10-15,"Cartera completa iShares MSCI China UCITS (mismo índice), 15/10/2026",A
+fondos,pictet-china,LU0625737910,Empresa,Alibaba,9.58,2026-10-15,"Cartera completa iShares MSCI China UCITS (mismo índice), 15/10/2026",A
+fondos,pictet-china,LU0625737910,Empresa,China Construction Bank,4.5,2026-10-15,"Cartera completa iShares MSCI China UCITS (mismo índice), 15/10/2026",A
+fondos,pictet-china,LU0625737910,Empresa,ICBC,2.69,2026-10-15,"Cartera completa iShares MSCI China UCITS (mismo índice), 15/10/2026",A
+fondos,pictet-china,LU0625737910,Empresa,Xiaomi,2.48,2026-10-15,"Cartera completa iShares MSCI China UCITS (mismo índice), 15/10/2026",A
+fondos,pictet-china,LU0625737910,Empresa,Bank of China,2.21,2026-10-15,"Cartera completa iShares MSCI China UCITS (mismo índice), 15/10/2026",A
+fondos,pictet-china,LU0625737910,Empresa,Meituan,2.04,2026-10-15,"Cartera completa iShares MSCI China UCITS (mismo índice), 15/10/2026",A
+fondos,pictet-china,LU0625737910,Empresa,NetEase,1.85,2026-10-15,"Cartera completa iShares MSCI China UCITS (mismo índice), 15/10/2026",A
+fondos,pictet-china,LU0625737910,Empresa,PDD Holdings,1.79,2026-10-15,"Cartera completa iShares MSCI China UCITS (mismo índice), 15/10/2026",A
+fondos,pictet-china,LU0625737910,Empresa,Ping An,1.66,2026-10-15,"Cartera completa iShares MSCI China UCITS (mismo índice), 15/10/2026",A
+fondos,pictet-china,LU0625737910,Empresa,BYD,1.44,2026-10-15,"Cartera completa iShares MSCI China UCITS (mismo índice), 15/10/2026",A
+fondos,pictet-china,LU0625737910,Empresa,JD.com,1.29,2026-10-15,"Cartera completa iShares MSCI China UCITS (mismo índice), 15/10/2026",A
+fondos,pictet-china,LU0625737910,Empresa,PetroChina,1.14,2026-10-15,"Cartera completa iShares MSCI China UCITS (mismo índice), 15/10/2026",A
+fondos,pictet-china,LU0625737910,Empresa,China Merchants Bank,1.1,2026-10-15,"Cartera completa iShares MSCI China UCITS (mismo índice), 15/10/2026",A
+fondos,pictet-china,LU0625737910,Empresa,Lenovo,1.04,2026-10-15,"Cartera completa iShares MSCI China UCITS (mismo índice), 15/10/2026",A
+fondos,pictet-china,LU0625737910,Empresa,Sin desglosar,50.95,2026-10-15,"Cartera completa iShares MSCI China UCITS (mismo índice), 15/10/2026",A
+fondos,pictet-china,LU0625737910,Empresa,Liquidez,0.49,2026-10-15,"Cartera completa iShares MSCI China UCITS (mismo índice), 15/10/2026",A
+fondos,pictet-china,LU0625737910,País,China,99.51,2026-10-15,"Cartera completa iShares MSCI China UCITS (mismo índice), 15/10/2026",A
+fondos,pictet-china,LU0625737910,País,Liquidez,0.49,2026-10-15,"Cartera completa iShares MSCI China UCITS (mismo índice), 15/10/2026",A
+fondos,pictet-china,LU0625737910,Sector,Consumo cíclico,22.4097,2026-10-15,"Cartera completa iShares MSCI China UCITS (mismo índice), 15/10/2026",A
+fondos,pictet-china,LU0625737910,Sector,Servicios financieros,20.8672,2026-10-15,"Cartera completa iShares MSCI China UCITS (mismo índice), 15/10/2026",A
+fondos,pictet-china,LU0625737910,Sector,Servicios de comunicación,18.071,2026-10-15,"Cartera completa iShares MSCI China UCITS (mismo índice), 15/10/2026",A
+fondos,pictet-china,LU0625737910,Sector,Tecnología,11.5233,2026-10-15,"Cartera completa iShares MSCI China UCITS (mismo índice), 15/10/2026",A
+fondos,pictet-china,LU0625737910,Sector,Salud,6.6373,2026-10-15,"Cartera completa iShares MSCI China UCITS (mismo índice), 15/10/2026",A
+fondos,pictet-china,LU0625737910,Sector,Materiales básicos,5.2939,2026-10-15,"Cartera completa iShares MSCI China UCITS (mismo índice), 15/10/2026",A
+fondos,pictet-china,LU0625737910,Sector,Otros sectores,14.7076,2026-10-15,"Cartera completa iShares MSCI China UCITS (mismo índice), 15/10/2026",A
+fondos,pictet-china,LU0625737910,Sector,Liquidez,0.49,2026-10-15,"Cartera completa iShares MSCI China UCITS (mismo índice), 15/10/2026",A
+fondos,horos-value-internacional,ES0146309002,Empresa,Pluxee,5.06,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Empresa,Naspers,4.23,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Empresa,TGS Nopec Geo,3.82,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Empresa,Meliá Hotels,3.38,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Empresa,Suzano (ADR),3.27,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Empresa,Acciona Energía,3.53,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Empresa,Sopra Steria,3.14,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Empresa,Fairfax (grupo),2.85,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Empresa,Onex,2.75,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Empresa,Gestamp,2.76,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Empresa,Liberty Global C,2.65,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Empresa,PayPal,2.69,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Empresa,Zigup,2.55,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Empresa,ALD (Ayvens),2.51,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Empresa,Azimut,2.27,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Empresa,Bolloré (grupo),3.74,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Empresa,Sun Hung Kai & Co,2.37,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Empresa,Semapa,2.13,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Empresa,BMW,2.14,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Empresa,Cofide,1.97,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Empresa,Antin Infrastructure,1.94,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Empresa,DIA,1.87,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Empresa,AmRest,1.8,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Empresa,LNA Santé,1.83,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Empresa,Expro Group,1.82,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Empresa,Verallia,1.74,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Empresa,Aubay,1.52,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Empresa,Groupe Guillin,1.45,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Empresa,Exor,2.91,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Empresa,Renault,2.81,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Empresa,GCI Liberty C,2.56,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Empresa,Booking Holdings,2.21,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Empresa,Constellation Oil Services,2.0,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Empresa,NagaCorp,1.36,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Empresa,Merlin Properties,1.19,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Empresa,Ajisen China,0.38,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Empresa,Aperam,0.39,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Empresa,Becle,0.51,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Empresa,Keck Seng,0.26,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Empresa,Tai Cheung,0.13,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Empresa,Tang Palace,0.05,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Empresa,Time Watch,0.05,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Empresa,Asia Standard Intl,0.04,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Empresa,Sin desglosar,0.13,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Empresa,Liquidez,9.24,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,País,Francia,25.74,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,País,Sudáfrica,4.23,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,País,Noruega,3.82,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,País,España,14.53,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,País,Brasil,5.27,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,País,India,2.85,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,País,Canadá,2.75,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,País,Reino Unido,5.2,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,País,Estados Unidos,9.28,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,País,Italia,4.24,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,País,Hong Kong,2.54,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,País,Portugal,2.13,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,País,Alemania,2.14,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,País,Países Bajos,2.91,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,País,Camboya,1.36,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,País,China,0.48,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,País,Luxemburgo,0.39,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,País,México,0.51,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,País,Malasia,0.26,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,País,Sin desglosar,0.13,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,País,Liquidez,9.24,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Sector,Industria,10.12,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Sector,Consumo cíclico,21.17,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Sector,Energía,7.64,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Sector,Materiales básicos,8.98,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Sector,Servicios públicos,3.53,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Sector,Tecnología,4.66,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Sector,Servicios financieros,19.75,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Sector,Servicios de comunicación,8.95,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Sector,Consumo defensivo,2.38,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Sector,Salud,1.83,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Sector,Inmobiliario,1.62,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Sector,Sin desglosar,0.13,2026-06-30,Informe CNMV 1S2026,A
+fondos,horos-value-internacional,ES0146309002,Sector,Liquidez,9.24,2026-06-30,Informe CNMV 1S2026,A
+fondos,cobas-seleccion,ES0124037013,Empresa,Grifols,1.61,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,Empresa,Meliá Hotels,2.54,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,Empresa,Sacyr,1.2,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,Empresa,Técnicas Reunidas,1.54,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,Empresa,Almirall,1.73,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,Empresa,B&M European Value,1.63,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,Empresa,Domino's Pizza Group,1.11,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,Empresa,Haitian International,1.57,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,Empresa,JD Sports,2.91,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,Empresa,Douglas,1.72,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,Empresa,Elior,1.67,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,Empresa,Ibstock,1.26,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,Empresa,Wizz Air,2.93,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,Empresa,Vicat,0.99,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,Empresa,PetroReconcavo,1.2,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,Empresa,SAF-Holland,1.46,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,Empresa,CK Asset,1.3,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,Empresa,Teleperformance,1.21,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,Empresa,Borr Drilling,2.11,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,Empresa,Brava Energia,1.89,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,Empresa,Fresenius Medical Care,1.23,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,Empresa,Bayer,2.61,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,Empresa,Energean,1.39,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,Empresa,BW Offshore,2.72,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,Empresa,BW Energy,2.42,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,Empresa,Cofide,1.2,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,Empresa,Viatris,1.65,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,Empresa,CK Hutchison,3.26,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,Empresa,Kosmos Energy,1.5,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,Empresa,Matas,1.01,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,Empresa,Danieli,1.04,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,Empresa,Exor,2.22,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,Empresa,Teva,0.2,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,Empresa,G-III Apparel,2.01,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,Empresa,Semapa,0.98,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,Empresa,Currys,1.6,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,Empresa,Renault,1.7,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,Empresa,Bolloré (grupo),1.26,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,Empresa,Porsche AG,1.4,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,Empresa,Golar LNG,3.23,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,Empresa,Sin desglosar,30.57,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,Empresa,Liquidez,1.22,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,País,España,8.62,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,País,Reino Unido,12.83,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,País,China,1.57,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,País,Alemania,8.42,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,País,Francia,6.83,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,País,Brasil,3.09,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,País,Hong Kong,4.56,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,País,Noruega,10.48,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,País,Italia,2.24,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,País,Estados Unidos,5.16,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,País,Dinamarca,1.01,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,País,Países Bajos,2.22,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,País,Israel,0.2,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,País,Portugal,0.98,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,País,Sin desglosar,30.57,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,País,Liquidez,1.22,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,Sector,Salud,9.03,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,Sector,Consumo cíclico,17.67,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,Sector,Industria,12.67,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,Sector,Energía,18.0,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,Sector,Consumo defensivo,1.63,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,Sector,Materiales básicos,3.23,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,Sector,Inmobiliario,1.3,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,Sector,Servicios financieros,3.42,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,Sector,Servicios de comunicación,1.26,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,Sector,Sin desglosar,30.57,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,cobas-seleccion,ES0124037013,Sector,Liquidez,1.22,2026-06-30,"Informe CNMV 1S2026; 29,9 % agrupado por la gestora",A
+fondos,myinvestor-value,ES0165243025,Empresa,Marshalls,1.92,2026-06-30,Informe CNMV 1S2026,A
+fondos,myinvestor-value,ES0165243025,Empresa,Arbonia,0.32,2026-06-30,Informe CNMV 1S2026,A
+fondos,myinvestor-value,ES0165243025,Empresa,Dormakaba,2.45,2026-06-30,Informe CNMV 1S2026,A
+fondos,myinvestor-value,ES0165243025,Empresa,Douglas,2.03,2026-06-30,Informe CNMV 1S2026,A
+fondos,myinvestor-value,ES0165243025,Empresa,Industrie De Nora,0.67,2026-06-30,Informe CNMV 1S2026,A
+fondos,myinvestor-value,ES0165243025,Empresa,Syensqo,3.12,2026-06-30,Informe CNMV 1S2026,A
+fondos,myinvestor-value,ES0165243025,Empresa,Fuchs,3.44,2026-06-30,Informe CNMV 1S2026,A
+fondos,myinvestor-value,ES0165243025,Empresa,Electrolux,2.57,2026-06-30,Informe CNMV 1S2026,A
+fondos,myinvestor-value,ES0165243025,Empresa,DCC,6.63,2026-06-30,Informe CNMV 1S2026,A
+fondos,myinvestor-value,ES0165243025,Empresa,Sesa,3.55,2026-06-30,Informe CNMV 1S2026,A
+fondos,myinvestor-value,ES0165243025,Empresa,Savills,1.52,2026-06-30,Informe CNMV 1S2026,A
+fondos,myinvestor-value,ES0165243025,Empresa,Husqvarna B,3.91,2026-06-30,Informe CNMV 1S2026,A
+fondos,myinvestor-value,ES0165243025,Empresa,MARR,2.05,2026-06-30,Informe CNMV 1S2026,A
+fondos,myinvestor-value,ES0165243025,Empresa,Dart Group (Jet2),4.97,2026-06-30,Informe CNMV 1S2026,A
+fondos,myinvestor-value,ES0165243025,Empresa,Dürr,2.07,2026-06-30,Informe CNMV 1S2026,A
+fondos,myinvestor-value,ES0165243025,Empresa,MGI Coutier (OPmobility),0.19,2026-06-30,Informe CNMV 1S2026,A
+fondos,myinvestor-value,ES0165243025,Empresa,Clariant,3.12,2026-06-30,Informe CNMV 1S2026,A
+fondos,myinvestor-value,ES0165243025,Empresa,Arkema,3.34,2026-06-30,Informe CNMV 1S2026,A
+fondos,myinvestor-value,ES0165243025,Empresa,Webuild (Impregilo),1.5,2026-06-30,Informe CNMV 1S2026,A
+fondos,myinvestor-value,ES0165243025,Empresa,Imerys,0.78,2026-06-30,Informe CNMV 1S2026,A
+fondos,myinvestor-value,ES0165243025,Empresa,Bénéteau,0.34,2026-06-30,Informe CNMV 1S2026,A
+fondos,myinvestor-value,ES0165243025,Empresa,Elior,2.3,2026-06-30,Informe CNMV 1S2026,A
+fondos,myinvestor-value,ES0165243025,Empresa,Billerud,3.71,2026-06-30,Informe CNMV 1S2026,A
+fondos,myinvestor-value,ES0165243025,Empresa,De'Longhi,2.36,2026-06-30,Informe CNMV 1S2026,A
+fondos,myinvestor-value,ES0165243025,Empresa,SEB,3.41,2026-06-30,Informe CNMV 1S2026,A
+fondos,myinvestor-value,ES0165243025,Empresa,Jungheinrich pref.,3.45,2026-06-30,Informe CNMV 1S2026,A
+fondos,myinvestor-value,ES0165243025,Empresa,Interpump,2.41,2026-06-30,Informe CNMV 1S2026,A
+fondos,myinvestor-value,ES0165243025,Empresa,Ipsos,0.76,2026-06-30,Informe CNMV 1S2026,A
+fondos,myinvestor-value,ES0165243025,Empresa,Barratt Redrow,5.22,2026-06-30,Informe CNMV 1S2026,A
+fondos,myinvestor-value,ES0165243025,Empresa,Trigano,0.54,2026-06-30,Informe CNMV 1S2026,A
+fondos,myinvestor-value,ES0165243025,Empresa,easyJet,8.47,2026-06-30,Informe CNMV 1S2026,A
+fondos,myinvestor-value,ES0165243025,Empresa,Alten,4.41,2026-06-30,Informe CNMV 1S2026,A
+fondos,myinvestor-value,ES0165243025,Empresa,Forvia (Faurecia),5.51,2026-06-30,Informe CNMV 1S2026,A
+fondos,myinvestor-value,ES0165243025,Empresa,Reply,4.87,2026-06-30,Informe CNMV 1S2026,A
+fondos,myinvestor-value,ES0165243025,Empresa,Liquidez,2.26,2026-06-30,Informe CNMV 1S2026,A
+fondos,myinvestor-value,ES0165243025,País,Reino Unido,22.1,2026-06-30,Informe CNMV 1S2026,A
+fondos,myinvestor-value,ES0165243025,País,Suiza,5.89,2026-06-30,Informe CNMV 1S2026,A
+fondos,myinvestor-value,ES0165243025,País,Alemania,10.99,2026-06-30,Informe CNMV 1S2026,A
+fondos,myinvestor-value,ES0165243025,País,Italia,17.41,2026-06-30,Informe CNMV 1S2026,A
+fondos,myinvestor-value,ES0165243025,País,Bélgica,3.12,2026-06-30,Informe CNMV 1S2026,A
+fondos,myinvestor-value,ES0165243025,País,Suecia,10.19,2026-06-30,Informe CNMV 1S2026,A
+fondos,myinvestor-value,ES0165243025,País,Irlanda,6.63,2026-06-30,Informe CNMV 1S2026,A
+fondos,myinvestor-value,ES0165243025,País,Francia,21.58,2026-06-30,Informe CNMV 1S2026,A
+fondos,myinvestor-value,ES0165243025,País,Liquidez,2.26,2026-06-30,Informe CNMV 1S2026,A
+fondos,myinvestor-value,ES0165243025,Sector,Materiales básicos,19.43,2026-06-30,Informe CNMV 1S2026,A
+fondos,myinvestor-value,ES0165243025,Sector,Industria,32.94,2026-06-30,Informe CNMV 1S2026,A
+fondos,myinvestor-value,ES0165243025,Sector,Consumo cíclico,28.38,2026-06-30,Informe CNMV 1S2026,A
+fondos,myinvestor-value,ES0165243025,Sector,Tecnología,12.83,2026-06-30,Informe CNMV 1S2026,A
+fondos,myinvestor-value,ES0165243025,Sector,Inmobiliario,1.52,2026-06-30,Informe CNMV 1S2026,A
+fondos,myinvestor-value,ES0165243025,Sector,Consumo defensivo,2.05,2026-06-30,Informe CNMV 1S2026,A
+fondos,myinvestor-value,ES0165243025,Sector,Servicios de comunicación,0.76,2026-06-30,Informe CNMV 1S2026,A
+fondos,myinvestor-value,ES0165243025,Sector,Liquidez,2.26,2026-06-30,Informe CNMV 1S2026,A
+fondos,numantia,ES0173311103,Empresa,Brookfield Corporation,7.91,2026-10-01,Tabla del gestor (fecha estimada oct-2026 por patrimonio),B
+fondos,numantia,ES0173311103,Empresa,FRP Holdings,6.63,2026-10-01,Tabla del gestor (fecha estimada oct-2026 por patrimonio),B
+fondos,numantia,ES0173311103,Empresa,Tesla,6.14,2026-10-01,Tabla del gestor (fecha estimada oct-2026 por patrimonio),B
+fondos,numantia,ES0173311103,Empresa,Fairfax (grupo),5.7,2026-10-01,Tabla del gestor (fecha estimada oct-2026 por patrimonio),B
+fondos,numantia,ES0173311103,Empresa,Eurofins Scientific,5.55,2026-10-01,Tabla del gestor (fecha estimada oct-2026 por patrimonio),B
+fondos,numantia,ES0173311103,Empresa,Meta Platforms,5.61,2026-10-01,Tabla del gestor (fecha estimada oct-2026 por patrimonio),B
+fondos,numantia,ES0173311103,Empresa,Amazon,4.13,2026-10-01,Tabla del gestor (fecha estimada oct-2026 por patrimonio),B
+fondos,numantia,ES0173311103,Empresa,Camden Property Trust,3.96,2026-10-01,Tabla del gestor (fecha estimada oct-2026 por patrimonio),B
+fondos,numantia,ES0173311103,Empresa,The St. Joe Company,3.97,2026-10-01,Tabla del gestor (fecha estimada oct-2026 por patrimonio),B
+fondos,numantia,ES0173311103,Empresa,Georgia Capital,3.96,2026-10-01,Tabla del gestor (fecha estimada oct-2026 por patrimonio),B
+fondos,numantia,ES0173311103,Empresa,GFL Environmental,3.73,2026-10-01,Tabla del gestor (fecha estimada oct-2026 por patrimonio),B
+fondos,numantia,ES0173311103,Empresa,Rexford Industrial Realty,3.62,2026-10-01,Tabla del gestor (fecha estimada oct-2026 por patrimonio),B
+fondos,numantia,ES0173311103,Empresa,KKR & Co.,3.52,2026-10-01,Tabla del gestor (fecha estimada oct-2026 por patrimonio),B
+fondos,numantia,ES0173311103,Empresa,Pool Corporation,3.35,2026-10-01,Tabla del gestor (fecha estimada oct-2026 por patrimonio),B
+fondos,numantia,ES0173311103,Empresa,Canadian Natural Resources,3.37,2026-10-01,Tabla del gestor (fecha estimada oct-2026 por patrimonio),B
+fondos,numantia,ES0173311103,Empresa,Chubb,3.22,2026-10-01,Tabla del gestor (fecha estimada oct-2026 por patrimonio),B
+fondos,numantia,ES0173311103,Empresa,GCC S.A.B. de C.V.,2.97,2026-10-01,Tabla del gestor (fecha estimada oct-2026 por patrimonio),B
+fondos,numantia,ES0173311103,Empresa,Amrize,2.9,2026-10-01,Tabla del gestor (fecha estimada oct-2026 por patrimonio),B
+fondos,numantia,ES0173311103,Empresa,Broadridge Financial Solutions,2.76,2026-10-01,Tabla del gestor (fecha estimada oct-2026 por patrimonio),B
+fondos,numantia,ES0173311103,Empresa,Carlisle Companies,2.68,2026-10-01,Tabla del gestor (fecha estimada oct-2026 por patrimonio),B
+fondos,numantia,ES0173311103,Empresa,S&P Global,2.56,2026-10-01,Tabla del gestor (fecha estimada oct-2026 por patrimonio),B
+fondos,numantia,ES0173311103,Empresa,Watches of Switzerland Group,2.5,2026-10-01,Tabla del gestor (fecha estimada oct-2026 por patrimonio),B
+fondos,numantia,ES0173311103,Empresa,Alexander's,2.48,2026-10-01,Tabla del gestor (fecha estimada oct-2026 por patrimonio),B
+fondos,numantia,ES0173311103,Empresa,Sagicor Financial Company,2.35,2026-10-01,Tabla del gestor (fecha estimada oct-2026 por patrimonio),B
+fondos,numantia,ES0173311103,Empresa,The Magnum Ice Cream Company,2.08,2026-10-01,Tabla del gestor (fecha estimada oct-2026 por patrimonio),B
+fondos,numantia,ES0173311103,Empresa,Sky Harbour Group,1.57,2026-10-01,Tabla del gestor (fecha estimada oct-2026 por patrimonio),B
+fondos,numantia,ES0173311103,Empresa,Sin desglosar,0.02,2026-10-01,Tabla del gestor (fecha estimada oct-2026 por patrimonio),B
+fondos,numantia,ES0173311103,Empresa,Liquidez,0.76,2026-10-01,Tabla del gestor (fecha estimada oct-2026 por patrimonio),B
+fondos,numantia,ES0173311103,País,Canadá,23.06,2026-10-01,Tabla del gestor (fecha estimada oct-2026 por patrimonio),B
+fondos,numantia,ES0173311103,País,Estados Unidos,52.98,2026-10-01,Tabla del gestor (fecha estimada oct-2026 por patrimonio),B
+fondos,numantia,ES0173311103,País,Luxemburgo,5.55,2026-10-01,Tabla del gestor (fecha estimada oct-2026 por patrimonio),B
+fondos,numantia,ES0173311103,País,Georgia,3.96,2026-10-01,Tabla del gestor (fecha estimada oct-2026 por patrimonio),B
+fondos,numantia,ES0173311103,País,Suiza,6.12,2026-10-01,Tabla del gestor (fecha estimada oct-2026 por patrimonio),B
+fondos,numantia,ES0173311103,País,México,2.97,2026-10-01,Tabla del gestor (fecha estimada oct-2026 por patrimonio),B
+fondos,numantia,ES0173311103,País,Reino Unido,2.5,2026-10-01,Tabla del gestor (fecha estimada oct-2026 por patrimonio),B
+fondos,numantia,ES0173311103,País,Países Bajos,2.08,2026-10-01,Tabla del gestor (fecha estimada oct-2026 por patrimonio),B
+fondos,numantia,ES0173311103,País,Sin desglosar,0.02,2026-10-01,Tabla del gestor (fecha estimada oct-2026 por patrimonio),B
+fondos,numantia,ES0173311103,País,Liquidez,0.76,2026-10-01,Tabla del gestor (fecha estimada oct-2026 por patrimonio),B
+fondos,numantia,ES0173311103,Sector,Servicios financieros,29.22,2026-10-01,Tabla del gestor (fecha estimada oct-2026 por patrimonio),B
+fondos,numantia,ES0173311103,Sector,Inmobiliario,20.66,2026-10-01,Tabla del gestor (fecha estimada oct-2026 por patrimonio),B
+fondos,numantia,ES0173311103,Sector,Consumo cíclico,16.12,2026-10-01,Tabla del gestor (fecha estimada oct-2026 por patrimonio),B
+fondos,numantia,ES0173311103,Sector,Salud,5.55,2026-10-01,Tabla del gestor (fecha estimada oct-2026 por patrimonio),B
+fondos,numantia,ES0173311103,Sector,Servicios de comunicación,5.61,2026-10-01,Tabla del gestor (fecha estimada oct-2026 por patrimonio),B
+fondos,numantia,ES0173311103,Sector,Industria,10.74,2026-10-01,Tabla del gestor (fecha estimada oct-2026 por patrimonio),B
+fondos,numantia,ES0173311103,Sector,Energía,3.37,2026-10-01,Tabla del gestor (fecha estimada oct-2026 por patrimonio),B
+fondos,numantia,ES0173311103,Sector,Materiales básicos,5.87,2026-10-01,Tabla del gestor (fecha estimada oct-2026 por patrimonio),B
+fondos,numantia,ES0173311103,Sector,Consumo defensivo,2.08,2026-10-01,Tabla del gestor (fecha estimada oct-2026 por patrimonio),B
+fondos,numantia,ES0173311103,Sector,Sin desglosar,0.02,2026-10-01,Tabla del gestor (fecha estimada oct-2026 por patrimonio),B
+fondos,numantia,ES0173311103,Sector,Liquidez,0.76,2026-10-01,Tabla del gestor (fecha estimada oct-2026 por patrimonio),B
+fondos,polar-capital,IE00BM95B621,Empresa,Alphabet,2.19,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,Amazon,0.82,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,Arista Networks,1.25,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,FOCI Fiber Optic,0.33,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,Meta Platforms,1.4,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,SoftBank Group,1.33,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,SpaceX (no cotizada),1.87,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,Tencent,0.35,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,Amphenol,0.55,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,Bloom Energy,0.99,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,Celestica,1.32,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,Chroma ATE,0.51,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,Coherent,1.43,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,Corning,1.94,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,Delta Electronics,0.53,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,Elite Material,1.06,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,Flex,1.46,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,Furukawa Electric,1.16,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,GE Vernova,1.06,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,Hoya,0.63,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,MACOM,0.62,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,Prysmian,0.44,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,Samsung Electro-Mechanics,1.06,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,Siemens Energy,0.73,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,TDK,1.31,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,TTM Technologies,1.32,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,Vertiv,0.86,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,Accton Technology,1.17,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,AMD,4.74,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,Akamai,0.65,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,Apple,0.9,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,ASE Technology,0.27,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,Asia Vital Components,0.59,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,ASML,2.46,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,Broadcom,2.16,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,Cloudflare,0.73,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,Crowdstrike,1.18,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,eMemory Technology,0.39,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,Fabrinet,0.77,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,FormFactor,0.95,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,Gold Circuit Electronics,0.29,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,Hon Precision,0.59,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,Ibiden,1.2,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,Infineon,0.71,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,Intel,2.7,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,KLA,2.55,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,Lam Research,2.67,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,Lumentum,0.9,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,Marvell,0.78,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,MediaTek,1.74,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,Micron,3.79,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,Microsoft,0.79,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,MongoDB,0.68,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,NVIDIA,7.56,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,Onto Innovation,0.44,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,Palo Alto Networks,1.64,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,Robinhood,0.76,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,Samsung Electronics,2.3,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,Sandisk,3.5,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,SAP,0.02,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,Seagate,2.78,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,ServiceNow,0.55,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,Silicon Motion,0.87,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,SK Hynix,2.36,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,Snowflake,1.02,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,STMicroelectronics,0.73,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,TSMC,4.58,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,Tower Semiconductor,0.96,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,Twilio,0.76,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,Western Digital,1.85,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Empresa,Liquidez,2.45,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,País,Estados Unidos,65.56,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,País,Taiwán,12.92,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,País,Japón,5.63,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,País,China,0.35,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,País,Canadá,1.32,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,País,Italia,0.44,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,País,Corea del Sur,5.72,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,País,Alemania,1.46,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,País,Países Bajos,2.46,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,País,Suiza,0.73,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,País,Israel,0.96,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,País,Liquidez,2.45,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Sector,Servicios de comunicación,8.72,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Sector,Consumo cíclico,0.82,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Sector,Industria,18.98,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Sector,Tecnología,68.27,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Sector,Servicios financieros,0.76,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+fondos,polar-capital,IE00BM95B621,Sector,Liquidez,2.45,2026-08-28,Cartera completa del informe semestral oficial a 30/06/2026 (70 acciones),B
+trade_republic,copper-miners,4COP,Empresa,Teck Resources,5.72,2026-10-16,Top 10 AJ Bell 16/10/2026 (40 posiciones),B
+trade_republic,copper-miners,4COP,Empresa,Southern Copper,5.57,2026-10-16,Top 10 AJ Bell 16/10/2026 (40 posiciones),B
+trade_republic,copper-miners,4COP,Empresa,Hudbay Minerals,5.4,2026-10-16,Top 10 AJ Bell 16/10/2026 (40 posiciones),B
+trade_republic,copper-miners,4COP,Empresa,BHP,5.34,2026-10-16,Top 10 AJ Bell 16/10/2026 (40 posiciones),B
+trade_republic,copper-miners,4COP,Empresa,Glencore,5.26,2026-10-16,Top 10 AJ Bell 16/10/2026 (40 posiciones),B
+trade_republic,copper-miners,4COP,Empresa,Freeport-McMoRan,5.21,2026-10-16,Top 10 AJ Bell 16/10/2026 (40 posiciones),B
+trade_republic,copper-miners,4COP,Empresa,KGHM,4.81,2026-10-16,Top 10 AJ Bell 16/10/2026 (40 posiciones),B
+trade_republic,copper-miners,4COP,Empresa,First Quantum,4.65,2026-10-16,Top 10 AJ Bell 16/10/2026 (40 posiciones),B
+trade_republic,copper-miners,4COP,Empresa,Boliden,4.62,2026-10-16,Top 10 AJ Bell 16/10/2026 (40 posiciones),B
+trade_republic,copper-miners,4COP,Empresa,Antofagasta,4.56,2026-10-16,Top 10 AJ Bell 16/10/2026 (40 posiciones),B
+trade_republic,copper-miners,4COP,Empresa,Sin desglosar,48.86,2026-10-16,Top 10 AJ Bell 16/10/2026 (40 posiciones),B
+trade_republic,copper-miners,4COP,País,Canadá,15.77,2026-10-16,Top 10 AJ Bell 16/10/2026 (40 posiciones),B
+trade_republic,copper-miners,4COP,País,Estados Unidos,10.78,2026-10-16,Top 10 AJ Bell 16/10/2026 (40 posiciones),B
+trade_republic,copper-miners,4COP,País,Australia,5.34,2026-10-16,Top 10 AJ Bell 16/10/2026 (40 posiciones),B
+trade_republic,copper-miners,4COP,País,Suiza,5.26,2026-10-16,Top 10 AJ Bell 16/10/2026 (40 posiciones),B
+trade_republic,copper-miners,4COP,País,Polonia,4.81,2026-10-16,Top 10 AJ Bell 16/10/2026 (40 posiciones),B
+trade_republic,copper-miners,4COP,País,Suecia,4.62,2026-10-16,Top 10 AJ Bell 16/10/2026 (40 posiciones),B
+trade_republic,copper-miners,4COP,País,Reino Unido,4.56,2026-10-16,Top 10 AJ Bell 16/10/2026 (40 posiciones),B
+trade_republic,copper-miners,4COP,País,Sin desglosar,48.86,2026-10-16,Top 10 AJ Bell 16/10/2026 (40 posiciones),B
+trade_republic,copper-miners,4COP,Sector,Materiales básicos,100.0,2026-10-16,Top 10 AJ Bell 16/10/2026 (40 posiciones),B
+trade_republic,uranium-nuclear,NUKL,Empresa,Cameco,14.66,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
+trade_republic,uranium-nuclear,NUKL,Empresa,NexGen Energy,7.0,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
+trade_republic,uranium-nuclear,NUKL,Empresa,Oklo,6.02,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
+trade_republic,uranium-nuclear,NUKL,Empresa,Fuji Electric,5.88,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
+trade_republic,uranium-nuclear,NUKL,Empresa,Hitachi,5.86,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
+trade_republic,uranium-nuclear,NUKL,Empresa,AtkinsRéalis,5.57,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
+trade_republic,uranium-nuclear,NUKL,Empresa,Mitsubishi Heavy Industries,5.56,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
+trade_republic,uranium-nuclear,NUKL,Empresa,IHI,5.31,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
+trade_republic,uranium-nuclear,NUKL,Empresa,Samsung C&T,5.08,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
+trade_republic,uranium-nuclear,NUKL,Empresa,Sin desglosar,29.81,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
+trade_republic,uranium-nuclear,NUKL,Empresa,No aplica (no es empresa): Uranio físico (Sprott),7.12,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
+trade_republic,uranium-nuclear,NUKL,Empresa,Liquidez,2.13,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
+trade_republic,uranium-nuclear,NUKL,País,Canadá,34.3175,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
+trade_republic,uranium-nuclear,NUKL,País,Japón,24.294,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
+trade_republic,uranium-nuclear,NUKL,País,Estados Unidos,20.2419,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
+trade_republic,uranium-nuclear,NUKL,País,Corea del Sur,6.3424,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
+trade_republic,uranium-nuclear,NUKL,País,Australia,3.8666,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
+trade_republic,uranium-nuclear,NUKL,País,Reino Unido,1.6876,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
+trade_republic,uranium-nuclear,NUKL,País,No aplica (no es empresa): Uranio físico (Sprott),7.12,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
+trade_republic,uranium-nuclear,NUKL,País,Liquidez,2.13,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
+trade_republic,uranium-nuclear,NUKL,Sector,Industria,45.375,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
+trade_republic,uranium-nuclear,NUKL,Sector,Energía,36.3,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
+trade_republic,uranium-nuclear,NUKL,Sector,Servicios públicos,9.075,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
+trade_republic,uranium-nuclear,NUKL,Sector,No aplica (no es empresa): Uranio físico (Sprott),7.12,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
+trade_republic,uranium-nuclear,NUKL,Sector,Liquidez,2.13,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
+trade_republic,space-innovators,JEDI,Empresa,Rocket Lab,8.88,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
+trade_republic,space-innovators,JEDI,Empresa,AST SpaceMobile,7.58,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
+trade_republic,space-innovators,JEDI,Empresa,EchoStar,6.89,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
+trade_republic,space-innovators,JEDI,Empresa,Viasat,6.35,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
+trade_republic,space-innovators,JEDI,Empresa,Globalstar,6.12,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
+trade_republic,space-innovators,JEDI,Empresa,MDA Space,5.69,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
+trade_republic,space-innovators,JEDI,Empresa,Firefly Aerospace,4.8,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
+trade_republic,space-innovators,JEDI,Empresa,Planet Labs,4.78,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
+trade_republic,space-innovators,JEDI,Empresa,Iridium,4.6,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
+trade_republic,space-innovators,JEDI,Empresa,Wistron NeWeb,4.53,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
+trade_republic,space-innovators,JEDI,Empresa,Sin desglosar,32.63,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
+trade_republic,space-innovators,JEDI,Empresa,Liquidez,7.15,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
+trade_republic,space-innovators,JEDI,País,Estados Unidos,67.69,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
+trade_republic,space-innovators,JEDI,País,Japón,7.33,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
+trade_republic,space-innovators,JEDI,País,Canadá,5.69,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
+trade_republic,space-innovators,JEDI,País,Taiwán,4.53,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
+trade_republic,space-innovators,JEDI,País,Reino Unido,4.38,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
+trade_republic,space-innovators,JEDI,País,Luxemburgo,3.23,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
+trade_republic,space-innovators,JEDI,País,Liquidez,7.15,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
+trade_republic,space-innovators,JEDI,Sector,Industria,41.7825,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
+trade_republic,space-innovators,JEDI,Sector,Servicios de comunicación,37.14,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
+trade_republic,space-innovators,JEDI,Sector,Tecnología,13.9275,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
+trade_republic,space-innovators,JEDI,Sector,Liquidez,7.15,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
+trade_republic,oro-fisico-etc,PPFB,Empresa,No aplica (no es empresa): Oro,100,2026-10-16,Materia prima,A
+trade_republic,oro-fisico-etc,PPFB,País,No aplica (no es empresa): Oro,100,2026-10-16,Materia prima,A
+trade_republic,oro-fisico-etc,PPFB,Sector,No aplica (no es empresa): Oro,100,2026-10-16,Materia prima,A
+trade_republic,plata-fisica-etc,ISLN,Empresa,No aplica (no es empresa): Plata,100,2026-10-16,Materia prima,A
+trade_republic,plata-fisica-etc,ISLN,País,No aplica (no es empresa): Plata,100,2026-10-16,Materia prima,A
+trade_republic,plata-fisica-etc,ISLN,Sector,No aplica (no es empresa): Plata,100,2026-10-16,Materia prima,A
+mexem,amzn,AMZN,Empresa,Amazon,100,2026-10-16,Mexem (IBKR) 16/10/2026,A
+mexem,amzn,AMZN,País,Estados Unidos,100,2026-10-16,Mexem (IBKR) 16/10/2026,A
+mexem,amzn,AMZN,Sector,Consumo cíclico,100,2026-10-16,Mexem (IBKR) 16/10/2026,A
+mexem,idr,IDR,Empresa,Indra,100,2026-10-16,Mexem (IBKR) 16/10/2026,A
+mexem,idr,IDR,País,España,100,2026-10-16,Mexem (IBKR) 16/10/2026,A
+mexem,idr,IDR,Sector,Industria,100,2026-10-16,Mexem (IBKR) 16/10/2026,A
+mexem,meta,META,Empresa,Meta Platforms,100,2026-10-16,Mexem (IBKR) 16/10/2026,A
+mexem,meta,META,País,Estados Unidos,100,2026-10-16,Mexem (IBKR) 16/10/2026,A
+mexem,meta,META,Sector,Servicios de comunicación,100,2026-10-16,Mexem (IBKR) 16/10/2026,A
+mexem,nxt,NXT,Empresa,Nextil,100,2026-10-16,Mexem (IBKR) 16/10/2026,A
+mexem,nxt,NXT,País,España,100,2026-10-16,Mexem (IBKR) 16/10/2026,A
+mexem,nxt,NXT,Sector,Consumo cíclico,100,2026-10-16,Mexem (IBKR) 16/10/2026,A
+mexem,googl,GOOGL,Empresa,Alphabet,100,2026-10-16,Mexem (IBKR) 16/10/2026,A
+mexem,googl,GOOGL,País,Estados Unidos,100,2026-10-16,Mexem (IBKR) 16/10/2026,A
+mexem,googl,GOOGL,Sector,Servicios de comunicación,100,2026-10-16,Mexem (IBKR) 16/10/2026,A
+mexem,rig,RIG,Empresa,Transocean,100,2026-10-16,Mexem (IBKR) 16/10/2026,A
+mexem,rig,RIG,País,Estados Unidos,100,2026-10-16,Mexem (IBKR) 16/10/2026,A
+mexem,rig,RIG,Sector,Energía,100,2026-10-16,Mexem (IBKR) 16/10/2026,A
+mexem,e5s1,E5S1,Empresa,E5S1 (Mexem),100,2026-10-16,Mexem (IBKR) 16/10/2026,A
+mexem,e5s1,E5S1,País,Reino Unido,100,2026-10-16,Mexem (IBKR) 16/10/2026,A
+mexem,e5s1,E5S1,Sector,Materiales básicos,100,2026-10-16,Mexem (IBKR) 16/10/2026,A
+mexem,apr0,APR0,Empresa,Amper,100,2026-10-16,Mexem (IBKR) 16/10/2026,A
+mexem,apr0,APR0,País,España,100,2026-10-16,Mexem (IBKR) 16/10/2026,A
+mexem,apr0,APR0,Sector,Industria,100,2026-10-16,Mexem (IBKR) 16/10/2026,A
+mexem,ohla,OHLA,Empresa,OHLA,100,2026-10-16,Mexem (IBKR) 16/10/2026,A
+mexem,ohla,OHLA,País,España,100,2026-10-16,Mexem (IBKR) 16/10/2026,A
+mexem,ohla,OHLA,Sector,Industria,100,2026-10-16,Mexem (IBKR) 16/10/2026,A
+mexem,tre,TRE,Empresa,Técnicas Reunidas,100,2026-10-16,Mexem (IBKR) 16/10/2026,A
+mexem,tre,TRE,País,España,100,2026-10-16,Mexem (IBKR) 16/10/2026,A
+mexem,tre,TRE,Sector,Energía,100,2026-10-16,Mexem (IBKR) 16/10/2026,A
+mexem,krknf,KRKNF,Empresa,Kraken Robotics,100,2026-10-16,Mexem (IBKR) 16/10/2026,A
+mexem,krknf,KRKNF,País,Canadá,100,2026-10-16,Mexem (IBKR) 16/10/2026,A
+mexem,krknf,KRKNF,Sector,Tecnología,100,2026-10-16,Mexem (IBKR) 16/10/2026,A
+mexem,pltr,PLTR,Empresa,Palantir,100,2026-10-16,Mexem (IBKR) 16/10/2026,A
+mexem,pltr,PLTR,País,Estados Unidos,100,2026-10-16,Mexem (IBKR) 16/10/2026,A
+mexem,pltr,PLTR,Sector,Tecnología,100,2026-10-16,Mexem (IBKR) 16/10/2026,A
+mexem,ero,ERO,Empresa,Ero Copper,100,2026-10-16,Mexem (IBKR) 16/10/2026,A
+mexem,ero,ERO,País,Brasil,100,2026-10-16,Mexem (IBKR) 16/10/2026,A
+mexem,ero,ERO,Sector,Materiales básicos,100,2026-10-16,Mexem (IBKR) 16/10/2026,A
+mexem,mp,MP,Empresa,MP Materials,100,2026-10-16,Mexem (IBKR) 16/10/2026,A
+mexem,mp,MP,País,Estados Unidos,100,2026-10-16,Mexem (IBKR) 16/10/2026,A
+mexem,mp,MP,Sector,Materiales básicos,100,2026-10-16,Mexem (IBKR) 16/10/2026,A
+mexem,dmx,DMX,Empresa,District Metals,100,2026-10-16,Mexem (IBKR) 16/10/2026,A
+mexem,dmx,DMX,País,Canadá,100,2026-10-16,Mexem (IBKR) 16/10/2026,A
+mexem,dmx,DMX,Sector,Materiales básicos,100,2026-10-16,Mexem (IBKR) 16/10/2026,A
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,Sin desglosar (composición caducada),100,2025-06-30,Informe semestral Merchbanc 30/06/2025 (caducado: pedir el de 2026),C
+fondos,plan-myinvestor-indexado-global,N5396,País,Sin desglosar (composición caducada),100,2025-06-30,Informe semestral Merchbanc 30/06/2025 (caducado: pedir el de 2026),C
+fondos,plan-myinvestor-indexado-global,N5396,Sector,Sin desglosar (composición caducada),100,2025-06-30,Informe semestral Merchbanc 30/06/2025 (caducado: pedir el de 2026),C
