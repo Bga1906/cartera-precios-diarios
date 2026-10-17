@@ -36,6 +36,13 @@
     {"id": "bitcoin-eur", "ticker": "BTC-EUR", "nombre": "Bitcoin en euros", "moneda": "EUR", "tipo_retorno": "precio", "estado_verificacion": "verificado"},
     {"id": "ethereum-eur", "ticker": "ETH-EUR", "nombre": "Ethereum en euros", "moneda": "EUR", "tipo_retorno": "precio", "estado_verificacion": "verificado"},
     {"id": "eur-usd", "ticker": "EURUSD=X", "nombre": "EUR/USD", "moneda": "USD", "tipo_retorno": "precio", "estado_verificacion": "verificado"},
-    {"id": "vix", "ticker": "^VIX", "nombre": "VIX (volatilidad, indicador)", "moneda": "USD", "tipo_retorno": "precio", "estado_verificacion": "verificado"}
+    {"id": "vix", "ticker": "^VIX", "nombre": "VIX (volatilidad, indicador)", "moneda": "USD", "tipo_retorno": "precio", "estado_verificacion": "verificado"},
+    {"id": "msci-world-nr-eur", "ticker": "^990100-EUR-NETR", "nombre": "MSCI World Net Return EUR (oficial Numantia; referencia iShares Developed World)", "moneda": "EUR", "tipo_retorno": "total", "estado_verificacion": "pendiente"},
+    {"id": "msci-acwi-nr-eur", "ticker": "^892400-EUR-NETR", "nombre": "MSCI ACWI Net Return EUR (Horos hasta 2024; plan MyInvestor Indexado Global)", "moneda": "EUR", "tipo_retorno": "total", "estado_verificacion": "pendiente"},
+    {"id": "msci-em-nr-eur", "ticker": "^891800-EUR-NETR", "nombre": "MSCI Emerging Markets Net Return EUR (oficial iShares Emerging Markets)", "moneda": "EUR", "tipo_retorno": "total", "estado_verificacion": "pendiente"},
+    {"id": "msci-em-nr-eur-alt", "ticker": "^701291-EUR-NETR", "nombre": "MSCI EM Net Return EUR, codigo alternativo visto en Yahoo (se queda el que funcione)", "moneda": "EUR", "tipo_retorno": "total", "estado_verificacion": "pendiente"},
+    {"id": "msci-europe-nr-eur", "ticker": "^990500-EUR-NETR", "nombre": "MSCI Europe Net Return EUR (sustituto del Bloomberg Europe DM Large & Mid Cap NR EUR de Cobas, sin serie gratuita)", "moneda": "EUR", "tipo_retorno": "total", "estado_verificacion": "pendiente"},
+    {"id": "msci-china-nr-eur", "ticker": "^302400-EUR-NETR", "nombre": "MSCI China Net Return EUR (Pictet China Index)", "moneda": "EUR", "tipo_retorno": "total", "estado_verificacion": "pendiente"},
+    {"id": "dj-global-technology", "ticker": "^W1TEC", "nombre": "Dow Jones Global Technology (precio, USD; el oficial de Polar es la version Net Return)", "moneda": "USD", "tipo_retorno": "precio", "estado_verificacion": "pendiente"}
   ]
 }

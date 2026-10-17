@@ -221,7 +221,7 @@ def test_ticker_nuevo_que_falla_no_rompe_el_resto(red):
     assert activos["benchmark:sp500-tr"]["ok"] is False and activos["benchmark:sp500-tr"]["error"] == "HTTP 404"
     assert activos["benchmark:russell-2000"]["ok"] is False and "boom" in activos["benchmark:russell-2000"]["error"]
     assert activos["benchmark:sp500"]["ok"] is True
-    assert len(activos) == 1 + 1 + 17 + 5 + 8 + 1 + 36  # ningun activo se pierde
+    assert len(activos) == 1 + 1 + 17 + 5 + 8 + 1 + len(f.cargar_catalogo())  # ningun activo se pierde
 
 
 def test_todos_los_benchmarks_del_catalogo_se_capturan(red):
@@ -287,8 +287,10 @@ def test_catalogo_real_verificados_y_pendientes():
     for id_, t in esperados.items():
         assert cat[id_]["ticker"] == t and cat[id_]["estado_verificacion"] == "verificado"
     pendientes = {i for i, b in cat.items() if b["estado_verificacion"] == "pendiente"}
-    assert pendientes == set()  # los 36 verificados tras las pruebas del 12/10
-    assert len(cat) == 36
+    # 36 verificados el 12/10; 17/10: 7 indices oficiales de los fondos en prueba (pendiente)
+    assert pendientes == {"msci-world-nr-eur", "msci-acwi-nr-eur", "msci-em-nr-eur", "msci-em-nr-eur-alt",
+                          "msci-europe-nr-eur", "msci-china-nr-eur", "dj-global-technology"}
+    assert len(cat) == 43
     assert {b["tipo_retorno"] for b in cat.values()} <= {"precio", "total"}
     assert cat["msci-world-etf-acc"]["proxy_de"] == "msci-world"
 
