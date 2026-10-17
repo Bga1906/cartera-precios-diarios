@@ -1,0 +1,43 @@
+name: Comparar fuentes de VL e indices
+
+# Version en GitHub de la hoja «Fuentes VL – prueba»: dos capturas al dia (como la hoja, 09:00 y 22:00)
+# de cada fondo, plan e indice oficial en todas sus fuentes, con desfase, retraso frente a la mejor fuente
+# y avisos en fuentes_vl/RESUMEN.md. Horas en UTC: 07:15 y 20:40 = 09:15 y 22:40 en Madrid (verano).
+on:
+  schedule:
+    - cron: "15 7 * * *"
+    - cron: "40 20 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# Mismo grupo que la captura diaria: nunca suben cambios a la vez.
+concurrency:
+  group: push-main
+  cancel-in-progress: false
+
+jobs:
+  comparar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Capturar todas las fuentes y rehacer el resumen
+        run: |
+          python3 fuentes_vl/comparar_fuentes.py | tee salida.txt
+          { echo '```'; cat salida.txt; echo '```'; echo; cat fuentes_vl/RESUMEN.md; } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commitear la comparativa
+        run: |
+          git config user.name "cartera-precios-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add fuentes_vl/capturas fuentes_vl/RESUMEN.md fuentes_vl/ultimo_comparativa.json
+          git diff --staged --quiet && { echo "Sin cambios"; exit 0; }
+          git commit -m "Fuentes VL $(date -u +%Y-%m-%d_%H%M)"
+          for i in 1 2 3; do git pull --rebase -q origin main && git push && exit 0; sleep 10; done
+          exit 1
