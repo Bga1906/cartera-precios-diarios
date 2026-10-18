@@ -3,7 +3,7 @@
 Generado automáticamente por `fuentes_vl/comparar_fuentes.py` (GitHub Actions, 09:15 y 22:40 aprox.).
 Desfase = días hábiles (lunes a viernes) entre la captura y la fecha real del dato. Retraso = días hábiles que una fuente va por detrás de la más al día para ese mismo fondo o índice.
 
-## Última captura: 2026-10-18 00:37
+## Última captura: 2026-10-18 14:02
 
 | Tipo | Instrumento | Fuente | Precio | Fecha del dato | Desfase (háb.) | Retraso vs mejor | Estado |
 |---|---|---|---|---|---|---|---|
@@ -38,12 +38,12 @@ Desfase = días hábiles (lunes a viernes) entre la captura y la fecha real del 
 | plan | plan-myinvestor-indexado-global | Yahoo | 20.3286 | 2026-10-15 | 1 | 0 | OK |
 | plan | plan-myinvestor-indexado-global | quefondos | 20.3286 | 2026-10-15 | 1 | 0 | OK |
 | indice | msci-world-nr-eur | Yahoo |  | — |  |  | HTTP 404 |
-| indice | msci-acwi-nr-eur | Yahoo | 523.64 | 2026-10-17 | 0 | 0 | OK |
-| indice | msci-em-nr-eur | Yahoo | 750.45 | 2026-10-17 | 0 | 0 | OK |
-| indice | msci-em-nr-eur-alt | Yahoo | 750.45 | 2026-10-17 | 0 | 0 | OK |
-| indice | msci-europe-nr-eur | Yahoo | 447.32 | 2026-10-17 | 0 | 0 | OK |
-| indice | msci-china-nr-eur | Yahoo | 478.67 | 2026-10-17 | 0 | 0 | OK |
-| indice | dj-global-technology | Yahoo | 5304.02 | 2026-10-16 | 0 | 0 | OK |
+| indice | msci-acwi-nr-eur | Yahoo | 523.64 | 2026-10-18 | 0 | 0 | OK |
+| indice | msci-em-nr-eur | Yahoo | 750.45 | 2026-10-18 | 0 | 0 | OK |
+| indice | msci-em-nr-eur-alt | Yahoo | 750.45 | 2026-10-18 | 0 | 0 | OK |
+| indice | msci-europe-nr-eur | Yahoo | 447.32 | 2026-10-18 | 0 | 0 | OK |
+| indice | msci-china-nr-eur | Yahoo | 478.67 | 2026-10-18 | 0 | 0 | OK |
+| indice | dj-global-technology | Yahoo | 5304.02 | 2026-10-18 | 0 | 0 | OK |
 
 ## Avisos
 
@@ -53,11 +53,11 @@ Desfase = días hábiles (lunes a viernes) entre la captura y la fecha real del 
 
 | Tipo | Fuente | Capturas | Con dato | Desfase medio (háb.) | Retraso medio vs mejor | Veces la más al día |
 |---|---|---|---|---|---|---|
-| fondo | FT | 8 | 100% | 1.1 | 0.0 | 8 |
-| fondo | Yahoo | 8 | 100% | 1.1 | 0.0 | 8 |
-| fondo | finanzen.at | 1 | 0% | — | — | 0 |
-| fondo | gestora | 3 | 67% | 1.5 | 0.0 | 2 |
-| fondo | quefondos | 8 | 88% | 1.3 | 0.1 | 6 |
-| indice | Yahoo | 7 | 86% | 0.0 | 0.0 | 6 |
-| plan | Yahoo | 1 | 100% | 1.0 | 0.0 | 1 |
-| plan | quefondos | 1 | 100% | 1.0 | 0.0 | 1 |
+| fondo | FT | 16 | 100% | 1.1 | 0.0 | 16 |
+| fondo | Yahoo | 16 | 100% | 1.1 | 0.0 | 16 |
+| fondo | finanzen.at | 2 | 0% | — | — | 0 |
+| fondo | gestora | 6 | 67% | 1.5 | 0.0 | 4 |
+| fondo | quefondos | 16 | 88% | 1.3 | 0.1 | 12 |
+| indice | Yahoo | 14 | 86% | 0.0 | 0.0 | 12 |
+| plan | Yahoo | 2 | 100% | 1.0 | 0.0 | 2 |
+| plan | quefondos | 2 | 100% | 1.0 | 0.0 | 2 |
