@@ -329,6 +329,16 @@ def construir_activos(fecha=None, catalogo=None):
         except (KeyError, TypeError, ValueError):
             err_oro = "respuesta inesperada de gold-api.com"
 
+    # Respaldo (25/10/2026): si gold-api.com falla (el 21/10 dio un error de DNS y
+    # el oro de joyeria quedo sin precio ese dia), se usa el futuro del oro de
+    # Yahoo (GC=F). Difiere algo del spot, por eso se marca en `fuente`.
+    fuente_oro_respaldo = False
+    if precio_oz_usd is None:
+        res_gc = obtener_cotizacion_yahoo("GC=F")
+        if res_gc["precio"] is not None and (res_gc["moneda"] or "USD") == "USD":
+            precio_oz_usd = float(res_gc["precio"])
+            fuente_oro_respaldo = True
+
     tasa_eur_usd, err_usd = obtener_tasa_fx("USD", FX_API_URL)
     tasa_eur_cad, err_cad = obtener_tasa_fx("CAD", FX_CAD_API_URL)
 
@@ -339,9 +349,11 @@ def construir_activos(fecha=None, catalogo=None):
         precio_g_eur_18k = precio_g_eur_24k * ORO_PUREZA
     activos["oro-fisico:joyeria"] = {
         "price": precio_g_eur_18k, "price_previous_close": None, "moneda": "EUR",
-        "fuente": "gold-api.com (XAU/USD) + frankfurter.app (EUR/USD), ya con pureza 18k aplicada",
+        "fuente": ("Yahoo Finance (GC=F, futuro; respaldo porque gold-api.com fallo) + EUR/USD, ya con pureza 18k aplicada"
+                   if fuente_oro_respaldo else
+                   "gold-api.com (XAU/USD) + frankfurter.app (EUR/USD), ya con pureza 18k aplicada"),
         "ok": precio_g_eur_18k is not None,
-        "error": err_oro or err_usd,
+        "error": (None if fuente_oro_respaldo and precio_g_eur_18k is not None else (err_oro or err_usd)),
     }
 
     res_btc = obtener_cotizacion_yahoo(BTC_TICKER_YAHOO)

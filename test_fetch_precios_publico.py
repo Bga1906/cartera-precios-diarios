@@ -449,3 +449,19 @@ def test_archivar_no_pierde_nada_si_hay_un_fichero_ilegible(tmp_path):
 
 def test_archivar_sin_carpeta_no_falla(tmp_path):
     assert f.archivar_antiguos(tmp_path / "no-existe", "2026-10-14") == 0
+
+
+def test_oro_joyeria_usa_futuro_de_yahoo_si_gold_api_falla(red, monkeypatch):
+    """21/10/2026: gold-api.com dio error de DNS y el oro quedo sin precio."""
+    original = f._get_json
+
+    def sin_gold_api(url):
+        if "gold-api" in url:
+            return None, "URLError: Name or service not known"
+        return original(url)
+
+    monkeypatch.setattr(f, "_get_json", sin_gold_api)
+    red.respuestas["GC=F"] = yahoo(3300.0, "USD", ts(2026, 10, 9, 20), "America/New_York", prev=3290.0)
+    act = f.construir_activos("2026-10-09")["oro-fisico:joyeria"]
+    assert act["ok"] is True and act["price"] > 0 and act["error"] is None
+    assert "GC=F" in act["fuente"]
