@@ -73,7 +73,7 @@ PLANES = [
     {"id": "plan-myinvestor-indexado-global", "codigo": "N5396", "yahoo": "0P0001LIG7.F"},
 ]
 # Indices oficiales de los fondos (comparables_fondos.yaml v2). El ticker sale del catalogo (un solo sitio).
-INDICES = ["msci-world-nr-eur", "msci-world-nr-usd", "msci-acwi-nr-eur", "msci-em-nr-eur", "msci-em-nr-eur-alt",
+INDICES = ["msci-world-nr-usd", "msci-acwi-nr-eur", "msci-em-nr-eur", "msci-em-nr-eur-alt",
            "msci-europe-nr-eur", "msci-china-nr-eur", "dj-global-technology"]
 
 MESES_EN = {m: i for i, m in enumerate(
