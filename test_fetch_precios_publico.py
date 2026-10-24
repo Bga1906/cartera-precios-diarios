@@ -288,9 +288,9 @@ def test_catalogo_real_verificados_y_pendientes():
         assert cat[id_]["ticker"] == t and cat[id_]["estado_verificacion"] == "verificado"
     pendientes = {i for i, b in cat.items() if b["estado_verificacion"] == "pendiente"}
     # 36 verificados el 12/10; 17/10: 7 indices oficiales de los fondos en prueba (pendiente)
-    assert pendientes == {"msci-world-nr-eur", "msci-acwi-nr-eur", "msci-em-nr-eur", "msci-em-nr-eur-alt",
+    assert pendientes == {"msci-world-nr-eur", "msci-world-nr-usd", "msci-acwi-nr-eur", "msci-em-nr-eur", "msci-em-nr-eur-alt",
                           "msci-europe-nr-eur", "msci-china-nr-eur", "dj-global-technology"}
-    assert len(cat) == 43
+    assert len(cat) == 44
     assert {b["tipo_retorno"] for b in cat.values()} <= {"precio", "total"}
     assert cat["msci-world-etf-acc"]["proxy_de"] == "msci-world"
 
