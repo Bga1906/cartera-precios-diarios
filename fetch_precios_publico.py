@@ -354,6 +354,11 @@ def construir_activos(fecha=None, catalogo=None):
                    "gold-api.com (XAU/USD) + frankfurter.app (EUR/USD), ya con pureza 18k aplicada"),
         "ok": precio_g_eur_18k is not None,
         "error": (None if fuente_oro_respaldo and precio_g_eur_18k is not None else (err_oro or err_usd)),
+        # 25/10/2026: se guarda tambien la cotizacion SIN convertir (USD por onza, oro 24k) y el EUR/USD
+        # usado, para poder dibujar el precio diario del oro en dolares sin reconstruirlo desde el EUR/g.
+        "precio_oz_usd": precio_oz_usd,
+        "eur_usd": tasa_eur_usd,
+        "precio_oz_fuente": (None if precio_oz_usd is None else ("Yahoo Finance (GC=F, futuro)" if fuente_oro_respaldo else "gold-api.com (XAU/USD, spot)")),
     }
 
     res_btc = obtener_cotizacion_yahoo(BTC_TICKER_YAHOO)
