@@ -58,6 +58,7 @@ YAHOO_URL = "https://query1.finance.yahoo.com/v8/finance/chart/{ticker}?range=10
 # 25/10/2026 (F1.1): fondos y plan salen de universo.json (un solo sitio, junto con la captura diaria).
 sys.path.insert(0, str(RAIZ))
 import universo as _universo  # noqa: E402
+import crudo as _crudo  # noqa: E402
 
 
 def construir_fondos_y_planes(universo=None):
@@ -453,6 +454,11 @@ def main(argv=None):
         return 0
     filas = capturar()
     escribir_salidas(filas)
+    try:  # 25/10/2026 (F1.2): ademas del CSV de siempre, cada lectura va al crudo. Si falla, solo avisa.
+        n = _crudo.anadir_filas(_crudo.filas_de_comparador(filas, _universo.cargar_universo()))
+        print(f"Crudo: {n} lecturas anotadas en crudo/.")
+    except Exception as e:  # noqa: BLE001
+        print(f"AVISO crudo: no se pudo anotar ({type(e).__name__}: {e}); la comparativa no se ve afectada.", file=sys.stderr)
     ok = sum(1 for f in filas if f["fecha_dato"])
     print(f"Capturadas {len(filas)} lecturas ({ok} con dato).")
     for f in filas:

@@ -30,6 +30,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 import universo as _universo  # noqa: E402
+import crudo as _crudo  # noqa: E402
 OUT_DIR = HERE / "precios"
 
 TIMEOUT_SEGUNDOS = 10
@@ -175,12 +176,15 @@ SEGUNDOS_SEMANA = 7 * 24 * 3600
 
 
 def _resultado_yahoo(precio=None, moneda=None, cierre_anterior=None, error=None,
-                     as_of=None, moneda_inferida=None, puntos_ultima_semana=0, as_of_fuente=None):
+                     as_of=None, moneda_inferida=None, puntos_ultima_semana=0, as_of_fuente=None,
+                     ficha_precio=None, ficha_as_of=None):
     return {
         "precio": precio, "moneda": moneda, "cierre_anterior": cierre_anterior, "error": error,
         "as_of": as_of, "moneda_inferida": moneda_inferida,
         "puntos_ultima_semana": puntos_ultima_semana,
         "as_of_fuente": as_of_fuente,
+        # lo que decia la ficha ('precio actual') antes de sustituirlo por el cierre de la serie (solo para el crudo)
+        "ficha_precio": ficha_precio, "ficha_as_of": ficha_as_of,
     }
 
 
@@ -254,7 +258,20 @@ def _ultimo_cierre_de_serie(result, zona=None):
         return None
 
 
+# 25/10/2026 (F1.2): cada lectura de Yahoo se anota tal cual para el crudo (crudo/AAAA-MM.csv).
+LECTURAS_YAHOO = []
+
+
 def obtener_cotizacion_yahoo(ticker: str, rango: str = None, desde_serie: bool = False):
+    res = _cotizacion_yahoo(ticker, rango, desde_serie)
+    try:
+        LECTURAS_YAHOO.append({"ticker": ticker, "rango": rango, "desde_serie": desde_serie, "res": dict(res)})
+    except Exception:  # noqa: BLE001  (anotar nunca puede romper la captura)
+        pass
+    return res
+
+
+def _cotizacion_yahoo(ticker: str, rango: str = None, desde_serie: bool = False):
     url = YAHOO_CHART_URL.format(ticker=urllib.parse.quote(ticker, safe=""))
     if rango:
         url += f"?range={rango}&interval=1d"
@@ -290,6 +307,7 @@ def obtener_cotizacion_yahoo(ticker: str, rango: str = None, desde_serie: bool =
         if cierre_anterior is None:
             cierre_anterior = _positivo_o_none(meta.get("chartPreviousClose"))
         as_of_fuente = None
+        ficha_precio, ficha_as_of = precio, as_of
         if desde_serie:
             serie = _ultimo_cierre_de_serie(result, meta.get("exchangeTimezoneName"))
             if serie is not None:
@@ -297,7 +315,7 @@ def obtener_cotizacion_yahoo(ticker: str, rango: str = None, desde_serie: bool =
                 as_of_fuente = "cierre_serie"
         return _resultado_yahoo(precio=precio, moneda=moneda, cierre_anterior=cierre_anterior, as_of=as_of,
                                 moneda_inferida=moneda_inferida, puntos_ultima_semana=puntos,
-                                as_of_fuente=as_of_fuente)
+                                as_of_fuente=as_of_fuente, ficha_precio=ficha_precio, ficha_as_of=ficha_as_of)
     except Exception as e:  # noqa: BLE001
         return _resultado_yahoo(error=f"respuesta inesperada: {type(e).__name__}: {e}")
 
@@ -579,6 +597,16 @@ def archivar_antiguos(out_dir, hoy, dias=None):
     return total
 
 
+def anotar_crudo(activos):
+    """Anade al crudo (crudo/AAAA-MM.csv) lo que dio cada fuente. Si falla, solo avisa: precios/ ya esta escrito."""
+    try:
+        n = _crudo.anadir_filas(_crudo.filas_de_captura(
+            LECTURAS_YAHOO, activos, UNIVERSO, cargar_catalogo(), _crudo.ahora_utc()))
+        print(f"Crudo: {n} lecturas anotadas en crudo/.")
+    except Exception as e:  # noqa: BLE001
+        print(f"AVISO crudo: no se pudo anotar ({type(e).__name__}: {e}); precios/ no se ve afectado.", file=sys.stderr)
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--pretty", action="store_true")
@@ -605,6 +633,7 @@ def main():
     escribir_atomico(OUT_DIR / "ultimo.json", texto)      # siempre la captura mas reciente
     escribir_atomico(OUT_DIR / f"{hoy}.json", texto)      # alias transitorio: el dashboard del vault lo lee por fecha
     movidos = archivar_antiguos(OUT_DIR, hoy)
+    anotar_crudo(activos)
     print(f"Escrito {out_path} ({sum(1 for a in activos.values() if a['ok'])}/{len(activos)} activos con precio fresco).")
     if movidos:
         print(f"Archivadas {movidos} capturas de mas de {DIAS_ARCHIVO} dias en precios/archivo/.")
