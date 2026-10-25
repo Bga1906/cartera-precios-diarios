@@ -51,9 +51,10 @@ Cambia `"estado"` a `"retirado"`: deja de capturarse y el histórico se conserva
 ## Un índice nuevo (ejemplo)
 Una línea en `benchmarks_catalogo.json`, con `"estado_verificacion": "pendiente"`:
 ```json
-{"id": "mi-indice-eur", "ticker": "^XXXX", "nombre": "Mi índice", "estado_verificacion": "pendiente"}
+{"id": "mi-indice-eur", "ticker": "^XXXX", "nombre": "Mi índice", "moneda": "EUR", "tipo_retorno": "total",
+ "estado_verificacion": "pendiente"}
 ```
-Se prueba con el mismo paso 2 y pasa a `"verificado"` cuando responde bien. El benchmark principal es `msci-acwi-nr-eur`
+`tipo_retorno`: `precio` (solo cotización) o `total` (con dividendos). Se prueba con el mismo paso 2 y pasa a `"verificado"` cuando responde bien. El benchmark principal es `msci-acwi-nr-eur`
 (`"principal": true`; solo uno puede serlo).
 
 ## Un dato nuevo (tipo de cambio, indicador…)
