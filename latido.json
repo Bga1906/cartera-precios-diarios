@@ -1,13 +1,27 @@
 {
- "generado_en": "2026-10-25T20:08:42Z",
+ "generado_en": "2026-10-25T22:14:08Z",
  "ventana_dias": 3,
  "origenes": {
+  "github": {
+   "ultima_captura_utc": "2026-10-25T22:13:57Z",
+   "lineas": 166
+  },
   "google": {
    "ultima_captura_utc": "2026-10-25T20:08:32Z",
    "lineas": 42
   }
  },
  "fuentes": {
+  "github/gold-api": {
+   "ultima_captura_utc": "2026-10-25T22:13:57Z",
+   "ok": 2,
+   "fallos": 0
+  },
+  "github/yahoo": {
+   "ultima_captura_utc": "2026-10-25T22:13:57Z",
+   "ok": 164,
+   "fallos": 0
+  },
   "google/google_finance": {
    "ultima_captura_utc": "2026-10-25T20:08:32Z",
    "ok": 42,
@@ -15,7 +29,9 @@
   }
  },
  "oficial": {
-  "respaldo": 20,
-  "sin_dato": 13
+  "dudoso": 3,
+  "ok": 22,
+  "respaldo": 7,
+  "sin_dato": 1
  }
 }
