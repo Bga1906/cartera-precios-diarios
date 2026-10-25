@@ -22,7 +22,7 @@ Solo lectura: este informe no cambia ninguna cifra ni ningún workflow. Datos le
 | Periodo | Ejecuciones | Retraso frente a las 20:00 UTC | Observación |
 |---|---|---|---|
 | #1 (08/09, manual) | 1 | +95 min | primera ejecución |
-| #2–#24 (09/09–01/10) | 23 | +5 a +8 min | normal |
+| #2–#24 (09/09–01/10) | 23 | +6 a +8 min | normal |
 | #25 (02/10) | 1 | +7 min | normal |
 | #26 | 1 | +396 min (salió a las 02:36 UTC del 04/10) | el del 03/10 no salió a su hora |
 | #27–#28 (04–05/10) | 2 | +87 y +90 min | |
