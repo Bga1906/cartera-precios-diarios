@@ -55,55 +55,38 @@ QF_PLAN = "https://www.quefondos.com/es/planes/ficha/index.html?isin={codigo}"
 FT_URL = "https://markets.ft.com/data/funds/tearsheet/summary?s={codigo}:EUR"
 YAHOO_URL = "https://query1.finance.yahoo.com/v8/finance/chart/{ticker}?range=10d&interval=1d"
 
-FONDOS = [
-    {"id": "cobas-seleccion", "codigo": "ES0124037013",
-     "gestora": ("cobas", "https://www.cobasam.com/productos/inversion-libre/cobas_seleccion/")},
-    {"id": "horos-value-internacional", "codigo": "ES0146309002",
-     # 25/10/2026: la web de la gestora (horosam.com) lleva semanas sin leerse («formato no reconocido»);
-     # Renta 4 publica el mismo VL y fecha (comprobado: 210,81 EUR del 22/10 = Yahoo y quefondos).
-     "gestora": ("renta4", "https://www.r4.com/productos-inversion/fondos/fichas/ES0146309002")},
-    {"id": "ishares-developed-world", "codigo": "IE000ZYRH0Q7"},
-    # 25/10/2026: quefondos no tiene ficha de este ISIN («No se encuentra disponible el fondo»): se omite.
-    {"id": "ishares-emerging-markets", "codigo": "IE000QAZP7L2", "sin_quefondos": True},
-    {"id": "myinvestor-value", "codigo": "ES0165243025"},
-    {"id": "numantia", "codigo": "ES0173311103",
-     "gestora": ("renta4", "https://www.r4.com/productos-inversion/fondos/fichas/ES0173311103")},
-    {"id": "pictet-china", "codigo": "LU0625737910",
-     # 25/10/2026: finanzen.at da HTTP 403 a los servidores (no automatizable, ver README). Se sustituye por la
-     # ficha de Renta 4 (125,04 EUR del 21/10 = quefondos).
-     "renta4": "https://www.r4.com/productos-inversion/fondos/fichas/LU0625737910"},
-    {"id": "polar-capital", "codigo": "IE00BM95B621"},
-]
-PLANES = [
-    {"id": "plan-myinvestor-indexado-global", "codigo": "N5396"},
-]
-
-# 25/10/2026: los tickers de Yahoo YA NO se escriben aqui: salen de fetch_precios_publico.py
-# (FONDOS_ISIN y PLAN_PENSIONES_TICKER_YAHOO), que es el unico sitio donde se apuntan.
+# 25/10/2026 (F1.1): fondos y plan salen de universo.json (un solo sitio, junto con la captura diaria).
 sys.path.insert(0, str(RAIZ))
-import fetch_precios_publico as _captura  # noqa: E402
+import universo as _universo  # noqa: E402
 
 
-def completar_tickers_yahoo(fondos=None, planes=None, captura=None):
-    """Rellena 'yahoo' en cada fondo y plan desde la captura diaria. Si un fondo esta en un sitio y
-    no en el otro, falla con un mensaje claro (antes quedaba desincronizado sin avisar)."""
-    fondos = FONDOS if fondos is None else fondos
-    planes = PLANES if planes is None else planes
-    captura = captura or _captura
-    por_isin = dict(captura.FONDOS_ISIN)
-    codigos = {f["codigo"] for f in fondos}
-    if codigos != set(por_isin):
-        raise ValueError("FONDOS de comparar_fuentes.py y FONDOS_ISIN de fetch_precios_publico.py no coinciden: "
-                         f"solo aqui {sorted(codigos - set(por_isin))}, solo en la captura {sorted(set(por_isin) - codigos)}")
-    for f in fondos:
-        f["yahoo"] = por_isin[f["codigo"]]
-    if len(planes) != 1:
-        raise ValueError("hay mas de un plan: la captura solo tiene un PLAN_PENSIONES_TICKER_YAHOO")
-    planes[0]["yahoo"] = captura.PLAN_PENSIONES_TICKER_YAHOO
+def construir_fondos_y_planes(universo=None):
+    """(FONDOS, PLANES) con el formato de siempre, a partir de los vehiculos 'activo' de universo.json."""
+    universo = universo or _universo.cargar_universo()
+    fondos, planes = [], []
+    for v in _universo.vehiculos(universo):
+        if v["tipo"] not in ("fondo", "plan"):
+            continue
+        y = _universo.fuente(v, "yahoo")
+        item = {"id": v["id_comparador"], "codigo": v["isin"] if v["tipo"] == "fondo" else v["codigo"],
+                "yahoo": y["ticker"]}
+        if v["tipo"] == "plan":
+            planes.append(item)
+            continue
+        if _universo.fuente(v, "quefondos") is None:
+            item["sin_quefondos"] = True
+        for nombre in ("finanzen", "renta4"):
+            fu = _universo.fuente(v, nombre)
+            if fu:
+                item[nombre] = fu["url"]
+        g = _universo.fuente(v, "gestora")
+        if g:
+            item["gestora"] = (g["parser"], g["url"])
+        fondos.append(item)
+    return fondos, planes
 
 
-completar_tickers_yahoo()
-
+FONDOS, PLANES = construir_fondos_y_planes()
 # Indices oficiales de los fondos (comparables_fondos.yaml v2). El ticker sale del catalogo (un solo sitio).
 INDICES = ["msci-world-nr-usd", "msci-acwi-nr-eur", "msci-em-nr-eur", "msci-em-nr-eur-alt",
            "msci-europe-nr-eur", "msci-china-nr-eur", "dj-global-technology"]
