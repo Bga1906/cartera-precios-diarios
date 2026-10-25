@@ -1,0 +1,48 @@
+name: Captura de respaldo (madrugada)
+
+# Segunda pasada: solo actua si la captura de las 20:00 UTC de la noche anterior no llego a correr.
+# Si ya esta hecha, no hace nada. Misma captura que «Captura diaria de precios».
+on:
+  schedule:
+    - cron: "30 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: push-main
+  cancel-in-progress: false
+
+jobs:
+  respaldo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Mirar si falta la captura de anoche
+        id: falta
+        run: echo "falta=$(python3 falta_captura.py)" >> "$GITHUB_OUTPUT"
+
+      - name: Ejecutar la captura de precios (solo si falta)
+        if: ${{ steps.falta.outputs.falta == 'si' }}
+        run: python3 fetch_precios_publico.py
+
+      - name: Commitear (solo si falta)
+        if: ${{ steps.falta.outputs.falta == 'si' }}
+        run: |
+          git config user.name "cartera-precios-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add precios/ crudo/
+          git diff --staged --quiet && { echo "Sin cambios"; exit 0; }
+          git commit -m "Precios (respaldo de madrugada) $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3; do git pull --rebase -q origin main && git push && exit 0; sleep 10; done
+          exit 1
+
+      - name: Resumen
+        run: |
+          echo "Falta la captura de anoche (si/no): ${{ steps.falta.outputs.falta }}" >> "$GITHUB_STEP_SUMMARY"
