@@ -59,14 +59,19 @@ FONDOS = [
     {"id": "cobas-seleccion", "codigo": "ES0124037013", "yahoo": "0P0001LFVR.F",
      "gestora": ("cobas", "https://www.cobasam.com/productos/inversion-libre/cobas_seleccion/")},
     {"id": "horos-value-internacional", "codigo": "ES0146309002", "yahoo": "0P0001DFE8.F",
-     "gestora": ("generica", "https://horosam.com/producto/horos-value-internacional/")},
+     # 25/10/2026: la web de la gestora (horosam.com) lleva semanas sin leerse («formato no reconocido»);
+     # Renta 4 publica el mismo VL y fecha (comprobado: 210,81 EUR del 22/10 = Yahoo y quefondos).
+     "gestora": ("renta4", "https://www.r4.com/productos-inversion/fondos/fichas/ES0146309002")},
     {"id": "ishares-developed-world", "codigo": "IE000ZYRH0Q7", "yahoo": "0P0001XF40.F"},
-    {"id": "ishares-emerging-markets", "codigo": "IE000QAZP7L2", "yahoo": "0P0001XF3Z.F"},
+    # 25/10/2026: quefondos no tiene ficha de este ISIN («No se encuentra disponible el fondo»): se omite.
+    {"id": "ishares-emerging-markets", "codigo": "IE000QAZP7L2", "yahoo": "0P0001XF3Z.F", "sin_quefondos": True},
     {"id": "myinvestor-value", "codigo": "ES0165243025", "yahoo": "0P0001T8V7.F"},
     {"id": "numantia", "codigo": "ES0173311103", "yahoo": "0P000168OI.F",
      "gestora": ("renta4", "https://www.r4.com/productos-inversion/fondos/fichas/ES0173311103")},
     {"id": "pictet-china", "codigo": "LU0625737910", "yahoo": "LU0625737910.LU",
-     "finanzen": "https://www.finanzen.at/fonds/pictet-china-index-p-lu0625737910/nav"},
+     # 25/10/2026: finanzen.at da HTTP 403 a los servidores (no automatizable, ver README). Se sustituye por la
+     # ficha de Renta 4 (125,04 EUR del 21/10 = quefondos).
+     "renta4": "https://www.r4.com/productos-inversion/fondos/fichas/LU0625737910"},
     {"id": "polar-capital", "codigo": "IE00BM95B621", "yahoo": "0P0001LT4H.F"},
 ]
 PLANES = [
@@ -232,9 +237,12 @@ def tareas(catalogo=None):
     for f in FONDOS:
         out.append(("fondo", f["id"], f["codigo"], "Yahoo", yurl(f["yahoo"]), parse_yahoo))
         out.append(("fondo", f["id"], f["codigo"], "FT", FT_URL.format(codigo=f["codigo"]), parse_ft))
-        out.append(("fondo", f["id"], f["codigo"], "quefondos", QF_FONDO.format(codigo=f["codigo"]), parse_quefondos))
+        if not f.get("sin_quefondos"):
+            out.append(("fondo", f["id"], f["codigo"], "quefondos", QF_FONDO.format(codigo=f["codigo"]), parse_quefondos))
         if f.get("finanzen"):
             out.append(("fondo", f["id"], f["codigo"], "finanzen.at", f["finanzen"], parse_finanzen))
+        if f.get("renta4"):
+            out.append(("fondo", f["id"], f["codigo"], "Renta 4", f["renta4"], parse_renta4))
         if f.get("gestora"):
             tipo, url = f["gestora"]
             out.append(("fondo", f["id"], f["codigo"], "gestora", url, PARSERS_GESTORA[tipo]))
@@ -381,9 +389,14 @@ def construir_resumen(ultima, historial):
                     avisos.append(f"{id_}: {f['fuente']} va {f['retraso_vs_mejor']} días hábiles por detrás de la mejor fuente.")
         avisos += ["Diferencia de precio: " + a for a in diferencias_precio(ultima)]
     # fuentes caidas: N capturas seguidas sin dato
+    # Solo cuentan las fuentes que siguen en la ultima captura: una fuente retirada deja de avisar enseguida
+    # (antes seguia avisando hasta 14 dias por el historial).
+    vigentes = {(f["id"], f["fuente"]) for f in ultima} if ultima else None
     seguidas = {}
     for r in historial:
         clave = (r["id"], r["fuente"])
+        if vigentes is not None and clave not in vigentes:
+            continue
         seguidas[clave] = 0 if r["fecha_dato"] else seguidas.get(clave, 0) + 1
     for (id_, fuente), n in sorted(seguidas.items()):
         if n >= FALLOS_SEGUIDOS_CAIDA:

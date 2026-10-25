@@ -110,7 +110,10 @@ def test_tareas_incluye_todas_las_fuentes_e_indices_del_catalogo():
     t = c.tareas(cat)
     fuentes_horos = {x[3] for x in t if x[1] == "horos-value-internacional"}
     assert fuentes_horos == {"Yahoo", "FT", "quefondos", "gestora"}
-    assert {x[3] for x in t if x[1] == "pictet-china"} == {"Yahoo", "FT", "quefondos", "finanzen.at"}
+    assert {x[3] for x in t if x[1] == "pictet-china"} == {"Yahoo", "FT", "quefondos", "Renta 4"}
+    # iShares EM no esta en quefondos (ISIN nuevo): no se pide
+    assert {x[3] for x in t if x[1] == "ishares-emerging-markets"} == {"Yahoo", "FT"}
+    assert any("r4.com" in x[4] and "ES0146309002" in x[4] for x in t if x[1] == "horos-value-internacional")
     assert {x[3] for x in t if x[0] == "plan"} == {"Yahoo", "quefondos"}
     assert {x[1] for x in t if x[0] == "indice"} == set(c.INDICES)
 
@@ -150,3 +153,16 @@ def test_csv_resumen_y_avisos(tmp_path, monkeypatch):
 
 def test_resumen_vacio_no_rompe():
     assert "Sin avisos" in c.construir_resumen([], [])
+
+
+def test_fuente_retirada_deja_de_avisar():
+    """Una fuente que ya no esta en la ultima captura no debe seguir saliendo como «caida» por el historial."""
+    def fila(fuente, dia, fecha=None):
+        return {"captura": f"2026-10-{dia:02d}", "id": "a", "fuente": fuente, "fecha_dato": fecha, "precio": None,
+                "tipo": "fondo", "hora": "22:40", "desfase_naturales": None, "desfase_habiles": None,
+                "retraso_vs_mejor": None, "estado": "x", "codigo": "x"}
+    hist = [fila("vieja", d) for d in (20, 21, 22, 23)] + [fila("Yahoo", d, "2026-10-22") for d in (20, 21, 22, 23)]
+    ultima = [dict(fila("Yahoo", 23, "2026-10-22"), precio=1.0, desfase_habiles=1, retraso_vs_mejor=0)]
+    md = c.construir_resumen(ultima, hist)
+    assert "vieja lleva" not in md
+
