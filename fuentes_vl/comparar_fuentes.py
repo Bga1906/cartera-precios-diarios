@@ -56,27 +56,54 @@ FT_URL = "https://markets.ft.com/data/funds/tearsheet/summary?s={codigo}:EUR"
 YAHOO_URL = "https://query1.finance.yahoo.com/v8/finance/chart/{ticker}?range=10d&interval=1d"
 
 FONDOS = [
-    {"id": "cobas-seleccion", "codigo": "ES0124037013", "yahoo": "0P0001LFVR.F",
+    {"id": "cobas-seleccion", "codigo": "ES0124037013",
      "gestora": ("cobas", "https://www.cobasam.com/productos/inversion-libre/cobas_seleccion/")},
-    {"id": "horos-value-internacional", "codigo": "ES0146309002", "yahoo": "0P0001DFE8.F",
+    {"id": "horos-value-internacional", "codigo": "ES0146309002",
      # 25/10/2026: la web de la gestora (horosam.com) lleva semanas sin leerse («formato no reconocido»);
      # Renta 4 publica el mismo VL y fecha (comprobado: 210,81 EUR del 22/10 = Yahoo y quefondos).
      "gestora": ("renta4", "https://www.r4.com/productos-inversion/fondos/fichas/ES0146309002")},
-    {"id": "ishares-developed-world", "codigo": "IE000ZYRH0Q7", "yahoo": "0P0001XF40.F"},
+    {"id": "ishares-developed-world", "codigo": "IE000ZYRH0Q7"},
     # 25/10/2026: quefondos no tiene ficha de este ISIN («No se encuentra disponible el fondo»): se omite.
-    {"id": "ishares-emerging-markets", "codigo": "IE000QAZP7L2", "yahoo": "0P0001XF3Z.F", "sin_quefondos": True},
-    {"id": "myinvestor-value", "codigo": "ES0165243025", "yahoo": "0P0001T8V7.F"},
-    {"id": "numantia", "codigo": "ES0173311103", "yahoo": "0P000168OI.F",
+    {"id": "ishares-emerging-markets", "codigo": "IE000QAZP7L2", "sin_quefondos": True},
+    {"id": "myinvestor-value", "codigo": "ES0165243025"},
+    {"id": "numantia", "codigo": "ES0173311103",
      "gestora": ("renta4", "https://www.r4.com/productos-inversion/fondos/fichas/ES0173311103")},
-    {"id": "pictet-china", "codigo": "LU0625737910", "yahoo": "LU0625737910.LU",
+    {"id": "pictet-china", "codigo": "LU0625737910",
      # 25/10/2026: finanzen.at da HTTP 403 a los servidores (no automatizable, ver README). Se sustituye por la
      # ficha de Renta 4 (125,04 EUR del 21/10 = quefondos).
      "renta4": "https://www.r4.com/productos-inversion/fondos/fichas/LU0625737910"},
-    {"id": "polar-capital", "codigo": "IE00BM95B621", "yahoo": "0P0001LT4H.F"},
+    {"id": "polar-capital", "codigo": "IE00BM95B621"},
 ]
 PLANES = [
-    {"id": "plan-myinvestor-indexado-global", "codigo": "N5396", "yahoo": "0P0001LIG7.F"},
+    {"id": "plan-myinvestor-indexado-global", "codigo": "N5396"},
 ]
+
+# 25/10/2026: los tickers de Yahoo YA NO se escriben aqui: salen de fetch_precios_publico.py
+# (FONDOS_ISIN y PLAN_PENSIONES_TICKER_YAHOO), que es el unico sitio donde se apuntan.
+sys.path.insert(0, str(RAIZ))
+import fetch_precios_publico as _captura  # noqa: E402
+
+
+def completar_tickers_yahoo(fondos=None, planes=None, captura=None):
+    """Rellena 'yahoo' en cada fondo y plan desde la captura diaria. Si un fondo esta en un sitio y
+    no en el otro, falla con un mensaje claro (antes quedaba desincronizado sin avisar)."""
+    fondos = FONDOS if fondos is None else fondos
+    planes = PLANES if planes is None else planes
+    captura = captura or _captura
+    por_isin = dict(captura.FONDOS_ISIN)
+    codigos = {f["codigo"] for f in fondos}
+    if codigos != set(por_isin):
+        raise ValueError("FONDOS de comparar_fuentes.py y FONDOS_ISIN de fetch_precios_publico.py no coinciden: "
+                         f"solo aqui {sorted(codigos - set(por_isin))}, solo en la captura {sorted(set(por_isin) - codigos)}")
+    for f in fondos:
+        f["yahoo"] = por_isin[f["codigo"]]
+    if len(planes) != 1:
+        raise ValueError("hay mas de un plan: la captura solo tiene un PLAN_PENSIONES_TICKER_YAHOO")
+    planes[0]["yahoo"] = captura.PLAN_PENSIONES_TICKER_YAHOO
+
+
+completar_tickers_yahoo()
+
 # Indices oficiales de los fondos (comparables_fondos.yaml v2). El ticker sale del catalogo (un solo sitio).
 INDICES = ["msci-world-nr-usd", "msci-acwi-nr-eur", "msci-em-nr-eur", "msci-em-nr-eur-alt",
            "msci-europe-nr-eur", "msci-china-nr-eur", "dj-global-technology"]

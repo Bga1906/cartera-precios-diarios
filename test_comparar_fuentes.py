@@ -166,3 +166,27 @@ def test_fuente_retirada_deja_de_avisar():
     md = c.construir_resumen(ultima, hist)
     assert "vieja lleva" not in md
 
+
+
+# ---------- 25/10/2026: una sola lista de tickers de Yahoo (la de la captura diaria) ----------
+def test_tickers_de_yahoo_salen_de_la_captura_diaria():
+    import fetch_precios_publico as captura
+    assert {f["codigo"] for f in c.FONDOS} == {isin for isin, _ in captura.FONDOS_ISIN}
+    for f in c.FONDOS:
+        assert f["yahoo"] == dict(captura.FONDOS_ISIN)[f["codigo"]]
+    assert c.PLANES[0]["yahoo"] == captura.PLAN_PENSIONES_TICKER_YAHOO
+
+
+def test_fondo_que_falta_en_un_sitio_falla_con_mensaje_claro():
+    class FalsaCaptura:
+        FONDOS_ISIN = [("ES0000000001", "T1")]
+        PLAN_PENSIONES_TICKER_YAHOO = "P"
+    with pytest.raises(ValueError, match="no coinciden"):
+        c.completar_tickers_yahoo(fondos=[{"id": "a", "codigo": "ES0000000002"}], planes=[{"id": "p"}],
+                                  captura=FalsaCaptura)
+
+
+def test_hay_un_unico_benchmark_principal_y_es_acwi():
+    catalogo = json.loads((Path(c.__file__).resolve().parent.parent / "benchmarks_catalogo.json").read_text(encoding="utf-8"))
+    principales = [b["id"] for b in catalogo["benchmarks"] if b.get("principal")]
+    assert principales == ["msci-acwi-nr-eur"]
