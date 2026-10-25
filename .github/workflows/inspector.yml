@@ -1,0 +1,50 @@
+name: Inspector de precios (oficial)
+
+# Elige el precio oficial de cada vehiculo a partir del crudo y lo guarda en oficial/.
+# Corre en paralelo: precios/ no cambia. Se lanza al terminar cada captura.
+on:
+  workflow_run:
+    workflows:
+      - "Captura diaria de precios"
+      - "Comparar fuentes de VL e indices"
+      - "Captura secundaria de Google"
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: push-main
+  cancel-in-progress: false
+
+jobs:
+  inspector:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Elegir el precio oficial
+        run: python3 inspector.py | tee inspector.txt
+
+      - name: Resumen
+        run: |
+          { echo '```'; cat inspector.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+          rm -f inspector.txt
+
+      - name: Commitear oficial/
+        run: |
+          git config user.name "cartera-precios-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add oficial/
+          git diff --staged --quiet && { echo "Sin cambios"; exit 0; }
+          git commit -m "Oficial $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3; do git pull --rebase -q origin main && git push && exit 0; sleep 10; done
+          exit 1
