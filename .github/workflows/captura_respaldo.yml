@@ -44,4 +44,5 @@ jobs:
           exit 1
 
       - name: Resumen
-        run: echo "Falta la captura de anoche: ${{ steps.falta.outputs.falta }}" >> "$GITHUB_STEP_SUMMARY"
+        run: |
+          echo "Falta la captura de anoche (si/no): ${{ steps.falta.outputs.falta }}" >> "$GITHUB_STEP_SUMMARY"
