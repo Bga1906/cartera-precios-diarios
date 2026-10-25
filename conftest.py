@@ -7,11 +7,13 @@ import pytest
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import crudo  # noqa: E402
 import fetch_precios_publico  # noqa: E402
+import google_lector  # noqa: E402
 
 
 @pytest.fixture(autouse=True)
 def crudo_aislado(tmp_path, monkeypatch):
     monkeypatch.setattr(crudo, "CRUDO_DIR", tmp_path / "crudo_de_prueba")
+    monkeypatch.setattr(google_lector, "LATIDO_GOOGLE", tmp_path / "latido_google_de_prueba.json")
     fetch_precios_publico.LECTURAS_YAHOO.clear()
     yield
     fetch_precios_publico.LECTURAS_YAHOO.clear()
