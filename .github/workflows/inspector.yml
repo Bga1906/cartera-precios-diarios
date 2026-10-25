@@ -8,6 +8,7 @@ on:
       - "Captura diaria de precios"
       - "Comparar fuentes de VL e indices"
       - "Captura secundaria de Google"
+      - "Captura de respaldo (madrugada)"
     types: [completed]
     branches: [main]
   workflow_dispatch:
