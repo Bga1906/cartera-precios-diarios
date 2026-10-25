@@ -521,3 +521,26 @@ def test_fondos_y_plan_se_piden_con_serie_y_el_resto_no(red):
     con_serie = [u for u in pedidas if "range=10d" in u]
     assert len(con_serie) == len(f.FONDOS_ISIN) + 1  # los fondos y el plan de pensiones
     assert activos["mexem:AMZN"]["as_of_fuente"] == "regularMarketTime"
+
+
+# ---- F1.7: --probar para vehiculos pendientes ----
+def test_probar_vehiculos_pendientes_no_escribe_y_cuenta():
+    doc = {"vehiculos": [
+        {"id": "mexem:ABC", "tipo": "accion", "broker": "mexem", "moneda": "EUR", "estado": "pendiente",
+         "fuentes": [{"fuente": "yahoo", "ticker": "ABC.MC"}]},
+        {"id": "mexem:NOEXISTE", "tipo": "accion", "broker": "mexem", "moneda": "EUR", "estado": "pendiente",
+         "fuentes": [{"fuente": "yahoo", "ticker": "ZZZ.MC"}]},
+        {"id": "mexem:ACTIVA", "tipo": "accion", "broker": "mexem", "moneda": "EUR", "estado": "activo",
+         "fuentes": [{"fuente": "yahoo", "ticker": "AAA"}]},
+    ]}
+
+    def lector(ticker, rango=None, desde_serie=False):
+        if ticker == "ABC.MC":
+            return {"precio": 12.3, "moneda": "EUR", "as_of": "2026-10-23", "error": None}
+        return {"precio": None, "moneda": None, "as_of": None, "error": "sin datos"}
+
+    salida = []
+    filas = f.probar_vehiculos(doc, imprimir=salida.append, lector=lector)
+    assert [f["id"] for f in filas] == ["mexem:ABC", "mexem:NOEXISTE"]       # la activa no se prueba
+    assert [f["existe"] for f in filas] == [True, False]
+    assert any("1/2 existen" in l for l in salida)

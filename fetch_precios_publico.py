@@ -14,7 +14,7 @@ dato personal.
 Uso:
     python3 fetch_precios_publico.py                # escribe precios/AAAA-MM-DD_HHMM.json (+ ultimo.json y el alias AAAA-MM-DD.json)
     python3 fetch_precios_publico.py --pretty        # con sangria
-    python3 fetch_precios_publico.py --probar        # solo comprueba benchmarks pendientes; no escribe
+    python3 fetch_precios_publico.py --probar        # solo comprueba benchmarks y vehiculos pendientes; no escribe
 """
 import argparse
 import datetime
@@ -538,6 +538,46 @@ def probar_benchmarks(catalogo=None, imprimir=print):
     return filas
 
 
+def probar_vehiculos(universo=None, imprimir=print, lector=None):
+    """Modo --probar para VEHICULOS 'pendiente' de universo.json: pregunta a Yahoo por cada uno y enseña si existe,
+    la moneda, la fecha del ultimo dato y el precio. NO escribe nada. Devuelve las filas (para las pruebas)."""
+    lector = lector or obtener_cotizacion_yahoo
+    doc = universo if universo is not None else _universo.cargar_universo()
+    filas = []
+    for v in _universo.vehiculos(doc, estado="pendiente"):
+        y = next((f for f in v["fuentes"] if f["fuente"] == "yahoo"), None)
+        if not y:
+            filas.append({"id": v["id"], "ticker": "-", "existe": False, "moneda": None, "as_of": None,
+                          "precio": None, "error": "sin fuente yahoo en universo.json"})
+            continue
+        serie = v["tipo"] in ("fondo", "plan")
+        try:
+            res = lector(y["ticker"], rango=RANGO_FONDOS if serie else None, desde_serie=serie)
+        except Exception as e:  # noqa: BLE001
+            res = _resultado_yahoo(error=f"fallo inesperado: {type(e).__name__}: {e}")
+        filas.append({"id": v["id"], "ticker": y["ticker"], "existe": res["precio"] is not None,
+                      "moneda": res["moneda"], "as_of": res["as_of"], "precio": res["precio"], "error": res["error"],
+                      "moneda_universo": v.get("moneda")})
+    if not filas:
+        imprimir("No hay vehiculos con estado: pendiente en universo.json.")
+        return filas
+    cab = ("id", "ticker", "existe", "moneda (fuente / universo)", "ultimo dato", "precio")
+    tabla = [cab] + [(f["id"], f["ticker"], "si" if f["existe"] else "NO",
+                      f"{f['moneda'] or '-'} / {f.get('moneda_universo') or '-'}", f["as_of"] or "-",
+                      "-" if f["precio"] is None else f"{f['precio']:.4g}") for f in filas]
+    anchos = [max(len(str(r[i])) for r in tabla) for i in range(len(cab))]
+    for n, r in enumerate(tabla):
+        imprimir("  ".join(str(c).ljust(anchos[i]) for i, c in enumerate(r)).rstrip())
+        if n == 0:
+            imprimir("  ".join("-" * a for a in anchos))
+    for f in filas:
+        if f["error"]:
+            imprimir(f"  {f['id']}: {f['error']}")
+    imprimir(f"{sum(f['existe'] for f in filas)}/{len(filas)} existen en Yahoo. Las otras fuentes (ft, quefondos...) "
+             "se comprueban con el workflow «Comparar fuentes». No se ha escrito nada.")
+    return filas
+
+
 def escribir_atomico(path, texto):
     """Escribe a un temporal y lo renombra: el fichero final nunca queda a medias."""
     path = Path(path)
@@ -611,11 +651,13 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--pretty", action="store_true")
     ap.add_argument("--probar", action="store_true",
-                    help="comprueba solo los benchmarks pendientes y NO escribe en precios/")
+                    help="comprueba solo los benchmarks y vehiculos pendientes y NO escribe en precios/")
     args = ap.parse_args()
 
     if args.probar:
         probar_benchmarks()
+        print()
+        probar_vehiculos()
         return
 
     hoy = datetime.date.today().isoformat()

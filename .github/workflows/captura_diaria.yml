@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       probar:
-        description: "Solo comprobar los benchmarks pendientes (no guarda nada)"
+        description: "Solo comprobar benchmarks y vehiculos pendientes (no guarda nada)"
         type: boolean
         default: false
 
@@ -28,7 +28,7 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Comprobar benchmarks pendientes (modo --probar, no guarda nada)
+      - name: Comprobar benchmarks y vehiculos pendientes (modo --probar, no guarda nada)
         if: ${{ inputs.probar }}
         run: |
           python3 fetch_precios_publico.py --probar | tee probar.txt

@@ -96,3 +96,23 @@ def test_fichero_ausente_o_ilegible_da_error_claro(tmp_path):
     ilegible.write_text("{no es json", encoding="utf-8")
     with pytest.raises(u.UniversoError, match="no se pudo leer"):
         u.cargar_universo(ilegible)
+
+
+# ---- F1.7: via de alta (los ejemplos de ALTA.md tienen que ser validos) ----
+EJEMPLOS_ALTA = [
+    {"id": "mexem:ABC", "tipo": "accion", "broker": "mexem", "moneda": "EUR", "estado": "pendiente",
+     "fuentes": [{"fuente": "yahoo", "ticker": "ABC.MC"}]},
+    {"id": "myinvestor-cobas:ES0000000000", "tipo": "fondo", "isin": "ES0000000000", "id_comparador": "ejemplo-fondo",
+     "moneda": "EUR", "estado": "pendiente",
+     "fuentes": [{"fuente": "yahoo", "ticker": "0P0000000.F", "lectura": "serie"}, {"fuente": "ft"},
+                 {"fuente": "quefondos"}]},
+]
+
+
+def test_ejemplos_de_alta_son_validos_y_no_se_capturan():
+    doc = u.cargar_universo()
+    doc["vehiculos"] = doc["vehiculos"] + EJEMPLOS_ALTA
+    u.validar_universo(doc)
+    activos = {v["id"] for v in u.vehiculos(doc)}
+    assert "mexem:ABC" not in activos and "myinvestor-cobas:ES0000000000" not in activos
+    assert {v["id"] for v in u.vehiculos(doc, estado="pendiente")} == {"mexem:ABC", "myinvestor-cobas:ES0000000000"}
