@@ -9,12 +9,12 @@
      "estado": "ok",
      "fecha_dato": "2026-10-25",
      "fuente": "google_finance",
-     "precio": 71911.61166
+     "precio": 71777.63082
     }
    ],
    "moneda": "EUR",
    "motivo": "respaldo: yahoo, coingecko sin dato valido o atrasado",
-   "precio": 71911.61166,
+   "precio": 71777.63082,
    "precios_json_eur": 71787.99,
    "tipo": "cripto"
   },
@@ -505,7 +505,7 @@
   }
  },
  "fecha": "2026-10-25",
- "hasta": "2026-10-25T20:00:40Z",
+ "hasta": "2026-10-25T20:08:42Z",
  "resumen": {
   "respaldo": 20,
   "sin_dato": 13
