@@ -619,6 +619,7 @@ def main():
         return
 
     hoy = datetime.date.today().isoformat()
+    LECTURAS_YAHOO.clear()
     activos = construir_activos(hoy)
     resultado = {
         "date": hoy,
