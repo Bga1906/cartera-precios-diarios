@@ -168,8 +168,8 @@ def test_fuente_retirada_deja_de_avisar():
 
 
 
-# ---------- 25/10/2026: una sola lista de tickers de Yahoo (la de la captura diaria) ----------
-def test_tickers_de_yahoo_salen_de_la_captura_diaria():
+# ---------- 25/10/2026 (F1.1): fondos y plan salen de universo.json ----------
+def test_fondos_y_planes_salen_del_universo():
     import fetch_precios_publico as captura
     assert {f["codigo"] for f in c.FONDOS} == {isin for isin, _ in captura.FONDOS_ISIN}
     for f in c.FONDOS:
@@ -177,13 +177,23 @@ def test_tickers_de_yahoo_salen_de_la_captura_diaria():
     assert c.PLANES[0]["yahoo"] == captura.PLAN_PENSIONES_TICKER_YAHOO
 
 
-def test_fondo_que_falta_en_un_sitio_falla_con_mensaje_claro():
-    class FalsaCaptura:
-        FONDOS_ISIN = [("ES0000000001", "T1")]
-        PLAN_PENSIONES_TICKER_YAHOO = "P"
-    with pytest.raises(ValueError, match="no coinciden"):
-        c.completar_tickers_yahoo(fondos=[{"id": "a", "codigo": "ES0000000002"}], planes=[{"id": "p"}],
-                                  captura=FalsaCaptura)
+def test_fuentes_de_contraste_de_los_fondos_se_conservan():
+    por_id = {f["id"]: f for f in c.FONDOS}
+    assert por_id["cobas-seleccion"]["gestora"][0] == "cobas"
+    assert por_id["horos-value-internacional"]["gestora"][0] == "renta4"
+    assert por_id["ishares-emerging-markets"]["sin_quefondos"] is True
+    assert "sin_quefondos" not in por_id["numantia"]
+    assert por_id["pictet-china"]["renta4"].endswith("LU0625737910")
+    assert c.PLANES[0]["codigo"] == "N5396"
+
+
+def test_un_vehiculo_pendiente_o_retirado_no_se_lee():
+    doc = json.loads((Path(c.__file__).resolve().parent.parent / "universo.json").read_text(encoding="utf-8"))
+    for v in doc["vehiculos"]:
+        if v["id"] == "myinvestor-cobas:IE00BM95B621":
+            v["estado"] = "retirado"
+    fondos, _ = c.construir_fondos_y_planes(doc)
+    assert "polar-capital" not in {f["id"] for f in fondos} and len(fondos) == 7
 
 
 def test_hay_un_unico_benchmark_principal_y_es_acwi():

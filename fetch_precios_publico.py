@@ -28,6 +28,8 @@ import zoneinfo
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
+sys.path.insert(0, str(HERE))
+import universo as _universo  # noqa: E402
 OUT_DIR = HERE / "precios"
 
 TIMEOUT_SEGUNDOS = 10
@@ -53,35 +55,24 @@ GRAMOS_POR_ONZA_TROY = 31.1034768
 # salía disparada (-25,78% falso el 21/09). Se corrige aquí, en origen.
 ORO_PUREZA = 0.750  # 18 quilates
 
-MEXEM_TICKERS = [
-    ("AMZN", "AMZN"), ("APR0", "AMP.MC"), ("CRML", "CRML"), ("DMX", "DMX.V"),
-    ("E5S1", "E5S1.F"), ("ERO", "ERO"), ("GOOGL", "GOOGL"), ("HUMA", "HUMA"),
-    ("IDR", "IDR.MC"), ("KRKNF", "KRKNF"), ("META", "META"), ("MP", "MP"),
-    ("NXT", "NXT.MC"), ("OHLA", "OHLA.MC"), ("PLTR", "PLTR"), ("RIG", "RIG"),
-    ("TRE", "TRE.MC"),
-]
+# 25/10/2026 (F1.1): las listas de vehiculos YA NO se escriben aqui: salen de universo.json (un solo sitio).
+# Para anadir o quitar un vehiculo se edita universo.json (ver ALTA.md), no este codigo. Los nombres de abajo se
+# conservan porque los usan las pruebas y el comparador de fuentes. Solo se capturan los vehiculos 'activo'.
+UNIVERSO = _universo.cargar_universo()
 
-TR_ETFS = [
-    ("Physical Gold USD (Acc)", "PPFB.DE"),
-    ("Copper Miners USD (Acc)", "4COP.DE"),
-    ("Physical Silver", "ISLN.L"),
-    ("Uranium And Nuclear Technologies USD (Acc)", "NUKL.DE"),
-    ("Space Innovators USD (Acc)", "JEDI.DE"),
-]
-FONDOS_ISIN = [
-    ("IE000ZYRH0Q7", "0P0001XF40.F"),
-    ("IE000QAZP7L2", "0P0001XF3Z.F"),
-    ("ES0146309002", "0P0001DFE8.F"),
-    ("ES0165243025", "0P0001T8V7.F"),
-    ("ES0173311103", "0P000168OI.F"),
-    ("IE00BM95B621", "0P0001LT4H.F"),
-    ("LU0625737910", "LU0625737910.LU"),
-    ("ES0124037013", "0P0001LFVR.F"),
-]
-PLAN_PENSIONES_TICKER_YAHOO = "0P0001LIG7.F"
+
+def _ticker_yahoo(v):
+    return _universo.fuente(v, "yahoo")["ticker"]
+
+
+MEXEM_TICKERS = [(v["id"].split(":", 1)[1], _ticker_yahoo(v)) for v in _universo.vehiculos(UNIVERSO, tipo="accion", broker="mexem")]
+TR_ETFS = [(v["id"].split(":", 1)[1], _ticker_yahoo(v)) for v in _universo.vehiculos(UNIVERSO, tipo="etf", broker="trade-republic")]
+FONDOS_ISIN = [(v["isin"], _ticker_yahoo(v)) for v in _universo.vehiculos(UNIVERSO, tipo="fondo")]
+PLAN_PENSIONES_TICKER_YAHOO = _ticker_yahoo(_universo.vehiculos(UNIVERSO, tipo="plan")[0])
 # 25/10/2026: fondos y plan se leen de la serie de cierres de los ultimos 10 dias (ultimo cierre con fecha propia).
 RANGO_FONDOS = "10d"
-BTC_TICKER_YAHOO = "BTC-EUR"
+BTC_TICKER_YAHOO = _ticker_yahoo(_universo.vehiculos(UNIVERSO, tipo="cripto")[0])
+ORO_RESPALDO_TICKER_YAHOO = _ticker_yahoo(_universo.vehiculos(UNIVERSO, tipo="materia_prima")[0])
 
 # Añadido 14/09/2026, a petición de Brian ("el sistema de actualización
 # diaria vía github y mi pc, ¿incluye los índices en benchmark?"): este
@@ -374,7 +365,7 @@ def construir_activos(fecha=None, catalogo=None):
     # Yahoo (GC=F). Difiere algo del spot, por eso se marca en `fuente`.
     fuente_oro_respaldo = False
     if precio_oz_usd is None:
-        res_gc = obtener_cotizacion_yahoo("GC=F")
+        res_gc = obtener_cotizacion_yahoo(ORO_RESPALDO_TICKER_YAHOO)
         if res_gc["precio"] is not None and (res_gc["moneda"] or "USD") == "USD":
             precio_oz_usd = float(res_gc["precio"])
             fuente_oro_respaldo = True
