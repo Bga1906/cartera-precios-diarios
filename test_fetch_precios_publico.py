@@ -279,7 +279,9 @@ def test_documento_es_json_valido_y_sin_claves_personales(red):
                   "poliza", "titular", "nombre_usuario", "email", "valor_eur", "participaciones", "shares", "posicion")
     for c in claves:
         assert not any(p in c.lower() for p in prohibidas), c
-    assert claves <= {*CLAVES_ANTIGUAS, "as_of", "as_of_fuente", "arrastrado", "dias_desfase", "moneda_inferida"}
+    # 25/10/2026: el oro guarda tambien la cotizacion sin convertir (USD/onza) y el EUR/USD usado.
+    assert claves <= {*CLAVES_ANTIGUAS, "as_of", "as_of_fuente", "arrastrado", "dias_desfase", "moneda_inferida",
+                      "precio_oz_usd", "eur_usd", "precio_oz_fuente"}
 
 
 # ---------- catalogo ----------
@@ -293,7 +295,7 @@ def test_catalogo_real_verificados_y_pendientes():
     # 36 verificados el 12/10; 17/10: 7 indices oficiales de los fondos en prueba (pendiente)
     assert pendientes == {"msci-world-nr-usd", "msci-acwi-nr-eur", "msci-em-nr-eur", "msci-em-nr-eur-alt",
                           "msci-europe-nr-eur", "msci-china-nr-eur", "dj-global-technology"}
-    assert len(cat) == 43
+    assert len(cat) == 47  # 25/10: +4 series de las liebres A/B
     assert {b["tipo_retorno"] for b in cat.values()} <= {"precio", "total"}
     assert cat["msci-world-etf-acc"]["proxy_de"] == "msci-world"
 
@@ -465,3 +467,57 @@ def test_oro_joyeria_usa_futuro_de_yahoo_si_gold_api_falla(red, monkeypatch):
     act = f.construir_activos("2026-10-09")["oro-fisico:joyeria"]
     assert act["ok"] is True and act["price"] > 0 and act["error"] is None
     assert "GC=F" in act["fuente"]
+
+
+# ---------- 25/10/2026: fondos leidos de la serie de cierres (caso Pictet-China) ----------
+def yahoo_con_serie(meta_precio, meta_t, fechas_cierres, zona="Europe/Madrid"):
+    """Respuesta de Yahoo con 'regularMarketPrice' y ademas la serie diaria (lista de (fecha, cierre|None))."""
+    marcas = [ts(*f, 12) for f, _ in fechas_cierres]
+    cierres = [c for _, c in fechas_cierres]
+    r = yahoo(meta_precio, "EUR", meta_t, zona, extra_result={
+        "timestamp": marcas, "indicators": {"quote": [{"close": cierres}]}})
+    return r
+
+
+PICTET_SERIE = [((2026, 10, 20), 126.42), ((2026, 10, 21), 125.04), ((2026, 10, 22), 121.39), ((2026, 10, 23), None)]
+
+
+def test_fondo_usa_ultimo_cierre_de_la_serie_y_no_el_precio_actual(red):
+    # Caso real: el 'precio actual' (125,04, sello del 23/10) va atrasado; la serie dice 22/10 = 121,39.
+    red.respuestas["PICT"] = yahoo_con_serie(125.04, ts(2026, 10, 23, 5, 55), PICTET_SERIE)
+    r = f.obtener_cotizacion_yahoo("PICT", rango="10d", desde_serie=True)
+    assert r["precio"] == 121.39 and r["as_of"] == "2026-10-22"
+    assert r["cierre_anterior"] == 125.04 and r["as_of_fuente"] == "cierre_serie"
+    extra = f.campos_fecha_mercado(r, "2026-10-23")
+    assert extra["as_of_fuente"] == "cierre_serie" and extra["arrastrado"] is True and extra["dias_desfase"] == 1
+
+
+def test_sin_desde_serie_se_comporta_como_antes(red):
+    red.respuestas["PICT"] = yahoo_con_serie(125.04, ts(2026, 10, 23, 5, 55), PICTET_SERIE)
+    r = f.obtener_cotizacion_yahoo("PICT")
+    assert r["precio"] == 125.04 and r["as_of"] == "2026-10-23" and r["as_of_fuente"] is None
+    assert f.campos_fecha_mercado(r, "2026-10-23")["as_of_fuente"] == "regularMarketTime"
+
+
+def test_desde_serie_sin_serie_cae_al_precio_actual(red):
+    red.respuestas["X"] = yahoo(10, "EUR", ts(2026, 10, 9, 15), "Europe/Madrid")
+    r = f.obtener_cotizacion_yahoo("X", rango="10d", desde_serie=True)
+    assert r["precio"] == 10.0 and r["as_of"] == "2026-10-09" and r["as_of_fuente"] is None
+
+
+def test_desde_serie_ignora_cierres_nulos_o_no_positivos(red):
+    serie = [((2026, 10, 20), 50.0), ((2026, 10, 21), 0), ((2026, 10, 22), None)]
+    red.respuestas["X"] = yahoo_con_serie(60.0, ts(2026, 10, 22, 9), serie)
+    r = f.obtener_cotizacion_yahoo("X", rango="10d", desde_serie=True)
+    assert r["precio"] == 50.0 and r["as_of"] == "2026-10-20" and r["cierre_anterior"] is None
+
+
+def test_fondos_y_plan_se_piden_con_serie_y_el_resto_no(red):
+    red.respuestas["LU0625737910.LU"] = yahoo_con_serie(125.04, ts(2026, 10, 23, 5, 55), PICTET_SERIE)
+    activos = f.construir_activos("2026-10-23", catalogo=[])
+    pictet = activos["myinvestor-cobas:LU0625737910"]
+    assert pictet["price"] == 121.39 and pictet["as_of"] == "2026-10-22" and pictet["as_of_fuente"] == "cierre_serie"
+    pedidas = [u for u in red.llamadas if "finance/chart/" in u]
+    con_serie = [u for u in pedidas if "range=10d" in u]
+    assert len(con_serie) == len(f.FONDOS_ISIN) + 1  # los fondos y el plan de pensiones
+    assert activos["mexem:AMZN"]["as_of_fuente"] == "regularMarketTime"

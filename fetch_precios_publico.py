@@ -79,6 +79,8 @@ FONDOS_ISIN = [
     ("ES0124037013", "0P0001LFVR.F"),
 ]
 PLAN_PENSIONES_TICKER_YAHOO = "0P0001LIG7.F"
+# 25/10/2026: fondos y plan se leen de la serie de cierres de los ultimos 10 dias (ultimo cierre con fecha propia).
+RANGO_FONDOS = "10d"
 BTC_TICKER_YAHOO = "BTC-EUR"
 
 # Añadido 14/09/2026, a petición de Brian ("el sistema de actualización
@@ -182,11 +184,12 @@ SEGUNDOS_SEMANA = 7 * 24 * 3600
 
 
 def _resultado_yahoo(precio=None, moneda=None, cierre_anterior=None, error=None,
-                     as_of=None, moneda_inferida=None, puntos_ultima_semana=0):
+                     as_of=None, moneda_inferida=None, puntos_ultima_semana=0, as_of_fuente=None):
     return {
         "precio": precio, "moneda": moneda, "cierre_anterior": cierre_anterior, "error": error,
         "as_of": as_of, "moneda_inferida": moneda_inferida,
         "puntos_ultima_semana": puntos_ultima_semana,
+        "as_of_fuente": as_of_fuente,
     }
 
 
@@ -230,7 +233,37 @@ def _puntos_ultima_semana(result, referencia):
         return 0
 
 
-def obtener_cotizacion_yahoo(ticker: str, rango: str = None):
+def _ultimo_cierre_de_serie(result, zona=None):
+    """Ultimo cierre diario NO nulo de la serie de Yahoo, su fecha (zona del mercado) y el
+    cierre no nulo anterior. Devuelve (cierre, fecha, cierre_anterior) o None si no hay serie.
+
+    25/10/2026: para los fondos, el 'precio actual' de la ficha (regularMarketPrice) puede ir
+    atrasado con un sello de hora nuevo (Pictet-China: 125,04 del 21/10 con sello del 23/10),
+    mientras que la serie por fechas es correcta (22/10 = 121,39)."""
+    try:
+        marcas = result.get("timestamp") or []
+        cierres = (((result.get("indicators") or {}).get("quote") or [{}])[0]).get("close") or []
+        tz = datetime.timezone.utc
+        if zona:
+            try:
+                tz = zoneinfo.ZoneInfo(zona)
+            except Exception:  # noqa: BLE001
+                tz = datetime.timezone.utc
+        validos = [
+            (t, float(c)) for t, c in zip(marcas, cierres)
+            if isinstance(t, (int, float)) and not isinstance(t, bool) and c is not None and float(c) > 0
+        ]
+        if not validos:
+            return None
+        t, c = validos[-1]
+        fecha = datetime.datetime.fromtimestamp(t, tz).date().isoformat()
+        anterior = validos[-2][1] if len(validos) > 1 else None
+        return c, fecha, anterior
+    except Exception:  # noqa: BLE001
+        return None
+
+
+def obtener_cotizacion_yahoo(ticker: str, rango: str = None, desde_serie: bool = False):
     url = YAHOO_CHART_URL.format(ticker=urllib.parse.quote(ticker, safe=""))
     if rango:
         url += f"?range={rango}&interval=1d"
@@ -265,8 +298,15 @@ def obtener_cotizacion_yahoo(ticker: str, rango: str = None):
         cierre_anterior = _positivo_o_none(meta.get("previousClose"))
         if cierre_anterior is None:
             cierre_anterior = _positivo_o_none(meta.get("chartPreviousClose"))
+        as_of_fuente = None
+        if desde_serie:
+            serie = _ultimo_cierre_de_serie(result, meta.get("exchangeTimezoneName"))
+            if serie is not None:
+                precio, as_of, cierre_anterior = serie
+                as_of_fuente = "cierre_serie"
         return _resultado_yahoo(precio=precio, moneda=moneda, cierre_anterior=cierre_anterior, as_of=as_of,
-                                moneda_inferida=moneda_inferida, puntos_ultima_semana=puntos)
+                                moneda_inferida=moneda_inferida, puntos_ultima_semana=puntos,
+                                as_of_fuente=as_of_fuente)
     except Exception as e:  # noqa: BLE001
         return _resultado_yahoo(error=f"respuesta inesperada: {type(e).__name__}: {e}")
 
@@ -276,7 +316,7 @@ def campos_fecha_mercado(res, fecha_fichero):
     los ignoran): as_of, as_of_fuente y, si el dato es de un dia anterior al del
     fichero, arrastrado + dias_desfase. Informativo: no cambia 'ok'."""
     as_of = res.get("as_of")
-    extra = {"as_of": as_of, "as_of_fuente": "regularMarketTime"}
+    extra = {"as_of": as_of, "as_of_fuente": res.get("as_of_fuente") or "regularMarketTime"}
     if as_of is not None and fecha_fichero is not None:
         try:
             dias = (datetime.date.fromisoformat(fecha_fichero) - datetime.date.fromisoformat(as_of)).days
@@ -419,14 +459,14 @@ def construir_activos(fecha=None, catalogo=None):
         }
 
     for isin, ticker_yahoo in FONDOS_ISIN:
-        res = obtener_cotizacion_yahoo(ticker_yahoo)
+        res = obtener_cotizacion_yahoo(ticker_yahoo, rango=RANGO_FONDOS, desde_serie=True)
         activos[f"myinvestor-cobas:{isin}"] = {
             "price": res["precio"], "price_previous_close": res["cierre_anterior"], "moneda": "EUR",
             "fuente": f"Yahoo Finance ({ticker_yahoo})", "ok": res["precio"] is not None, "error": res["error"],
             **campos_fecha_mercado(res, fecha),
         }
 
-    res_pp = obtener_cotizacion_yahoo(PLAN_PENSIONES_TICKER_YAHOO)
+    res_pp = obtener_cotizacion_yahoo(PLAN_PENSIONES_TICKER_YAHOO, rango=RANGO_FONDOS, desde_serie=True)
     activos["myinvestor:plan-pensiones"] = {
         "price": res_pp["precio"], "price_previous_close": res_pp["cierre_anterior"], "moneda": "EUR",
         "fuente": f"Yahoo Finance ({PLAN_PENSIONES_TICKER_YAHOO})", "ok": res_pp["precio"] is not None, "error": res_pp["error"],
