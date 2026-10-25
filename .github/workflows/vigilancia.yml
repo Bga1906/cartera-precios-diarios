@@ -1,0 +1,25 @@
+name: Vigilancia de la captura
+
+# Cada 6 h mira si la cadena de precios lleva mas de 30 h parada y, si es asi, abre UN issue (llega por email).
+# Solo avisa: no corrige nada ni escribe en precios/ ni crudo/.
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  vigilancia:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Comprobar latidos y avisar si hace falta
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 vigilancia.py --issue

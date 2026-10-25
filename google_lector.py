@@ -18,6 +18,7 @@ import crudo as _crudo
 
 HERE = Path(__file__).resolve().parent
 CONFIG = HERE / "google" / "config.json"
+LATIDO_GOOGLE = HERE / "latido_google.json"
 COLUMNAS_ESPERADAS = ["id", "ticker_google", "precio", "moneda", "fecha_dato"]
 RE_FECHA = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
@@ -52,6 +53,15 @@ def leer_csv(texto):
     return [f for f in lector if (f.get("id") or "").strip()]
 
 
+def foto_de_google(registros):
+    """Hora (UTC) de la ultima foto nocturna del Apps Script, si el Sheet la publica en la columna ultima_foto_utc."""
+    for r in registros:
+        v = (r.get("ultima_foto_utc") or "").strip()
+        if v:
+            return v
+    return None
+
+
 def filas_de_google(registros, captura_utc, origen="google"):
     """Lineas de crudo (una por vehiculo) a partir de las filas del CSV. Precio TAL CUAL, sin convertir."""
     out = []
@@ -77,8 +87,12 @@ def main(argv=None):
             texto = Path(argv[argv.index("--archivo") + 1]).read_text(encoding="utf-8-sig")
         else:
             texto = descargar(json.loads(CONFIG.read_text(encoding="utf-8"))["ultima_csv_url"])
-        filas = filas_de_google(leer_csv(texto), _crudo.ahora_utc())
+        registros = leer_csv(texto)
+        ahora = _crudo.ahora_utc()
+        filas = filas_de_google(registros, ahora)
         n = _crudo.anadir_filas(filas)
+        LATIDO_GOOGLE.write_text(json.dumps({"leido_utc": ahora, "ultima_foto_utc": foto_de_google(registros)},
+                                            indent=1) + "\n", encoding="utf-8")
         sin = sum(1 for f in filas if f["estado"] != "ok")
         print(f"Google: {n} lineas anotadas en el crudo ({sin} sin dato).")
     except Exception as e:  # nunca rompe nada: el aviso lo dara la vigilancia (F1.5)

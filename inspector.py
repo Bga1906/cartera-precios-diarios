@@ -20,6 +20,7 @@ import sys
 from pathlib import Path
 
 import crudo as _crudo
+import latido as _latido
 import universo as _universo
 
 HERE = Path(__file__).resolve().parent
@@ -63,10 +64,10 @@ def _atraso(tipo, desde_iso, hasta_iso):
     return dias_habiles(desde_iso, hasta_iso)
 
 
-def leer_crudo(hasta, carpeta=None):
-    """Filas de crudo de la ventana (hasta - 36 h, hasta]. Devuelve lista de diccionarios."""
+def leer_crudo(hasta, carpeta=None, horas=VENTANA_HORAS):
+    """Filas de crudo de la ventana (hasta - horas, hasta]. Devuelve lista de diccionarios."""
     carpeta = Path(carpeta) if carpeta else _crudo.CRUDO_DIR
-    desde = hasta - datetime.timedelta(hours=VENTANA_HORAS)
+    desde = hasta - datetime.timedelta(hours=horas)
     meses = {desde.strftime("%Y-%m"), hasta.strftime("%Y-%m")}
     out = []
     for mes in sorted(meses):
@@ -191,6 +192,9 @@ def main(argv=None):
     precios = json.loads(PRECIOS_ULTIMO.read_text(encoding="utf-8")) if PRECIOS_ULTIMO.exists() else None
     doc = inspeccionar(_universo.cargar_universo(), leer_crudo(hasta), hasta, precios)
     escribir(doc, carpeta)
+    if carpeta is None:  # el latido solo se escribe en la ejecucion real
+        lat = _latido.calcular(leer_crudo(hasta, horas=_latido.VENTANA_DIAS * 24), hasta, doc["resumen"])
+        (HERE / "latido.json").write_text(json.dumps(lat, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     print(f"Oficial {doc['fecha']}: {doc['resumen']}")
     for k, r in doc["activos"].items():
         if r["estado_precio"] != "ok":
