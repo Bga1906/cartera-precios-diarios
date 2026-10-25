@@ -1,0 +1,21 @@
+{
+ "generado_en": "2026-10-25T20:00:40Z",
+ "ventana_dias": 3,
+ "origenes": {
+  "google": {
+   "ultima_captura_utc": "2026-10-25T18:54:42Z",
+   "lineas": 21
+  }
+ },
+ "fuentes": {
+  "google/google_finance": {
+   "ultima_captura_utc": "2026-10-25T18:54:42Z",
+   "ok": 21,
+   "fallos": 0
+  }
+ },
+ "oficial": {
+  "respaldo": 20,
+  "sin_dato": 13
+ }
+}
