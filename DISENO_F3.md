@@ -20,6 +20,9 @@ Una foto por Sheet, mismos campos: `id, nombre, tipo, cantidad, moneda, precio, 
 - El plan de pensiones es automático (participaciones × VL diario), siempre `no_liquido`, fuera del valor líquido; tu valor manual queda como contraste (aviso si difiere >0,5 % con fechas a ≤3 días).
 - Si el precio de la hoja difiere >0,5 % del oficial **a la misma fecha**, aviso `dif_oficial`.
 
+## Fecha de cierre (26/10/2026)
+La foto se crea de madrugada (07:30) con los precios del cierre anterior. Por eso lleva dos fechas: `fecha_foto` (el día en que se hizo) y `fecha_cierre` (la última fecha REAL de precio de mercado de sus posiciones; no cuenta el valor manual del plan). Las fotos hechas antes del 26/10/2026 no traen `fecha_cierre`.
+
 ## Qué NO hace
 - No toca `datos_sheet_fondos.json` ni `salud_sheet_fondos.json` (los copia el vault a las 22:00). Se revisará en la integración con vault y titan-mcp.
 - El libro con cantidades **no** va a este repo público; solo vive en el Drive privado. El código nuevo no lleva ids, cifras ni datos personales (hay prueba que lo vigila).

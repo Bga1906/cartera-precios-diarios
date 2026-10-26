@@ -14,7 +14,7 @@ def foto_ok():
     }
     plan = dict(pos, id="x:plan", tipo="plan", valor_eur=500, no_liquido=True)
     return {
-        "formato": "foto_cartera/v1", "sheet": "fondos", "fecha_foto": "2026-10-23", "generado_utc": "2026-10-23T06:45:00Z",
+        "formato": "foto_cartera/v1", "sheet": "fondos", "fecha_foto": "2026-10-23", "fecha_cierre": "2026-10-22", "generado_utc": "2026-10-23T06:45:00Z",
         "version_script": "2.2", "version_exportador": "F3.1", "fuente_precios": "precios", "fecha_captura_precios": "2026-10-22",
         "huella": {"hash": "c53:abc"}, "avisos": [],
         "totales": {"valor_liquido_eur": 1000, "valor_no_liquido_eur": 500, "valor_total_eur": 1500,
@@ -31,6 +31,7 @@ def test_detecta_errores():
     casos = [
         lambda f: f.update(formato="otra/v1"),
         lambda f: f.update(fecha_foto="23/10/2026"),
+        lambda f: f.update(fecha_cierre="22/10/2026"),
         lambda f: f["posiciones"][0].update(estado_precio="raro"),
         lambda f: f["posiciones"][1].update(id="x:1"),
         lambda f: f["totales"].update(valor_liquido_eur=1005),
@@ -69,3 +70,9 @@ def test_cli(tmp_path):
     m.write_text(json.dumps(malo))
     assert fc.main([str(bueno)]) == 0
     assert fc.main([str(bueno), str(m)]) == 1
+
+
+def test_fotos_anteriores_sin_fecha_cierre_siguen_siendo_validas():
+    f = foto_ok()
+    del f["fecha_cierre"]
+    assert fc.validar_foto(f) == []
