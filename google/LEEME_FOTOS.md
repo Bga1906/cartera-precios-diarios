@@ -20,3 +20,6 @@ Hazlo tú, en tu Sheet. Nada se pega solo.
 8. Si algo falla: Apps Script → ⚙ **Configuración del proyecto → Propiedades de la secuencia de comandos** → mira `FOTOS_ULTIMO_ERROR`. La valoración normal sigue funcionando aunque las fotos fallen.
 
 Verificación opcional en el repo: `python3 foto_cartera.py foto_fondos_<fecha>.json` (descarga antes la foto desde Drive).
+
+## Cripto (F5)
+La foto diaria del Sheet «CRYPTO» (misma plantilla, otro gancho) está en [LEEME_FOTOS_CRIPTO.md](LEEME_FOTOS_CRIPTO.md): instalación, paso de ensayo a definitivo y receta para dar de alta una moneda nueva.
