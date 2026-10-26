@@ -42,11 +42,11 @@ def test_foto_del_sheet_se_parece_a_la_provisional_en_lo_que_lee_el_consolidador
     assert f["posiciones"][0]["nombre"] == "btc" and f["posiciones"][0]["tipo"] == "cripto"
 
 
-def test_moneda_nueva_sin_precio_oficial_sale_sin_dato_y_valida(salida):
+def test_moneda_nueva_sin_precio_oficial_sale_sin_oficial_y_valida(salida):
     f = json.loads((salida / "foto_cripto_2026-10-29.json").read_text())
     sol = next(p for p in f["posiciones"] if p["id"] == "cripto:sol")
-    assert sol["estado_precio"] == "sin_dato" and sol["valor_eur"] is None and "sin precio oficial" in sol["avisos"]
-    assert all(p["estado_precio"] != "sin_oficial" for p in f["posiciones"])
+    assert sol["estado_precio"] == "sin_oficial" and sol["valor_eur"] is None and "sin precio oficial" in sol["avisos"]
+    assert fc.validar_foto(f) == []
 
 
 def test_libro_e_historial_generados(salida):

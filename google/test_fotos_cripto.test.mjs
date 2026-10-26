@@ -126,14 +126,14 @@ test('el precio es el oficial: cambia con oficial/ultimo.json y nada de la hoja 
 });
 function FOTOS_CRIPTO_NCOLS(g) { return vm.runInContext('FOTOS_CRIPTO.EXPO_NCOLS', g); }
 
-test('estado «dudoso» del oficial se conserva; «sin_dato» del oficial sale como sin_dato', () => {
+test('estado «dudoso» del oficial se conserva; «sin_dato» del oficial sale como sin_oficial', () => {
   const g = cargar();
   const d = pos(J(g.fotosCriptoGenerar_(ctxBase({ oficial: { fecha: '2026-10-26', activos: { [BTC]: ent(70000, { estado_precio: 'dudoso', motivo: 'fuentes discrepan' }) } } }))).foto, BTC);
   assert.equal(d.estado_precio, 'dudoso');
   assert.equal(d.valor_eur, 35000);
   assert.equal(d.oficial.motivo, 'fuentes discrepan');
   const s = pos(J(g.fotosCriptoGenerar_(ctxBase({ oficial: { fecha: '2026-10-26', activos: { [BTC]: ent(null, { estado_precio: 'sin_dato' }) } } }))).foto, BTC);
-  assert.equal(s.estado_precio, 'sin_dato');
+  assert.equal(s.estado_precio, 'sin_oficial');
   assert.equal(s.valor_eur, null);
 });
 
@@ -184,11 +184,11 @@ test('varias monedas: todas las filas entran, ids «cripto:simbolo» y BTC con s
   guardarMuestra('foto_cripto_2026-10-28.json', JSON.stringify(r.foto, null, 1));
 });
 
-test('una moneda nueva sin precio oficial entra igualmente: sin_dato, valor null y aviso «sin precio oficial»', () => {
+test('una moneda nueva sin precio oficial entra igualmente: sin_oficial, valor null y aviso «sin precio oficial»', () => {
   const g = cargar();
   const r = J(g.fotosCriptoGenerar_(ctxBase({ raw: rawVarias(), ahora: new Date('2026-10-29T06:35:00Z') })));
   const s = pos(r.foto, SOL);
-  assert.equal(s.estado_precio, 'sin_dato');
+  assert.equal(s.estado_precio, 'sin_oficial');
   assert.equal(s.precio, null);
   assert.equal(s.precio_eur, null);
   assert.equal(s.fecha_precio, null);
@@ -196,7 +196,6 @@ test('una moneda nueva sin precio oficial entra igualmente: sin_dato, valor null
   assert.equal(s.cantidad, 10);
   assert.ok(s.avisos.includes('sin precio oficial'));
   assert.deepEqual(J(g.fotoValidar_(r.foto)), []);
-  assert.ok(r.foto.posiciones.every((p) => p.estado_precio !== 'sin_oficial'), 'sin_oficial no se usa nunca');
   guardarMuestra('foto_cripto_2026-10-29.json', JSON.stringify(r.foto, null, 1));
 });
 
@@ -210,11 +209,11 @@ test('con cantidad 0 y sin precio el valor es 0, no un null mudo; sin cantidad e
   assert.deepEqual(J(g.fotoValidar_(r.foto)), []);
 });
 
-test('sin oficial/ultimo.json (no se pudo leer): todo sale sin_dato con aviso y la foto sigue siendo valida', () => {
+test('sin oficial/ultimo.json (no se pudo leer): todo sale sin_oficial con aviso y la foto sigue siendo valida', () => {
   const g = cargar();
   const r = J(g.fotosCriptoGenerar_(ctxBase({ oficial: null, ahora: new Date('2026-10-30T06:35:00Z') })));
   const p = pos(r.foto, BTC);
-  assert.equal(p.estado_precio, 'sin_dato');
+  assert.equal(p.estado_precio, 'sin_oficial');
   assert.equal(p.valor_eur, null);
   assert.ok(p.avisos.includes('sin precio oficial'));
   assert.ok(r.foto.avisos.some((a) => a.includes('oficial/ultimo.json')));
@@ -224,10 +223,10 @@ test('sin oficial/ultimo.json (no se pudo leer): todo sale sin_dato con aviso y 
   guardarMuestra('foto_cripto_2026-10-30.json', JSON.stringify(r.foto, null, 1));
 });
 
-test('un precio oficial en otra moneda no se convierte: sin_dato con aviso', () => {
+test('un precio oficial en otra moneda no se convierte: sin_oficial con aviso', () => {
   const g = cargar();
   const p = pos(J(g.fotosCriptoGenerar_(ctxBase({ oficial: { fecha: '2026-10-26', activos: { [BTC]: ent(80000, { moneda: 'USD' }) } } }))).foto, BTC);
-  assert.equal(p.estado_precio, 'sin_dato');
+  assert.equal(p.estado_precio, 'sin_oficial');
   assert.equal(p.valor_eur, null);
   assert.ok(p.avisos.some((a) => a.includes('USD')));
 });

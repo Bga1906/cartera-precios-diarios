@@ -12,8 +12,7 @@ inventados) y `test_fotos_cripto_apps_script.py` (valida con el validador públi
 - **Precio:** el cierre de `oficial/ultimo.json` (captura oficial de GitHub). El precio de Google Finance de la hoja «Exposición» no entra nunca.
 - **Posiciones:** todas las filas de la tabla de «Exposición» (de la fila 8 a la fila «TOTAL»). Sin lista fija de monedas.
 - **Ids:** BTC = `bitcoin:btc`; el resto = `cripto:` + símbolo en minúsculas (`cripto:eth`). El nombre de la posición es el símbolo en minúsculas (`btc`).
-- **Sin precio oficial válido:** la posición entra igualmente con `precio`/`valor_eur` a `null`, `estado_precio: "sin_dato"` y el aviso «sin precio oficial».
-  (`sin_oficial` no se usa nunca.) Precio oficial en otra moneda que no sea EUR: igual, sin convertir.
+- **Sin precio oficial válido:** la posición entra igualmente con `precio`/`valor_eur` a `null`, `estado_precio: "sin_oficial"` (igual que fondos; es un valor válido del molde) y el aviso «sin precio oficial». Precio oficial en otra moneda que no sea EUR: igual, sin convertir.
 - **Coste:** «Dinero neto puesto» de «Exposición» (compras − ventas en euros, flujo de caja, **no** base fiscal), con `coste_tipo: "neto_caja"`.
   `estado_coste` = `cuadrado` solo para BTC y solo si la pestaña «Cuadre» dice «Todos los controles cuadran» en esa pasada; si no, o para cualquier
   otra moneda, `sin verificar`. Sin dato: `coste_eur: null`, `estado_coste: "sin_dato"`.
@@ -55,7 +54,7 @@ Una moneda distinta de BTC entra en la manga `bitcoin_cripto`. **Antes de compra
 2. **Captura de precios (repo público, vía de `ALTA.md`):** añade en `universo.json`, **debajo de la línea de BTC** (el capturador usa hoy la primera cripto de la lista), una línea
    `{"id": "cripto:eth", "tipo": "cripto", "moneda": "EUR", "estado": "pendiente", "fuentes": [{"fuente": "yahoo", "ticker": "ETH-EUR"}]}`,
    pruébala («probar = sí»), y actívala con un Pull Request. Después añade su fila en la pestaña «Ultima» del Sheet «Precios secundaria».
-   **Aviso — verificado en `fetch_precios_publico.py`:** hoy el capturador solo escribe a mano `bitcoin:btc` (toma `vehiculos(tipo="cripto")[0]` y CoinGecko está fijado a Bitcoin). Una segunda cripto activa **no se captura** hasta ampliar el capturador (cambio único, en un Pull Request aparte, antes de la primera moneda nueva). Sin eso, el Sheet la mostrará con `sin_dato` y el aviso «sin precio oficial»: no rompe nada, pero no tiene valor. No he comprobado si `crudo.py` y el inspector la tratan bien (solo BTC está probado).
+   **Aviso — verificado en `fetch_precios_publico.py`:** hoy el capturador solo escribe a mano `bitcoin:btc` (toma `vehiculos(tipo="cripto")[0]` y CoinGecko está fijado a Bitcoin). Una segunda cripto activa **no se captura** hasta ampliar el capturador (cambio único, en un Pull Request aparte, antes de la primera moneda nueva). Sin eso, el Sheet la mostrará con `sin_oficial` y el aviso «sin precio oficial»: no rompe nada, pero no tiene valor. No he comprobado si `crudo.py` y el inspector la tratan bien (solo BTC está probado).
 3. **Vault (solo la primera vez):** que el prefijo `cripto:` vaya a la cesta de cripto en `_CESTA_POR_PREFIJO` y a la manga `bitcoin_cripto` en `scripts/cartera/reglas_ips.yaml`, igual que hoy `bitcoin:`. Con ese cambio hecho una vez, las monedas siguientes no necesitan tocar nada más. (Cambio en el vault: con tu «sí» y commit con rutas exactas.)
 4. **Sheet «CRYPTO», hoja «Exposición»:** escribe el símbolo (`ETH`) en la columna B de una fila libre (de la 9 a la 23). No hay que tocar código: el gancho lee todas las filas hasta «TOTAL».
 5. **Hoja «Otras criptos»:** una fila por operación (fecha, símbolo, Compra o Venta, cantidad, importe € — siempre en positivo —, plataforma).

@@ -16,7 +16,7 @@
  *  - COSTE: «Dinero neto puesto» de la hoja (compras - ventas en euros: flujo de caja, NO base fiscal) con coste_tipo «neto_caja».
  *    estado_coste = «cuadrado» solo para BTC y solo si la pestana «Cuadre» dice «Todos los controles cuadran» en ESTA pasada;
  *    en cualquier otro caso «sin verificar». Sin dato: coste_eur null y estado_coste «sin_dato».
- *  - Sin precio oficial valido: la posicion entra igualmente con precio y valor null, estado_precio «sin_dato» y el aviso
+ *  - Sin precio oficial valido: la posicion entra igualmente con precio y valor null, estado_precio «sin_oficial» y el aviso
  *    «sin precio oficial». Nunca se inventa un precio ni se omite en silencio.
  *  - MODO (propiedad del script FOTOS_MODO): «ensayo» (por defecto) escribe en fotos/ensayo_cripto/, que el consolidador no lee;
  *    «definitivo» escribe en fotos/ con el nombre definitivo. Se cambia a mano con fotosCriptoModoDefinitivo().
@@ -223,7 +223,7 @@ function fotosCriptoPosiciones_(raw, oficial, fechaFoto, cuadra) {
     posiciones.push({
       id: id, nombre: s.toLowerCase(), tipo: 'cripto', moneda: 'EUR',
       cantidad: cantidad, precio: valido ? fotoR_(precio, 6) : null, precio_eur: valido ? fotoR_(precio, 6) : null,
-      fecha_precio: fechaPrecio, estado_precio: valido ? estadoOf : 'sin_dato', frescura: null,
+      fecha_precio: fechaPrecio, estado_precio: valido ? estadoOf : 'sin_oficial', frescura: null,
       dias_desfase: fechaPrecio ? fotoDiasEntre_(fechaPrecio, fechaFoto) : null,
       valor_eur: valor,
       coste_eur: coste, coste_tipo: coste === null ? null : FOTOS_CRIPTO.COSTE_TIPO,
