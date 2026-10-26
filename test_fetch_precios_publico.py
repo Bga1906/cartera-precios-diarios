@@ -221,7 +221,7 @@ def test_ticker_nuevo_que_falla_no_rompe_el_resto(red):
     assert activos["benchmark:sp500-tr"]["ok"] is False and activos["benchmark:sp500-tr"]["error"] == "HTTP 404"
     assert activos["benchmark:russell-2000"]["ok"] is False and "boom" in activos["benchmark:russell-2000"]["error"]
     assert activos["benchmark:sp500"]["ok"] is True
-    assert len(activos) == 1 + 1 + 17 + 5 + 8 + 1 + len(f.cargar_catalogo())  # ningun activo se pierde
+    assert len(activos) == 1 + 1 + 15 + 5 + 8 + 1 + len(f.cargar_catalogo())  # ningun activo se pierde
 
 
 def test_todos_los_benchmarks_del_catalogo_se_capturan(red):
@@ -263,6 +263,10 @@ def test_compatibilidad_con_un_fichero_real_del_repo(red):
     # 25/10/2026: un id que nunca tuvo dato (ok false y sin precio, como msci-world-nr-eur, que Yahoo
     # no publica) puede retirarse del catalogo; todo id que si tuvo dato debe seguir existiendo.
     con_dato = {i: a for i, a in viejo["activos"].items() if a.get("ok") or a.get("price") is not None}
+    # 26/10/2026: un vehiculo pasado a «retirado» en universo.json (HUMA y CRML, vendidas el 01/10) deja de capturarse
+    retirados = {v["id"] for v in json.loads((Path(__file__).parent / "universo.json").read_text(encoding="utf-8"))["vehiculos"]
+                 if v.get("estado") == "retirado"}
+    con_dato = {i: a for i, a in con_dato.items() if i not in retirados}
     assert set(con_dato) <= set(nuevo)
     for id_, a in con_dato.items():
         assert (set(a) & set(CLAVES_ANTIGUAS)) <= set(nuevo[id_]), id_

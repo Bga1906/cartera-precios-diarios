@@ -93,3 +93,19 @@ def test_escribe_ficheros_y_referencia_precios(tmp_path):
     leido = json.loads((tmp_path / "ultimo.json").read_text(encoding="utf-8"))
     assert (tmp_path / "2026-10-26.json").exists()
     assert leido["activos"]["mexem:X"]["precios_json_eur"] == 4.6 and leido["resumen"] == {"ok": 1}
+
+
+def test_oro_spot_sin_fecha_usa_la_fecha_de_captura():
+    """gold-api da el precio de ahora y no trae fecha: antes se descartaba y el oro quedaba «sin_dato» (26/10/2026)."""
+    oro = {"id": "oro-fisico:joyeria", "tipo": "materia_prima", "moneda": "EUR", "estado": "activo", "fuentes": []}
+    filas = [fila("oro-fisico:joyeria", "gold-api", 3994.7, None, moneda="USD"),
+             fila("oro-fisico:joyeria", "yahoo", 4007.9, CAP[:10], moneda="USD")]
+    a = run(u(oro), filas)["oro-fisico:joyeria"]
+    assert a["estado_precio"] == "ok" and a["fuente_elegida"] == "gold-api"
+    assert a["fecha_dato"] == CAP[:10] and a["precio"] == 3994.7
+
+
+def test_oro_sin_precio_sigue_sin_dato():
+    oro = {"id": "oro-fisico:joyeria", "tipo": "materia_prima", "moneda": "EUR", "estado": "activo", "fuentes": []}
+    a = run(u(oro), [fila("oro-fisico:joyeria", "gold-api", None, None, estado="error", moneda="USD")])["oro-fisico:joyeria"]
+    assert a["estado_precio"] == "sin_dato"

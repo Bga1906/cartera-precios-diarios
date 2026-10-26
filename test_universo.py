@@ -20,12 +20,12 @@ def test_el_universo_real_es_valido():
 
 
 def test_contrato_los_vehiculos_de_hoy_siguen_ahi(doc):
-    """Foto de lo que se captura el 25/10/2026: si alguien quita uno por error, esta prueba falla."""
+    """Foto de lo que se captura el 26/10/2026 (HUMA y CRML retiradas: vendidas el 01/10/2026): si alguien quita uno por error, esta prueba falla."""
     por_tipo = {t: u.vehiculos(doc, tipo=t) for t in u.TIPOS}
     assert {t: len(v) for t, v in por_tipo.items()} == {
-        "accion": 17, "etf": 5, "fondo": 8, "plan": 1, "cripto": 1, "materia_prima": 1}
+        "accion": 15, "etf": 5, "fondo": 8, "plan": 1, "cripto": 1, "materia_prima": 1}
     assert {v["id"] for v in por_tipo["accion"]} == {f"mexem:{t}" for t in (
-        "AMZN", "APR0", "CRML", "DMX", "E5S1", "ERO", "GOOGL", "HUMA", "IDR", "KRKNF", "META", "MP",
+        "AMZN", "APR0", "DMX", "E5S1", "ERO", "GOOGL", "IDR", "KRKNF", "META", "MP",
         "NXT", "OHLA", "PLTR", "RIG", "TRE")}
     assert {v["isin"] for v in por_tipo["fondo"]} == {
         "ES0124037013", "ES0146309002", "ES0165243025", "ES0173311103", "IE000QAZP7L2", "IE000ZYRH0Q7",
