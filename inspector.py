@@ -37,6 +37,8 @@ JERARQUIA = {
     "cripto": ["yahoo", "coingecko", "google_finance"],
     "materia_prima": ["gold-api"],
 }
+# Fuentes de precio "spot" (el precio de AHORA): la API no da fecha, asi que su fecha es la de la captura (UTC).
+SPOT_SIN_FECHA = ("gold-api",)
 UMBRAL_DIFERENCIA = 0.005   # 0,5 %
 FRESCO_DIAS_HABILES = 1
 DUDOSO_DIAS_HABILES = 2
@@ -99,6 +101,8 @@ def lecturas_por_vehiculo(filas):
         l = {"fuente": f["fuente"], "precio": _precio(f.get("precio")), "moneda": f.get("moneda") or None,
              "fecha_dato": f.get("fecha_dato") or None, "estado": f.get("estado") or "",
              "captura_utc": f["captura_utc"]}
+        if l["fecha_dato"] is None and l["fuente"] in SPOT_SIN_FECHA and l["precio"] is not None:
+            l["fecha_dato"] = f["captura_utc"][:10]
         previa = out.setdefault(f["id"], {}).get(f["fuente"])
         if previa is None or l["captura_utc"] >= previa["captura_utc"]:
             out[f["id"]][f["fuente"]] = l
