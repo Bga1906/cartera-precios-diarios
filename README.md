@@ -38,4 +38,8 @@ Campos **opcionales** añadidos (los lectores antiguos pueden ignorarlos; solo e
 
 ## Pruebas
 
-`pip install pytest && python3 -m pytest -q` (respuestas de Yahoo simuladas, sin red).
+`pip install pytest && python3 -m pytest -q` (respuestas de Yahoo simuladas, sin red). Las pruebas de la foto diaria (F3) usan además Node ≥ 18 (`node --test google/test_fotos.test.mjs`); si no hay Node se saltan.
+
+## Foto diaria del Sheet (F3)
+
+Ver `DISENO_F3.md` (qué hace) y `google/LEEME_FOTOS.md` (cómo instalarla).
