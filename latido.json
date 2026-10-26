@@ -1,5 +1,5 @@
 {
- "generado_en": "2026-10-26T10:24:07Z",
+ "generado_en": "2026-10-26T13:26:53Z",
  "ventana_dias": 3,
  "origenes": {
   "github": {
@@ -7,8 +7,8 @@
    "lineas": 202
   },
   "google": {
-   "ultima_captura_utc": "2026-10-26T00:36:05Z",
-   "lineas": 63
+   "ultima_captura_utc": "2026-10-26T13:26:39Z",
+   "lineas": 84
   }
  },
  "fuentes": {
@@ -43,14 +43,13 @@
    "fallos": 0
   },
   "google/google_finance": {
-   "ultima_captura_utc": "2026-10-26T00:36:05Z",
-   "ok": 63,
+   "ultima_captura_utc": "2026-10-26T13:26:39Z",
+   "ok": 84,
    "fallos": 0
   }
  },
  "oficial": {
-  "dudoso": 11,
-  "ok": 21,
-  "sin_dato": 1
+  "dudoso": 2,
+  "ok": 29
  }
 }
