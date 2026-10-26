@@ -43,6 +43,9 @@ def validar_foto(f):
         e.append("falta sheet")
     if not (isinstance(f.get("fecha_foto"), str) and _FECHA.match(f["fecha_foto"])):
         e.append("fecha_foto no es AAAA-MM-DD")
+    # fecha_cierre se anadio el 26/10/2026: las fotos anteriores no la traen (se acepta que falte, no que sea invalida)
+    if f.get("fecha_cierre") is not None and not (isinstance(f["fecha_cierre"], str) and _FECHA.match(f["fecha_cierre"])):
+        e.append("fecha_cierre debe ser AAAA-MM-DD o null")
     if not (isinstance(f.get("generado_utc"), str) and _ISO_Z.match(f["generado_utc"])):
         e.append("generado_utc no es ISO con Z")
     if not isinstance(f.get("version_script"), str):

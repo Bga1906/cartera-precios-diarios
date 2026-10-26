@@ -97,6 +97,7 @@ test('la foto cumple el molde y los totales cuadran con las posiciones', () => {
   assert.deepEqual(J(g.fotoValidar_(r.foto)), []);
   assert.equal(r.foto.formato, 'foto_cartera/v1');
   assert.equal(r.foto.fecha_foto, '2026-10-23');
+  assert.equal(r.foto.fecha_cierre, '2026-10-21');   // ultima fecha real de precio (el plan automatico tambien cuenta)
   assert.equal(r.foto.fuente_precios, 'precios');
   assert.equal(r.foto.fecha_captura_precios, '2026-10-22');
   assert.equal(r.foto.posiciones.length, 3);
@@ -332,6 +333,8 @@ test('el validador detecta fotos mal formadas', () => {
   assert.ok(rota((f) => { f.posiciones[1].id = f.posiciones[0].id; }).some((x) => x.includes('repetido')));
   assert.ok(rota((f) => { f.totales.valor_liquido_eur += 5; }).some((x) => x.includes('no cuadra')));
   assert.ok(rota((f) => { f.fecha_foto = '23/10/2026'; }).length > 0);
+  assert.ok(rota((f) => { f.fecha_cierre = '21/10/2026'; }).length > 0);
+  assert.ok(rota((f) => { delete f.fecha_cierre; }).length > 0);
   assert.ok(rota((f) => { delete f.huella; }).length > 0);
   assert.ok(rota((f) => { delete f.posiciones[0].avisos; }).length > 0);
 });
@@ -453,4 +456,15 @@ testReal('script real: una compra con fecha pasada recalcula el pasado y la foto
   assert.ok(nueva.avisos.some((a) => a.includes('ESTIMADAS')));
   assert.deepEqual(J(m2.g.fotoValidar_(nueva)), []);
   guardarMuestra('foto_fondos_2026-10-24_real.json', alm.m.get('foto_fondos_2026-10-24.json'));
+});
+
+test('fecha_cierre ignora el valor manual del plan y es null si no hay ningun precio de mercado', () => {
+  const g = cargar();
+  const c = ctxCoherente({ plan: { ok: false, motivo: 'no aparece' }, planInfo: { manual: true, asOf: '' } });
+  c.frescura.planEstado = null; c.frescura.planDias = null;
+  c.raw.plan['Fecha del valor'] = '2026-10-25';    // fecha del valor manual: NO es un cierre de mercado
+  assert.equal(J(g.fotosFondosGenerar_(c)).foto.fecha_cierre, '2026-10-21');
+  const v = ctxCoherente({ vl: {}, plan: { ok: false, motivo: 'x' }, planInfo: { manual: true, asOf: '' } });
+  v.frescura.planEstado = null; v.frescura.planDias = null;
+  assert.equal(J(g.fotosFondosGenerar_(v)).foto.fecha_cierre, null);
 });

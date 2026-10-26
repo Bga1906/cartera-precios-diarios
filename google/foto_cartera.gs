@@ -139,8 +139,9 @@ function fotoContrasteOficial_(precioSheet, fechaSheet, entradaOficial) {
  * extras: {aportado_efectivo_eur, coste_liquido_eur?} con lo que el Sheet sabe y las posiciones no.
  */
 function fotoConstruir_(meta, posiciones, extras, avisos) {
-  var liquido = 0, noLiquido = 0, coste = 0, hayCoste = false;
+  var liquido = 0, noLiquido = 0, coste = 0, hayCoste = false, cierre = null;
   posiciones.forEach(function (p) {
+    if (fotoEsFecha_(p.fecha_precio) && p.estado_precio !== 'manual' && (cierre === null || p.fecha_precio > cierre)) cierre = p.fecha_precio;
     if (typeof p.valor_eur === 'number') { if (p.no_liquido) noLiquido += p.valor_eur; else liquido += p.valor_eur; }
     if (!p.no_liquido && typeof p.coste_eur === 'number') { coste += p.coste_eur; hayCoste = true; }
   });
@@ -150,6 +151,7 @@ function fotoConstruir_(meta, posiciones, extras, avisos) {
     formato: FOTO_FORMATO,
     sheet: meta.sheet,
     fecha_foto: meta.fechaFoto,
+    fecha_cierre: cierre,   // ultima fecha REAL de precio de mercado de las posiciones (la foto se hace de madrugada con el cierre anterior)
     generado_utc: fotoIsoUtc_(meta.ahora),
     version_script: String(meta.versionScript || ''),
     version_exportador: String(meta.versionExportador || ''),
@@ -177,6 +179,7 @@ function fotoValidar_(f) {
   if (f.formato !== FOTO_FORMATO) e.push('formato distinto de ' + FOTO_FORMATO);
   if (typeof f.sheet !== 'string' || !f.sheet) e.push('falta sheet');
   if (!fotoEsFecha_(f.fecha_foto)) e.push('fecha_foto no es AAAA-MM-DD');
+  if (f.fecha_cierre === undefined || (f.fecha_cierre !== null && !fotoEsFecha_(f.fecha_cierre))) e.push('fecha_cierre debe ser AAAA-MM-DD o null');
   if (typeof f.generado_utc !== 'string' || !/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$/.test(f.generado_utc)) e.push('generado_utc no es ISO con Z');
   if (typeof f.version_script !== 'string') e.push('falta version_script');
   if (typeof f.version_exportador !== 'string' || !f.version_exportador) e.push('falta version_exportador');

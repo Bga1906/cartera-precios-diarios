@@ -42,6 +42,9 @@ SPOT_SIN_FECHA = ("gold-api",)
 UMBRAL_DIFERENCIA = 0.005   # 0,5 %
 FRESCO_DIAS_HABILES = 1
 DUDOSO_DIAS_HABILES = 2
+# Fondos y planes publican su valor liquidativo con 1-2 dias de retraso (el del viernes no esta ni el domingo): se dan por
+# dudosos a partir de 3 dias habiles, para que no salte la alarma cada lunes (decision de Brian, 26/10/2026).
+DUDOSO_DIAS_HABILES_FONDO = 3
 VENTANA_HORAS = 36
 SIN_DIAS_HABILES = ("cripto", "materia_prima")  # estos se miden en dias naturales
 
@@ -157,7 +160,7 @@ def decidir(vehiculo, lecturas, hasta_dia):
             estado = "dudoso"
             motivos.append(f"{n} difiere {dif * 100:.2f} % con la misma fecha")
     atraso = _atraso(tipo, l["fecha_dato"], hasta_dia)
-    if atraso >= DUDOSO_DIAS_HABILES:
+    if atraso >= (DUDOSO_DIAS_HABILES_FONDO if tipo in ("fondo", "plan") else DUDOSO_DIAS_HABILES):
         estado = "dudoso"
         motivos.append(f"el dato tiene {atraso} dias de atraso")
     return {**base, "fuente_elegida": elegida, "precio": l["precio"], "moneda": l["moneda"] or vehiculo.get("moneda"),

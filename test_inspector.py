@@ -109,3 +109,12 @@ def test_oro_sin_precio_sigue_sin_dato():
     oro = {"id": "oro-fisico:joyeria", "tipo": "materia_prima", "moneda": "EUR", "estado": "activo", "fuentes": []}
     a = run(u(oro), [fila("oro-fisico:joyeria", "gold-api", None, None, estado="error", moneda="USD")])["oro-fisico:joyeria"]
     assert a["estado_precio"] == "sin_dato"
+
+
+def test_fondo_con_2_dias_habiles_de_atraso_ya_no_es_dudoso_pero_con_3_si():
+    """Un fondo publica su VL con 1-2 dias de retraso: el lunes con el VL del jueves es normal (26/10/2026)."""
+    assert ins.dias_habiles("2026-10-22", "2026-10-26") == 2          # jueves -> lunes
+    ok = run(u(FONDO), [fila("f:1", "ft", 100.0, "2026-10-22")])["f:1"]
+    assert ok["estado_precio"] == "ok"
+    tarde = run(u(FONDO), [fila("f:1", "ft", 100.0, "2026-10-21")])["f:1"]   # miercoles -> lunes = 3
+    assert tarde["estado_precio"] == "dudoso" and "atraso" in tarde["motivo"]
