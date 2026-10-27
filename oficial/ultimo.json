@@ -9,7 +9,7 @@
      "estado": "ok",
      "fecha_dato": "2026-10-27",
      "fuente": "google_finance",
-     "precio": 71647.52238
+     "precio": 71794.62409
     },
     {
      "estado": "ok",
@@ -55,9 +55,9 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-10-26",
+     "fecha_dato": "2026-10-27",
      "fuente": "google_finance",
-     "precio": 4.51
+     "precio": 4.62
     },
     {
      "estado": "ok",
@@ -103,9 +103,9 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-10-26",
+     "fecha_dato": "2026-10-27",
      "fuente": "google_finance",
-     "precio": 9.8
+     "precio": 10.4
     },
     {
      "estado": "ok",
@@ -175,9 +175,9 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-10-26",
+     "fecha_dato": "2026-10-27",
      "fuente": "google_finance",
-     "precio": 62.4
+     "precio": 63.18
     },
     {
      "estado": "ok",
@@ -271,9 +271,9 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-10-26",
+     "fecha_dato": "2026-10-27",
      "fuente": "google_finance",
-     "precio": 0.95
+     "precio": 0.97
     },
     {
      "estado": "ok",
@@ -295,9 +295,9 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-10-26",
+     "fecha_dato": "2026-10-27",
      "fuente": "google_finance",
-     "precio": 0.34
+     "precio": 0.35
     },
     {
      "estado": "ok",
@@ -367,9 +367,9 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-10-26",
+     "fecha_dato": "2026-10-27",
      "fuente": "google_finance",
-     "precio": 27.6
+     "precio": 27.88
     },
     {
      "estado": "ok",
@@ -697,9 +697,9 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-10-26",
+     "fecha_dato": "2026-10-27",
      "fuente": "google_finance",
-     "precio": 58.14
+     "precio": 58.9
     },
     {
      "estado": "ok",
@@ -757,9 +757,9 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-10-26",
+     "fecha_dato": "2026-10-27",
      "fuente": "google_finance",
-     "precio": 70.73
+     "precio": 70.55
     },
     {
      "estado": "ok",
@@ -794,7 +794,7 @@
   }
  },
  "fecha": "2026-10-27",
- "hasta": "2026-10-27T09:58:18Z",
+ "hasta": "2026-10-27T12:34:45Z",
  "resumen": {
   "dudoso": 4,
   "ok": 27
