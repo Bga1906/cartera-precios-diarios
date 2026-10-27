@@ -386,26 +386,26 @@
   },
   "myinvestor-cobas:ES0124037013": {
    "estado_precio": "dudoso",
-   "fecha_dato": "2026-10-23",
+   "fecha_dato": "2026-10-26",
    "fuente_elegida": "ft",
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-10-23",
+     "fecha_dato": "2026-10-26",
      "fuente": "ft",
-     "precio": 297.24
+     "precio": 297.64
+    },
+    {
+     "estado": "ok",
+     "fecha_dato": "2026-10-26",
+     "fuente": "gestora",
+     "precio": 0.14
     },
     {
      "estado": "ok",
      "fecha_dato": "2026-10-23",
-     "fuente": "gestora",
-     "precio": 0.35
-    },
-    {
-     "estado": "ok",
-     "fecha_dato": "2026-10-22",
      "fuente": "quefondos",
-     "precio": 296.198371
+     "precio": 297.239241
     },
     {
      "estado": "ok",
@@ -415,21 +415,21 @@
     }
    ],
    "moneda": "EUR",
-   "motivo": "gestora difiere 99.88 % con la misma fecha",
-   "precio": 297.24,
+   "motivo": "gestora difiere 99.95 % con la misma fecha",
+   "precio": 297.64,
    "precios_json_eur": 297.2392272949219,
    "tipo": "fondo"
   },
   "myinvestor-cobas:ES0146309002": {
    "estado_precio": "ok",
-   "fecha_dato": "2026-10-23",
+   "fecha_dato": "2026-10-26",
    "fuente_elegida": "ft",
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-10-23",
+     "fecha_dato": "2026-10-26",
      "fuente": "ft",
-     "precio": 210.94
+     "precio": 211.37
     },
     {
      "estado": "ok",
@@ -439,9 +439,9 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-10-22",
+     "fecha_dato": "2026-10-23",
      "fuente": "quefondos",
-     "precio": 210.805293
+     "precio": 210.935887
     },
     {
      "estado": "ok",
@@ -452,7 +452,7 @@
    ],
    "moneda": "EUR",
    "motivo": "primera fuente al dia",
-   "precio": 210.94,
+   "precio": 211.37,
    "precios_json_eur": 210.93588256835938,
    "tipo": "fondo"
   },
@@ -469,9 +469,9 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-10-22",
+     "fecha_dato": "2026-10-23",
      "fuente": "quefondos",
-     "precio": 1.317741
+     "precio": 1.305358
     },
     {
      "estado": "ok",
@@ -505,9 +505,9 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-10-21",
+     "fecha_dato": "2026-10-22",
      "fuente": "quefondos",
-     "precio": 29.00608
+     "precio": 29.41016
     },
     {
      "estado": "ok",
@@ -559,9 +559,9 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-10-22",
+     "fecha_dato": "2026-10-23",
      "fuente": "quefondos",
-     "precio": 12.465
+     "precio": 12.406
     },
     {
      "estado": "ok",
@@ -577,15 +577,15 @@
    "tipo": "fondo"
   },
   "myinvestor-cobas:IE00BM95B621": {
-   "estado_precio": "dudoso",
-   "fecha_dato": "2026-10-22",
+   "estado_precio": "ok",
+   "fecha_dato": "2026-10-23",
    "fuente_elegida": "ft",
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-10-22",
+     "fecha_dato": "2026-10-23",
      "fuente": "ft",
-     "precio": 36.54
+     "precio": 36.63
     },
     {
      "estado": "ok",
@@ -601,27 +601,27 @@
     }
    ],
    "moneda": "EUR",
-   "motivo": "el dato tiene 3 dias de atraso",
-   "precio": 36.54,
+   "motivo": "primera fuente al dia",
+   "precio": 36.63,
    "precios_json_eur": 36.540000915527344,
    "tipo": "fondo"
   },
   "myinvestor-cobas:LU0625737910": {
    "estado_precio": "ok",
-   "fecha_dato": "2026-10-23",
+   "fecha_dato": "2026-10-26",
    "fuente_elegida": "ft",
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-10-23",
+     "fecha_dato": "2026-10-26",
      "fuente": "ft",
-     "precio": 122.69
+     "precio": 123.15
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-10-21",
+     "fecha_dato": "2026-10-22",
      "fuente": "quefondos",
-     "precio": 125.04
+     "precio": 121.39
     },
     {
      "estado": "ok",
@@ -638,31 +638,31 @@
    ],
    "moneda": "EUR",
    "motivo": "primera fuente al dia",
-   "precio": 122.69,
+   "precio": 123.15,
    "precios_json_eur": 122.69000244140625,
    "tipo": "fondo"
   },
   "myinvestor:plan-pensiones": {
-   "estado_precio": "dudoso",
-   "fecha_dato": "2026-10-22",
+   "estado_precio": "ok",
+   "fecha_dato": "2026-10-23",
    "fuente_elegida": "yahoo",
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-10-21",
+     "fecha_dato": "2026-10-23",
      "fuente": "quefondos",
-     "precio": 20.37723
+     "precio": 20.13164
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-10-22",
+     "fecha_dato": "2026-10-23",
      "fuente": "yahoo",
-     "precio": 20.143529891967773
+     "precio": 20.13163948059082
     }
    ],
    "moneda": "EUR",
-   "motivo": "el dato tiene 3 dias de atraso",
-   "precio": 20.143529891967773,
+   "motivo": "primera fuente al dia",
+   "precio": 20.13163948059082,
    "precios_json_eur": 20.143529891967773,
    "tipo": "plan"
   },
@@ -794,10 +794,10 @@
   }
  },
  "fecha": "2026-10-27",
- "hasta": "2026-10-27T12:34:45Z",
+ "hasta": "2026-10-27T13:11:59Z",
  "resumen": {
-  "dudoso": 4,
-  "ok": 27
+  "dudoso": 2,
+  "ok": 29
  },
  "version": 1
 }
