@@ -1,10 +1,10 @@
 {
- "generado_en": "2026-10-27T23:26:06Z",
+ "generado_en": "2026-10-27T23:58:03Z",
  "ventana_dias": 3,
  "origenes": {
   "github": {
-   "ultima_captura_utc": "2026-10-27T23:25:52Z",
-   "lineas": 472
+   "ultima_captura_utc": "2026-10-27T23:57:00Z",
+   "lineas": 508
   },
   "google": {
    "ultima_captura_utc": "2026-10-27T12:34:32Z",
@@ -13,13 +13,13 @@
  },
  "fuentes": {
   "github/ft": {
-   "ultima_captura_utc": "2026-10-27T13:11:00Z",
-   "ok": 32,
+   "ultima_captura_utc": "2026-10-27T23:57:00Z",
+   "ok": 40,
    "fallos": 0
   },
   "github/gestora": {
-   "ultima_captura_utc": "2026-10-27T13:11:00Z",
-   "ok": 11,
+   "ultima_captura_utc": "2026-10-27T23:57:00Z",
+   "ok": 14,
    "fallos": 1
   },
   "github/gold-api": {
@@ -28,18 +28,18 @@
    "fallos": 0
   },
   "github/quefondos": {
-   "ultima_captura_utc": "2026-10-27T13:11:00Z",
-   "ok": 32,
+   "ultima_captura_utc": "2026-10-27T23:57:00Z",
+   "ok": 40,
    "fallos": 0
   },
   "github/renta4": {
-   "ultima_captura_utc": "2026-10-27T13:11:00Z",
-   "ok": 4,
+   "ultima_captura_utc": "2026-10-27T23:57:00Z",
+   "ok": 5,
    "fallos": 0
   },
   "github/yahoo": {
-   "ultima_captura_utc": "2026-10-27T23:25:52Z",
-   "ok": 388,
+   "ultima_captura_utc": "2026-10-27T23:57:00Z",
+   "ok": 404,
    "fallos": 0
   },
   "google/google_finance": {
@@ -49,7 +49,7 @@
   }
  },
  "oficial": {
-  "dudoso": 7,
-  "ok": 24
+  "dudoso": 6,
+  "ok": 25
  }
 }
