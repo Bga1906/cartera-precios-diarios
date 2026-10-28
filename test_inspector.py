@@ -74,6 +74,15 @@ def test_monedas_distintas_no_se_comparan():
     assert a["mexem:X"]["estado_precio"] == "ok"
 
 
+def test_cada_lectura_lleva_su_moneda():
+    """Cobre/Space: Google en USD y Yahoo en EUR. El resumen debe decir la moneda de cada lectura para no compararlas en bruto."""
+    etf = {"id": "tr:x", "tipo": "etf", "moneda": "EUR", "estado": "activo", "fuentes": []}
+    a = run(u(etf), [fila("tr:x", "yahoo", 52.21, "2026-10-23"), fila("tr:x", "google_finance", 58.9, "2026-10-23", moneda="USD")])
+    lec = {l["fuente"]: l for l in a["tr:x"]["lecturas"]}
+    assert lec["yahoo"]["moneda"] == "EUR" and lec["google_finance"]["moneda"] == "USD"
+    assert a["tr:x"]["estado_precio"] == "ok" and a["tr:x"]["moneda"] == "EUR"
+
+
 def test_sin_dato_y_pendientes_ignorados():
     pend = {**ACCION, "id": "mexem:P", "estado": "pendiente"}
     a = run(u(ACCION, pend), [])

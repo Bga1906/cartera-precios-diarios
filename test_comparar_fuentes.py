@@ -57,6 +57,25 @@ def test_cobas_solo_fecha():
     assert r["fecha"] == "2026-10-08" and r["precio"] is None and "solo fecha" in r["estado"]
 
 
+COBAS_REAL = ("<div>Cobas Selección FI Clase A</div><div>193,483326 €</div><div>Valor liquidativo</div>"
+              "<div>0,60%</div><div>Rentabilidad diaria</div>"
+              "<div>Cobas Selección FI Clase D</div><div>299,428243 €</div><div>Valor liquidativo</div>"
+              "<div>0,60%</div><div>Rentabilidad diaria</div>"
+              "<p>Fecha valor liquidativo: 27-10-2026</p>")
+
+
+def test_cobas_coge_el_vl_de_la_clase_d_y_no_la_rentabilidad():
+    """Forma real de la web (28/10/2026): el numero va ANTES de la etiqueta y detras viene la rentabilidad del dia."""
+    r = c.parse_cobas(COBAS_REAL)
+    assert r == {"precio": 299.428243, "fecha": "2026-10-27", "estado": "OK (gestora)"}
+
+
+def test_cobas_otra_clase_y_clase_ausente():
+    assert c.parse_cobas(COBAS_REAL, clase="A")["precio"] == 193.483326
+    r = c.parse_cobas(COBAS_REAL, clase="C")
+    assert r["precio"] is None and "solo fecha" in r["estado"]
+
+
 def test_generica():
     r = c.parse_generica("<p>Valor liquidativo</p><p>210,3153 €</p><p>15/10/2026</p>")
     assert r["precio"] == 210.3153 and r["fecha"] == "2026-10-15"
