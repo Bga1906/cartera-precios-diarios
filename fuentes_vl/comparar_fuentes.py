@@ -195,14 +195,22 @@ def parse_renta4(html):
     return _r(num_es(m.group(1)), fecha_iso(m.group(4), MESES_ES[m.group(3).lower()], m.group(2)), "OK (gestora)")
 
 
-def parse_cobas(html):
-    """Web de Cobas: da la fecha ('Fecha valor liquidativo: 8-10-2026'); el VL puede no salir."""
+COBAS_CLASE = "D"  # la clase que tiene Brian (posicion «Cobas Seleccion FI Clase D»)
+
+
+def parse_cobas(html, clase=COBAS_CLASE):
+    """Web de Cobas: da la fecha ('Fecha valor liquidativo: 27-10-2026') y un bloque por clase.
+
+    En la pagina el numero va ANTES de la etiqueta: 'Clase D 299,428243 € Valor liquidativo 0,60% Rentabilidad diaria'.
+    Hasta el 28/10/2026 se cogia el primer numero DESPUES de 'Valor liquidativo', que es la rentabilidad del dia
+    (0,35 / 0,14 / 0,60) y dejaba el fondo «dudoso» a diario. Ahora se coge el VL de la clase indicada; si no aparece,
+    solo la fecha (nunca un numero de otra clase)."""
     t = texto_plano(html)
     d = re.search(r"Fecha (?:del )?valor liquidativo:?\s*(\d{1,2})[-/.](\d{1,2})[-/.](\d{4})", t, re.I)
     if not d:
         return _r(estado="formato no reconocido")
     f = fecha_iso(d.group(3), d.group(2), d.group(1))
-    p = re.search(r"Valor liquidativo:?\s*([\d.]+,\d+)\s*€?", t, re.I)
+    p = re.search(r"Clase " + re.escape(clase) + r"\s+([\d.]+,\d+)\s*€\s*Valor liquidativo(?!\s*:)", t, re.I)
     return _r(num_es(p.group(1)) if p else None, f, "OK (gestora)" if p else "OK (gestora, solo fecha)")
 
 
