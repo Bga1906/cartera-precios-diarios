@@ -126,7 +126,8 @@ def decidir(vehiculo, lecturas, hasta_dia):
     tipo = vehiculo["tipo"]
     jerarquia = JERARQUIA.get(tipo, [])
     validas = {n: l for n, l in lecturas.items() if _valida(l, tipo)}
-    resumen = [{"fuente": n, "precio": l["precio"], "fecha_dato": l["fecha_dato"],
+    # cada lectura lleva SU moneda: Google da cobre y Space de Londres en USD y Yahoo en EUR (28/10/2026)
+    resumen = [{"fuente": n, "precio": l["precio"], "moneda": l["moneda"], "fecha_dato": l["fecha_dato"],
                 "estado": "ok" if n in validas else (l["estado"] if l["estado"] != "ok" else "descartada")}
                for n, l in sorted(lecturas.items())]
     base = {"id": vehiculo["id"], "tipo": tipo, "lecturas": resumen}
