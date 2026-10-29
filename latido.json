@@ -1,9 +1,9 @@
 {
- "generado_en": "2026-10-29T14:15:55Z",
+ "generado_en": "2026-10-29T23:45:48Z",
  "ventana_dias": 3,
  "origenes": {
   "github": {
-   "ultima_captura_utc": "2026-10-29T14:15:00Z",
+   "ultima_captura_utc": "2026-10-29T23:45:36Z",
    "lineas": 459
   },
   "google": {
@@ -23,7 +23,7 @@
    "fallos": 0
   },
   "github/gold-api": {
-   "ultima_captura_utc": "2026-10-28T23:47:54Z",
+   "ultima_captura_utc": "2026-10-29T23:45:36Z",
    "ok": 3,
    "fallos": 0
   },
@@ -38,7 +38,7 @@
    "fallos": 0
   },
   "github/yahoo": {
-   "ultima_captura_utc": "2026-10-29T14:15:00Z",
+   "ultima_captura_utc": "2026-10-29T23:45:36Z",
    "ok": 336,
    "fallos": 0
   },
@@ -49,7 +49,8 @@
   }
  },
  "oficial": {
-  "dudoso": 1,
-  "ok": 30
+  "dudoso": 6,
+  "ok": 24,
+  "respaldo": 1
  }
 }
