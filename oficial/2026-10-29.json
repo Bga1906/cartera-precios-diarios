@@ -10,7 +10,7 @@
      "fecha_dato": "2026-10-29",
      "fuente": "google_finance",
      "moneda": "EUR",
-     "precio": 71951.87258
+     "precio": 71960.90164
     },
     {
      "estado": "ok",
@@ -59,10 +59,10 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-10-28",
+     "fecha_dato": "2026-10-29",
      "fuente": "google_finance",
      "moneda": "EUR",
-     "precio": 4.53
+     "precio": 4.64
     },
     {
      "estado": "ok",
@@ -111,7 +111,7 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-10-28",
+     "fecha_dato": "2026-10-29",
      "fuente": "google_finance",
      "moneda": "EUR",
      "precio": 10.4
@@ -189,10 +189,10 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-10-28",
+     "fecha_dato": "2026-10-29",
      "fuente": "google_finance",
      "moneda": "EUR",
-     "precio": 63.16
+     "precio": 65.04
     },
     {
      "estado": "ok",
@@ -293,10 +293,10 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-10-28",
+     "fecha_dato": "2026-10-29",
      "fuente": "google_finance",
      "moneda": "EUR",
-     "precio": 0.96
+     "precio": 0.98
     },
     {
      "estado": "ok",
@@ -313,13 +313,13 @@
    "tipo": "accion"
   },
   "mexem:OHLA": {
-   "estado_precio": "dudoso",
+   "estado_precio": "ok",
    "fecha_dato": "2026-10-28",
    "fuente_elegida": "yahoo",
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-10-28",
+     "fecha_dato": "2026-10-29",
      "fuente": "google_finance",
      "moneda": "EUR",
      "precio": 0.35
@@ -333,7 +333,7 @@
     }
    ],
    "moneda": "EUR",
-   "motivo": "google_finance difiere 0.96 % con la misma fecha",
+   "motivo": "primera fuente al dia",
    "precio": 0.3534,
    "precios_json_eur": 0.3534,
    "tipo": "accion"
@@ -397,10 +397,10 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-10-28",
+     "fecha_dato": "2026-10-29",
      "fuente": "google_finance",
      "moneda": "EUR",
-     "precio": 28.52
+     "precio": 29.66
     },
     {
      "estado": "ok",
@@ -760,10 +760,10 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-10-28",
+     "fecha_dato": "2026-10-29",
      "fuente": "google_finance",
      "moneda": "USD",
-     "precio": 59.76
+     "precio": 59.4
     },
     {
      "estado": "ok",
@@ -824,10 +824,10 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-10-28",
+     "fecha_dato": "2026-10-29",
      "fuente": "google_finance",
      "moneda": "USD",
-     "precio": 72.72
+     "precio": 73.2
     },
     {
      "estado": "ok",
@@ -864,10 +864,10 @@
   }
  },
  "fecha": "2026-10-29",
- "hasta": "2026-10-29T11:01:55Z",
+ "hasta": "2026-10-29T13:31:59Z",
  "resumen": {
-  "dudoso": 3,
-  "ok": 28
+  "dudoso": 2,
+  "ok": 29
  },
  "version": 1
 }
