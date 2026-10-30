@@ -418,15 +418,15 @@
   },
   "myinvestor-cobas:ES0124037013": {
    "estado_precio": "ok",
-   "fecha_dato": "2026-10-27",
+   "fecha_dato": "2026-10-28",
    "fuente_elegida": "ft",
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-10-27",
+     "fecha_dato": "2026-10-28",
      "fuente": "ft",
      "moneda": "EUR",
-     "precio": 299.43
+     "precio": 299.91
     },
     {
      "estado": "ok",
@@ -452,28 +452,28 @@
    ],
    "moneda": "EUR",
    "motivo": "primera fuente al dia",
-   "precio": 299.43,
+   "precio": 299.91,
    "precios_json_eur": 299.9140319824219,
    "tipo": "fondo"
   },
   "myinvestor-cobas:ES0146309002": {
    "estado_precio": "ok",
-   "fecha_dato": "2026-10-27",
+   "fecha_dato": "2026-10-28",
    "fuente_elegida": "ft",
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-10-27",
+     "fecha_dato": "2026-10-28",
      "fuente": "ft",
      "moneda": "EUR",
-     "precio": 212.8
+     "precio": 212.02
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-10-27",
+     "fecha_dato": "2026-10-28",
      "fuente": "gestora",
      "moneda": "EUR",
-     "precio": 212.8
+     "precio": 212.02
     },
     {
      "estado": "ok",
@@ -492,21 +492,21 @@
    ],
    "moneda": "EUR",
    "motivo": "primera fuente al dia",
-   "precio": 212.8,
+   "precio": 212.02,
    "precios_json_eur": 212.0219268798828,
    "tipo": "fondo"
   },
   "myinvestor-cobas:ES0165243025": {
    "estado_precio": "ok",
-   "fecha_dato": "2026-10-27",
+   "fecha_dato": "2026-10-28",
    "fuente_elegida": "ft",
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-10-27",
+     "fecha_dato": "2026-10-28",
      "fuente": "ft",
      "moneda": "EUR",
-     "precio": 1.33
+     "precio": 1.32
     },
     {
      "estado": "ok",
@@ -525,28 +525,28 @@
    ],
    "moneda": "EUR",
    "motivo": "primera fuente al dia",
-   "precio": 1.33,
+   "precio": 1.32,
    "precios_json_eur": 1.3209999799728394,
    "tipo": "fondo"
   },
   "myinvestor-cobas:ES0173311103": {
-   "estado_precio": "respaldo",
+   "estado_precio": "dudoso",
    "fecha_dato": "2026-10-27",
-   "fuente_elegida": "yahoo",
+   "fuente_elegida": "ft",
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-10-23",
+     "fecha_dato": "2026-10-27",
      "fuente": "ft",
      "moneda": "EUR",
-     "precio": 29.36
+     "precio": 29.61
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-10-26",
+     "fecha_dato": "2026-10-27",
      "fuente": "gestora",
      "moneda": "EUR",
-     "precio": 29.56
+     "precio": 29.61
     },
     {
      "estado": "ok",
@@ -564,8 +564,8 @@
     }
    ],
    "moneda": "EUR",
-   "motivo": "respaldo: ft sin dato valido o atrasado",
-   "precio": 29.61273956298828,
+   "motivo": "el dato tiene 3 dias de atraso",
+   "precio": 29.61,
    "precios_json_eur": 29.61273956298828,
    "tipo": "fondo"
   },
@@ -663,15 +663,15 @@
   },
   "myinvestor-cobas:LU0625737910": {
    "estado_precio": "ok",
-   "fecha_dato": "2026-10-27",
+   "fecha_dato": "2026-10-28",
    "fuente_elegida": "ft",
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-10-27",
+     "fecha_dato": "2026-10-28",
      "fuente": "ft",
      "moneda": "EUR",
-     "precio": 122.71
+     "precio": 123.47
     },
     {
      "estado": "ok",
@@ -682,10 +682,10 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-10-27",
+     "fecha_dato": "2026-10-28",
      "fuente": "renta4",
      "moneda": "EUR",
-     "precio": 122.71
+     "precio": 123.47
     },
     {
      "estado": "ok",
@@ -697,12 +697,12 @@
    ],
    "moneda": "EUR",
    "motivo": "primera fuente al dia",
-   "precio": 122.71,
+   "precio": 123.47,
    "precios_json_eur": 123.47000122070312,
    "tipo": "fondo"
   },
   "myinvestor:plan-pensiones": {
-   "estado_precio": "ok",
+   "estado_precio": "dudoso",
    "fecha_dato": "2026-10-27",
    "fuente_elegida": "yahoo",
    "lecturas": [
@@ -722,7 +722,7 @@
     }
    ],
    "moneda": "EUR",
-   "motivo": "primera fuente al dia",
+   "motivo": "el dato tiene 3 dias de atraso",
    "precio": 20.4171199798584,
    "precios_json_eur": 20.4171199798584,
    "tipo": "plan"
@@ -863,12 +863,11 @@
    "tipo": "etf"
   }
  },
- "fecha": "2026-10-29",
- "hasta": "2026-10-29T23:45:48Z",
+ "fecha": "2026-10-30",
+ "hasta": "2026-10-30T00:16:39Z",
  "resumen": {
-  "dudoso": 6,
-  "ok": 24,
-  "respaldo": 1
+  "dudoso": 8,
+  "ok": 23
  },
  "version": 1
 }
