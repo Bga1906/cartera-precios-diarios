@@ -2,7 +2,7 @@
  "activos": {
   "bitcoin:btc": {
    "estado_precio": "ok",
-   "fecha_dato": "2026-10-30",
+   "fecha_dato": "2026-10-31",
    "fuente_elegida": "yahoo",
    "lecturas": [
     {
@@ -14,16 +14,16 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-10-30",
+     "fecha_dato": "2026-10-31",
      "fuente": "yahoo",
      "moneda": "EUR",
-     "precio": 69079.62
+     "precio": 69380.22
     }
    ],
    "moneda": "EUR",
    "motivo": "primera fuente al dia",
-   "precio": 69079.62,
-   "precios_json_eur": 69094.34,
+   "precio": 69380.22,
+   "precios_json_eur": 69386.45,
    "tipo": "cripto"
   },
   "mexem:AMZN": {
@@ -225,13 +225,13 @@
      "fecha_dato": "2026-10-30",
      "fuente": "yahoo",
      "moneda": "USD",
-     "precio": 2.72
+     "precio": 2.721
     }
    ],
    "moneda": "USD",
    "motivo": "primera fuente al dia",
-   "precio": 2.72,
-   "precios_json_eur": 2.4346580737558186,
+   "precio": 2.721,
+   "precios_json_eur": 2.4355531686358756,
    "tipo": "accion"
   },
   "mexem:META": {
@@ -724,17 +724,17 @@
    "moneda": "EUR",
    "motivo": "primera fuente al dia",
    "precio": 20.391510009765625,
-   "precios_json_eur": 20.45439910888672,
+   "precios_json_eur": 20.391510009765625,
    "tipo": "plan"
   },
   "oro-fisico:joyeria": {
    "estado_precio": "ok",
-   "fecha_dato": "2026-10-30",
+   "fecha_dato": "2026-10-31",
    "fuente_elegida": "gold-api",
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-10-30",
+     "fecha_dato": "2026-10-31",
      "fuente": "gold-api",
      "moneda": "USD",
      "precio": 3876.399902
@@ -744,7 +744,7 @@
      "fecha_dato": "2026-10-30",
      "fuente": "yahoo",
      "moneda": "USD",
-     "precio": 3884.9
+     "precio": 3898.9
     }
    ],
    "moneda": "USD",
@@ -864,7 +864,7 @@
   }
  },
  "fecha": "2026-10-31",
- "hasta": "2026-10-31T13:38:50Z",
+ "hasta": "2026-10-31T22:58:34Z",
  "resumen": {
   "ok": 31
  },
