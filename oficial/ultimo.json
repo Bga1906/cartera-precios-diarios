@@ -7,10 +7,10 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-10-30",
+     "fecha_dato": "2026-10-31",
      "fuente": "google_finance",
      "moneda": "EUR",
-     "precio": 69148.05274
+     "precio": 68990.50698
     },
     {
      "estado": "ok",
@@ -33,10 +33,10 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-10-29",
+     "fecha_dato": "2026-10-30",
      "fuente": "google_finance",
      "moneda": "USD",
-     "precio": 243.79
+     "precio": 240.35
     },
     {
      "estado": "ok",
@@ -53,7 +53,7 @@
    "tipo": "accion"
   },
   "mexem:APR0": {
-   "estado_precio": "dudoso",
+   "estado_precio": "ok",
    "fecha_dato": "2026-10-30",
    "fuente_elegida": "yahoo",
    "lecturas": [
@@ -62,7 +62,7 @@
      "fecha_dato": "2026-10-30",
      "fuente": "google_finance",
      "moneda": "EUR",
-     "precio": 4.7
+     "precio": 4.67
     },
     {
      "estado": "ok",
@@ -73,7 +73,7 @@
     }
    ],
    "moneda": "EUR",
-   "motivo": "google_finance difiere 0.64 % con la misma fecha",
+   "motivo": "primera fuente al dia",
    "precio": 4.67,
    "precios_json_eur": 4.67,
    "tipo": "accion"
@@ -85,7 +85,7 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-10-29",
+     "fecha_dato": "2026-10-30",
      "fuente": "google_finance",
      "moneda": "CAD",
      "precio": 0.39
@@ -137,10 +137,10 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-10-29",
+     "fecha_dato": "2026-10-30",
      "fuente": "google_finance",
      "moneda": "USD",
-     "precio": 31.12
+     "precio": 29.05
     },
     {
      "estado": "ok",
@@ -163,10 +163,10 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-10-29",
+     "fecha_dato": "2026-10-30",
      "fuente": "google_finance",
      "moneda": "USD",
-     "precio": 283.82
+     "precio": 279.84
     },
     {
      "estado": "ok",
@@ -183,7 +183,7 @@
    "tipo": "accion"
   },
   "mexem:IDR": {
-   "estado_precio": "dudoso",
+   "estado_precio": "ok",
    "fecha_dato": "2026-10-30",
    "fuente_elegida": "yahoo",
    "lecturas": [
@@ -192,7 +192,7 @@
      "fecha_dato": "2026-10-30",
      "fuente": "google_finance",
      "moneda": "EUR",
-     "precio": 64.34
+     "precio": 63.88
     },
     {
      "estado": "ok",
@@ -203,7 +203,7 @@
     }
    ],
    "moneda": "EUR",
-   "motivo": "google_finance difiere 0.72 % con la misma fecha",
+   "motivo": "primera fuente al dia",
    "precio": 63.88,
    "precios_json_eur": 63.88,
    "tipo": "accion"
@@ -215,10 +215,10 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-10-29",
+     "fecha_dato": "2026-10-30",
      "fuente": "google_finance",
      "moneda": "USD",
-     "precio": 2.75
+     "precio": 2.72
     },
     {
      "estado": "ok",
@@ -241,10 +241,10 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-10-29",
+     "fecha_dato": "2026-10-30",
      "fuente": "google_finance",
      "moneda": "USD",
-     "precio": 624.52
+     "precio": 614.99
     },
     {
      "estado": "ok",
@@ -267,10 +267,10 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-10-29",
+     "fecha_dato": "2026-10-30",
      "fuente": "google_finance",
      "moneda": "USD",
-     "precio": 41.64
+     "precio": 39.57
     },
     {
      "estado": "ok",
@@ -287,7 +287,7 @@
    "tipo": "accion"
   },
   "mexem:NXT": {
-   "estado_precio": "dudoso",
+   "estado_precio": "ok",
    "fecha_dato": "2026-10-30",
    "fuente_elegida": "yahoo",
    "lecturas": [
@@ -296,7 +296,7 @@
      "fecha_dato": "2026-10-30",
      "fuente": "google_finance",
      "moneda": "EUR",
-     "precio": 0.97
+     "precio": 0.98
     },
     {
      "estado": "ok",
@@ -307,7 +307,7 @@
     }
    ],
    "moneda": "EUR",
-   "motivo": "google_finance difiere 1.12 % con la misma fecha",
+   "motivo": "primera fuente al dia",
    "precio": 0.981,
    "precios_json_eur": 0.981,
    "tipo": "accion"
@@ -345,10 +345,10 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-10-29",
+     "fecha_dato": "2026-10-30",
      "fuente": "google_finance",
      "moneda": "USD",
-     "precio": 196.42
+     "precio": 184.11
     },
     {
      "estado": "ok",
@@ -371,10 +371,10 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-10-29",
+     "fecha_dato": "2026-10-30",
      "fuente": "google_finance",
      "moneda": "USD",
-     "precio": 6.69
+     "precio": 6.94
     },
     {
      "estado": "ok",
@@ -400,7 +400,7 @@
      "fecha_dato": "2026-10-30",
      "fuente": "google_finance",
      "moneda": "EUR",
-     "precio": 27.88
+     "precio": 27.98
     },
     {
      "estado": "ok",
@@ -763,7 +763,7 @@
      "fecha_dato": "2026-10-30",
      "fuente": "google_finance",
      "moneda": "USD",
-     "precio": 57.27
+     "precio": 56.41
     },
     {
      "estado": "ok",
@@ -827,7 +827,7 @@
      "fecha_dato": "2026-10-30",
      "fuente": "google_finance",
      "moneda": "USD",
-     "precio": 71.19
+     "precio": 70.97
     },
     {
      "estado": "ok",
@@ -864,10 +864,9 @@
   }
  },
  "fecha": "2026-10-31",
- "hasta": "2026-10-31T00:00:57Z",
+ "hasta": "2026-10-31T01:44:53Z",
  "resumen": {
-  "dudoso": 3,
-  "ok": 28
+  "ok": 31
  },
  "version": 1
 }
