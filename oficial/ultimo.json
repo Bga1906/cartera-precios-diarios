@@ -7,10 +7,10 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-10-31",
+     "fecha_dato": "2026-11-01",
      "fuente": "google_finance",
      "moneda": "EUR",
-     "precio": 69083.93233
+     "precio": 69247.63602
     },
     {
      "estado": "ok",
@@ -863,8 +863,8 @@
    "tipo": "etf"
   }
  },
- "fecha": "2026-10-31",
- "hasta": "2026-10-31T23:40:40Z",
+ "fecha": "2026-11-01",
+ "hasta": "2026-11-01T01:23:15Z",
  "resumen": {
   "ok": 31
  },
