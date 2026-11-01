@@ -1,8 +1,8 @@
 {
  "activos": {
   "bitcoin:btc": {
-   "estado_precio": "ok",
-   "fecha_dato": "2026-10-31",
+   "estado_precio": "dudoso",
+   "fecha_dato": "2026-11-01",
    "fuente_elegida": "yahoo",
    "lecturas": [
     {
@@ -14,16 +14,16 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-10-31",
+     "fecha_dato": "2026-11-01",
      "fuente": "yahoo",
      "moneda": "EUR",
-     "precio": 69380.22
+     "precio": 69888.2
     }
    ],
    "moneda": "EUR",
-   "motivo": "primera fuente al dia",
-   "precio": 69380.22,
-   "precios_json_eur": 69386.45,
+   "motivo": "google_finance difiere 0.62 % con la misma fecha",
+   "precio": 69888.2,
+   "precios_json_eur": 69891.73,
    "tipo": "cripto"
   },
   "mexem:AMZN": {
@@ -729,19 +729,19 @@
   },
   "oro-fisico:joyeria": {
    "estado_precio": "ok",
-   "fecha_dato": "2026-10-31",
+   "fecha_dato": "2026-11-01",
    "fuente_elegida": "gold-api",
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-10-31",
+     "fecha_dato": "2026-11-01",
      "fuente": "gold-api",
      "moneda": "USD",
-     "precio": 3876.399902
+     "precio": 3894.0
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-10-30",
+     "fecha_dato": "2026-11-01",
      "fuente": "yahoo",
      "moneda": "USD",
      "precio": 3898.9
@@ -749,8 +749,8 @@
    ],
    "moneda": "USD",
    "motivo": "primera fuente al dia",
-   "precio": 3876.399902,
-   "precios_json_eur": 83.66618612235254,
+   "precio": 3894.0,
+   "precios_json_eur": 84.04605742362874,
    "tipo": "materia_prima"
   },
   "trade-republic:Copper Miners USD (Acc)": {
@@ -864,9 +864,10 @@
   }
  },
  "fecha": "2026-11-01",
- "hasta": "2026-11-01T14:16:01Z",
+ "hasta": "2026-11-01T23:18:08Z",
  "resumen": {
-  "ok": 31
+  "dudoso": 1,
+  "ok": 30
  },
  "version": 1
 }
