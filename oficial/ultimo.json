@@ -1,16 +1,16 @@
 {
  "activos": {
   "bitcoin:btc": {
-   "estado_precio": "dudoso",
+   "estado_precio": "ok",
    "fecha_dato": "2026-11-01",
    "fuente_elegida": "yahoo",
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-01",
+     "fecha_dato": "2026-11-02",
      "fuente": "google_finance",
      "moneda": "EUR",
-     "precio": 69453.24315
+     "precio": 70231.35039
     },
     {
      "estado": "ok",
@@ -21,7 +21,7 @@
     }
    ],
    "moneda": "EUR",
-   "motivo": "google_finance difiere 0.62 % con la misma fecha",
+   "motivo": "primera fuente al dia",
    "precio": 69888.2,
    "precios_json_eur": 69891.73,
    "tipo": "cripto"
@@ -530,7 +530,7 @@
    "tipo": "fondo"
   },
   "myinvestor-cobas:ES0173311103": {
-   "estado_precio": "ok",
+   "estado_precio": "dudoso",
    "fecha_dato": "2026-10-28",
    "fuente_elegida": "ft",
    "lecturas": [
@@ -564,7 +564,7 @@
     }
    ],
    "moneda": "EUR",
-   "motivo": "primera fuente al dia",
+   "motivo": "el dato tiene 3 dias de atraso",
    "precio": 29.5,
    "precios_json_eur": 29.499109268188477,
    "tipo": "fondo"
@@ -863,8 +863,8 @@
    "tipo": "etf"
   }
  },
- "fecha": "2026-11-01",
- "hasta": "2026-11-01T23:51:45Z",
+ "fecha": "2026-11-02",
+ "hasta": "2026-11-02T01:43:09Z",
  "resumen": {
   "dudoso": 1,
   "ok": 30
