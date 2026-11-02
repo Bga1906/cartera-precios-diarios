@@ -1,5 +1,5 @@
 {
- "generado_en": "2026-11-02T01:43:09Z",
+ "generado_en": "2026-11-02T12:47:16Z",
  "ventana_dias": 3,
  "origenes": {
   "github": {
@@ -8,7 +8,7 @@
   },
   "google": {
    "ultima_captura_utc": "2026-11-02T01:42:57Z",
-   "lineas": 147
+   "lineas": 126
   }
  },
  "fuentes": {
@@ -44,7 +44,7 @@
   },
   "google/google_finance": {
    "ultima_captura_utc": "2026-11-02T01:42:57Z",
-   "ok": 147,
+   "ok": 126,
    "fallos": 0
   }
  },
