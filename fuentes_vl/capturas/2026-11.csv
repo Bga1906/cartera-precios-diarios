@@ -395,3 +395,39 @@ captura,hora,tipo,id,codigo,fuente,precio,fecha_dato,desfase_naturales,desfase_h
 2026-11-06,02:05,indice,msci-europe-nr-eur,^990500-EUR-NETR,Yahoo,454.80999755859375,2026-11-05,1,1,0,OK
 2026-11-06,02:05,indice,msci-china-nr-eur,^302400-EUR-NETR,Yahoo,488.70001220703125,2026-11-05,1,1,0,OK
 2026-11-06,02:05,indice,dj-global-technology,^W1TEC,Yahoo,4737.72998046875,2026-11-05,1,1,0,OK
+2026-11-06,16:00,fondo,ishares-developed-world,IE000ZYRH0Q7,Yahoo,12.494000434875488,2026-11-04,2,2,1,OK
+2026-11-06,16:00,fondo,ishares-developed-world,IE000ZYRH0Q7,FT,12.09,2026-11-05,1,1,0,OK (2 decimales)
+2026-11-06,16:00,fondo,ishares-developed-world,IE000ZYRH0Q7,quefondos,12.494,2026-11-04,2,2,1,OK
+2026-11-06,16:00,fondo,ishares-emerging-markets,IE000QAZP7L2,Yahoo,13.093000411987305,2026-11-04,2,2,1,OK
+2026-11-06,16:00,fondo,ishares-emerging-markets,IE000QAZP7L2,FT,12.98,2026-11-05,1,1,0,OK (2 decimales)
+2026-11-06,16:00,fondo,horos-value-internacional,ES0146309002,Yahoo,217.2392120361328,2026-11-04,2,2,0,OK
+2026-11-06,16:00,fondo,horos-value-internacional,ES0146309002,FT,217.24,2026-11-04,2,2,0,OK (2 decimales)
+2026-11-06,16:00,fondo,horos-value-internacional,ES0146309002,quefondos,217.239212,2026-11-04,2,2,0,OK
+2026-11-06,16:00,fondo,horos-value-internacional,ES0146309002,gestora,217.24,2026-11-04,2,2,0,OK (gestora)
+2026-11-06,16:00,fondo,myinvestor-value,ES0165243025,Yahoo,1.3647799491882324,2026-11-04,2,2,0,OK
+2026-11-06,16:00,fondo,myinvestor-value,ES0165243025,FT,1.36,2026-11-04,2,2,0,OK (2 decimales)
+2026-11-06,16:00,fondo,myinvestor-value,ES0165243025,quefondos,1.364777,2026-11-04,2,2,0,OK
+2026-11-06,16:00,fondo,numantia,ES0173311103,Yahoo,29.99686050415039,2026-11-03,3,3,1,OK
+2026-11-06,16:00,fondo,numantia,ES0173311103,FT,30.0,2026-11-03,3,3,1,OK (2 decimales)
+2026-11-06,16:00,fondo,numantia,ES0173311103,quefondos,29.99685,2026-11-03,3,3,1,OK
+2026-11-06,16:00,fondo,numantia,ES0173311103,gestora,30.81,2026-11-04,2,2,0,OK (gestora)
+2026-11-06,16:00,fondo,polar-capital,IE00BM95B621,Yahoo,34.08000183105469,2026-11-04,2,2,1,OK
+2026-11-06,16:00,fondo,polar-capital,IE00BM95B621,FT,31.46,2026-11-05,1,1,0,OK (2 decimales)
+2026-11-06,16:00,fondo,polar-capital,IE00BM95B621,quefondos,34.08,2026-11-04,2,2,1,OK
+2026-11-06,16:00,fondo,pictet-china,LU0625737910,Yahoo,125.87000274658203,2026-11-04,2,2,0,OK
+2026-11-06,16:00,fondo,pictet-china,LU0625737910,FT,125.87,2026-11-04,2,2,0,OK (2 decimales)
+2026-11-06,16:00,fondo,pictet-china,LU0625737910,quefondos,123.86,2026-11-03,3,3,1,OK
+2026-11-06,16:00,fondo,pictet-china,LU0625737910,Renta 4,125.87,2026-11-04,2,2,0,OK (gestora)
+2026-11-06,16:00,fondo,cobas-seleccion,ES0124037013,Yahoo,300.7167053222656,2026-11-04,2,2,1,OK
+2026-11-06,16:00,fondo,cobas-seleccion,ES0124037013,FT,300.72,2026-11-04,2,2,1,OK (2 decimales)
+2026-11-06,16:00,fondo,cobas-seleccion,ES0124037013,quefondos,300.716695,2026-11-04,2,2,1,OK
+2026-11-06,16:00,fondo,cobas-seleccion,ES0124037013,gestora,299.603032,2026-11-05,1,1,0,OK (gestora)
+2026-11-06,16:00,plan,plan-myinvestor-indexado-global,N5396,Yahoo,20.243789672851562,2026-11-04,2,2,0,OK
+2026-11-06,16:00,plan,plan-myinvestor-indexado-global,N5396,quefondos,20.01148,2026-11-03,3,3,1,OK
+2026-11-06,16:00,indice,msci-world-nr-usd,^990100-USD-NETR,Yahoo,15426.1103515625,2026-11-06,0,0,0,OK
+2026-11-06,16:00,indice,msci-acwi-nr-eur,^892400-EUR-NETR,Yahoo,510.1700134277344,2026-11-06,0,0,0,OK
+2026-11-06,16:00,indice,msci-em-nr-eur,^891800-EUR-NETR,Yahoo,701.9199829101562,2026-11-06,0,0,0,OK
+2026-11-06,16:00,indice,msci-em-nr-eur-alt,^701291-EUR-NETR,Yahoo,701.8599853515625,2026-11-06,0,0,0,OK
+2026-11-06,16:00,indice,msci-europe-nr-eur,^990500-EUR-NETR,Yahoo,448.69000244140625,2026-11-06,0,0,0,OK
+2026-11-06,16:00,indice,msci-china-nr-eur,^302400-EUR-NETR,Yahoo,484.0299987792969,2026-11-06,0,0,0,OK
+2026-11-06,16:00,indice,dj-global-technology,^W1TEC,Yahoo,4798.31005859375,2026-11-06,0,0,0,OK
