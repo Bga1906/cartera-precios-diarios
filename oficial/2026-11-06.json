@@ -470,10 +470,10 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-03",
+     "fecha_dato": "2026-11-04",
      "fuente": "gestora",
      "moneda": "EUR",
-     "precio": 212.18
+     "precio": 217.24
     },
     {
      "estado": "ok",
@@ -682,10 +682,10 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-03",
+     "fecha_dato": "2026-11-04",
      "fuente": "renta4",
      "moneda": "EUR",
-     "precio": 123.86
+     "precio": 125.87
     },
     {
      "estado": "ok",
@@ -702,8 +702,8 @@
    "tipo": "fondo"
   },
   "myinvestor:plan-pensiones": {
-   "estado_precio": "dudoso",
-   "fecha_dato": "2026-11-03",
+   "estado_precio": "ok",
+   "fecha_dato": "2026-11-04",
    "fuente_elegida": "yahoo",
    "lecturas": [
     {
@@ -715,15 +715,15 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-03",
+     "fecha_dato": "2026-11-04",
      "fuente": "yahoo",
      "moneda": "EUR",
-     "precio": 20.0114803314209
+     "precio": 20.243789672851562
     }
    ],
    "moneda": "EUR",
-   "motivo": "el dato tiene 3 dias de atraso",
-   "precio": 20.0114803314209,
+   "motivo": "primera fuente al dia",
+   "precio": 20.243789672851562,
    "precios_json_eur": 20.0114803314209,
    "tipo": "plan"
   },
@@ -864,10 +864,10 @@
   }
  },
  "fecha": "2026-11-06",
- "hasta": "2026-11-06T00:39:56Z",
+ "hasta": "2026-11-06T01:06:31Z",
  "resumen": {
-  "dudoso": 17,
-  "ok": 14
+  "dudoso": 16,
+  "ok": 15
  },
  "version": 1
 }
