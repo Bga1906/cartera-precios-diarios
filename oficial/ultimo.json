@@ -2,7 +2,7 @@
  "activos": {
   "bitcoin:btc": {
    "estado_precio": "ok",
-   "fecha_dato": "2026-11-06",
+   "fecha_dato": "2026-11-07",
    "fuente_elegida": "yahoo",
    "lecturas": [
     {
@@ -14,16 +14,16 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-06",
+     "fecha_dato": "2026-11-07",
      "fuente": "yahoo",
      "moneda": "EUR",
-     "precio": 68082.9
+     "precio": 67922.36
     }
    ],
    "moneda": "EUR",
    "motivo": "primera fuente al dia",
-   "precio": 68082.9,
-   "precios_json_eur": 68077.53,
+   "precio": 67922.36,
+   "precios_json_eur": 67928.08,
    "tipo": "cripto"
   },
   "mexem:AMZN": {
@@ -724,17 +724,17 @@
    "moneda": "EUR",
    "motivo": "primera fuente al dia",
    "precio": 19.764419555664062,
-   "precios_json_eur": 20.243789672851562,
+   "precios_json_eur": 19.764419555664062,
    "tipo": "plan"
   },
   "oro-fisico:joyeria": {
    "estado_precio": "ok",
-   "fecha_dato": "2026-11-06",
+   "fecha_dato": "2026-11-07",
    "fuente_elegida": "gold-api",
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-06",
+     "fecha_dato": "2026-11-07",
      "fuente": "gold-api",
      "moneda": "USD",
      "precio": 4072.100098
@@ -744,7 +744,7 @@
      "fecha_dato": "2026-11-06",
      "fuente": "yahoo",
      "moneda": "USD",
-     "precio": 4079.5
+     "precio": 4074.9
     }
    ],
    "moneda": "USD",
@@ -864,7 +864,7 @@
   }
  },
  "fecha": "2026-11-07",
- "hasta": "2026-11-07T13:59:15Z",
+ "hasta": "2026-11-07T23:19:48Z",
  "resumen": {
   "dudoso": 1,
   "ok": 30
