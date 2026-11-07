@@ -3,7 +3,7 @@
 Generado automáticamente por `fuentes_vl/comparar_fuentes.py` (GitHub Actions, 09:15 y 22:40 aprox.).
 Desfase = días hábiles (lunes a viernes) entre la captura y la fecha real del dato. Retraso = días hábiles que una fuente va por detrás de la más al día para ese mismo fondo o índice.
 
-## Última captura: 2026-11-07 14:58
+## Última captura: 2026-11-08 00:54
 
 | Tipo | Instrumento | Fuente | Precio | Fecha del dato | Desfase (háb.) | Retraso vs mejor | Estado |
 |---|---|---|---|---|---|---|---|
@@ -52,12 +52,12 @@ Desfase = días hábiles (lunes a viernes) entre la captura y la fecha real del 
 
 | Tipo | Fuente | Capturas | Con dato | Desfase medio (háb.) | Retraso medio vs mejor | Veces la más al día |
 |---|---|---|---|---|---|---|
-| fondo | FT | 248 | 100% | 1.6 | 0.0 | 238 |
-| fondo | Renta 4 | 28 | 100% | 2.0 | 0.5 | 15 |
-| fondo | Yahoo | 248 | 100% | 1.8 | 0.2 | 193 |
-| fondo | finanzen.at | 3 | 0% | — | — | 0 |
-| fondo | gestora | 93 | 96% | 2.0 | 0.2 | 71 |
-| fondo | quefondos | 220 | 99% | 2.4 | 0.8 | 82 |
-| indice | Yahoo | 217 | 99% | 0.3 | 0.0 | 215 |
-| plan | Yahoo | 31 | 100% | 1.9 | 0.0 | 31 |
-| plan | quefondos | 31 | 100% | 2.5 | 0.7 | 13 |
+| fondo | FT | 240 | 100% | 1.6 | 0.0 | 230 |
+| fondo | Renta 4 | 29 | 100% | 2.0 | 0.4 | 16 |
+| fondo | Yahoo | 240 | 100% | 1.8 | 0.2 | 185 |
+| fondo | finanzen.at | 1 | 0% | — | — | 0 |
+| fondo | gestora | 90 | 99% | 2.0 | 0.2 | 70 |
+| fondo | quefondos | 211 | 100% | 2.4 | 0.8 | 82 |
+| indice | Yahoo | 210 | 100% | 0.3 | 0.0 | 210 |
+| plan | Yahoo | 30 | 100% | 1.8 | 0.0 | 30 |
+| plan | quefondos | 30 | 100% | 2.5 | 0.7 | 13 |
