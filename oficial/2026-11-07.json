@@ -437,10 +437,10 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-04",
+     "fecha_dato": "2026-11-05",
      "fuente": "quefondos",
      "moneda": "EUR",
-     "precio": 300.716695
+     "precio": 299.603032
     },
     {
      "estado": "ok",
@@ -477,10 +477,10 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-04",
+     "fecha_dato": "2026-11-05",
      "fuente": "quefondos",
      "moneda": "EUR",
-     "precio": 217.239212
+     "precio": 216.245749
     },
     {
      "estado": "ok",
@@ -510,10 +510,10 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-04",
+     "fecha_dato": "2026-11-05",
      "fuente": "quefondos",
      "moneda": "EUR",
-     "precio": 1.364777
+     "precio": 1.358062
     },
     {
      "estado": "ok",
@@ -550,10 +550,10 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-03",
+     "fecha_dato": "2026-11-04",
      "fuente": "quefondos",
      "moneda": "EUR",
-     "precio": 29.99685
+     "precio": 30.8109
     },
     {
      "estado": "ok",
@@ -609,10 +609,10 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-04",
+     "fecha_dato": "2026-11-05",
      "fuente": "quefondos",
      "moneda": "EUR",
-     "precio": 12.494
+     "precio": 12.093
     },
     {
      "estado": "ok",
@@ -642,10 +642,10 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-04",
+     "fecha_dato": "2026-11-05",
      "fuente": "quefondos",
      "moneda": "EUR",
-     "precio": 34.08
+     "precio": 31.46
     },
     {
      "estado": "ok",
@@ -675,10 +675,10 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-03",
+     "fecha_dato": "2026-11-04",
      "fuente": "quefondos",
      "moneda": "EUR",
-     "precio": 123.86
+     "precio": 125.87
     },
     {
      "estado": "ok",
@@ -703,27 +703,27 @@
   },
   "myinvestor:plan-pensiones": {
    "estado_precio": "ok",
-   "fecha_dato": "2026-11-04",
+   "fecha_dato": "2026-11-05",
    "fuente_elegida": "yahoo",
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-03",
+     "fecha_dato": "2026-11-05",
      "fuente": "quefondos",
      "moneda": "EUR",
-     "precio": 20.01148
+     "precio": 19.76442
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-04",
+     "fecha_dato": "2026-11-05",
      "fuente": "yahoo",
      "moneda": "EUR",
-     "precio": 20.243789672851562
+     "precio": 19.764419555664062
     }
    ],
    "moneda": "EUR",
    "motivo": "primera fuente al dia",
-   "precio": 20.243789672851562,
+   "precio": 19.764419555664062,
    "precios_json_eur": 20.243789672851562,
    "tipo": "plan"
   },
@@ -864,7 +864,7 @@
   }
  },
  "fecha": "2026-11-07",
- "hasta": "2026-11-07T13:25:44Z",
+ "hasta": "2026-11-07T13:59:15Z",
  "resumen": {
   "dudoso": 1,
   "ok": 30
