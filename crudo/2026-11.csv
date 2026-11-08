@@ -1364,3 +1364,24 @@ captura_utc,origen,id,fuente,ticker,precio,moneda,fecha_dato,estado,detalle
 2026-11-07T23:54:00Z,github,benchmark:msci-europe-nr-eur,yahoo,^990500-EUR-NETR,450.44000244140625,,2026-11-07,ok,
 2026-11-07T23:54:00Z,github,benchmark:msci-china-nr-eur,yahoo,^302400-EUR-NETR,484.17999267578125,,2026-11-07,ok,
 2026-11-07T23:54:00Z,github,benchmark:dj-global-technology,yahoo,^W1TEC,4746.02978515625,,2026-11-06,ok,
+2026-11-08T01:44:06Z,google,mexem:AMZN,google_finance,NASDAQ:AMZN,259.3,USD,2026-11-06,ok,"{""cierre_anterior"":260.21}"
+2026-11-08T01:44:06Z,google,mexem:APR0,google_finance,BME:AMP,4.75,EUR,2026-11-06,ok,"{""cierre_anterior"":4.7}"
+2026-11-08T01:44:06Z,google,mexem:CRML,google_finance,NASDAQ:CRML,5.88,USD,2026-11-06,ok,"{""cierre_anterior"":5.59}"
+2026-11-08T01:44:06Z,google,mexem:DMX,google_finance,CVE:DMX,0.37,CAD,2026-11-06,ok,"{""cierre_anterior"":0.35}"
+2026-11-08T01:44:06Z,google,mexem:E5S1,google_finance,FRA:E5S1,9.8,EUR,2026-11-06,ok,"{""cierre_anterior"":9.8}"
+2026-11-08T01:44:06Z,google,mexem:ERO,google_finance,NYSE:ERO,28.86,USD,2026-11-06,ok,"{""cierre_anterior"":28.09}"
+2026-11-08T01:44:06Z,google,mexem:GOOGL,google_finance,NASDAQ:GOOGL,284.78,USD,2026-11-06,ok,"{""cierre_anterior"":282.57}"
+2026-11-08T01:44:06Z,google,mexem:HUMA,google_finance,NASDAQ:HUMA,0.45,USD,2026-11-06,ok,"{""cierre_anterior"":0.4}"
+2026-11-08T01:44:06Z,google,mexem:IDR,google_finance,BME:IDR,56.76,EUR,2026-11-06,ok,"{""cierre_anterior"":57.52}"
+2026-11-08T01:44:06Z,google,mexem:KRKNF,google_finance,OTCMKTS:KRKNF,2.4,USD,2026-11-06,ok,"{""cierre_anterior"":2.41}"
+2026-11-08T01:44:06Z,google,mexem:META,google_finance,NASDAQ:META,610.15,USD,2026-11-06,ok,"{""cierre_anterior"":605.08}"
+2026-11-08T01:44:06Z,google,mexem:MP,google_finance,NYSE:MP,35.41,USD,2026-11-06,ok,"{""cierre_anterior"":33.74}"
+2026-11-08T01:44:06Z,google,mexem:NXT,google_finance,BME:NXT,0.95,EUR,2026-11-06,ok,"{""cierre_anterior"":0.96}"
+2026-11-08T01:44:06Z,google,mexem:OHLA,google_finance,BME:OHLA,0.36,EUR,2026-11-06,ok,"{""cierre_anterior"":0.36}"
+2026-11-08T01:44:06Z,google,mexem:PLTR,google_finance,NASDAQ:PLTR,160.38,USD,2026-11-06,ok,"{""cierre_anterior"":154.99}"
+2026-11-08T01:44:06Z,google,mexem:RIG,google_finance,NYSE:RIG,5.24,USD,2026-11-06,ok,"{""cierre_anterior"":5.1}"
+2026-11-08T01:44:06Z,google,mexem:TRE,google_finance,BME:TRE,29.36,EUR,2026-11-06,ok,"{""cierre_anterior"":29.12}"
+2026-11-08T01:44:06Z,google,bitcoin:btc,google_finance,CURRENCY:BTCEUR,67872.78344,EUR,2026-11-08,ok,
+2026-11-08T01:44:06Z,google,fx:eurusd,google_finance,CURRENCY:EURUSD,1.11485,USD,2026-11-08,ok,
+2026-11-08T01:44:06Z,google,trade-republic:Copper Miners USD (Acc),google_finance,LON:COPX,56.48,USD,2026-11-06,ok,"{""cierre_anterior"":56.62}"
+2026-11-08T01:44:06Z,google,trade-republic:Space Innovators USD (Acc),google_finance,LON:JEDI,65.68,USD,2026-11-06,ok,"{""cierre_anterior"":63.73}"
