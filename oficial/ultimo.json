@@ -470,10 +470,10 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-04",
+     "fecha_dato": "2026-11-05",
      "fuente": "gestora",
      "moneda": "EUR",
-     "precio": 217.24
+     "precio": 216.25
     },
     {
      "estado": "ok",
@@ -498,15 +498,15 @@
   },
   "myinvestor-cobas:ES0165243025": {
    "estado_precio": "ok",
-   "fecha_dato": "2026-11-05",
+   "fecha_dato": "2026-11-06",
    "fuente_elegida": "ft",
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-05",
+     "fecha_dato": "2026-11-06",
      "fuente": "ft",
      "moneda": "EUR",
-     "precio": 1.36
+     "precio": 1.35
     },
     {
      "estado": "ok",
@@ -525,21 +525,21 @@
    ],
    "moneda": "EUR",
    "motivo": "primera fuente al dia",
-   "precio": 1.36,
+   "precio": 1.35,
    "precios_json_eur": 1.3580600023269653,
    "tipo": "fondo"
   },
   "myinvestor-cobas:ES0173311103": {
-   "estado_precio": "dudoso",
-   "fecha_dato": "2026-11-04",
+   "estado_precio": "ok",
+   "fecha_dato": "2026-11-05",
    "fuente_elegida": "ft",
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-04",
+     "fecha_dato": "2026-11-05",
      "fuente": "ft",
      "moneda": "EUR",
-     "precio": 30.81
+     "precio": 30.24
     },
     {
      "estado": "ok",
@@ -564,22 +564,22 @@
     }
    ],
    "moneda": "EUR",
-   "motivo": "el dato tiene 3 dias de atraso",
-   "precio": 30.81,
+   "motivo": "primera fuente al dia",
+   "precio": 30.24,
    "precios_json_eur": 30.81097984313965,
    "tipo": "fondo"
   },
   "myinvestor-cobas:IE000QAZP7L2": {
    "estado_precio": "ok",
-   "fecha_dato": "2026-11-05",
+   "fecha_dato": "2026-11-06",
    "fuente_elegida": "ft",
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-05",
+     "fecha_dato": "2026-11-06",
      "fuente": "ft",
      "moneda": "EUR",
-     "precio": 12.98
+     "precio": 12.72
     },
     {
      "estado": "ok",
@@ -591,21 +591,21 @@
    ],
    "moneda": "EUR",
    "motivo": "primera fuente al dia",
-   "precio": 12.98,
+   "precio": 12.72,
    "precios_json_eur": 12.97700023651123,
    "tipo": "fondo"
   },
   "myinvestor-cobas:IE000ZYRH0Q7": {
    "estado_precio": "ok",
-   "fecha_dato": "2026-11-05",
+   "fecha_dato": "2026-11-06",
    "fuente_elegida": "ft",
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-05",
+     "fecha_dato": "2026-11-06",
      "fuente": "ft",
      "moneda": "EUR",
-     "precio": 12.09
+     "precio": 12.13
     },
     {
      "estado": "ok",
@@ -624,21 +624,21 @@
    ],
    "moneda": "EUR",
    "motivo": "primera fuente al dia",
-   "precio": 12.09,
+   "precio": 12.13,
    "precios_json_eur": 12.093000411987305,
    "tipo": "fondo"
   },
   "myinvestor-cobas:IE00BM95B621": {
    "estado_precio": "ok",
-   "fecha_dato": "2026-11-05",
+   "fecha_dato": "2026-11-06",
    "fuente_elegida": "ft",
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-05",
+     "fecha_dato": "2026-11-06",
      "fuente": "ft",
      "moneda": "EUR",
-     "precio": 31.46
+     "precio": 31.93
     },
     {
      "estado": "ok",
@@ -657,21 +657,21 @@
    ],
    "moneda": "EUR",
    "motivo": "primera fuente al dia",
-   "precio": 31.46,
+   "precio": 31.93,
    "precios_json_eur": 31.459999084472656,
    "tipo": "fondo"
   },
   "myinvestor-cobas:LU0625737910": {
    "estado_precio": "ok",
-   "fecha_dato": "2026-11-05",
+   "fecha_dato": "2026-11-06",
    "fuente_elegida": "ft",
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-05",
+     "fecha_dato": "2026-11-06",
      "fuente": "ft",
      "moneda": "EUR",
-     "precio": 130.54
+     "precio": 129.35
     },
     {
      "estado": "ok",
@@ -697,7 +697,7 @@
    ],
    "moneda": "EUR",
    "motivo": "primera fuente al dia",
-   "precio": 130.54,
+   "precio": 129.35,
    "precios_json_eur": 130.5399932861328,
    "tipo": "fondo"
   },
@@ -864,10 +864,9 @@
   }
  },
  "fecha": "2026-11-09",
- "hasta": "2026-11-09T16:44:57Z",
+ "hasta": "2026-11-09T17:27:34Z",
  "resumen": {
-  "dudoso": 1,
-  "ok": 30
+  "ok": 31
  },
  "version": 1
 }
