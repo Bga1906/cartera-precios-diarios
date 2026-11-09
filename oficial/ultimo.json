@@ -7,10 +7,10 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-08",
+     "fecha_dato": "2026-11-09",
      "fuente": "google_finance",
      "moneda": "EUR",
-     "precio": 68010.47811
+     "precio": 67250.79168
     },
     {
      "estado": "ok",
@@ -530,7 +530,7 @@
    "tipo": "fondo"
   },
   "myinvestor-cobas:ES0173311103": {
-   "estado_precio": "ok",
+   "estado_precio": "dudoso",
    "fecha_dato": "2026-11-04",
    "fuente_elegida": "ft",
    "lecturas": [
@@ -564,7 +564,7 @@
     }
    ],
    "moneda": "EUR",
-   "motivo": "primera fuente al dia",
+   "motivo": "el dato tiene 3 dias de atraso",
    "precio": 30.81,
    "precios_json_eur": 30.81097984313965,
    "tipo": "fondo"
@@ -863,11 +863,11 @@
    "tipo": "etf"
   }
  },
- "fecha": "2026-11-08",
- "hasta": "2026-11-08T23:58:40Z",
+ "fecha": "2026-11-09",
+ "hasta": "2026-11-09T01:51:21Z",
  "resumen": {
-  "dudoso": 1,
-  "ok": 30
+  "dudoso": 2,
+  "ok": 29
  },
  "version": 1
 }
