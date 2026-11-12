@@ -1,7 +1,7 @@
 {
  "activos": {
   "bitcoin:btc": {
-   "estado_precio": "ok",
+   "estado_precio": "dudoso",
    "fecha_dato": "2026-11-12",
    "fuente_elegida": "yahoo",
    "lecturas": [
@@ -10,7 +10,7 @@
      "fecha_dato": "2026-11-12",
      "fuente": "google_finance",
      "moneda": "EUR",
-     "precio": 66502.29364
+     "precio": 64561.78019
     },
     {
      "estado": "ok",
@@ -21,7 +21,7 @@
     }
    ],
    "moneda": "EUR",
-   "motivo": "primera fuente al dia",
+   "motivo": "google_finance difiere 2.71 % con la misma fecha",
    "precio": 66361.93,
    "precios_json_eur": 66360.24,
    "tipo": "cripto"
@@ -33,10 +33,10 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-11",
+     "fecha_dato": "2026-11-12",
      "fuente": "google_finance",
      "moneda": "USD",
-     "precio": 266.17
+     "precio": 269.94
     },
     {
      "estado": "ok",
@@ -59,10 +59,10 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-11",
+     "fecha_dato": "2026-11-12",
      "fuente": "google_finance",
      "moneda": "EUR",
-     "precio": 4.82
+     "precio": 4.78
     },
     {
      "estado": "ok",
@@ -85,7 +85,7 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-11",
+     "fecha_dato": "2026-11-12",
      "fuente": "google_finance",
      "moneda": "CAD",
      "precio": 0.38
@@ -111,10 +111,10 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-11",
+     "fecha_dato": "2026-11-12",
      "fuente": "google_finance",
      "moneda": "EUR",
-     "precio": 10.1
+     "precio": 10.3
     },
     {
      "estado": "ok",
@@ -137,10 +137,10 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-11",
+     "fecha_dato": "2026-11-12",
      "fuente": "google_finance",
      "moneda": "USD",
-     "precio": 30.92
+     "precio": 29.23
     },
     {
      "estado": "ok",
@@ -163,10 +163,10 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-11",
+     "fecha_dato": "2026-11-12",
      "fuente": "google_finance",
      "moneda": "USD",
-     "precio": 293.45
+     "precio": 295.72
     },
     {
      "estado": "ok",
@@ -189,10 +189,10 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-11",
+     "fecha_dato": "2026-11-12",
      "fuente": "google_finance",
      "moneda": "EUR",
-     "precio": 59.68
+     "precio": 57.82
     },
     {
      "estado": "ok",
@@ -209,16 +209,16 @@
    "tipo": "accion"
   },
   "mexem:KRKNF": {
-   "estado_precio": "dudoso",
+   "estado_precio": "ok",
    "fecha_dato": "2026-11-11",
    "fuente_elegida": "yahoo",
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-11",
+     "fecha_dato": "2026-11-12",
      "fuente": "google_finance",
      "moneda": "USD",
-     "precio": 2.44
+     "precio": 2.39
     },
     {
      "estado": "ok",
@@ -229,7 +229,7 @@
     }
    ],
    "moneda": "USD",
-   "motivo": "google_finance difiere 0.81 % con la misma fecha",
+   "motivo": "primera fuente al dia",
    "precio": 2.46,
    "precios_json_eur": 2.2108385009436504,
    "tipo": "accion"
@@ -241,10 +241,10 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-11",
+     "fecha_dato": "2026-11-12",
      "fuente": "google_finance",
      "moneda": "USD",
-     "precio": 628.77
+     "precio": 621.8
     },
     {
      "estado": "ok",
@@ -267,10 +267,10 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-11",
+     "fecha_dato": "2026-11-12",
      "fuente": "google_finance",
      "moneda": "USD",
-     "precio": 36.73
+     "precio": 37.38
     },
     {
      "estado": "ok",
@@ -293,10 +293,10 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-11",
+     "fecha_dato": "2026-11-12",
      "fuente": "google_finance",
      "moneda": "EUR",
-     "precio": 0.95
+     "precio": 0.93
     },
     {
      "estado": "ok",
@@ -313,13 +313,13 @@
    "tipo": "accion"
   },
   "mexem:OHLA": {
-   "estado_precio": "dudoso",
+   "estado_precio": "ok",
    "fecha_dato": "2026-11-11",
    "fuente_elegida": "yahoo",
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-11",
+     "fecha_dato": "2026-11-12",
      "fuente": "google_finance",
      "moneda": "EUR",
      "precio": 0.37
@@ -333,7 +333,7 @@
     }
    ],
    "moneda": "EUR",
-   "motivo": "google_finance difiere 0.54 % con la misma fecha",
+   "motivo": "primera fuente al dia",
    "precio": 0.372,
    "precios_json_eur": 0.372,
    "tipo": "accion"
@@ -345,10 +345,10 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-11",
+     "fecha_dato": "2026-11-12",
      "fuente": "google_finance",
      "moneda": "USD",
-     "precio": 172.4
+     "precio": 170.17
     },
     {
      "estado": "ok",
@@ -371,10 +371,10 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-11",
+     "fecha_dato": "2026-11-12",
      "fuente": "google_finance",
      "moneda": "USD",
-     "precio": 5.31
+     "precio": 5.29
     },
     {
      "estado": "ok",
@@ -397,10 +397,10 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-11",
+     "fecha_dato": "2026-11-12",
      "fuente": "google_finance",
      "moneda": "EUR",
-     "precio": 31.18
+     "precio": 31.02
     },
     {
      "estado": "ok",
@@ -760,10 +760,10 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-11",
+     "fecha_dato": "2026-11-12",
      "fuente": "google_finance",
      "moneda": "USD",
-     "precio": 57.89
+     "precio": 55.46
     },
     {
      "estado": "ok",
@@ -824,10 +824,10 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-11",
+     "fecha_dato": "2026-11-12",
      "fuente": "google_finance",
      "moneda": "USD",
-     "precio": 74.69
+     "precio": 72.64
     },
     {
      "estado": "ok",
@@ -864,10 +864,10 @@
   }
  },
  "fecha": "2026-11-12",
- "hasta": "2026-11-12T13:06:18Z",
+ "hasta": "2026-11-12T15:30:25Z",
  "resumen": {
-  "dudoso": 3,
-  "ok": 28
+  "dudoso": 2,
+  "ok": 29
  },
  "version": 1
 }
