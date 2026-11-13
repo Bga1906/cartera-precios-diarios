@@ -470,10 +470,10 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-10",
+     "fecha_dato": "2026-11-11",
      "fuente": "gestora",
      "moneda": "EUR",
-     "precio": 219.29
+     "precio": 219.92
     },
     {
      "estado": "ok",
@@ -682,10 +682,10 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-10",
+     "fecha_dato": "2026-11-11",
      "fuente": "renta4",
      "moneda": "EUR",
-     "precio": 128.9
+     "precio": 128.57
     },
     {
      "estado": "ok",
@@ -864,7 +864,7 @@
   }
  },
  "fecha": "2026-11-13",
- "hasta": "2026-11-13T00:50:42Z",
+ "hasta": "2026-11-13T01:27:16Z",
  "resumen": {
   "dudoso": 14,
   "ok": 17
