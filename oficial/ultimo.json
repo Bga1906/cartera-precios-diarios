@@ -477,10 +477,10 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-11",
+     "fecha_dato": "2026-11-12",
      "fuente": "quefondos",
      "moneda": "EUR",
-     "precio": 219.922449
+     "precio": 219.69543
     },
     {
      "estado": "ok",
@@ -510,10 +510,10 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-11",
+     "fecha_dato": "2026-11-12",
      "fuente": "quefondos",
      "moneda": "EUR",
-     "precio": 1.354491
+     "precio": 1.350678
     },
     {
      "estado": "ok",
@@ -550,10 +550,10 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-10",
+     "fecha_dato": "2026-11-11",
      "fuente": "quefondos",
      "moneda": "EUR",
-     "precio": 30.7239
+     "precio": 30.99289
     },
     {
      "estado": "ok",
@@ -609,10 +609,10 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-11",
+     "fecha_dato": "2026-11-12",
      "fuente": "quefondos",
      "moneda": "EUR",
-     "precio": 12.561
+     "precio": 12.556
     },
     {
      "estado": "ok",
@@ -642,10 +642,10 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-10",
+     "fecha_dato": "2026-11-12",
      "fuente": "quefondos",
      "moneda": "EUR",
-     "precio": 33.2
+     "precio": 34.45
     },
     {
      "estado": "ok",
@@ -675,10 +675,10 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-10",
+     "fecha_dato": "2026-11-11",
      "fuente": "quefondos",
      "moneda": "EUR",
-     "precio": 128.9
+     "precio": 128.57
     },
     {
      "estado": "ok",
@@ -708,10 +708,10 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-10",
+     "fecha_dato": "2026-11-11",
      "fuente": "quefondos",
      "moneda": "EUR",
-     "precio": 19.96954
+     "precio": 20.35081
     },
     {
      "estado": "ok",
@@ -864,7 +864,7 @@
   }
  },
  "fecha": "2026-11-14",
- "hasta": "2026-11-14T13:44:18Z",
+ "hasta": "2026-11-14T14:08:02Z",
  "resumen": {
   "dudoso": 3,
   "ok": 28
