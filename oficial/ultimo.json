@@ -10,7 +10,7 @@
      "fecha_dato": "2026-11-14",
      "fuente": "google_finance",
      "moneda": "EUR",
-     "precio": 61107.31347
+     "precio": 60535.70701
     },
     {
      "estado": "ok",
@@ -21,7 +21,7 @@
     }
    ],
    "moneda": "EUR",
-   "motivo": "google_finance difiere 1.28 % con la misma fecha",
+   "motivo": "google_finance difiere 2.21 % con la misma fecha",
    "precio": 61901.72,
    "precios_json_eur": 61901.72,
    "tipo": "cripto"
@@ -864,7 +864,7 @@
   }
  },
  "fecha": "2026-11-14",
- "hasta": "2026-11-14T11:41:12Z",
+ "hasta": "2026-11-14T13:44:18Z",
  "resumen": {
   "dudoso": 3,
   "ok": 28
