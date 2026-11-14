@@ -1,9 +1,9 @@
 {
- "generado_en": "2026-11-14T00:36:30Z",
+ "generado_en": "2026-11-14T01:00:31Z",
  "ventana_dias": 3,
  "origenes": {
   "github": {
-   "ultima_captura_utc": "2026-11-14T00:36:17Z",
+   "ultima_captura_utc": "2026-11-14T00:59:00Z",
    "lineas": 459
   },
   "google": {
@@ -13,12 +13,12 @@
  },
  "fuentes": {
   "github/ft": {
-   "ultima_captura_utc": "2026-11-13T15:22:00Z",
+   "ultima_captura_utc": "2026-11-14T00:59:00Z",
    "ok": 48,
    "fallos": 0
   },
   "github/gestora": {
-   "ultima_captura_utc": "2026-11-13T15:22:00Z",
+   "ultima_captura_utc": "2026-11-14T00:59:00Z",
    "ok": 18,
    "fallos": 0
   },
@@ -28,17 +28,17 @@
    "fallos": 0
   },
   "github/quefondos": {
-   "ultima_captura_utc": "2026-11-13T15:22:00Z",
+   "ultima_captura_utc": "2026-11-14T00:59:00Z",
    "ok": 48,
    "fallos": 0
   },
   "github/renta4": {
-   "ultima_captura_utc": "2026-11-13T15:22:00Z",
+   "ultima_captura_utc": "2026-11-14T00:59:00Z",
    "ok": 6,
    "fallos": 0
   },
   "github/yahoo": {
-   "ultima_captura_utc": "2026-11-14T00:36:17Z",
+   "ultima_captura_utc": "2026-11-14T00:59:00Z",
    "ok": 336,
    "fallos": 0
   },
