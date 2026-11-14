@@ -17,13 +17,13 @@
      "fecha_dato": "2026-11-14",
      "fuente": "yahoo",
      "moneda": "EUR",
-     "precio": 61901.72
+     "precio": 57840.19
     }
    ],
    "moneda": "EUR",
-   "motivo": "google_finance difiere 2.21 % con la misma fecha",
-   "precio": 61901.72,
-   "precios_json_eur": 61901.72,
+   "motivo": "google_finance difiere 4.66 % con la misma fecha",
+   "precio": 57840.19,
+   "precios_json_eur": 57840.19,
    "tipo": "cripto"
   },
   "mexem:AMZN": {
@@ -744,7 +744,7 @@
      "fecha_dato": "2026-11-13",
      "fuente": "yahoo",
      "moneda": "USD",
-     "precio": 3887.6
+     "precio": 3886.3
     }
    ],
    "moneda": "USD",
@@ -864,7 +864,7 @@
   }
  },
  "fecha": "2026-11-14",
- "hasta": "2026-11-14T14:08:02Z",
+ "hasta": "2026-11-14T23:34:48Z",
  "resumen": {
   "dudoso": 3,
   "ok": 28
