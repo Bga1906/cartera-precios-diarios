@@ -3,7 +3,7 @@
 Generado automáticamente por `fuentes_vl/comparar_fuentes.py` (GitHub Actions, 09:15 y 22:40 aprox.).
 Desfase = días hábiles (lunes a viernes) entre la captura y la fecha real del dato. Retraso = días hábiles que una fuente va por detrás de la más al día para ese mismo fondo o índice.
 
-## Última captura: 2026-11-15 01:12
+## Última captura: 2026-11-15 15:44
 
 | Tipo | Instrumento | Fuente | Precio | Fecha del dato | Desfase (háb.) | Retraso vs mejor | Estado |
 |---|---|---|---|---|---|---|---|
@@ -36,13 +36,13 @@ Desfase = días hábiles (lunes a viernes) entre la captura y la fecha real del 
 | fondo | cobas-seleccion | gestora | 301.712 | 2026-11-12 | 1 | 0 | OK (gestora) |
 | plan | plan-myinvestor-indexado-global | Yahoo | 19.9695 | 2026-11-10 | 3 | 1 | OK |
 | plan | plan-myinvestor-indexado-global | quefondos | 20.3508 | 2026-11-11 | 2 | 0 | OK |
-| indice | msci-world-nr-usd | Yahoo | 15727 | 2026-11-14 | 0 | 0 | OK |
-| indice | msci-acwi-nr-eur | Yahoo | 526.68 | 2026-11-14 | 0 | 0 | OK |
-| indice | msci-em-nr-eur | Yahoo | 733 | 2026-11-14 | 0 | 0 | OK |
-| indice | msci-em-nr-eur-alt | Yahoo | 733 | 2026-11-14 | 0 | 0 | OK |
-| indice | msci-europe-nr-eur | Yahoo | 461.59 | 2026-11-14 | 0 | 0 | OK |
-| indice | msci-china-nr-eur | Yahoo | 466.76 | 2026-11-14 | 0 | 0 | OK |
-| indice | dj-global-technology | Yahoo | 4895.75 | 2026-11-13 | 0 | 0 | OK |
+| indice | msci-world-nr-usd | Yahoo | 15727 | 2026-11-15 | 0 | 0 | OK |
+| indice | msci-acwi-nr-eur | Yahoo | 526.68 | 2026-11-15 | 0 | 0 | OK |
+| indice | msci-em-nr-eur | Yahoo | 733 | 2026-11-15 | 0 | 0 | OK |
+| indice | msci-em-nr-eur-alt | Yahoo | 733 | 2026-11-15 | 0 | 0 | OK |
+| indice | msci-europe-nr-eur | Yahoo | 461.59 | 2026-11-15 | 0 | 0 | OK |
+| indice | msci-china-nr-eur | Yahoo | 466.76 | 2026-11-15 | 0 | 0 | OK |
+| indice | dj-global-technology | Yahoo | 4895.48 | 2026-11-15 | 0 | 0 | OK |
 
 ## Avisos
 
@@ -52,11 +52,11 @@ Desfase = días hábiles (lunes a viernes) entre la captura y la fecha real del 
 
 | Tipo | Fuente | Capturas | Con dato | Desfase medio (háb.) | Retraso medio vs mejor | Veces la más al día |
 |---|---|---|---|---|---|---|
-| fondo | FT | 232 | 100% | 1.6 | 0.0 | 227 |
-| fondo | Renta 4 | 29 | 100% | 2.0 | 0.5 | 15 |
-| fondo | Yahoo | 232 | 100% | 1.9 | 0.3 | 163 |
-| fondo | gestora | 87 | 100% | 2.1 | 0.3 | 62 |
-| fondo | quefondos | 203 | 100% | 2.5 | 0.9 | 63 |
-| indice | Yahoo | 203 | 100% | 0.3 | 0.0 | 203 |
-| plan | Yahoo | 29 | 100% | 2.0 | 0.1 | 27 |
-| plan | quefondos | 29 | 100% | 2.7 | 0.7 | 13 |
+| fondo | FT | 240 | 100% | 1.6 | 0.0 | 235 |
+| fondo | Renta 4 | 30 | 100% | 2.0 | 0.5 | 15 |
+| fondo | Yahoo | 240 | 100% | 1.9 | 0.3 | 171 |
+| fondo | gestora | 90 | 100% | 2.1 | 0.3 | 64 |
+| fondo | quefondos | 210 | 100% | 2.5 | 0.9 | 68 |
+| indice | Yahoo | 210 | 100% | 0.3 | 0.0 | 210 |
+| plan | Yahoo | 30 | 100% | 2.0 | 0.1 | 27 |
+| plan | quefondos | 30 | 100% | 2.6 | 0.7 | 14 |
