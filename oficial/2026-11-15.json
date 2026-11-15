@@ -10,7 +10,7 @@
      "fecha_dato": "2026-11-15",
      "fuente": "google_finance",
      "moneda": "EUR",
-     "precio": 56861.54086
+     "precio": 59102.90894
     },
     {
      "estado": "ok",
@@ -864,7 +864,7 @@
   }
  },
  "fecha": "2026-11-15",
- "hasta": "2026-11-15T12:10:03Z",
+ "hasta": "2026-11-15T14:13:41Z",
  "resumen": {
   "dudoso": 2,
   "ok": 29
