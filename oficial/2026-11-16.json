@@ -7,10 +7,10 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-15",
+     "fecha_dato": "2026-11-16",
      "fuente": "google_finance",
      "moneda": "EUR",
-     "precio": 59102.90894
+     "precio": 58994.00611
     },
     {
      "estado": "ok",
@@ -864,7 +864,7 @@
   }
  },
  "fecha": "2026-11-16",
- "hasta": "2026-11-16T00:20:35Z",
+ "hasta": "2026-11-16T02:20:36Z",
  "resumen": {
   "dudoso": 3,
   "ok": 28
