@@ -530,7 +530,7 @@
    "tipo": "fondo"
   },
   "myinvestor-cobas:ES0173311103": {
-   "estado_precio": "ok",
+   "estado_precio": "dudoso",
    "fecha_dato": "2026-11-11",
    "fuente_elegida": "ft",
    "lecturas": [
@@ -564,7 +564,7 @@
     }
    ],
    "moneda": "EUR",
-   "motivo": "primera fuente al dia",
+   "motivo": "el dato tiene 3 dias de atraso",
    "precio": 30.99,
    "precios_json_eur": 30.992900848388672,
    "tipo": "fondo"
@@ -722,7 +722,7 @@
     }
    ],
    "moneda": "EUR",
-   "motivo": "el dato tiene 3 dias de atraso",
+   "motivo": "el dato tiene 4 dias de atraso",
    "precio": 19.969539642333984,
    "precios_json_eur": 19.969539642333984,
    "tipo": "plan"
@@ -863,11 +863,11 @@
    "tipo": "etf"
   }
  },
- "fecha": "2026-11-15",
- "hasta": "2026-11-15T23:42:09Z",
+ "fecha": "2026-11-16",
+ "hasta": "2026-11-16T00:20:35Z",
  "resumen": {
-  "dudoso": 2,
-  "ok": 29
+  "dudoso": 3,
+  "ok": 28
  },
  "version": 1
 }
