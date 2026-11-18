@@ -543,10 +543,10 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-12",
+     "fecha_dato": "2026-11-13",
      "fuente": "gestora",
      "moneda": "EUR",
-     "precio": 30.83
+     "precio": 30.86
     },
     {
      "estado": "ok",
@@ -864,7 +864,7 @@
   }
  },
  "fecha": "2026-11-18",
- "hasta": "2026-11-18T01:59:49Z",
+ "hasta": "2026-11-18T02:34:10Z",
  "resumen": {
   "dudoso": 10,
   "ok": 21
