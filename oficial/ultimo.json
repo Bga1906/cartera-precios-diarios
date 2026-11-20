@@ -1,8 +1,8 @@
 {
  "activos": {
   "bitcoin:btc": {
-   "estado_precio": "dudoso",
-   "fecha_dato": "2026-11-19",
+   "estado_precio": "ok",
+   "fecha_dato": "2026-11-20",
    "fuente_elegida": "yahoo",
    "lecturas": [
     {
@@ -14,21 +14,21 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-19",
+     "fecha_dato": "2026-11-20",
      "fuente": "yahoo",
      "moneda": "EUR",
-     "precio": 56903.33
+     "precio": 56782.24
     }
    ],
    "moneda": "EUR",
-   "motivo": "google_finance difiere 0.62 % con la misma fecha",
-   "precio": 56903.33,
-   "precios_json_eur": 56925.82,
+   "motivo": "primera fuente al dia",
+   "precio": 56782.24,
+   "precios_json_eur": 56782.24,
    "tipo": "cripto"
   },
   "mexem:AMZN": {
-   "estado_precio": "ok",
-   "fecha_dato": "2026-11-18",
+   "estado_precio": "dudoso",
+   "fecha_dato": "2026-11-19",
    "fuente_elegida": "yahoo",
    "lecturas": [
     {
@@ -40,21 +40,21 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-18",
+     "fecha_dato": "2026-11-19",
      "fuente": "yahoo",
      "moneda": "USD",
-     "precio": 267.74
+     "precio": 257.37
     }
    ],
    "moneda": "USD",
-   "motivo": "primera fuente al dia",
-   "precio": 267.74,
-   "precios_json_eur": 244.1101385849745,
+   "motivo": "google_finance difiere 4.23 % con la misma fecha",
+   "precio": 257.37,
+   "precios_json_eur": 234.1430131004367,
    "tipo": "accion"
   },
   "mexem:APR0": {
    "estado_precio": "ok",
-   "fecha_dato": "2026-11-18",
+   "fecha_dato": "2026-11-19",
    "fuente_elegida": "yahoo",
    "lecturas": [
     {
@@ -66,21 +66,21 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-18",
+     "fecha_dato": "2026-11-19",
      "fuente": "yahoo",
      "moneda": "EUR",
-     "precio": 4.465
+     "precio": 4.44
     }
    ],
    "moneda": "EUR",
    "motivo": "primera fuente al dia",
-   "precio": 4.465,
-   "precios_json_eur": 4.465,
+   "precio": 4.44,
+   "precios_json_eur": 4.44,
    "tipo": "accion"
   },
   "mexem:DMX": {
-   "estado_precio": "ok",
-   "fecha_dato": "2026-11-18",
+   "estado_precio": "dudoso",
+   "fecha_dato": "2026-11-19",
    "fuente_elegida": "yahoo",
    "lecturas": [
     {
@@ -92,21 +92,21 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-18",
+     "fecha_dato": "2026-11-19",
      "fuente": "yahoo",
      "moneda": "CAD",
-     "precio": 0.32
+     "precio": 0.3
     }
    ],
    "moneda": "CAD",
-   "motivo": "primera fuente al dia",
-   "precio": 0.32,
-   "precios_json_eur": 0.2039515615041428,
+   "motivo": "google_finance difiere 6.67 % con la misma fecha",
+   "precio": 0.3,
+   "precios_json_eur": 0.19085183535848335,
    "tipo": "accion"
   },
   "mexem:E5S1": {
    "estado_precio": "ok",
-   "fecha_dato": "2026-11-18",
+   "fecha_dato": "2026-11-19",
    "fuente_elegida": "yahoo",
    "lecturas": [
     {
@@ -118,21 +118,21 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-18",
+     "fecha_dato": "2026-11-19",
      "fuente": "yahoo",
      "moneda": "EUR",
-     "precio": 9.1
+     "precio": 8.8
     }
    ],
    "moneda": "EUR",
    "motivo": "primera fuente al dia",
-   "precio": 9.1,
-   "precios_json_eur": 9.1,
+   "precio": 8.8,
+   "precios_json_eur": 8.8,
    "tipo": "accion"
   },
   "mexem:ERO": {
-   "estado_precio": "ok",
-   "fecha_dato": "2026-11-18",
+   "estado_precio": "dudoso",
+   "fecha_dato": "2026-11-19",
    "fuente_elegida": "yahoo",
    "lecturas": [
     {
@@ -144,21 +144,21 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-18",
+     "fecha_dato": "2026-11-19",
      "fuente": "yahoo",
      "moneda": "USD",
-     "precio": 23.92
+     "precio": 23.35
     }
    ],
    "moneda": "USD",
-   "motivo": "primera fuente al dia",
-   "precio": 23.92,
-   "precios_json_eur": 21.808898614150255,
+   "motivo": "google_finance difiere 2.66 % con la misma fecha",
+   "precio": 23.35,
+   "precios_json_eur": 21.242721979621546,
    "tipo": "accion"
   },
   "mexem:GOOGL": {
-   "estado_precio": "ok",
-   "fecha_dato": "2026-11-18",
+   "estado_precio": "dudoso",
+   "fecha_dato": "2026-11-19",
    "fuente_elegida": "yahoo",
    "lecturas": [
     {
@@ -170,21 +170,21 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-18",
+     "fecha_dato": "2026-11-19",
      "fuente": "yahoo",
      "moneda": "USD",
-     "precio": 282.44
+     "precio": 272.66
     }
    ],
    "moneda": "USD",
-   "motivo": "primera fuente al dia",
-   "precio": 282.44,
-   "precios_json_eur": 257.5127644055434,
+   "motivo": "google_finance difiere 6.07 % con la misma fecha",
+   "precio": 272.66,
+   "precios_json_eur": 248.05312954876277,
    "tipo": "accion"
   },
   "mexem:IDR": {
    "estado_precio": "ok",
-   "fecha_dato": "2026-11-18",
+   "fecha_dato": "2026-11-19",
    "fuente_elegida": "yahoo",
    "lecturas": [
     {
@@ -196,21 +196,21 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-18",
+     "fecha_dato": "2026-11-19",
      "fuente": "yahoo",
      "moneda": "EUR",
-     "precio": 51.74
+     "precio": 51.4
     }
    ],
    "moneda": "EUR",
    "motivo": "primera fuente al dia",
-   "precio": 51.74,
-   "precios_json_eur": 51.74,
+   "precio": 51.4,
+   "precios_json_eur": 51.4,
    "tipo": "accion"
   },
   "mexem:KRKNF": {
-   "estado_precio": "ok",
-   "fecha_dato": "2026-11-18",
+   "estado_precio": "dudoso",
+   "fecha_dato": "2026-11-19",
    "fuente_elegida": "yahoo",
    "lecturas": [
     {
@@ -222,21 +222,21 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-18",
+     "fecha_dato": "2026-11-19",
      "fuente": "yahoo",
      "moneda": "USD",
-     "precio": 2.1
+     "precio": 2.01
     }
    ],
    "moneda": "USD",
-   "motivo": "primera fuente al dia",
-   "precio": 2.1,
-   "precios_json_eur": 1.914660831509847,
+   "motivo": "google_finance difiere 2.99 % con la misma fecha",
+   "precio": 2.01,
+   "precios_json_eur": 1.8286026200873362,
    "tipo": "accion"
   },
   "mexem:META": {
-   "estado_precio": "ok",
-   "fecha_dato": "2026-11-18",
+   "estado_precio": "dudoso",
+   "fecha_dato": "2026-11-19",
    "fuente_elegida": "yahoo",
    "lecturas": [
     {
@@ -248,21 +248,21 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-18",
+     "fecha_dato": "2026-11-19",
      "fuente": "yahoo",
      "moneda": "USD",
-     "precio": 616.38
+     "precio": 596.22
     }
    ],
    "moneda": "USD",
-   "motivo": "primera fuente al dia",
-   "precio": 616.38,
-   "precios_json_eur": 561.9803063457331,
+   "motivo": "google_finance difiere 3.51 % con la misma fecha",
+   "precio": 596.22,
+   "precios_json_eur": 542.4126637554585,
    "tipo": "accion"
   },
   "mexem:MP": {
-   "estado_precio": "ok",
-   "fecha_dato": "2026-11-18",
+   "estado_precio": "dudoso",
+   "fecha_dato": "2026-11-19",
    "fuente_elegida": "yahoo",
    "lecturas": [
     {
@@ -274,21 +274,21 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-18",
+     "fecha_dato": "2026-11-19",
      "fuente": "yahoo",
      "moneda": "USD",
-     "precio": 35.95
+     "precio": 36.66
     }
    ],
    "moneda": "USD",
-   "motivo": "primera fuente al dia",
-   "precio": 35.95,
-   "precios_json_eur": 32.77716994894238,
+   "motivo": "google_finance difiere 1.25 % con la misma fecha",
+   "precio": 36.66,
+   "precios_json_eur": 33.351528384279476,
    "tipo": "accion"
   },
   "mexem:NXT": {
-   "estado_precio": "ok",
-   "fecha_dato": "2026-11-18",
+   "estado_precio": "dudoso",
+   "fecha_dato": "2026-11-19",
    "fuente_elegida": "yahoo",
    "lecturas": [
     {
@@ -300,21 +300,21 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-18",
+     "fecha_dato": "2026-11-19",
      "fuente": "yahoo",
      "moneda": "EUR",
-     "precio": 0.898
+     "precio": 0.881
     }
    ],
    "moneda": "EUR",
-   "motivo": "primera fuente al dia",
-   "precio": 0.898,
-   "precios_json_eur": 0.898,
+   "motivo": "google_finance difiere 1.02 % con la misma fecha",
+   "precio": 0.881,
+   "precios_json_eur": 0.881,
    "tipo": "accion"
   },
   "mexem:OHLA": {
    "estado_precio": "ok",
-   "fecha_dato": "2026-11-18",
+   "fecha_dato": "2026-11-19",
    "fuente_elegida": "yahoo",
    "lecturas": [
     {
@@ -326,21 +326,21 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-18",
+     "fecha_dato": "2026-11-19",
      "fuente": "yahoo",
      "moneda": "EUR",
-     "precio": 0.363
+     "precio": 0.349
     }
    ],
    "moneda": "EUR",
    "motivo": "primera fuente al dia",
-   "precio": 0.363,
-   "precios_json_eur": 0.363,
+   "precio": 0.349,
+   "precios_json_eur": 0.349,
    "tipo": "accion"
   },
   "mexem:PLTR": {
-   "estado_precio": "ok",
-   "fecha_dato": "2026-11-18",
+   "estado_precio": "dudoso",
+   "fecha_dato": "2026-11-19",
    "fuente_elegida": "yahoo",
    "lecturas": [
     {
@@ -352,21 +352,21 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-18",
+     "fecha_dato": "2026-11-19",
      "fuente": "yahoo",
      "moneda": "USD",
-     "precio": 156.67
+     "precio": 153.68
     }
    ],
    "moneda": "USD",
-   "motivo": "primera fuente al dia",
-   "precio": 156.67,
-   "precios_json_eur": 142.84281546316555,
+   "motivo": "google_finance difiere 3.95 % con la misma fecha",
+   "precio": 153.68,
+   "precios_json_eur": 139.81077147016012,
    "tipo": "accion"
   },
   "mexem:RIG": {
-   "estado_precio": "ok",
-   "fecha_dato": "2026-11-18",
+   "estado_precio": "dudoso",
+   "fecha_dato": "2026-11-19",
    "fuente_elegida": "yahoo",
    "lecturas": [
     {
@@ -378,21 +378,21 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-18",
+     "fecha_dato": "2026-11-19",
      "fuente": "yahoo",
      "moneda": "USD",
-     "precio": 5.03
+     "precio": 4.77
     }
    ],
    "moneda": "USD",
-   "motivo": "primera fuente al dia",
-   "precio": 5.03,
-   "precios_json_eur": 4.586068563092633,
+   "motivo": "google_finance difiere 2.10 % con la misma fecha",
+   "precio": 4.77,
+   "precios_json_eur": 4.3395196506550215,
    "tipo": "accion"
   },
   "mexem:TRE": {
    "estado_precio": "ok",
-   "fecha_dato": "2026-11-18",
+   "fecha_dato": "2026-11-19",
    "fuente_elegida": "yahoo",
    "lecturas": [
     {
@@ -404,16 +404,16 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-18",
+     "fecha_dato": "2026-11-19",
      "fuente": "yahoo",
      "moneda": "EUR",
-     "precio": 29.66
+     "precio": 30.0
     }
    ],
    "moneda": "EUR",
    "motivo": "primera fuente al dia",
-   "precio": 29.66,
-   "precios_json_eur": 29.66,
+   "precio": 30.0,
+   "precios_json_eur": 30.0,
    "tipo": "accion"
   },
   "myinvestor-cobas:ES0124037013": {
@@ -444,16 +444,16 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-17",
+     "fecha_dato": "2026-11-18",
      "fuente": "yahoo",
      "moneda": "EUR",
-     "precio": 299.4913024902344
+     "precio": 297.1205139160156
     }
    ],
    "moneda": "EUR",
    "motivo": "primera fuente al dia",
    "precio": 297.12,
-   "precios_json_eur": 299.4913024902344,
+   "precios_json_eur": 297.1205139160156,
    "tipo": "fondo"
   },
   "myinvestor-cobas:ES0146309002": {
@@ -484,16 +484,16 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-17",
+     "fecha_dato": "2026-11-18",
      "fuente": "yahoo",
      "moneda": "EUR",
-     "precio": 216.91473388671875
+     "precio": 215.3530731201172
     }
    ],
    "moneda": "EUR",
    "motivo": "primera fuente al dia",
    "precio": 215.35,
-   "precios_json_eur": 216.91473388671875,
+   "precios_json_eur": 215.3530731201172,
    "tipo": "fondo"
   },
   "myinvestor-cobas:ES0165243025": {
@@ -517,20 +517,20 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-17",
+     "fecha_dato": "2026-11-18",
      "fuente": "yahoo",
      "moneda": "EUR",
-     "precio": 1.3166300058364868
+     "precio": 1.3080999851226807
     }
    ],
    "moneda": "EUR",
    "motivo": "primera fuente al dia",
    "precio": 1.31,
-   "precios_json_eur": 1.3166300058364868,
+   "precios_json_eur": 1.3080999851226807,
    "tipo": "fondo"
   },
   "myinvestor-cobas:ES0173311103": {
-   "estado_precio": "ok",
+   "estado_precio": "dudoso",
    "fecha_dato": "2026-11-17",
    "fuente_elegida": "ft",
    "lecturas": [
@@ -557,16 +557,16 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-16",
+     "fecha_dato": "2026-11-17",
      "fuente": "yahoo",
      "moneda": "EUR",
-     "precio": 30.679609298706055
+     "precio": 30.196250915527344
     }
    ],
    "moneda": "EUR",
-   "motivo": "primera fuente al dia",
+   "motivo": "el dato tiene 3 dias de atraso",
    "precio": 30.2,
-   "precios_json_eur": 30.679609298706055,
+   "precios_json_eur": 30.196250915527344,
    "tipo": "fondo"
   },
   "myinvestor-cobas:IE000QAZP7L2": {
@@ -583,16 +583,16 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-17",
+     "fecha_dato": "2026-11-18",
      "fuente": "yahoo",
      "moneda": "EUR",
-     "precio": 12.75100040435791
+     "precio": 12.774999618530273
     }
    ],
    "moneda": "EUR",
    "motivo": "primera fuente al dia",
    "precio": 12.78,
-   "precios_json_eur": 12.75100040435791,
+   "precios_json_eur": 12.774999618530273,
    "tipo": "fondo"
   },
   "myinvestor-cobas:IE000ZYRH0Q7": {
@@ -616,16 +616,16 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-17",
+     "fecha_dato": "2026-11-18",
      "fuente": "yahoo",
      "moneda": "EUR",
-     "precio": 12.230999946594238
+     "precio": 12.213000297546387
     }
    ],
    "moneda": "EUR",
    "motivo": "primera fuente al dia",
    "precio": 12.21,
-   "precios_json_eur": 12.230999946594238,
+   "precios_json_eur": 12.213000297546387,
    "tipo": "fondo"
   },
   "myinvestor-cobas:IE00BM95B621": {
@@ -649,16 +649,16 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-17",
+     "fecha_dato": "2026-11-18",
      "fuente": "yahoo",
      "moneda": "EUR",
-     "precio": 32.20000076293945
+     "precio": 32.58000183105469
     }
    ],
    "moneda": "EUR",
    "motivo": "primera fuente al dia",
    "precio": 32.58,
-   "precios_json_eur": 32.20000076293945,
+   "precios_json_eur": 32.58000183105469,
    "tipo": "fondo"
   },
   "myinvestor-cobas:LU0625737910": {
@@ -689,21 +689,21 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-17",
+     "fecha_dato": "2026-11-18",
      "fuente": "yahoo",
      "moneda": "EUR",
-     "precio": 123.4800033569336
+     "precio": 123.1500015258789
     }
    ],
    "moneda": "EUR",
    "motivo": "primera fuente al dia",
    "precio": 123.15,
-   "precios_json_eur": 123.4800033569336,
+   "precios_json_eur": 123.1500015258789,
    "tipo": "fondo"
   },
   "myinvestor:plan-pensiones": {
    "estado_precio": "ok",
-   "fecha_dato": "2026-11-17",
+   "fecha_dato": "2026-11-18",
    "fuente_elegida": "yahoo",
    "lecturas": [
     {
@@ -715,47 +715,47 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-17",
+     "fecha_dato": "2026-11-18",
      "fuente": "yahoo",
      "moneda": "EUR",
-     "precio": 19.696950912475586
+     "precio": 19.689529418945312
     }
    ],
    "moneda": "EUR",
    "motivo": "primera fuente al dia",
-   "precio": 19.696950912475586,
-   "precios_json_eur": 19.696950912475586,
+   "precio": 19.689529418945312,
+   "precios_json_eur": 19.689529418945312,
    "tipo": "plan"
   },
   "oro-fisico:joyeria": {
    "estado_precio": "ok",
-   "fecha_dato": "2026-11-19",
+   "fecha_dato": "2026-11-20",
    "fuente_elegida": "gold-api",
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-19",
+     "fecha_dato": "2026-11-20",
      "fuente": "gold-api",
      "moneda": "USD",
-     "precio": 3740.050049
+     "precio": 3581.919922
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-18",
+     "fecha_dato": "2026-11-19",
      "fuente": "yahoo",
      "moneda": "USD",
-     "precio": 3749.4
+     "precio": 3580.3
     }
    ],
    "moneda": "USD",
    "motivo": "primera fuente al dia",
-   "precio": 3740.050049,
-   "precios_json_eur": 82.22469999957855,
+   "precio": 3581.919922,
+   "precios_json_eur": 78.57628250637399,
    "tipo": "materia_prima"
   },
   "trade-republic:Copper Miners USD (Acc)": {
    "estado_precio": "ok",
-   "fecha_dato": "2026-11-18",
+   "fecha_dato": "2026-11-19",
    "fuente_elegida": "yahoo",
    "lecturas": [
     {
@@ -767,59 +767,59 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-18",
+     "fecha_dato": "2026-11-19",
      "fuente": "yahoo",
      "moneda": "EUR",
-     "precio": 43.375
+     "precio": 43.395
     }
    ],
    "moneda": "EUR",
    "motivo": "primera fuente al dia",
-   "precio": 43.375,
-   "precios_json_eur": 43.375,
+   "precio": 43.395,
+   "precios_json_eur": 43.395,
    "tipo": "etf"
   },
   "trade-republic:Physical Gold USD (Acc)": {
    "estado_precio": "ok",
-   "fecha_dato": "2026-11-18",
+   "fecha_dato": "2026-11-19",
    "fuente_elegida": "yahoo",
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-18",
+     "fecha_dato": "2026-11-19",
      "fuente": "yahoo",
      "moneda": "EUR",
-     "precio": 66.09
+     "precio": 65.085
     }
    ],
    "moneda": "EUR",
    "motivo": "primera fuente al dia",
-   "precio": 66.09,
-   "precios_json_eur": 66.09,
+   "precio": 65.085,
+   "precios_json_eur": 65.085,
    "tipo": "etf"
   },
   "trade-republic:Physical Silver": {
    "estado_precio": "ok",
-   "fecha_dato": "2026-11-18",
+   "fecha_dato": "2026-11-19",
    "fuente_elegida": "yahoo",
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-18",
+     "fecha_dato": "2026-11-19",
      "fuente": "yahoo",
      "moneda": "USD",
-     "precio": 42.65
+     "precio": 42.506
     }
    ],
    "moneda": "USD",
    "motivo": "primera fuente al dia",
-   "precio": 42.65,
-   "precios_json_eur": 38.88584974471189,
+   "precio": 42.506,
+   "precios_json_eur": 38.669941775836975,
    "tipo": "etf"
   },
   "trade-republic:Space Innovators USD (Acc)": {
    "estado_precio": "ok",
-   "fecha_dato": "2026-11-18",
+   "fecha_dato": "2026-11-19",
    "fuente_elegida": "yahoo",
    "lecturas": [
     {
@@ -831,43 +831,43 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-18",
+     "fecha_dato": "2026-11-19",
      "fuente": "yahoo",
      "moneda": "EUR",
-     "precio": 60.59
+     "precio": 60.57
     }
    ],
    "moneda": "EUR",
    "motivo": "primera fuente al dia",
-   "precio": 60.59,
-   "precios_json_eur": 60.59,
+   "precio": 60.57,
+   "precios_json_eur": 60.57,
    "tipo": "etf"
   },
   "trade-republic:Uranium And Nuclear Technologies USD (Acc)": {
    "estado_precio": "ok",
-   "fecha_dato": "2026-11-18",
+   "fecha_dato": "2026-11-19",
    "fuente_elegida": "yahoo",
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-18",
+     "fecha_dato": "2026-11-19",
      "fuente": "yahoo",
      "moneda": "EUR",
-     "precio": 34.4
+     "precio": 34.45
     }
    ],
    "moneda": "EUR",
    "motivo": "primera fuente al dia",
-   "precio": 34.4,
-   "precios_json_eur": 34.4,
+   "precio": 34.45,
+   "precios_json_eur": 34.45,
    "tipo": "etf"
   }
  },
- "fecha": "2026-11-19",
- "hasta": "2026-11-19T16:32:28Z",
+ "fecha": "2026-11-20",
+ "hasta": "2026-11-20T01:35:57Z",
  "resumen": {
-  "dudoso": 1,
-  "ok": 30
+  "dudoso": 11,
+  "ok": 20
  },
  "version": 1
 }
