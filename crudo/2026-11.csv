@@ -3941,3 +3941,39 @@ captura_utc,origen,id,fuente,ticker,precio,moneda,fecha_dato,estado,detalle
 2026-11-21T14:51:28Z,google,fx:eurusd,google_finance,CURRENCY:EURUSD,1.0968,USD,2026-11-21,ok,
 2026-11-21T14:51:28Z,google,trade-republic:Copper Miners USD (Acc),google_finance,LON:COPX,45.14,USD,2026-11-20,ok,"{""cierre_anterior"":47.61}"
 2026-11-21T14:51:28Z,google,trade-republic:Space Innovators USD (Acc),google_finance,LON:JEDI,60.61,USD,2026-11-20,ok,"{""cierre_anterior"":66.41}"
+2026-11-21T15:20:00Z,github,myinvestor-cobas:IE000ZYRH0Q7,yahoo,IE000ZYRH0Q7,11.98900032043457,EUR,2026-11-19,ok,
+2026-11-21T15:20:00Z,github,myinvestor-cobas:IE000ZYRH0Q7,ft,IE000ZYRH0Q7,11.99,EUR,2026-11-19,ok,"{""estado_fuente"":""OK (2 decimales)""}"
+2026-11-21T15:20:00Z,github,myinvestor-cobas:IE000ZYRH0Q7,quefondos,IE000ZYRH0Q7,11.989,EUR,2026-11-19,ok,
+2026-11-21T15:20:00Z,github,myinvestor-cobas:IE000QAZP7L2,yahoo,IE000QAZP7L2,12.590999603271484,EUR,2026-11-19,ok,
+2026-11-21T15:20:00Z,github,myinvestor-cobas:IE000QAZP7L2,ft,IE000QAZP7L2,12.59,EUR,2026-11-19,ok,"{""estado_fuente"":""OK (2 decimales)""}"
+2026-11-21T15:20:00Z,github,myinvestor-cobas:ES0146309002,yahoo,ES0146309002,212.28822326660156,EUR,2026-11-19,ok,
+2026-11-21T15:20:00Z,github,myinvestor-cobas:ES0146309002,ft,ES0146309002,212.29,EUR,2026-11-19,ok,"{""estado_fuente"":""OK (2 decimales)""}"
+2026-11-21T15:20:00Z,github,myinvestor-cobas:ES0146309002,quefondos,ES0146309002,212.288221,EUR,2026-11-19,ok,
+2026-11-21T15:20:00Z,github,myinvestor-cobas:ES0146309002,gestora,ES0146309002,212.29,EUR,2026-11-19,ok,"{""estado_fuente"":""OK (gestora)""}"
+2026-11-21T15:20:00Z,github,myinvestor-cobas:ES0165243025,yahoo,ES0165243025,1.2934399843215942,EUR,2026-11-19,ok,
+2026-11-21T15:20:00Z,github,myinvestor-cobas:ES0165243025,ft,ES0165243025,1.29,EUR,2026-11-19,ok,"{""estado_fuente"":""OK (2 decimales)""}"
+2026-11-21T15:20:00Z,github,myinvestor-cobas:ES0165243025,quefondos,ES0165243025,1.293441,EUR,2026-11-19,ok,
+2026-11-21T15:20:00Z,github,myinvestor-cobas:ES0173311103,yahoo,ES0173311103,30.177160263061523,EUR,2026-11-18,ok,
+2026-11-21T15:20:00Z,github,myinvestor-cobas:ES0173311103,ft,ES0173311103,30.18,EUR,2026-11-18,ok,"{""estado_fuente"":""OK (2 decimales)""}"
+2026-11-21T15:20:00Z,github,myinvestor-cobas:ES0173311103,quefondos,ES0173311103,30.17715,EUR,2026-11-18,ok,
+2026-11-21T15:20:00Z,github,myinvestor-cobas:ES0173311103,gestora,ES0173311103,30.18,EUR,2026-11-18,ok,"{""estado_fuente"":""OK (gestora)""}"
+2026-11-21T15:20:00Z,github,myinvestor-cobas:IE00BM95B621,yahoo,IE00BM95B621,31.850000381469727,EUR,2026-11-19,ok,
+2026-11-21T15:20:00Z,github,myinvestor-cobas:IE00BM95B621,ft,IE00BM95B621,31.85,EUR,2026-11-19,ok,"{""estado_fuente"":""OK (2 decimales)""}"
+2026-11-21T15:20:00Z,github,myinvestor-cobas:IE00BM95B621,quefondos,IE00BM95B621,31.85,EUR,2026-11-19,ok,
+2026-11-21T15:20:00Z,github,myinvestor-cobas:LU0625737910,yahoo,LU0625737910,120.55999755859375,EUR,2026-11-19,ok,
+2026-11-21T15:20:00Z,github,myinvestor-cobas:LU0625737910,ft,LU0625737910,120.56,EUR,2026-11-19,ok,"{""estado_fuente"":""OK (2 decimales)""}"
+2026-11-21T15:20:00Z,github,myinvestor-cobas:LU0625737910,quefondos,LU0625737910,123.15,EUR,2026-11-18,ok,
+2026-11-21T15:20:00Z,github,myinvestor-cobas:LU0625737910,renta4,LU0625737910,123.15,EUR,2026-11-18,ok,"{""estado_fuente"":""OK (gestora)""}"
+2026-11-21T15:20:00Z,github,myinvestor-cobas:ES0124037013,yahoo,ES0124037013,292.7413330078125,EUR,2026-11-19,ok,
+2026-11-21T15:20:00Z,github,myinvestor-cobas:ES0124037013,ft,ES0124037013,292.74,EUR,2026-11-19,ok,"{""estado_fuente"":""OK (2 decimales)""}"
+2026-11-21T15:20:00Z,github,myinvestor-cobas:ES0124037013,quefondos,ES0124037013,292.741334,EUR,2026-11-19,ok,
+2026-11-21T15:20:00Z,github,myinvestor-cobas:ES0124037013,gestora,ES0124037013,292.741334,EUR,2026-11-19,ok,"{""estado_fuente"":""OK (gestora)""}"
+2026-11-21T15:20:00Z,github,myinvestor:plan-pensiones,yahoo,N5396,19.607900619506836,EUR,2026-11-19,ok,
+2026-11-21T15:20:00Z,github,myinvestor:plan-pensiones,quefondos,N5396,19.60789,EUR,2026-11-19,ok,
+2026-11-21T15:20:00Z,github,benchmark:msci-world-nr-usd,yahoo,^990100-USD-NETR,14460.7197265625,,2026-11-21,ok,
+2026-11-21T15:20:00Z,github,benchmark:msci-acwi-nr-eur,yahoo,^892400-EUR-NETR,486.0400085449219,,2026-11-21,ok,
+2026-11-21T15:20:00Z,github,benchmark:msci-em-nr-eur,yahoo,^891800-EUR-NETR,674.27001953125,,2026-11-21,ok,
+2026-11-21T15:20:00Z,github,benchmark:msci-em-nr-eur-alt,yahoo,^701291-EUR-NETR,674.27001953125,,2026-11-21,ok,
+2026-11-21T15:20:00Z,github,benchmark:msci-europe-nr-eur,yahoo,^990500-EUR-NETR,434.760009765625,,2026-11-21,ok,
+2026-11-21T15:20:00Z,github,benchmark:msci-china-nr-eur,yahoo,^302400-EUR-NETR,444.0199890136719,,2026-11-21,ok,
+2026-11-21T15:20:00Z,github,benchmark:dj-global-technology,yahoo,^W1TEC,4299.77001953125,,2026-11-20,ok,
