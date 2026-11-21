@@ -437,10 +437,10 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-18",
+     "fecha_dato": "2026-11-19",
      "fuente": "quefondos",
      "moneda": "EUR",
-     "precio": 297.120511
+     "precio": 292.741334
     },
     {
      "estado": "ok",
@@ -477,10 +477,10 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-18",
+     "fecha_dato": "2026-11-19",
      "fuente": "quefondos",
      "moneda": "EUR",
-     "precio": 215.353067
+     "precio": 212.288221
     },
     {
      "estado": "ok",
@@ -510,10 +510,10 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-18",
+     "fecha_dato": "2026-11-19",
      "fuente": "quefondos",
      "moneda": "EUR",
-     "precio": 1.308104
+     "precio": 1.293441
     },
     {
      "estado": "ok",
@@ -550,10 +550,10 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-17",
+     "fecha_dato": "2026-11-18",
      "fuente": "quefondos",
      "moneda": "EUR",
-     "precio": 30.1962
+     "precio": 30.17715
     },
     {
      "estado": "ok",
@@ -609,10 +609,10 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-18",
+     "fecha_dato": "2026-11-19",
      "fuente": "quefondos",
      "moneda": "EUR",
-     "precio": 12.213
+     "precio": 11.989
     },
     {
      "estado": "ok",
@@ -642,10 +642,10 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-18",
+     "fecha_dato": "2026-11-19",
      "fuente": "quefondos",
      "moneda": "EUR",
-     "precio": 32.58
+     "precio": 31.85
     },
     {
      "estado": "ok",
@@ -675,10 +675,10 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-17",
+     "fecha_dato": "2026-11-18",
      "fuente": "quefondos",
      "moneda": "EUR",
-     "precio": 123.48
+     "precio": 123.15
     },
     {
      "estado": "ok",
@@ -708,10 +708,10 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-18",
+     "fecha_dato": "2026-11-19",
      "fuente": "quefondos",
      "moneda": "EUR",
-     "precio": 19.68953
+     "precio": 19.60789
     },
     {
      "estado": "ok",
@@ -864,7 +864,7 @@
   }
  },
  "fecha": "2026-11-21",
- "hasta": "2026-11-21T14:51:42Z",
+ "hasta": "2026-11-21T15:20:54Z",
  "resumen": {
   "dudoso": 1,
   "ok": 30
