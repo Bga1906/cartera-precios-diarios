@@ -1,55 +1,125 @@
 sheet,vehiculo,codigo,dimension,categoria,pct,fecha_dato,fuente,nivel
-fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Apple,5.5,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
-fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,NVIDIA,5.47,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
-fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Microsoft,4.17,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
-fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Amazon,2.7,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
-fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Alphabet,4.01,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
-fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Meta Platforms,1.77,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
-fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Broadcom,1.7,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
-fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Micron,1.15,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
-fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Tesla,1.14,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
-fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Eli Lilly,1.1,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
-fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,AMD,1.0,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
-fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,JPMorgan,0.98,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
-fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Berkshire Hathaway,0.81,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
-fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,ExxonMobil,0.8,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
-fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Visa,0.73,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
-fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,ASML,0.7,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
-fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Johnson & Johnson,0.67,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
-fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Walmart,0.56,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
-fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Mastercard,0.55,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
-fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,AbbVie,0.55,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
-fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Palantir,0.48,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
-fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Cisco,0.47,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
-fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Costco,0.47,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
-fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Intel,0.46,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
-fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Chevron,0.44,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
-fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,UnitedHealth,0.4,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
-fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Procter & Gamble,0.4,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
-fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Merck & Co,0.39,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
-fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Coca-Cola,0.39,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
-fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Lam Research,0.38,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
-fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Caterpillar,0.37,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
-fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Applied Materials,0.37,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
-fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Bank of America,0.37,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
-fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,GE Aerospace,0.35,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
-fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Roche,0.35,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
-fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,HSBC,0.35,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
-fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Philip Morris,0.34,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
-fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Home Depot,0.34,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
-fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Netflix,0.33,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
-fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Shell,0.33,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
-fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Palo Alto Networks,0.33,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
-fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Novartis,0.3,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
-fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Royal Bank of Canada,0.3,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
-fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Goldman Sachs,0.29,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
-fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Thermo Fisher,0.28,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
-fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Wells Fargo,0.28,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
-fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,AstraZeneca,0.28,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
-fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Texas Instruments,0.28,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
-fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,RTX,0.27,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
-fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Sin desglosar,53.29,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
-fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Liquidez,0.26,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Apple,6.09,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Microsoft,4.14,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,NVIDIA,3.49,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Amazon,2.89,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Alphabet,3.37,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Broadcom,1.66,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Meta Platforms,1.49,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Eli Lilly,1.31,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Tesla,1.2,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,JPMorgan Chase,1,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Berkshire Hathaway,0.97,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Advanced Micro Devices,0.83,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Micron Technology,0.81,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Visa,0.81,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,ExxonMobil,0.8,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Johnson & Johnson,0.79,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Walmart,0.68,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Mastercard,0.62,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,AbbVie,0.61,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,ASML,0.6,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Costco Wholesale,0.59,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Procter & Gamble,0.47,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Chevron,0.46,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Coca-Cola,0.45,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Cisco Systems,0.43,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Home Depot,0.41,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Roche,0.4,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Merck & Co,0.4,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,GE Aerospace,0.39,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Palantir,0.38,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,UnitedHealth,0.37,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Bank of America,0.37,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Philip Morris,0.35,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Novartis,0.34,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Palo Alto Networks,0.34,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,HSBC,0.33,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Shell,0.33,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,AstraZeneca,0.32,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Nestlé,0.31,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Royal Bank of Canada,0.31,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,RTX,0.31,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Thermo Fisher,0.3,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Wells Fargo,0.29,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Applied Materials,0.29,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Texas Instruments,0.29,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Netflix,0.29,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Caterpillar,0.29,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Amgen,0.28,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Linde,0.28,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Goldman Sachs,0.28,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Lam Research,0.28,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Intel,0.27,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Crowdstrike,0.27,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,IBM,0.25,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,SAP,0.25,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Walt Disney,0.25,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Gilead Sciences,0.25,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Siemens,0.25,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Mitsubishi UFJ,0.25,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Morgan Stanley,0.24,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,McDonald's,0.23,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Toyota Motor,0.23,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,PepsiCo,0.23,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Verizon Communications,0.23,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Commonwealth Bank Of Australia,0.23,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,GE Vernova,0.23,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Citigroup,0.23,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Toronto Dominion,0.23,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Allianz,0.23,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Abbott Laboratories,0.22,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Arista Networks,0.22,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Oracle,0.21,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,BHP,0.21,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Nextera Energy,0.21,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Amphenol,0.21,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,TotalEnergies,0.21,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Analog Devices,0.2,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Welltower,0.2,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Union Pacific,0.2,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,ConocoPhillips,0.2,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,KLA,0.2,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Banco Santander,0.2,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Sony Group,0.2,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,BlackRock,0.2,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,American Express,0.19,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Qualcomm,0.19,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Pfizer,0.19,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,AT&T,0.19,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Iberdrola,0.19,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,TJX,0.18,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Charles Schwab,0.18,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Deere,0.18,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Shopify,0.18,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Salesforce,0.17,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Recruit Holdings,0.17,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Intuitive Surgical,0.17,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,UBS,0.17,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Unilever,0.17,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Danaher,0.17,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Rolls-Royce Holdings,0.17,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Schneider Electric,0.17,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Progressive,0.17,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,S&P Global,0.16,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Sumitomo Mitsui Financial Group,0.16,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Hitachi,0.16,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Accenture,0.16,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,BBVA,0.16,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Chubb,0.16,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Medtronic,0.16,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Vertex Pharmaceuticals,0.15,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Air Liquide,0.15,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,McKesson,0.15,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Novo Nordisk B,0.15,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Airbus Group,0.15,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Lowes Companies,0.15,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Altria Group,0.15,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Eaton,0.15,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,ABB,0.15,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Bristol Myers Squibb,0.15,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,"No aplica (resto diversificado): 1130 empresas más del MSCI World, ninguna > 0,15 %",41.38,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
+fondos,ishares-developed-world,IE000ZYRH0Q7,Empresa,Liquidez,0.27,2026-11-20,"Cartera completa iShares Core MSCI World UCITS ETF (mismo índice), 20/11/2026: 120 mayores + resto",A
 fondos,ishares-developed-world,IE000ZYRH0Q7,País,Estados Unidos,73.70525,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
 fondos,ishares-developed-world,IE000ZYRH0Q7,País,Japón,5.70141,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
 fondos,ishares-developed-world,IE000ZYRH0Q7,País,Reino Unido,3.48141,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
@@ -79,27 +149,107 @@ fondos,ishares-developed-world,IE000ZYRH0Q7,Sector,Materiales básicos,3.09,2026
 fondos,ishares-developed-world,IE000ZYRH0Q7,Sector,Servicios públicos,2.33,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
 fondos,ishares-developed-world,IE000ZYRH0Q7,Sector,Inmobiliario,1.51,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
 fondos,ishares-developed-world,IE000ZYRH0Q7,Sector,Liquidez,0.26,2026-10-15,"Cartera completa iShares Core MSCI World (mismo índice), 15/10/2026",A
-fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,TSMC,15.89,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
-fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Samsung Electronics,7.07,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
-fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,SK Hynix,4.45,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
-fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Tencent,2.8,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
-fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Alibaba,1.95,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
-fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,MediaTek,1.61,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
-fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,China Construction Bank,0.92,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
-fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Delta Electronics,0.84,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
-fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Hon Hai (Foxconn),0.78,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
-fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,HDFC Bank,0.74,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
-fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,ICICI Bank,0.65,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
-fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Reliance Industries,0.63,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
-fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,ASE Technology,0.59,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
-fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,ICBC,0.55,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
-fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Xiaomi,0.51,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
-fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Bharti Airtel,0.47,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
-fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Bank of China,0.45,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
-fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Meituan,0.41,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
-fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Al Rajhi Bank,0.41,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
-fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Sin desglosar,57.65,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
-fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Liquidez,0.63,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,TSMC,14.54,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Samsung Electronics,7.07,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,SK Hynix,4.48,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Tencent,2.62,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Alibaba,1.73,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,MediaTek,1.44,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,China Construction Bank,1.1,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,HDFC Bank,1,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,ICICI Bank,0.9,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Reliance Industries,0.83,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Hon Hai (Foxconn),0.76,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,ICBC,0.64,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Bharti Airtel,0.64,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Xiaomi,0.59,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Delta Electronics,0.52,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Bank of China,0.51,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Al Rajhi Bank,0.47,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,SK Square,0.46,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,ASE Technology,0.45,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,PDD Holdings,0.42,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Saudi Arabian Oil,0.42,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Meituan,0.41,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Ping An Insurance,0.38,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,AngloGold Ashanti,0.38,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,KB Financial,0.37,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Infosys,0.35,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Axis Bank,0.34,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Fubon Financial Holding,0.34,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,NetEase,0.33,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,CTBC Financial,0.33,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Mahindra & Mahindra,0.33,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Samsung Electro Mechanics,0.32,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Kotak Mahindra Bank,0.3,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Bajaj Finance,0.29,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Grupo México,0.29,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Larsen & Toubro,0.29,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Gold Fields,0.29,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Nan Ya Plastics,0.29,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,BYD,0.29,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,The Saudi National Bank,0.29,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,JD.com,0.28,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Kuwait Finance House,0.27,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,United Micro Electronics,0.27,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Cathay Financial Holding,0.27,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Naspers,0.26,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Shinhan Financial Group,0.26,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,PetroChina,0.26,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,China Merchants Bank,0.26,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,First Abu Dhabi Bank,0.25,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Firstrand,0.25,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Hyundai Motor,0.25,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Hana Financial Group,0.24,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,OTP Bank,0.24,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Celltrion,0.24,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Banorte,0.24,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Trip.com,0.24,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,PKO Bank Polski,0.23,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,National Bank Of Kuwait,0.23,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Elite Material,0.23,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Agricultural Bank Of China,0.23,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Ts Financial Holding,0.23,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,BeOne Medicines,0.23,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Credicorp,0.22,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Qatar National Bank,0.22,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,State Bank Of India,0.22,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,MTN Group,0.21,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Quanta Computer,0.21,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Capitec,0.21,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Unimicron Technology,0.21,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Emaar Properties,0.21,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Standard Bank Group,0.21,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Nu Holdings,0.21,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,TCS,0.2,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Saudi Telecom,0.2,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Fomento Economico Mexicano,0.2,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Emirates Telecommunications Group,0.2,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Asia Vital Components,0.2,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Accton Technology,0.2,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,China Life Insurance,0.2,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Yuanta Financial Holding,0.19,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,América Móvil,0.18,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Eternal,0.18,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Chunghwa Telecom,0.18,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Itaú Unibanco,0.18,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,China Shenhua Energy,0.18,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,WuXi Biologics,0.18,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Vale,0.18,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Sun Pharmaceutical Industries,0.18,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Mega Financial Holding,0.18,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,E.Sun Financial Holding,0.18,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Titan Company,0.18,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Samsung SDI,0.17,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Maruti Suzuki India,0.17,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Zijin Mining,0.17,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Emirates NBD,0.17,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Yum China Holdings,0.17,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Saudi Arabian Mining,0.17,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,No aplica (fondo dentro del ETF): iShares MSCI China A,3.54,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,No aplica (fondo dentro del ETF): iShares MSCI Brazil,1.84,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,"No aplica (resto diversificado): 678 empresas más del MSCI Emerging Markets, ninguna > 0,17 %",34.06,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
+fondos,ishares-emerging-markets,IE000QAZP7L2,Empresa,Liquidez,0.58,2026-11-20,"Cartera completa iShares MSCI EM UCITS ETF (mismo índice), 20/11/2026: 100 mayores + resto",A
 fondos,ishares-emerging-markets,IE000QAZP7L2,País,Taiwán,29.47224,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
 fondos,ishares-emerging-markets,IE000QAZP7L2,País,Corea del Sur,18.19446,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
 fondos,ishares-emerging-markets,IE000QAZP7L2,País,China,20.53726,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
@@ -131,23 +281,56 @@ fondos,ishares-emerging-markets,IE000QAZP7L2,Sector,Consumo defensivo,2.47,2026-
 fondos,ishares-emerging-markets,IE000QAZP7L2,Sector,Servicios públicos,1.66,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
 fondos,ishares-emerging-markets,IE000QAZP7L2,Sector,Inmobiliario,0.99,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
 fondos,ishares-emerging-markets,IE000QAZP7L2,Sector,Liquidez,0.63,2026-10-15,"Cartera completa iShares MSCI EM UCITS (mismo índice), 15/10/2026",A
-fondos,pictet-china,LU0625737910,Empresa,Tencent,13.75,2026-10-15,"Cartera completa iShares MSCI China UCITS (gemelo del mismo índice; no es la cartera de Pictet), 15/10/2026",B
-fondos,pictet-china,LU0625737910,Empresa,Alibaba,9.58,2026-10-15,"Cartera completa iShares MSCI China UCITS (gemelo del mismo índice; no es la cartera de Pictet), 15/10/2026",B
-fondos,pictet-china,LU0625737910,Empresa,China Construction Bank,4.5,2026-10-15,"Cartera completa iShares MSCI China UCITS (gemelo del mismo índice; no es la cartera de Pictet), 15/10/2026",B
-fondos,pictet-china,LU0625737910,Empresa,ICBC,2.69,2026-10-15,"Cartera completa iShares MSCI China UCITS (gemelo del mismo índice; no es la cartera de Pictet), 15/10/2026",B
-fondos,pictet-china,LU0625737910,Empresa,Xiaomi,2.48,2026-10-15,"Cartera completa iShares MSCI China UCITS (gemelo del mismo índice; no es la cartera de Pictet), 15/10/2026",B
-fondos,pictet-china,LU0625737910,Empresa,Bank of China,2.21,2026-10-15,"Cartera completa iShares MSCI China UCITS (gemelo del mismo índice; no es la cartera de Pictet), 15/10/2026",B
-fondos,pictet-china,LU0625737910,Empresa,Meituan,2.04,2026-10-15,"Cartera completa iShares MSCI China UCITS (gemelo del mismo índice; no es la cartera de Pictet), 15/10/2026",B
-fondos,pictet-china,LU0625737910,Empresa,NetEase,1.85,2026-10-15,"Cartera completa iShares MSCI China UCITS (gemelo del mismo índice; no es la cartera de Pictet), 15/10/2026",B
-fondos,pictet-china,LU0625737910,Empresa,PDD Holdings,1.79,2026-10-15,"Cartera completa iShares MSCI China UCITS (gemelo del mismo índice; no es la cartera de Pictet), 15/10/2026",B
-fondos,pictet-china,LU0625737910,Empresa,Ping An,1.66,2026-10-15,"Cartera completa iShares MSCI China UCITS (gemelo del mismo índice; no es la cartera de Pictet), 15/10/2026",B
-fondos,pictet-china,LU0625737910,Empresa,BYD,1.44,2026-10-15,"Cartera completa iShares MSCI China UCITS (gemelo del mismo índice; no es la cartera de Pictet), 15/10/2026",B
-fondos,pictet-china,LU0625737910,Empresa,JD.com,1.29,2026-10-15,"Cartera completa iShares MSCI China UCITS (gemelo del mismo índice; no es la cartera de Pictet), 15/10/2026",B
-fondos,pictet-china,LU0625737910,Empresa,PetroChina,1.14,2026-10-15,"Cartera completa iShares MSCI China UCITS (gemelo del mismo índice; no es la cartera de Pictet), 15/10/2026",B
-fondos,pictet-china,LU0625737910,Empresa,China Merchants Bank,1.1,2026-10-15,"Cartera completa iShares MSCI China UCITS (gemelo del mismo índice; no es la cartera de Pictet), 15/10/2026",B
-fondos,pictet-china,LU0625737910,Empresa,Lenovo,1.04,2026-10-15,"Cartera completa iShares MSCI China UCITS (gemelo del mismo índice; no es la cartera de Pictet), 15/10/2026",B
-fondos,pictet-china,LU0625737910,Empresa,Sin desglosar,50.95,2026-10-15,"Cartera completa iShares MSCI China UCITS (gemelo del mismo índice; no es la cartera de Pictet), 15/10/2026",B
-fondos,pictet-china,LU0625737910,Empresa,Liquidez,0.49,2026-10-15,"Cartera completa iShares MSCI China UCITS (gemelo del mismo índice; no es la cartera de Pictet), 15/10/2026",B
+fondos,pictet-china,LU0625737910,Empresa,Tencent,12.52,2026-11-20,"Cartera completa iShares MSCI China UCITS ETF (gemelo del mismo índice; no es la cartera de Pictet), 20/11/2026: 50 mayores + resto",B
+fondos,pictet-china,LU0625737910,Empresa,Alibaba,8.29,2026-11-20,"Cartera completa iShares MSCI China UCITS ETF (gemelo del mismo índice; no es la cartera de Pictet), 20/11/2026: 50 mayores + resto",B
+fondos,pictet-china,LU0625737910,Empresa,China Construction Bank,5.23,2026-11-20,"Cartera completa iShares MSCI China UCITS ETF (gemelo del mismo índice; no es la cartera de Pictet), 20/11/2026: 50 mayores + resto",B
+fondos,pictet-china,LU0625737910,Empresa,ICBC,3.04,2026-11-20,"Cartera completa iShares MSCI China UCITS ETF (gemelo del mismo índice; no es la cartera de Pictet), 20/11/2026: 50 mayores + resto",B
+fondos,pictet-china,LU0625737910,Empresa,Xiaomi,2.8,2026-11-20,"Cartera completa iShares MSCI China UCITS ETF (gemelo del mismo índice; no es la cartera de Pictet), 20/11/2026: 50 mayores + resto",B
+fondos,pictet-china,LU0625737910,Empresa,Bank of China,2.44,2026-11-20,"Cartera completa iShares MSCI China UCITS ETF (gemelo del mismo índice; no es la cartera de Pictet), 20/11/2026: 50 mayores + resto",B
+fondos,pictet-china,LU0625737910,Empresa,PDD Holdings,2,2026-11-20,"Cartera completa iShares MSCI China UCITS ETF (gemelo del mismo índice; no es la cartera de Pictet), 20/11/2026: 50 mayores + resto",B
+fondos,pictet-china,LU0625737910,Empresa,Meituan,1.98,2026-11-20,"Cartera completa iShares MSCI China UCITS ETF (gemelo del mismo índice; no es la cartera de Pictet), 20/11/2026: 50 mayores + resto",B
+fondos,pictet-china,LU0625737910,Empresa,Ping An Insurance,1.81,2026-11-20,"Cartera completa iShares MSCI China UCITS ETF (gemelo del mismo índice; no es la cartera de Pictet), 20/11/2026: 50 mayores + resto",B
+fondos,pictet-china,LU0625737910,Empresa,NetEase,1.61,2026-11-20,"Cartera completa iShares MSCI China UCITS ETF (gemelo del mismo índice; no es la cartera de Pictet), 20/11/2026: 50 mayores + resto",B
+fondos,pictet-china,LU0625737910,Empresa,BYD,1.36,2026-11-20,"Cartera completa iShares MSCI China UCITS ETF (gemelo del mismo índice; no es la cartera de Pictet), 20/11/2026: 50 mayores + resto",B
+fondos,pictet-china,LU0625737910,Empresa,JD.com,1.33,2026-11-20,"Cartera completa iShares MSCI China UCITS ETF (gemelo del mismo índice; no es la cartera de Pictet), 20/11/2026: 50 mayores + resto",B
+fondos,pictet-china,LU0625737910,Empresa,PetroChina,1.26,2026-11-20,"Cartera completa iShares MSCI China UCITS ETF (gemelo del mismo índice; no es la cartera de Pictet), 20/11/2026: 50 mayores + resto",B
+fondos,pictet-china,LU0625737910,Empresa,China Merchants Bank,1.59,2026-11-20,"Cartera completa iShares MSCI China UCITS ETF (gemelo del mismo índice; no es la cartera de Pictet), 20/11/2026: 50 mayores + resto",B
+fondos,pictet-china,LU0625737910,Empresa,Trip.com,1.13,2026-11-20,"Cartera completa iShares MSCI China UCITS ETF (gemelo del mismo índice; no es la cartera de Pictet), 20/11/2026: 50 mayores + resto",B
+fondos,pictet-china,LU0625737910,Empresa,BeOne Medicines,1.09,2026-11-20,"Cartera completa iShares MSCI China UCITS ETF (gemelo del mismo índice; no es la cartera de Pictet), 20/11/2026: 50 mayores + resto",B
+fondos,pictet-china,LU0625737910,Empresa,Agricultural Bank Of China,1.07,2026-11-20,"Cartera completa iShares MSCI China UCITS ETF (gemelo del mismo índice; no es la cartera de Pictet), 20/11/2026: 50 mayores + resto",B
+fondos,pictet-china,LU0625737910,Empresa,China Life Insurance,0.95,2026-11-20,"Cartera completa iShares MSCI China UCITS ETF (gemelo del mismo índice; no es la cartera de Pictet), 20/11/2026: 50 mayores + resto",B
+fondos,pictet-china,LU0625737910,Empresa,WuXi Biologics,0.85,2026-11-20,"Cartera completa iShares MSCI China UCITS ETF (gemelo del mismo índice; no es la cartera de Pictet), 20/11/2026: 50 mayores + resto",B
+fondos,pictet-china,LU0625737910,Empresa,China Shenhua Energy,0.84,2026-11-20,"Cartera completa iShares MSCI China UCITS ETF (gemelo del mismo índice; no es la cartera de Pictet), 20/11/2026: 50 mayores + resto",B
+fondos,pictet-china,LU0625737910,Empresa,Zijin Mining,0.82,2026-11-20,"Cartera completa iShares MSCI China UCITS ETF (gemelo del mismo índice; no es la cartera de Pictet), 20/11/2026: 50 mayores + resto",B
+fondos,pictet-china,LU0625737910,Empresa,Baidu,0.79,2026-11-20,"Cartera completa iShares MSCI China UCITS ETF (gemelo del mismo índice; no es la cartera de Pictet), 20/11/2026: 50 mayores + resto",B
+fondos,pictet-china,LU0625737910,Empresa,Kweichow Moutai,0.78,2026-11-20,"Cartera completa iShares MSCI China UCITS ETF (gemelo del mismo índice; no es la cartera de Pictet), 20/11/2026: 50 mayores + resto",B
+fondos,pictet-china,LU0625737910,Empresa,Yum China Holdings,0.77,2026-11-20,"Cartera completa iShares MSCI China UCITS ETF (gemelo del mismo índice; no es la cartera de Pictet), 20/11/2026: 50 mayores + resto",B
+fondos,pictet-china,LU0625737910,Empresa,Lenovo,0.72,2026-11-20,"Cartera completa iShares MSCI China UCITS ETF (gemelo del mismo índice; no es la cartera de Pictet), 20/11/2026: 50 mayores + resto",B
+fondos,pictet-china,LU0625737910,Empresa,PICC P&C,0.69,2026-11-20,"Cartera completa iShares MSCI China UCITS ETF (gemelo del mismo índice; no es la cartera de Pictet), 20/11/2026: 50 mayores + resto",B
+fondos,pictet-china,LU0625737910,Empresa,Innovent Biologics,0.68,2026-11-20,"Cartera completa iShares MSCI China UCITS ETF (gemelo del mismo índice; no es la cartera de Pictet), 20/11/2026: 50 mayores + resto",B
+fondos,pictet-china,LU0625737910,Empresa,China Petroleum And Chemical,0.62,2026-11-20,"Cartera completa iShares MSCI China UCITS ETF (gemelo del mismo índice; no es la cartera de Pictet), 20/11/2026: 50 mayores + resto",B
+fondos,pictet-china,LU0625737910,Empresa,Anta Sports Products,0.61,2026-11-20,"Cartera completa iShares MSCI China UCITS ETF (gemelo del mismo índice; no es la cartera de Pictet), 20/11/2026: 50 mayores + resto",B
+fondos,pictet-china,LU0625737910,Empresa,KE Holdings,0.56,2026-11-20,"Cartera completa iShares MSCI China UCITS ETF (gemelo del mismo índice; no es la cartera de Pictet), 20/11/2026: 50 mayores + resto",B
+fondos,pictet-china,LU0625737910,Empresa,Geely Automobile Holdings,0.51,2026-11-20,"Cartera completa iShares MSCI China UCITS ETF (gemelo del mismo índice; no es la cartera de Pictet), 20/11/2026: 50 mayores + resto",B
+fondos,pictet-china,LU0625737910,Empresa,Nongfu Spring,0.48,2026-11-20,"Cartera completa iShares MSCI China UCITS ETF (gemelo del mismo índice; no es la cartera de Pictet), 20/11/2026: 50 mayores + resto",B
+fondos,pictet-china,LU0625737910,Empresa,China Resources Land,0.47,2026-11-20,"Cartera completa iShares MSCI China UCITS ETF (gemelo del mismo índice; no es la cartera de Pictet), 20/11/2026: 50 mayores + resto",B
+fondos,pictet-china,LU0625737910,Empresa,H World Group,0.44,2026-11-20,"Cartera completa iShares MSCI China UCITS ETF (gemelo del mismo índice; no es la cartera de Pictet), 20/11/2026: 50 mayores + resto",B
+fondos,pictet-china,LU0625737910,Empresa,WuXi AppTec,0.42,2026-11-20,"Cartera completa iShares MSCI China UCITS ETF (gemelo del mismo índice; no es la cartera de Pictet), 20/11/2026: 50 mayores + resto",B
+fondos,pictet-china,LU0625737910,Empresa,CATL,0.76,2026-11-20,"Cartera completa iShares MSCI China UCITS ETF (gemelo del mismo índice; no es la cartera de Pictet), 20/11/2026: 50 mayores + resto",B
+fondos,pictet-china,LU0625737910,Empresa,Pop Mart International Group,0.41,2026-11-20,"Cartera completa iShares MSCI China UCITS ETF (gemelo del mismo índice; no es la cartera de Pictet), 20/11/2026: 50 mayores + resto",B
+fondos,pictet-china,LU0625737910,Empresa,China Pacific Insurance,0.41,2026-11-20,"Cartera completa iShares MSCI China UCITS ETF (gemelo del mismo índice; no es la cartera de Pictet), 20/11/2026: 50 mayores + resto",B
+fondos,pictet-china,LU0625737910,Empresa,Bank Of Communications,0.38,2026-11-20,"Cartera completa iShares MSCI China UCITS ETF (gemelo del mismo índice; no es la cartera de Pictet), 20/11/2026: 50 mayores + resto",B
+fondos,pictet-china,LU0625737910,Empresa,China Citic Bank,0.38,2026-11-20,"Cartera completa iShares MSCI China UCITS ETF (gemelo del mismo índice; no es la cartera de Pictet), 20/11/2026: 50 mayores + resto",B
+fondos,pictet-china,LU0625737910,Empresa,China Mengniu Dairy,0.38,2026-11-20,"Cartera completa iShares MSCI China UCITS ETF (gemelo del mismo índice; no es la cartera de Pictet), 20/11/2026: 50 mayores + resto",B
+fondos,pictet-china,LU0625737910,Empresa,CSPC Pharmaceutical,0.38,2026-11-20,"Cartera completa iShares MSCI China UCITS ETF (gemelo del mismo índice; no es la cartera de Pictet), 20/11/2026: 50 mayores + resto",B
+fondos,pictet-china,LU0625737910,Empresa,ZTO Express,0.36,2026-11-20,"Cartera completa iShares MSCI China UCITS ETF (gemelo del mismo índice; no es la cartera de Pictet), 20/11/2026: 50 mayores + resto",B
+fondos,pictet-china,LU0625737910,Empresa,Kuaishou Technology,0.34,2026-11-20,"Cartera completa iShares MSCI China UCITS ETF (gemelo del mismo índice; no es la cartera de Pictet), 20/11/2026: 50 mayores + resto",B
+fondos,pictet-china,LU0625737910,Empresa,Citic,0.33,2026-11-20,"Cartera completa iShares MSCI China UCITS ETF (gemelo del mismo índice; no es la cartera de Pictet), 20/11/2026: 50 mayores + resto",B
+fondos,pictet-china,LU0625737910,Empresa,China Hongqiao Group,0.33,2026-11-20,"Cartera completa iShares MSCI China UCITS ETF (gemelo del mismo índice; no es la cartera de Pictet), 20/11/2026: 50 mayores + resto",B
+fondos,pictet-china,LU0625737910,Empresa,China Yangtze Power,0.32,2026-11-20,"Cartera completa iShares MSCI China UCITS ETF (gemelo del mismo índice; no es la cartera de Pictet), 20/11/2026: 50 mayores + resto",B
+fondos,pictet-china,LU0625737910,Empresa,Hua Hong Grace Semiconductor,0.32,2026-11-20,"Cartera completa iShares MSCI China UCITS ETF (gemelo del mismo índice; no es la cartera de Pictet), 20/11/2026: 50 mayores + resto",B
+fondos,pictet-china,LU0625737910,Empresa,"No aplica (resto diversificado): 526 empresas más del MSCI China, ninguna > 0,31 %",32.08,2026-11-20,"Cartera completa iShares MSCI China UCITS ETF (gemelo del mismo índice; no es la cartera de Pictet), 20/11/2026: 50 mayores + resto",B
+fondos,pictet-china,LU0625737910,Empresa,Liquidez,0.27,2026-11-20,"Cartera completa iShares MSCI China UCITS ETF (gemelo del mismo índice; no es la cartera de Pictet), 20/11/2026: 50 mayores + resto",B
 fondos,pictet-china,LU0625737910,País,China,99.51,2026-10-15,"Cartera completa iShares MSCI China UCITS (gemelo del mismo índice; no es la cartera de Pictet), 15/10/2026",B
 fondos,pictet-china,LU0625737910,País,Liquidez,0.49,2026-10-15,"Cartera completa iShares MSCI China UCITS (gemelo del mismo índice; no es la cartera de Pictet), 15/10/2026",B
 fondos,pictet-china,LU0625737910,Sector,Consumo cíclico,22.4097,2026-10-15,"Cartera completa iShares MSCI China UCITS (gemelo del mismo índice; no es la cartera de Pictet), 15/10/2026",B
@@ -555,18 +738,32 @@ trade_republic,copper-miners,4COP,País,Arabia Saudí,0.499,2026-11-10,Cartera c
 trade_republic,copper-miners,4COP,País,Liquidez,0.139,2026-11-10,Cartera completa oficial Global X (CSV de globalxetfs.eu) 10/11/2026 (44 posiciones),A
 trade_republic,copper-miners,4COP,Sector,Materiales básicos,99.861,2026-11-10,Cartera completa oficial Global X (CSV de globalxetfs.eu) 10/11/2026 (44 posiciones),A
 trade_republic,copper-miners,4COP,Sector,Liquidez,0.139,2026-11-10,Cartera completa oficial Global X (CSV de globalxetfs.eu) 10/11/2026 (44 posiciones),A
-trade_republic,uranium-nuclear,NUKL,Empresa,Cameco,14.66,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
-trade_republic,uranium-nuclear,NUKL,Empresa,NexGen Energy,7.0,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
-trade_republic,uranium-nuclear,NUKL,Empresa,Oklo,6.02,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
-trade_republic,uranium-nuclear,NUKL,Empresa,Fuji Electric,5.88,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
-trade_republic,uranium-nuclear,NUKL,Empresa,Hitachi,5.86,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
-trade_republic,uranium-nuclear,NUKL,Empresa,AtkinsRéalis,5.57,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
-trade_republic,uranium-nuclear,NUKL,Empresa,Mitsubishi Heavy Industries,5.56,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
-trade_republic,uranium-nuclear,NUKL,Empresa,IHI,5.31,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
-trade_republic,uranium-nuclear,NUKL,Empresa,Samsung C&T,5.08,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
-trade_republic,uranium-nuclear,NUKL,Empresa,Sin desglosar,29.81,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
-trade_republic,uranium-nuclear,NUKL,Empresa,No aplica (no es empresa): Uranio físico (Sprott),7.12,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
-trade_republic,uranium-nuclear,NUKL,Empresa,Liquidez,2.13,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
+trade_republic,uranium-nuclear,NUKL,Empresa,Cameco,13.86,2026-11-20,Cartera completa VanEck (Excel «todas las posiciones») 20/11/2026,A
+trade_republic,uranium-nuclear,NUKL,Empresa,AtkinsRéalis,7.49,2026-11-20,Cartera completa VanEck (Excel «todas las posiciones») 20/11/2026,A
+trade_republic,uranium-nuclear,NUKL,Empresa,Hitachi,7.11,2026-11-20,Cartera completa VanEck (Excel «todas las posiciones») 20/11/2026,A
+trade_republic,uranium-nuclear,NUKL,Empresa,NexGen Energy,6.95,2026-11-20,Cartera completa VanEck (Excel «todas las posiciones») 20/11/2026,A
+trade_republic,uranium-nuclear,NUKL,Empresa,IHI,6.01,2026-11-20,Cartera completa VanEck (Excel «todas las posiciones») 20/11/2026,A
+trade_republic,uranium-nuclear,NUKL,Empresa,Fuji Electric,5.9,2026-11-20,Cartera completa VanEck (Excel «todas las posiciones») 20/11/2026,A
+trade_republic,uranium-nuclear,NUKL,Empresa,Mitsubishi Heavy Industries,5.51,2026-11-20,Cartera completa VanEck (Excel «todas las posiciones») 20/11/2026,A
+trade_republic,uranium-nuclear,NUKL,Empresa,Samsung C&T,5.49,2026-11-20,Cartera completa VanEck (Excel «todas las posiciones») 20/11/2026,A
+trade_republic,uranium-nuclear,NUKL,Empresa,Oklo,4.56,2026-11-20,Cartera completa VanEck (Excel «todas las posiciones») 20/11/2026,A
+trade_republic,uranium-nuclear,NUKL,Empresa,Jgc,4.28,2026-11-20,Cartera completa VanEck (Excel «todas las posiciones») 20/11/2026,A
+trade_republic,uranium-nuclear,NUKL,Empresa,X-Energy,3.07,2026-11-20,Cartera completa VanEck (Excel «todas las posiciones») 20/11/2026,A
+trade_republic,uranium-nuclear,NUKL,Empresa,Uranium Energy,2.66,2026-11-20,Cartera completa VanEck (Excel «todas las posiciones») 20/11/2026,A
+trade_republic,uranium-nuclear,NUKL,Empresa,Nuscale Power,2.39,2026-11-20,Cartera completa VanEck (Excel «todas las posiciones») 20/11/2026,A
+trade_republic,uranium-nuclear,NUKL,Empresa,Paladin Energy,2.29,2026-11-20,Cartera completa VanEck (Excel «todas las posiciones») 20/11/2026,A
+trade_republic,uranium-nuclear,NUKL,Empresa,Denison Mines,2.24,2026-11-20,Cartera completa VanEck (Excel «todas las posiciones») 20/11/2026,A
+trade_republic,uranium-nuclear,NUKL,Empresa,Centrus Energy,1.88,2026-11-20,Cartera completa VanEck (Excel «todas las posiciones») 20/11/2026,A
+trade_republic,uranium-nuclear,NUKL,Empresa,Energy Fuels,1.72,2026-11-20,Cartera completa VanEck (Excel «todas las posiciones») 20/11/2026,A
+trade_republic,uranium-nuclear,NUKL,Empresa,Kepco Engineering & Construction Co,1.3,2026-11-20,Cartera completa VanEck (Excel «todas las posiciones») 20/11/2026,A
+trade_republic,uranium-nuclear,NUKL,Empresa,Cgn Mining Co,1.19,2026-11-20,Cartera completa VanEck (Excel «todas las posiciones») 20/11/2026,A
+trade_republic,uranium-nuclear,NUKL,Empresa,Nac Kazatomprom Jsc,1.19,2026-11-20,Cartera completa VanEck (Excel «todas las posiciones») 20/11/2026,A
+trade_republic,uranium-nuclear,NUKL,Empresa,Silex Systems,0.61,2026-11-20,Cartera completa VanEck (Excel «todas las posiciones») 20/11/2026,A
+trade_republic,uranium-nuclear,NUKL,Empresa,Deep Yellow,0.47,2026-11-20,Cartera completa VanEck (Excel «todas las posiciones») 20/11/2026,A
+trade_republic,uranium-nuclear,NUKL,Empresa,Isoenergy,0.19,2026-11-20,Cartera completa VanEck (Excel «todas las posiciones») 20/11/2026,A
+trade_republic,uranium-nuclear,NUKL,Empresa,No aplica (no es empresa): Uranio físico (Sprott),9.24,2026-11-20,Cartera completa VanEck (Excel «todas las posiciones») 20/11/2026,A
+trade_republic,uranium-nuclear,NUKL,Empresa,No aplica (no es empresa): Uranio físico (Yellow Cake),2.3,2026-11-20,Cartera completa VanEck (Excel «todas las posiciones») 20/11/2026,A
+trade_republic,uranium-nuclear,NUKL,Empresa,Liquidez,0.1,2026-11-20,Cartera completa VanEck (Excel «todas las posiciones») 20/11/2026,A
 trade_republic,uranium-nuclear,NUKL,País,Canadá,34.3175,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
 trade_republic,uranium-nuclear,NUKL,País,Japón,24.294,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
 trade_republic,uranium-nuclear,NUKL,País,Estados Unidos,20.2419,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
@@ -580,18 +777,32 @@ trade_republic,uranium-nuclear,NUKL,Sector,Energía,36.3,2026-09-30,Ficha VanEck
 trade_republic,uranium-nuclear,NUKL,Sector,Servicios públicos,9.075,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
 trade_republic,uranium-nuclear,NUKL,Sector,No aplica (no es empresa): Uranio físico (Sprott),7.12,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
 trade_republic,uranium-nuclear,NUKL,Sector,Liquidez,2.13,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
-trade_republic,space-innovators,JEDI,Empresa,Rocket Lab,8.88,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
-trade_republic,space-innovators,JEDI,Empresa,AST SpaceMobile,7.58,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
-trade_republic,space-innovators,JEDI,Empresa,EchoStar,6.89,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
-trade_republic,space-innovators,JEDI,Empresa,Viasat,6.35,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
-trade_republic,space-innovators,JEDI,Empresa,Globalstar,6.12,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
-trade_republic,space-innovators,JEDI,Empresa,MDA Space,5.69,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
-trade_republic,space-innovators,JEDI,Empresa,Firefly Aerospace,4.8,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
-trade_republic,space-innovators,JEDI,Empresa,Planet Labs,4.78,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
-trade_republic,space-innovators,JEDI,Empresa,Iridium,4.6,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
-trade_republic,space-innovators,JEDI,Empresa,Wistron NeWeb,4.53,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
-trade_republic,space-innovators,JEDI,Empresa,Sin desglosar,32.63,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
-trade_republic,space-innovators,JEDI,Empresa,Liquidez,7.15,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
+trade_republic,space-innovators,JEDI,Empresa,EchoStar,8.55,2026-11-20,Cartera completa VanEck (Excel «todas las posiciones») 20/11/2026,A
+trade_republic,space-innovators,JEDI,Empresa,Globalstar,8.33,2026-11-20,Cartera completa VanEck (Excel «todas las posiciones») 20/11/2026,A
+trade_republic,space-innovators,JEDI,Empresa,Rocket Lab,7.63,2026-11-20,Cartera completa VanEck (Excel «todas las posiciones») 20/11/2026,A
+trade_republic,space-innovators,JEDI,Empresa,Viasat,6.69,2026-11-20,Cartera completa VanEck (Excel «todas las posiciones») 20/11/2026,A
+trade_republic,space-innovators,JEDI,Empresa,MDA Space,6.49,2026-11-20,Cartera completa VanEck (Excel «todas las posiciones») 20/11/2026,A
+trade_republic,space-innovators,JEDI,Empresa,Melrose Industries,5.51,2026-11-20,Cartera completa VanEck (Excel «todas las posiciones») 20/11/2026,A
+trade_republic,space-innovators,JEDI,Empresa,Iridium Communications,5.33,2026-11-20,Cartera completa VanEck (Excel «todas las posiciones») 20/11/2026,A
+trade_republic,space-innovators,JEDI,Empresa,Firefly Aerospace,4.83,2026-11-20,Cartera completa VanEck (Excel «todas las posiciones») 20/11/2026,A
+trade_republic,space-innovators,JEDI,Empresa,Avio Spa,4.49,2026-11-20,Cartera completa VanEck (Excel «todas las posiciones») 20/11/2026,A
+trade_republic,space-innovators,JEDI,Empresa,Sky Perfect Jsat Holdings,4.43,2026-11-20,Cartera completa VanEck (Excel «todas las posiciones») 20/11/2026,A
+trade_republic,space-innovators,JEDI,Empresa,Wistron NeWeb,4.19,2026-11-20,Cartera completa VanEck (Excel «todas las posiciones») 20/11/2026,A
+trade_republic,space-innovators,JEDI,Empresa,Planet Labs,4.05,2026-11-20,Cartera completa VanEck (Excel «todas las posiciones») 20/11/2026,A
+trade_republic,space-innovators,JEDI,Empresa,Ses Sa,3.96,2026-11-20,Cartera completa VanEck (Excel «todas las posiciones») 20/11/2026,A
+trade_republic,space-innovators,JEDI,Empresa,AST SpaceMobile,3.95,2026-11-20,Cartera completa VanEck (Excel «todas las posiciones») 20/11/2026,A
+trade_republic,space-innovators,JEDI,Empresa,Ducommun,3.46,2026-11-20,Cartera completa VanEck (Excel «todas las posiciones») 20/11/2026,A
+trade_republic,space-innovators,JEDI,Empresa,Intuitive Machines,3.32,2026-11-20,Cartera completa VanEck (Excel «todas las posiciones») 20/11/2026,A
+trade_republic,space-innovators,JEDI,Empresa,Redwire,3.15,2026-11-20,Cartera completa VanEck (Excel «todas las posiciones») 20/11/2026,A
+trade_republic,space-innovators,JEDI,Empresa,Ohb Se,2.09,2026-11-20,Cartera completa VanEck (Excel «todas las posiciones») 20/11/2026,A
+trade_republic,space-innovators,JEDI,Empresa,Nextnav,2,2026-11-20,Cartera completa VanEck (Excel «todas las posiciones») 20/11/2026,A
+trade_republic,space-innovators,JEDI,Empresa,Eutelsat Communications Sa,1.91,2026-11-20,Cartera completa VanEck (Excel «todas las posiciones») 20/11/2026,A
+trade_republic,space-innovators,JEDI,Empresa,Astroscale Holdings,1.75,2026-11-20,Cartera completa VanEck (Excel «todas las posiciones») 20/11/2026,A
+trade_republic,space-innovators,JEDI,Empresa,Blacksky Technology,1.52,2026-11-20,Cartera completa VanEck (Excel «todas las posiciones») 20/11/2026,A
+trade_republic,space-innovators,JEDI,Empresa,Satellogic,0.88,2026-11-20,Cartera completa VanEck (Excel «todas las posiciones») 20/11/2026,A
+trade_republic,space-innovators,JEDI,Empresa,Qps Holdings,0.82,2026-11-20,Cartera completa VanEck (Excel «todas las posiciones») 20/11/2026,A
+trade_republic,space-innovators,JEDI,Empresa,Gilat Satellite Networks,0.65,2026-11-20,Cartera completa VanEck (Excel «todas las posiciones») 20/11/2026,A
+trade_republic,space-innovators,JEDI,Empresa,Liquidez,0.02,2026-11-20,Cartera completa VanEck (Excel «todas las posiciones») 20/11/2026,A
 trade_republic,space-innovators,JEDI,País,Estados Unidos,67.69,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
 trade_republic,space-innovators,JEDI,País,Japón,7.33,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
 trade_republic,space-innovators,JEDI,País,Canadá,5.69,2026-09-30,Ficha VanEck 30/09/2026 (top 10),A
@@ -654,6 +865,113 @@ mexem,mp,MP,Sector,Materiales básicos,100.0,2026-10-16,Mexem (IBKR) 16/10/2026,
 mexem,dmx,DMX,Empresa,District Metals,100.0,2026-10-16,Mexem (IBKR) 16/10/2026,A
 mexem,dmx,DMX,País,Canadá,100.0,2026-10-16,Mexem (IBKR) 16/10/2026,A
 mexem,dmx,DMX,Sector,Materiales básicos,100.0,2026-10-16,Mexem (IBKR) 16/10/2026,A
-fondos,plan-myinvestor-indexado-global,N5396,Empresa,Sin desglosar (composición caducada),100.0,2025-06-30,Informe semestral Merchbanc 30/06/2025 (caducado: pedir el de 2026),C
-fondos,plan-myinvestor-indexado-global,N5396,País,Sin desglosar (composición caducada),100.0,2025-06-30,Informe semestral Merchbanc 30/06/2025 (caducado: pedir el de 2026),C
-fondos,plan-myinvestor-indexado-global,N5396,Sector,Sin desglosar (composición caducada),100.0,2025-06-30,Informe semestral Merchbanc 30/06/2025 (caducado: pedir el de 2026),C
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,Apple,5.4201,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,Microsoft,3.6846,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,NVIDIA,3.1061,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,Alphabet,2.9993,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,Amazon,2.5721,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,TSMC,1.5994,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,Broadcom,1.4774,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,Meta Platforms,1.3261,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,Eli Lilly,1.1659,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,Tesla,1.068,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,JPMorgan Chase,0.89,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,Berkshire Hathaway,0.8633,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,Samsung Electronics,0.7777,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,Advanced Micro Devices,0.7387,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,Micron Technology,0.7209,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,Visa,0.7209,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,ExxonMobil,0.712,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,Johnson & Johnson,0.7031,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,Walmart,0.6052,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,Mastercard,0.5518,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,AbbVie,0.5429,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,ASML,0.534,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,Costco Wholesale,0.5251,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,SK Hynix,0.4928,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,Procter & Gamble,0.4183,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,Chevron,0.4094,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,Coca-Cola,0.4005,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,Cisco Systems,0.3827,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,Home Depot,0.3649,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,Roche,0.356,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,Merck & Co,0.356,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,GE Aerospace,0.3471,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,Palantir,0.3382,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,UnitedHealth,0.3293,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,Bank of America,0.3293,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,Philip Morris,0.3115,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,Novartis,0.3026,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,Palo Alto Networks,0.3026,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,HSBC,0.2937,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,Shell,0.2937,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,Tencent,0.2882,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,AstraZeneca,0.2848,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,Nestlé,0.2759,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,Royal Bank of Canada,0.2759,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,RTX,0.2759,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,Thermo Fisher,0.267,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,Wells Fargo,0.2581,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,Applied Materials,0.2581,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,Texas Instruments,0.2581,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,Netflix,0.2581,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,Caterpillar,0.2581,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,Amgen,0.2492,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,Linde,0.2492,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,Goldman Sachs,0.2492,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,Lam Research,0.2492,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,Intel,0.2403,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,Crowdstrike,0.2403,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,IBM,0.2225,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,SAP,0.2225,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,Walt Disney,0.2225,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,No aplica (fondo dentro del ETF): iShares MSCI China A y Brazil,0.5918,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,"No aplica (resto diversificado): unas 2.000 empresas más del MSCI ACWI, ninguna > 0,22 %",54.6678,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,Empresa,Liquidez,0.3041,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026",B
+fondos,plan-myinvestor-indexado-global,N5396,País,Estados Unidos,65.5977,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026 (País/Sector de iShares 15/10/2026)",B
+fondos,plan-myinvestor-indexado-global,N5396,País,Japón,5.0743,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026 (País/Sector de iShares 15/10/2026)",B
+fondos,plan-myinvestor-indexado-global,N5396,País,Taiwán,3.2419,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026 (País/Sector de iShares 15/10/2026)",B
+fondos,plan-myinvestor-indexado-global,N5396,País,Reino Unido,3.0985,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026 (País/Sector de iShares 15/10/2026)",B
+fondos,plan-myinvestor-indexado-global,N5396,País,Canadá,3.0266,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026 (País/Sector de iShares 15/10/2026)",B
+fondos,plan-myinvestor-indexado-global,N5396,País,China,2.2591,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026 (País/Sector de iShares 15/10/2026)",B
+fondos,plan-myinvestor-indexado-global,N5396,País,Corea del Sur,2.0014,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026 (País/Sector de iShares 15/10/2026)",B
+fondos,plan-myinvestor-indexado-global,N5396,País,Francia,1.9938,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026 (País/Sector de iShares 15/10/2026)",B
+fondos,plan-myinvestor-indexado-global,N5396,País,Suiza,1.9848,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026 (País/Sector de iShares 15/10/2026)",B
+fondos,plan-myinvestor-indexado-global,N5396,País,Alemania,1.8680,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026 (País/Sector de iShares 15/10/2026)",B
+fondos,plan-myinvestor-indexado-global,N5396,País,Australia,1.3561,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026 (País/Sector de iShares 15/10/2026)",B
+fondos,plan-myinvestor-indexado-global,N5396,País,India,1.2684,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026 (País/Sector de iShares 15/10/2026)",B
+fondos,plan-myinvestor-indexado-global,N5396,País,Países Bajos,1.1855,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026 (País/Sector de iShares 15/10/2026)",B
+fondos,plan-myinvestor-indexado-global,N5396,País,España,0.8353,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026 (País/Sector de iShares 15/10/2026)",B
+fondos,plan-myinvestor-indexado-global,N5396,País,Suecia,0.7634,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026 (País/Sector de iShares 15/10/2026)",B
+fondos,plan-myinvestor-indexado-global,N5396,País,Italia,0.6467,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026 (País/Sector de iShares 15/10/2026)",B
+fondos,plan-myinvestor-indexado-global,N5396,País,Brasil,0.5511,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026 (País/Sector de iShares 15/10/2026)",B
+fondos,plan-myinvestor-indexado-global,N5396,País,Singapur,0.3772,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026 (País/Sector de iShares 15/10/2026)",B
+fondos,plan-myinvestor-indexado-global,N5396,País,Hong Kong,0.3592,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026 (País/Sector de iShares 15/10/2026)",B
+fondos,plan-myinvestor-indexado-global,N5396,País,Dinamarca,0.3503,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026 (País/Sector de iShares 15/10/2026)",B
+fondos,plan-myinvestor-indexado-global,N5396,País,Sudáfrica,0.3436,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026 (País/Sector de iShares 15/10/2026)",B
+fondos,plan-myinvestor-indexado-global,N5396,País,Liquidez,0.3007,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026 (País/Sector de iShares 15/10/2026)",B
+fondos,plan-myinvestor-indexado-global,N5396,País,Arabia Saudí,0.2599,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026 (País/Sector de iShares 15/10/2026)",B
+fondos,plan-myinvestor-indexado-global,N5396,País,Finlandia,0.2514,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026 (País/Sector de iShares 15/10/2026)",B
+fondos,plan-myinvestor-indexado-global,N5396,País,México,0.1908,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026 (País/Sector de iShares 15/10/2026)",B
+fondos,plan-myinvestor-indexado-global,N5396,País,EAU,0.1406,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026 (País/Sector de iShares 15/10/2026)",B
+fondos,plan-myinvestor-indexado-global,N5396,País,Polonia,0.1361,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026 (País/Sector de iShares 15/10/2026)",B
+fondos,plan-myinvestor-indexado-global,N5396,País,Tailandia,0.1082,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026 (País/Sector de iShares 15/10/2026)",B
+fondos,plan-myinvestor-indexado-global,N5396,País,Malasia,0.1015,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026 (País/Sector de iShares 15/10/2026)",B
+fondos,plan-myinvestor-indexado-global,N5396,País,Grecia,0.0669,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026 (País/Sector de iShares 15/10/2026)",B
+fondos,plan-myinvestor-indexado-global,N5396,País,Kuwait,0.0614,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026 (País/Sector de iShares 15/10/2026)",B
+fondos,plan-myinvestor-indexado-global,N5396,País,Indonesia,0.0524,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026 (País/Sector de iShares 15/10/2026)",B
+fondos,plan-myinvestor-indexado-global,N5396,País,Catar,0.0502,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026 (País/Sector de iShares 15/10/2026)",B
+fondos,plan-myinvestor-indexado-global,N5396,País,Perú,0.0491,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026 (País/Sector de iShares 15/10/2026)",B
+fondos,plan-myinvestor-indexado-global,N5396,País,Chile,0.0480,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026 (País/Sector de iShares 15/10/2026)",B
+fondos,plan-myinvestor-indexado-global,N5396,Sector,Tecnología,31.5599,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026 (País/Sector de iShares 15/10/2026)",B
+fondos,plan-myinvestor-indexado-global,N5396,Sector,Servicios financieros,16.7324,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026 (País/Sector de iShares 15/10/2026)",B
+fondos,plan-myinvestor-indexado-global,N5396,Sector,Industria,10.0881,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026 (País/Sector de iShares 15/10/2026)",B
+fondos,plan-myinvestor-indexado-global,N5396,Sector,Salud,8.7400,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026 (País/Sector de iShares 15/10/2026)",B
+fondos,plan-myinvestor-indexado-global,N5396,Sector,Consumo cíclico,8.5045,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026 (País/Sector de iShares 15/10/2026)",B
+fondos,plan-myinvestor-indexado-global,N5396,Sector,Servicios de comunicación,7.9758,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026 (País/Sector de iShares 15/10/2026)",B
+fondos,plan-myinvestor-indexado-global,N5396,Sector,Consumo defensivo,4.8730,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026 (País/Sector de iShares 15/10/2026)",B
+fondos,plan-myinvestor-indexado-global,N5396,Sector,Energía,4.1768,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026 (País/Sector de iShares 15/10/2026)",B
+fondos,plan-myinvestor-indexado-global,N5396,Sector,Materiales básicos,3.3397,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026 (País/Sector de iShares 15/10/2026)",B
+fondos,plan-myinvestor-indexado-global,N5396,Sector,Servicios públicos,2.2563,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026 (País/Sector de iShares 15/10/2026)",B
+fondos,plan-myinvestor-indexado-global,N5396,Sector,Inmobiliario,1.4528,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026 (País/Sector de iShares 15/10/2026)",B
+fondos,plan-myinvestor-indexado-global,N5396,Sector,Liquidez,0.3007,2026-11-20,"Aproximación: 89 % MSCI World + 11 % MSCI EM (reparto oficial por regiones de MyInvestor; replica el ACWI), carteras iShares 20/11/2026 (País/Sector de iShares 15/10/2026)",B

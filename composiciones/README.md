@@ -3,6 +3,9 @@
 `reparto_vehiculos.csv`: qué hay dentro de cada fondo, plan, ETF/ETC y acción seguidos, en **porcentaje** (nunca importes).
 Una fila por vehículo, dimensión (`Empresa`, `País`, `Sector`) y categoría. En cada vehículo y dimensión los `pct` suman 100:
 lo que el vehículo no publica sale como `Sin desglosar`; caja, oro, plata, uranio físico o bitcoin como `Liquidez` o `No aplica (no es empresa): …`.
+En los fondos índice se nombran las mayores posiciones y el resto (cientos de empresas, cada una diminuta) va en una sola línea
+`No aplica (resto diversificado): N empresas más del <índice>, ninguna > X %`: está repartido y es conocido, así que NO cuenta como
+`Sin desglosar` (22/11/2026). Los ETF que un fondo lleva dentro van como `No aplica (fondo dentro del ETF): …`.
 
 - `sheet` dice qué Sheet lo usa: `fondos` (Seguimiento fondos), `trade_republic` y `mexem` (Sheets futuros).
 - Los Sheets lo leen con `IMPORTDATA` y multiplican cada `pct` por el valor del vehículo de su propia valoración.
