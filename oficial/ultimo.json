@@ -1,8 +1,8 @@
 {
  "activos": {
   "bitcoin:btc": {
-   "estado_precio": "dudoso",
-   "fecha_dato": "2026-11-22",
+   "estado_precio": "ok",
+   "fecha_dato": "2026-11-23",
    "fuente_elegida": "yahoo",
    "lecturas": [
     {
@@ -14,16 +14,16 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-22",
+     "fecha_dato": "2026-11-23",
      "fuente": "yahoo",
      "moneda": "EUR",
-     "precio": 54871.64
+     "precio": 55867.87
     }
    ],
    "moneda": "EUR",
-   "motivo": "google_finance difiere 1.15 % con la misma fecha",
-   "precio": 54871.64,
-   "precios_json_eur": 54867.58,
+   "motivo": "primera fuente al dia",
+   "precio": 55867.87,
+   "precios_json_eur": 55900.0,
    "tipo": "cripto"
   },
   "mexem:AMZN": {
@@ -530,7 +530,7 @@
    "tipo": "fondo"
   },
   "myinvestor-cobas:ES0173311103": {
-   "estado_precio": "ok",
+   "estado_precio": "dudoso",
    "fecha_dato": "2026-11-18",
    "fuente_elegida": "ft",
    "lecturas": [
@@ -564,7 +564,7 @@
     }
    ],
    "moneda": "EUR",
-   "motivo": "primera fuente al dia",
+   "motivo": "el dato tiene 3 dias de atraso",
    "precio": 30.18,
    "precios_json_eur": 30.177160263061523,
    "tipo": "fondo"
@@ -729,28 +729,28 @@
   },
   "oro-fisico:joyeria": {
    "estado_precio": "ok",
-   "fecha_dato": "2026-11-22",
+   "fecha_dato": "2026-11-23",
    "fuente_elegida": "gold-api",
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-22",
+     "fecha_dato": "2026-11-23",
      "fuente": "gold-api",
      "moneda": "USD",
-     "precio": 3539.0
+     "precio": 3573.0
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-20",
+     "fecha_dato": "2026-11-22",
      "fuente": "yahoo",
      "moneda": "USD",
-     "precio": 3515.4
+     "precio": 3573.4
     }
    ],
    "moneda": "USD",
    "motivo": "primera fuente al dia",
-   "precio": 3539.0,
-   "precios_json_eur": 77.64887996340384,
+   "precio": 3573.0,
+   "precios_json_eur": 78.3948708983447,
    "tipo": "materia_prima"
   },
   "trade-republic:Copper Miners USD (Acc)": {
@@ -863,8 +863,8 @@
    "tipo": "etf"
   }
  },
- "fecha": "2026-11-22",
- "hasta": "2026-11-22T15:16:19Z",
+ "fecha": "2026-11-23",
+ "hasta": "2026-11-23T00:34:01Z",
  "resumen": {
   "dudoso": 1,
   "ok": 30
