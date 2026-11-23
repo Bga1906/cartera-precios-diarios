@@ -1,16 +1,16 @@
 {
  "activos": {
   "bitcoin:btc": {
-   "estado_precio": "ok",
+   "estado_precio": "dudoso",
    "fecha_dato": "2026-11-23",
    "fuente_elegida": "yahoo",
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-22",
+     "fecha_dato": "2026-11-23",
      "fuente": "google_finance",
      "moneda": "EUR",
-     "precio": 55502.9739
+     "precio": 55026.62167
     },
     {
      "estado": "ok",
@@ -21,7 +21,7 @@
     }
    ],
    "moneda": "EUR",
-   "motivo": "primera fuente al dia",
+   "motivo": "google_finance difiere 1.51 % con la misma fecha",
    "precio": 55867.87,
    "precios_json_eur": 55900.0,
    "tipo": "cripto"
@@ -864,10 +864,10 @@
   }
  },
  "fecha": "2026-11-23",
- "hasta": "2026-11-23T01:07:10Z",
+ "hasta": "2026-11-23T02:59:45Z",
  "resumen": {
-  "dudoso": 1,
-  "ok": 30
+  "dudoso": 2,
+  "ok": 29
  },
  "version": 1
 }
