@@ -1,7 +1,7 @@
 {
  "activos": {
   "bitcoin:btc": {
-   "estado_precio": "ok",
+   "estado_precio": "dudoso",
    "fecha_dato": "2026-11-24",
    "fuente_elegida": "yahoo",
    "lecturas": [
@@ -10,7 +10,7 @@
      "fecha_dato": "2026-11-24",
      "fuente": "google_finance",
      "moneda": "EUR",
-     "precio": 55375.24091
+     "precio": 54841.25533
     },
     {
      "estado": "ok",
@@ -21,7 +21,7 @@
     }
    ],
    "moneda": "EUR",
-   "motivo": "primera fuente al dia",
+   "motivo": "google_finance difiere 1.06 % con la misma fecha",
    "precio": 55427.19,
    "precios_json_eur": 55427.19,
    "tipo": "cripto"
@@ -33,10 +33,10 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-23",
+     "fecha_dato": "2026-11-24",
      "fuente": "google_finance",
      "moneda": "USD",
-     "precio": 255.39
+     "precio": 252.81
     },
     {
      "estado": "ok",
@@ -59,10 +59,10 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-23",
+     "fecha_dato": "2026-11-24",
      "fuente": "google_finance",
      "moneda": "EUR",
-     "precio": 4.43
+     "precio": 4.33
     },
     {
      "estado": "ok",
@@ -79,13 +79,13 @@
    "tipo": "accion"
   },
   "mexem:DMX": {
-   "estado_precio": "dudoso",
+   "estado_precio": "ok",
    "fecha_dato": "2026-11-23",
    "fuente_elegida": "yahoo",
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-23",
+     "fecha_dato": "2026-11-24",
      "fuente": "google_finance",
      "moneda": "CAD",
      "precio": 0.32
@@ -99,7 +99,7 @@
     }
    ],
    "moneda": "CAD",
-   "motivo": "google_finance difiere 1.59 % con la misma fecha",
+   "motivo": "primera fuente al dia",
    "precio": 0.315,
    "precios_json_eur": 0.2004964674431927,
    "tipo": "accion"
@@ -111,10 +111,10 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-23",
+     "fecha_dato": "2026-11-24",
      "fuente": "google_finance",
      "moneda": "EUR",
-     "precio": 9.05
+     "precio": 8.4
     },
     {
      "estado": "ok",
@@ -137,10 +137,10 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-23",
+     "fecha_dato": "2026-11-24",
      "fuente": "google_finance",
      "moneda": "USD",
-     "precio": 23.36
+     "precio": 21.74
     },
     {
      "estado": "ok",
@@ -163,10 +163,10 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-23",
+     "fecha_dato": "2026-11-24",
      "fuente": "google_finance",
      "moneda": "USD",
-     "precio": 282.1
+     "precio": 279.15
     },
     {
      "estado": "ok",
@@ -189,10 +189,10 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-23",
+     "fecha_dato": "2026-11-24",
      "fuente": "google_finance",
      "moneda": "EUR",
-     "precio": 51.54
+     "precio": 52.02
     },
     {
      "estado": "ok",
@@ -215,10 +215,10 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-23",
+     "fecha_dato": "2026-11-24",
      "fuente": "google_finance",
      "moneda": "USD",
-     "precio": 2.18
+     "precio": 1.67
     },
     {
      "estado": "ok",
@@ -241,10 +241,10 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-23",
+     "fecha_dato": "2026-11-24",
      "fuente": "google_finance",
      "moneda": "USD",
-     "precio": 597.6
+     "precio": 594.77
     },
     {
      "estado": "ok",
@@ -267,10 +267,10 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-23",
+     "fecha_dato": "2026-11-24",
      "fuente": "google_finance",
      "moneda": "USD",
-     "precio": 35.54
+     "precio": 35.95
     },
     {
      "estado": "ok",
@@ -293,10 +293,10 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-23",
+     "fecha_dato": "2026-11-24",
      "fuente": "google_finance",
      "moneda": "EUR",
-     "precio": 0.9
+     "precio": 0.88
     },
     {
      "estado": "ok",
@@ -313,16 +313,16 @@
    "tipo": "accion"
   },
   "mexem:OHLA": {
-   "estado_precio": "dudoso",
+   "estado_precio": "ok",
    "fecha_dato": "2026-11-23",
    "fuente_elegida": "yahoo",
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-23",
+     "fecha_dato": "2026-11-24",
      "fuente": "google_finance",
      "moneda": "EUR",
-     "precio": 0.34
+     "precio": 0.31
     },
     {
      "estado": "ok",
@@ -333,7 +333,7 @@
     }
    ],
    "moneda": "EUR",
-   "motivo": "google_finance difiere 0.65 % con la misma fecha",
+   "motivo": "primera fuente al dia",
    "precio": 0.3378,
    "precios_json_eur": 0.3378,
    "tipo": "accion"
@@ -345,10 +345,10 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-23",
+     "fecha_dato": "2026-11-24",
      "fuente": "google_finance",
      "moneda": "USD",
-     "precio": 159.36
+     "precio": 162.7
     },
     {
      "estado": "ok",
@@ -371,10 +371,10 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-23",
+     "fecha_dato": "2026-11-24",
      "fuente": "google_finance",
      "moneda": "USD",
-     "precio": 4.69
+     "precio": 4.87
     },
     {
      "estado": "ok",
@@ -397,10 +397,10 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-23",
+     "fecha_dato": "2026-11-24",
      "fuente": "google_finance",
      "moneda": "EUR",
-     "precio": 30.2
+     "precio": 28.32
     },
     {
      "estado": "ok",
@@ -760,10 +760,10 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-23",
+     "fecha_dato": "2026-11-24",
      "fuente": "google_finance",
      "moneda": "USD",
-     "precio": 47.58
+     "precio": 44.34
     },
     {
      "estado": "ok",
@@ -824,10 +824,10 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-23",
+     "fecha_dato": "2026-11-24",
      "fuente": "google_finance",
      "moneda": "USD",
-     "precio": 63.81
+     "precio": 61.18
     },
     {
      "estado": "ok",
@@ -864,10 +864,10 @@
   }
  },
  "fecha": "2026-11-24",
- "hasta": "2026-11-24T15:08:52Z",
+ "hasta": "2026-11-24T18:06:49Z",
  "resumen": {
-  "dudoso": 3,
-  "ok": 28
+  "dudoso": 2,
+  "ok": 29
  },
  "version": 1
 }
