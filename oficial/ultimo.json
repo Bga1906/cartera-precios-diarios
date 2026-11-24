@@ -437,10 +437,10 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-19",
+     "fecha_dato": "2026-11-20",
      "fuente": "quefondos",
      "moneda": "EUR",
-     "precio": 292.741334
+     "precio": 286.8485
     },
     {
      "estado": "ok",
@@ -477,10 +477,10 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-19",
+     "fecha_dato": "2026-11-20",
      "fuente": "quefondos",
      "moneda": "EUR",
-     "precio": 212.288221
+     "precio": 208.185256
     },
     {
      "estado": "ok",
@@ -510,10 +510,10 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-19",
+     "fecha_dato": "2026-11-20",
      "fuente": "quefondos",
      "moneda": "EUR",
-     "precio": 1.293441
+     "precio": 1.255397
     },
     {
      "estado": "ok",
@@ -550,10 +550,10 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-18",
+     "fecha_dato": "2026-11-19",
      "fuente": "quefondos",
      "moneda": "EUR",
-     "precio": 30.17715
+     "precio": 29.91237
     },
     {
      "estado": "ok",
@@ -609,10 +609,10 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-19",
+     "fecha_dato": "2026-11-20",
      "fuente": "quefondos",
      "moneda": "EUR",
-     "precio": 11.989
+     "precio": 11.59
     },
     {
      "estado": "ok",
@@ -642,10 +642,10 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-19",
+     "fecha_dato": "2026-11-20",
      "fuente": "quefondos",
      "moneda": "EUR",
-     "precio": 31.85
+     "precio": 29.34
     },
     {
      "estado": "ok",
@@ -675,10 +675,10 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-18",
+     "fecha_dato": "2026-11-19",
      "fuente": "quefondos",
      "moneda": "EUR",
-     "precio": 123.15
+     "precio": 120.56
     },
     {
      "estado": "URLError: <urlopen error timed out>",
@@ -708,10 +708,10 @@
    "lecturas": [
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-19",
+     "fecha_dato": "2026-11-20",
      "fuente": "quefondos",
      "moneda": "EUR",
-     "precio": 19.60789
+     "precio": 18.95586
     },
     {
      "estado": "ok",
@@ -864,7 +864,7 @@
   }
  },
  "fecha": "2026-11-24",
- "hasta": "2026-11-24T04:33:20Z",
+ "hasta": "2026-11-24T04:58:14Z",
  "resumen": {
   "dudoso": 9,
   "ok": 22
