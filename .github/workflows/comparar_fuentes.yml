@@ -11,6 +11,8 @@ on:
     # horas las ejecuciones. Pasadas extra de lunes a viernes para que el VL nuevo llegue el mismo dia.
     # Minuto impar a proposito (las horas en punto son las que mas se retrasan).
     - cron: "23 12,14,16,18 * * 1-5"
+    - cron: "53 21 * * *"   # tras el cierre de EE. UU. (21:00 UTC): foto oficial de cierre; GitHub retrasa horas, por eso dos pasadas
+    - cron: "23 23 * * *"
   workflow_dispatch:
 
 permissions:
