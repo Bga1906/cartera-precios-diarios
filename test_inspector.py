@@ -127,3 +127,37 @@ def test_fondo_con_2_dias_habiles_de_atraso_ya_no_es_dudoso_pero_con_3_si():
     assert ok["estado_precio"] == "ok"
     tarde = run(u(FONDO), [fila("f:1", "ft", 100.0, "2026-10-21")])["f:1"]   # miercoles -> lunes = 3
     assert tarde["estado_precio"] == "dudoso" and "atraso" in tarde["motivo"]
+
+
+# 27/11/2026: fondos con la fecha mas reciente y decimales exactos aunque gane FT
+def test_fondo_ft_toma_decimales_de_yahoo_si_es_el_mismo_vl():
+    a = run(u(FONDO), [fila("f:1", "ft", 1.27, "2026-10-23"), fila("f:1", "yahoo", 1.26569, "2026-10-23")])
+    r = a["f:1"]
+    assert (r["fuente_elegida"], r["precio"], r["decimales_de"], r["precio_ft"], r["estado_precio"]) == ("ft", 1.26569, "yahoo", 1.27, "ok")
+
+
+def test_fondo_ft_no_toma_decimales_si_no_redondea_igual():
+    a = run(u(FONDO), [fila("f:1", "ft", 1.27, "2026-10-23"), fila("f:1", "yahoo", 1.2639, "2026-10-23")])
+    assert a["f:1"]["precio"] == 1.27 and "decimales_de" not in a["f:1"]
+
+
+def test_fondo_ft_no_toma_decimales_de_otra_fecha():
+    a = run(u(FONDO), [fila("f:1", "ft", 1.27, "2026-10-23"), fila("f:1", "yahoo", 1.2690, "2026-10-22")])
+    assert a["f:1"]["precio"] == 1.27 and "decimales_de" not in a["f:1"]
+
+
+def test_fondo_gana_la_fecha_mas_reciente_aunque_ft_vaya_un_dia_atras():
+    a = run(u(FONDO), [fila("f:1", "ft", 100.0, "2026-10-22"), fila("f:1", "yahoo", 101.0, "2026-10-23")])
+    r = a["f:1"]
+    assert (r["fuente_elegida"], r["fecha_dato"], r["estado_precio"]) == ("yahoo", "2026-10-23", "respaldo")
+
+
+def test_fondo_ft_con_vl_nuevo_gana_a_yahoo_atrasado():
+    a = run(u(FONDO), [fila("f:1", "ft", 102.0, "2026-10-23"), fila("f:1", "yahoo", 100.0, "2026-10-22")])
+    r = a["f:1"]
+    assert (r["fuente_elegida"], r["precio"], r["fecha_dato"]) == ("ft", 102.0, "2026-10-23") and "decimales_de" not in r
+
+
+def test_accion_sigue_admitiendo_un_dia_de_margen():
+    a = run(u(ACCION), [fila("mexem:X", "yahoo", 5.0, "2026-10-22"), fila("mexem:X", "google_finance", 5.1, "2026-10-23")])
+    assert a["mexem:X"]["fuente_elegida"] == "yahoo"

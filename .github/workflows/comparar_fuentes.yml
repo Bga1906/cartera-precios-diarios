@@ -7,6 +7,10 @@ on:
   schedule:
     - cron: "15 7 * * *"
     - cron: "40 20 * * *"
+    # 27/11/2026: FT publica el VL del dia anterior a lo largo de la tarde (visto: 14-19 UTC) y GitHub retrasa
+    # horas las ejecuciones. Pasadas extra de lunes a viernes para que el VL nuevo llegue el mismo dia.
+    # Minuto impar a proposito (las horas en punto son las que mas se retrasan).
+    - cron: "23 12,14,16,18 * * 1-5"
   workflow_dispatch:
 
 permissions:

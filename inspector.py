@@ -46,6 +46,12 @@ DUDOSO_DIAS_HABILES = 2
 # dudosos a partir de 3 dias habiles, para que no salte la alarma cada lunes (decision de Brian, 26/10/2026).
 DUDOSO_DIAS_HABILES_FONDO = 3
 VENTANA_HORAS = 36
+# Fondos y planes (27/11/2026, Brian): gana siempre la fecha MAS RECIENTE (no se acepta un dia de retraso si otra
+# fuente ya trae el VL nuevo). Y FT da solo 2 decimales: si otra fuente da el mismo VL, misma fecha y moneda, con mas
+# decimales y redondea al de FT, se usa ese precio exacto (fuente_elegida sigue siendo FT; se anota decimales_de).
+FRESCO_DIAS_HABILES_FONDO = 0
+FUENTES_2_DECIMALES = ("ft",)
+TOLERANCIA_REDONDEO = 0.005 + 1e-9
 SIN_DIAS_HABILES = ("cripto", "materia_prima")  # estos se miden en dias naturales
 
 
@@ -138,7 +144,8 @@ def decidir(vehiculo, lecturas, hasta_dia):
                 "fecha_dato": None, "estado_precio": "sin_dato", "motivo": "ninguna fuente dio un dato valido"}
 
     mejor_fecha = max(l["fecha_dato"] for l in validas.values())
-    frescas = [n for n in candidatas if dias_habiles(validas[n]["fecha_dato"], mejor_fecha) <= FRESCO_DIAS_HABILES]
+    margen = FRESCO_DIAS_HABILES_FONDO if tipo in ("fondo", "plan") else FRESCO_DIAS_HABILES
+    frescas = [n for n in candidatas if dias_habiles(validas[n]["fecha_dato"], mejor_fecha) <= margen]
     motivos = []
     if frescas:
         elegida = frescas[0]
@@ -151,6 +158,16 @@ def decidir(vehiculo, lecturas, hasta_dia):
         elegida, estado = candidatas[0], "dudoso"
         motivos.append("ninguna fuente de la jerarquia esta al dia")
     l = validas[elegida]
+    extra = {}
+    if elegida in FUENTES_2_DECIMALES:
+        for n in jerarquia:
+            o = validas.get(n)
+            if (n != elegida and o and o["fecha_dato"] == l["fecha_dato"] and (o["moneda"] or l["moneda"]) == l["moneda"]
+                    and abs(o["precio"] - l["precio"]) <= TOLERANCIA_REDONDEO and o["precio"] != l["precio"]):
+                extra = {"decimales_de": n, "precio_" + elegida: l["precio"]}
+                l = {**l, "precio": o["precio"]}
+                motivos.append(f"decimales de {n} (mismo VL)")
+                break
 
     # dudoso por desacuerdo con cualquier otra fuente (tambien las de contraste) con la misma fecha y moneda
     for n, o in validas.items():
@@ -165,7 +182,7 @@ def decidir(vehiculo, lecturas, hasta_dia):
         estado = "dudoso"
         motivos.append(f"el dato tiene {atraso} dias de atraso")
     return {**base, "fuente_elegida": elegida, "precio": l["precio"], "moneda": l["moneda"] or vehiculo.get("moneda"),
-            "fecha_dato": l["fecha_dato"], "estado_precio": estado, "motivo": "; ".join(motivos) or "primera fuente al dia"}
+            "fecha_dato": l["fecha_dato"], "estado_precio": estado, "motivo": "; ".join(motivos) or "primera fuente al dia", **extra}
 
 
 def inspeccionar(universo, filas_crudo, hasta, precios_ultimo=None):
