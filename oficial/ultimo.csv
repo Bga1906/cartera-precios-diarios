@@ -1,0 +1,32 @@
+id,clave,tipo,precio,moneda,fecha_dato,estado,fuente,hasta
+bitcoin:btc,btc,cripto,54985.49,EUR,2026-11-28,ok,yahoo,2026-11-28T04:48:00Z
+mexem:AMZN,AMZN,accion,254.12,USD,2026-11-27,ok,yahoo,2026-11-28T04:48:00Z
+mexem:APR0,APR0,accion,4.585,EUR,2026-11-27,ok,yahoo,2026-11-28T04:48:00Z
+mexem:DMX,DMX,accion,0.36,CAD,2026-11-27,ok,yahoo,2026-11-28T04:48:00Z
+mexem:E5S1,E5S1,accion,8.8,EUR,2026-11-27,ok,yahoo,2026-11-28T04:48:00Z
+mexem:ERO,ERO,accion,21.6,USD,2026-11-27,ok,yahoo,2026-11-28T04:48:00Z
+mexem:GOOGL,GOOGL,accion,274.96,USD,2026-11-27,ok,yahoo,2026-11-28T04:48:00Z
+mexem:IDR,IDR,accion,57.38,EUR,2026-11-27,ok,yahoo,2026-11-28T04:48:00Z
+mexem:KRKNF,KRKNF,accion,2.0,USD,2026-11-27,dudoso,yahoo,2026-11-28T04:48:00Z
+mexem:META,META,accion,628.96,USD,2026-11-27,ok,yahoo,2026-11-28T04:48:00Z
+mexem:MP,MP,accion,35.81,USD,2026-11-27,ok,yahoo,2026-11-28T04:48:00Z
+mexem:NXT,NXT,accion,0.924,EUR,2026-11-27,ok,yahoo,2026-11-28T04:48:00Z
+mexem:OHLA,OHLA,accion,0.3376,EUR,2026-11-27,dudoso,yahoo,2026-11-28T04:48:00Z
+mexem:PLTR,PLTR,accion,172.17,USD,2026-11-27,ok,yahoo,2026-11-28T04:48:00Z
+mexem:RIG,RIG,accion,5.18,USD,2026-11-27,ok,yahoo,2026-11-28T04:48:00Z
+mexem:TRE,TRE,accion,30.24,EUR,2026-11-27,ok,yahoo,2026-11-28T04:48:00Z
+myinvestor-cobas:ES0124037013,ES0124037013,fondo,293.4234313964844,EUR,2026-11-26,ok,ft,2026-11-28T04:48:00Z
+myinvestor-cobas:ES0146309002,ES0146309002,fondo,214.4997100830078,EUR,2026-11-26,ok,ft,2026-11-28T04:48:00Z
+myinvestor-cobas:ES0165243025,ES0165243025,fondo,1.3006700277328491,EUR,2026-11-26,ok,ft,2026-11-28T04:48:00Z
+myinvestor-cobas:ES0173311103,ES0173311103,fondo,30.068740844726562,EUR,2026-11-25,ok,ft,2026-11-28T04:48:00Z
+myinvestor-cobas:IE000QAZP7L2,IE000QAZP7L2,fondo,12.39900016784668,EUR,2026-11-26,ok,ft,2026-11-28T04:48:00Z
+myinvestor-cobas:IE000ZYRH0Q7,IE000ZYRH0Q7,fondo,11.982000350952148,EUR,2026-11-25,ok,ft,2026-11-28T04:48:00Z
+myinvestor-cobas:IE00BM95B621,IE00BM95B621,fondo,29.979999542236328,EUR,2026-11-25,ok,ft,2026-11-28T04:48:00Z
+myinvestor-cobas:LU0625737910,LU0625737910,fondo,117.66000366210938,EUR,2026-11-26,ok,ft,2026-11-28T04:48:00Z
+myinvestor:plan-pensiones,plan-pensiones,plan,19.451860427856445,EUR,2026-11-26,ok,yahoo,2026-11-28T04:48:00Z
+oro-fisico:joyeria,joyeria,materia_prima,3650.0,USD,2026-11-28,ok,gold-api,2026-11-28T04:48:00Z
+trade-republic:Copper Miners USD (Acc),Copper Miners USD (Acc),etf,43.85,EUR,2026-11-27,ok,yahoo,2026-11-28T04:48:00Z
+trade-republic:Physical Gold USD (Acc),Physical Gold USD (Acc),etf,64.34,EUR,2026-11-27,ok,yahoo,2026-11-28T04:48:00Z
+trade-republic:Physical Silver,Physical Silver,etf,41.255,USD,2026-11-27,ok,yahoo,2026-11-28T04:48:00Z
+trade-republic:Space Innovators USD (Acc),Space Innovators USD (Acc),etf,59.56,EUR,2026-11-27,ok,yahoo,2026-11-28T04:48:00Z
+trade-republic:Uranium And Nuclear Technologies USD (Acc),Uranium And Nuclear Technologies USD (Acc),etf,33.915,EUR,2026-11-27,ok,yahoo,2026-11-28T04:48:00Z

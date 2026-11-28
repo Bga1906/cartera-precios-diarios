@@ -202,12 +202,32 @@ def inspeccionar(universo, filas_crudo, hasta, precios_ultimo=None):
             "resumen": dict(sorted(cuenta.items())), "activos": activos}
 
 
+CSV_COLUMNAS = ["id", "clave", "tipo", "precio", "moneda", "fecha_dato", "estado", "fuente", "hasta"]
+
+
+def a_csv(doc):
+    """Version en tabla de ultimo.json para los Sheets (IMPORTDATA no lee JSON) - 28/11/2026.
+    Una fila por activo; `clave` = id sin prefijo (mexem:AMZN -> AMZN); punto decimal; sin precio -> celda vacia."""
+    import io
+    buf = io.StringIO()
+    w = csv.writer(buf, lineterminator="\n")
+    w.writerow(CSV_COLUMNAS)
+    for k in sorted(doc["activos"]):
+        r = doc["activos"][k]
+        p = r.get("precio")
+        w.writerow([k, k.split(":", 1)[-1], r.get("tipo") or "", "" if p is None else repr(float(p)),
+                    r.get("moneda") or "", r.get("fecha_dato") or "", r.get("estado_precio") or "",
+                    r.get("fuente_elegida") or "", doc.get("hasta") or ""])
+    return buf.getvalue()
+
+
 def escribir(doc, carpeta=None):
     carpeta = Path(carpeta) if carpeta else OFICIAL_DIR
     carpeta.mkdir(parents=True, exist_ok=True)
     txt = json.dumps(doc, ensure_ascii=False, indent=1, sort_keys=True) + "\n"
     (carpeta / f"{doc['fecha']}.json").write_text(txt, encoding="utf-8")
     (carpeta / "ultimo.json").write_text(txt, encoding="utf-8")
+    (carpeta / "ultimo.csv").write_text(a_csv(doc), encoding="utf-8")
 
 
 def main(argv=None):

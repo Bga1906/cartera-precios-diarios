@@ -104,6 +104,25 @@ def test_escribe_ficheros_y_referencia_precios(tmp_path):
     assert leido["activos"]["mexem:X"]["precios_json_eur"] == 4.6 and leido["resumen"] == {"ok": 1}
 
 
+def test_escribe_csv_para_los_sheets(tmp_path):
+    """ultimo.csv = mismo contenido que ultimo.json, en tabla para IMPORTDATA (28/11/2026)."""
+    crudo.anadir_filas([fila("mexem:X", "yahoo", 0.3376, "2026-10-23")])
+    doc = ins.inspeccionar(u(ACCION), ins.leer_crudo(HASTA), HASTA)
+    ins.escribir(doc, tmp_path)
+    import csv as _csv
+    filas = list(_csv.DictReader((tmp_path / "ultimo.csv").read_text(encoding="utf-8").splitlines()))
+    assert list(filas[0].keys()) == ins.CSV_COLUMNAS
+    f = filas[0]
+    assert f["id"] == "mexem:X" and f["clave"] == "X" and f["precio"] == "0.3376"
+    assert f["estado"] == "ok" and f["fecha_dato"] == "2026-10-23" and f["hasta"] == doc["hasta"]
+
+
+def test_csv_sin_precio_deja_la_celda_vacia():
+    doc = {"hasta": "2026-11-28T04:48:00Z", "activos": {"mexem:Y": {"tipo": "accion", "precio": None, "estado_precio": "sin_dato"}}}
+    lineas = ins.a_csv(doc).splitlines()
+    assert lineas[1] == "mexem:Y,Y,accion,,,,sin_dato,,2026-11-28T04:48:00Z"
+
+
 def test_oro_spot_sin_fecha_usa_la_fecha_de_captura():
     """gold-api da el precio de ahora y no trae fecha: antes se descartaba y el oro quedaba «sin_dato» (26/10/2026)."""
     oro = {"id": "oro-fisico:joyeria", "tipo": "materia_prima", "moneda": "EUR", "estado": "activo", "fuentes": []}
