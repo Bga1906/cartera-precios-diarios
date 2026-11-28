@@ -3,7 +3,7 @@
 Generado automáticamente por `fuentes_vl/comparar_fuentes.py` (GitHub Actions, 09:15 y 22:40 aprox.).
 Desfase = días hábiles (lunes a viernes) entre la captura y la fecha real del dato. Retraso = días hábiles que una fuente va por detrás de la más al día para ese mismo fondo o índice.
 
-## Última captura: 2026-11-28 03:56
+## Última captura: 2026-11-28 04:36
 
 | Tipo | Instrumento | Fuente | Precio | Fecha del dato | Desfase (háb.) | Retraso vs mejor | Estado |
 |---|---|---|---|---|---|---|---|
@@ -48,19 +48,19 @@ Desfase = días hábiles (lunes a viernes) entre la captura y la fecha real del 
 
 - pictet-china: quefondos va 2 días hábiles por detrás de la mejor fuente.
 - plan-myinvestor-indexado-global: quefondos va 2 días hábiles por detrás de la mejor fuente.
-- horos-value-internacional: gestora lleva 12 capturas seguidas sin dato (fuente caída o formato cambiado).
-- numantia: gestora lleva 12 capturas seguidas sin dato (fuente caída o formato cambiado).
-- pictet-china: Renta 4 lleva 12 capturas seguidas sin dato (fuente caída o formato cambiado).
+- horos-value-internacional: gestora lleva 13 capturas seguidas sin dato (fuente caída o formato cambiado).
+- numantia: gestora lleva 13 capturas seguidas sin dato (fuente caída o formato cambiado).
+- pictet-china: Renta 4 lleva 13 capturas seguidas sin dato (fuente caída o formato cambiado).
 
 ## Últimos 14 días, por fuente
 
 | Tipo | Fuente | Capturas | Con dato | Desfase medio (háb.) | Retraso medio vs mejor | Veces la más al día |
 |---|---|---|---|---|---|---|
-| fondo | FT | 248 | 100% | 1.5 | 0.0 | 248 |
-| fondo | Renta 4 | 31 | 61% | 2.0 | 0.6 | 7 |
-| fondo | Yahoo | 248 | 100% | 1.8 | 0.3 | 168 |
-| fondo | gestora | 93 | 74% | 1.8 | 0.2 | 53 |
-| fondo | quefondos | 217 | 100% | 2.4 | 0.8 | 58 |
-| indice | Yahoo | 217 | 100% | 0.3 | 0.0 | 217 |
-| plan | Yahoo | 31 | 100% | 2.1 | 0.2 | 26 |
-| plan | quefondos | 31 | 100% | 2.7 | 0.8 | 15 |
+| fondo | FT | 256 | 100% | 1.5 | 0.0 | 256 |
+| fondo | Renta 4 | 32 | 59% | 2.0 | 0.6 | 7 |
+| fondo | Yahoo | 256 | 100% | 1.8 | 0.3 | 176 |
+| fondo | gestora | 96 | 73% | 1.8 | 0.2 | 54 |
+| fondo | quefondos | 224 | 100% | 2.3 | 0.8 | 60 |
+| indice | Yahoo | 224 | 100% | 0.3 | 0.0 | 224 |
+| plan | Yahoo | 32 | 100% | 2.1 | 0.2 | 27 |
+| plan | quefondos | 32 | 100% | 2.7 | 0.8 | 15 |
