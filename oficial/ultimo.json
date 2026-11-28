@@ -417,6 +417,7 @@
    "tipo": "accion"
   },
   "myinvestor-cobas:ES0124037013": {
+   "decimales_de": "yahoo",
    "estado_precio": "ok",
    "fecha_dato": "2026-11-26",
    "fuente_elegida": "ft",
@@ -444,19 +445,21 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-25",
+     "fecha_dato": "2026-11-26",
      "fuente": "yahoo",
      "moneda": "EUR",
-     "precio": 288.1554260253906
+     "precio": 293.4234313964844
     }
    ],
    "moneda": "EUR",
-   "motivo": "primera fuente al dia",
-   "precio": 293.42,
+   "motivo": "decimales de yahoo (mismo VL)",
+   "precio": 293.4234313964844,
+   "precio_ft": 293.42,
    "precios_json_eur": 288.1554260253906,
    "tipo": "fondo"
   },
   "myinvestor-cobas:ES0146309002": {
+   "decimales_de": "yahoo",
    "estado_precio": "ok",
    "fecha_dato": "2026-11-26",
    "fuente_elegida": "ft",
@@ -484,19 +487,21 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-25",
+     "fecha_dato": "2026-11-26",
      "fuente": "yahoo",
      "moneda": "EUR",
-     "precio": 210.6726837158203
+     "precio": 214.4997100830078
     }
    ],
    "moneda": "EUR",
-   "motivo": "primera fuente al dia",
-   "precio": 214.5,
+   "motivo": "decimales de yahoo (mismo VL)",
+   "precio": 214.4997100830078,
+   "precio_ft": 214.5,
    "precios_json_eur": 210.6726837158203,
    "tipo": "fondo"
   },
   "myinvestor-cobas:ES0165243025": {
+   "decimales_de": "yahoo",
    "estado_precio": "ok",
    "fecha_dato": "2026-11-26",
    "fuente_elegida": "ft",
@@ -517,19 +522,21 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-25",
+     "fecha_dato": "2026-11-26",
      "fuente": "yahoo",
      "moneda": "EUR",
-     "precio": 1.2656899690628052
+     "precio": 1.3006700277328491
     }
    ],
    "moneda": "EUR",
-   "motivo": "primera fuente al dia",
-   "precio": 1.3,
+   "motivo": "decimales de yahoo (mismo VL)",
+   "precio": 1.3006700277328491,
+   "precio_ft": 1.3,
    "precios_json_eur": 1.2656899690628052,
    "tipo": "fondo"
   },
   "myinvestor-cobas:ES0173311103": {
+   "decimales_de": "yahoo",
    "estado_precio": "ok",
    "fecha_dato": "2026-11-25",
    "fuente_elegida": "ft",
@@ -557,19 +564,21 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-24",
+     "fecha_dato": "2026-11-25",
      "fuente": "yahoo",
      "moneda": "EUR",
-     "precio": 29.94186019897461
+     "precio": 30.068740844726562
     }
    ],
    "moneda": "EUR",
-   "motivo": "primera fuente al dia",
-   "precio": 30.07,
+   "motivo": "decimales de yahoo (mismo VL)",
+   "precio": 30.068740844726562,
+   "precio_ft": 30.07,
    "precios_json_eur": 29.94186019897461,
    "tipo": "fondo"
   },
   "myinvestor-cobas:IE000QAZP7L2": {
+   "decimales_de": "yahoo",
    "estado_precio": "ok",
    "fecha_dato": "2026-11-26",
    "fuente_elegida": "ft",
@@ -583,15 +592,16 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-25",
+     "fecha_dato": "2026-11-26",
      "fuente": "yahoo",
      "moneda": "EUR",
-     "precio": 12.263999938964844
+     "precio": 12.39900016784668
     }
    ],
    "moneda": "EUR",
-   "motivo": "primera fuente al dia",
-   "precio": 12.4,
+   "motivo": "decimales de yahoo (mismo VL)",
+   "precio": 12.39900016784668,
+   "precio_ft": 12.4,
    "precios_json_eur": 12.263999938964844,
    "tipo": "fondo"
   },
@@ -666,6 +676,7 @@
    "tipo": "fondo"
   },
   "myinvestor-cobas:LU0625737910": {
+   "decimales_de": "yahoo",
    "estado_precio": "ok",
    "fecha_dato": "2026-11-26",
    "fuente_elegida": "ft",
@@ -693,15 +704,16 @@
     },
     {
      "estado": "ok",
-     "fecha_dato": "2026-11-25",
+     "fecha_dato": "2026-11-26",
      "fuente": "yahoo",
      "moneda": "EUR",
-     "precio": 116.63999938964844
+     "precio": 117.66000366210938
     }
    ],
    "moneda": "EUR",
-   "motivo": "primera fuente al dia",
-   "precio": 117.66,
+   "motivo": "decimales de yahoo (mismo VL)",
+   "precio": 117.66000366210938,
+   "precio_ft": 117.66,
    "precios_json_eur": 116.63999938964844,
    "tipo": "fondo"
   },
@@ -867,8 +879,8 @@
    "tipo": "etf"
   }
  },
- "fecha": "2026-11-27",
- "hasta": "2026-11-27T17:27:10Z",
+ "fecha": "2026-11-28",
+ "hasta": "2026-11-28T00:06:23Z",
  "resumen": {
   "dudoso": 1,
   "ok": 22,
