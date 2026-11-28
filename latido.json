@@ -1,10 +1,10 @@
 {
- "generado_en": "2026-11-28T00:06:23Z",
+ "generado_en": "2026-11-28T02:27:00Z",
  "ventana_dias": 3,
  "origenes": {
   "github": {
-   "ultima_captura_utc": "2026-11-28T00:05:00Z",
-   "lineas": 531
+   "ultima_captura_utc": "2026-11-28T02:26:46Z",
+   "lineas": 612
   },
   "google": {
    "ultima_captura_utc": "2026-11-27T16:54:26Z",
@@ -23,8 +23,8 @@
    "fallos": 16
   },
   "github/gold-api": {
-   "ultima_captura_utc": "2026-11-27T02:35:48Z",
-   "ok": 3,
+   "ultima_captura_utc": "2026-11-28T02:26:46Z",
+   "ok": 4,
    "fallos": 0
   },
   "github/quefondos": {
@@ -38,8 +38,8 @@
    "fallos": 8
   },
   "github/yahoo": {
-   "ultima_captura_utc": "2026-11-28T00:05:00Z",
-   "ok": 368,
+   "ultima_captura_utc": "2026-11-28T02:26:46Z",
+   "ok": 448,
    "fallos": 0
   },
   "google/google_finance": {
@@ -49,8 +49,7 @@
   }
  },
  "oficial": {
-  "dudoso": 1,
-  "ok": 22,
-  "respaldo": 8
+  "dudoso": 6,
+  "ok": 25
  }
 }
