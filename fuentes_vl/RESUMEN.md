@@ -3,7 +3,7 @@
 Generado automáticamente por `fuentes_vl/comparar_fuentes.py` (GitHub Actions, 09:15 y 22:40 aprox.).
 Desfase = días hábiles (lunes a viernes) entre la captura y la fecha real del dato. Retraso = días hábiles que una fuente va por detrás de la más al día para ese mismo fondo o índice.
 
-## Última captura: 2026-11-28 05:47
+## Última captura: 2026-11-28 17:09
 
 | Tipo | Instrumento | Fuente | Precio | Fecha del dato | Desfase (háb.) | Retraso vs mejor | Estado |
 |---|---|---|---|---|---|---|---|
@@ -36,29 +36,29 @@ Desfase = días hábiles (lunes a viernes) entre la captura y la fecha real del 
 | fondo | cobas-seleccion | gestora | 293.423 | 2026-11-26 | 1 | 0 | OK (gestora) |
 | plan | plan-myinvestor-indexado-global | Yahoo | 19.4519 | 2026-11-26 | 1 | 0 | OK |
 | plan | plan-myinvestor-indexado-global | quefondos | 19.4519 | 2026-11-26 | 1 | 0 | OK |
-| indice | msci-world-nr-usd | Yahoo | 15174.4 | 2026-11-27 | 0 | 0 | OK |
-| indice | msci-acwi-nr-eur | Yahoo | 511.34 | 2026-11-27 | 0 | 0 | OK |
-| indice | msci-em-nr-eur | Yahoo | 701.69 | 2026-11-27 | 0 | 0 | OK |
-| indice | msci-em-nr-eur-alt | Yahoo | 701.69 | 2026-11-27 | 0 | 0 | OK |
-| indice | msci-europe-nr-eur | Yahoo | 447.99 | 2026-11-27 | 0 | 0 | OK |
-| indice | msci-china-nr-eur | Yahoo | 456.39 | 2026-11-27 | 0 | 0 | OK |
+| indice | msci-world-nr-usd | Yahoo | 15174.4 | 2026-11-28 | 0 | 0 | OK |
+| indice | msci-acwi-nr-eur | Yahoo | 511.34 | 2026-11-28 | 0 | 0 | OK |
+| indice | msci-em-nr-eur | Yahoo | 701.69 | 2026-11-28 | 0 | 0 | OK |
+| indice | msci-em-nr-eur-alt | Yahoo | 701.69 | 2026-11-28 | 0 | 0 | OK |
+| indice | msci-europe-nr-eur | Yahoo | 447.99 | 2026-11-28 | 0 | 0 | OK |
+| indice | msci-china-nr-eur | Yahoo | 456.39 | 2026-11-28 | 0 | 0 | OK |
 | indice | dj-global-technology | Yahoo | 4590.02 | 2026-11-27 | 0 | 0 | OK |
 
 ## Avisos
 
-- horos-value-internacional: gestora lleva 14 capturas seguidas sin dato (fuente caída o formato cambiado).
-- numantia: gestora lleva 14 capturas seguidas sin dato (fuente caída o formato cambiado).
-- pictet-china: Renta 4 lleva 14 capturas seguidas sin dato (fuente caída o formato cambiado).
+- horos-value-internacional: gestora lleva 15 capturas seguidas sin dato (fuente caída o formato cambiado).
+- numantia: gestora lleva 15 capturas seguidas sin dato (fuente caída o formato cambiado).
+- pictet-china: Renta 4 lleva 15 capturas seguidas sin dato (fuente caída o formato cambiado).
 
 ## Últimos 14 días, por fuente
 
 | Tipo | Fuente | Capturas | Con dato | Desfase medio (háb.) | Retraso medio vs mejor | Veces la más al día |
 |---|---|---|---|---|---|---|
-| fondo | FT | 264 | 100% | 1.5 | 0.0 | 264 |
-| fondo | Renta 4 | 33 | 58% | 2.0 | 0.6 | 7 |
-| fondo | Yahoo | 264 | 100% | 1.8 | 0.3 | 184 |
-| fondo | gestora | 99 | 72% | 1.8 | 0.2 | 55 |
-| fondo | quefondos | 231 | 100% | 2.3 | 0.8 | 66 |
-| indice | Yahoo | 231 | 100% | 0.3 | 0.0 | 231 |
-| plan | Yahoo | 33 | 100% | 2.0 | 0.2 | 28 |
-| plan | quefondos | 33 | 100% | 2.7 | 0.8 | 16 |
+| fondo | FT | 272 | 100% | 1.5 | 0.0 | 272 |
+| fondo | Renta 4 | 34 | 56% | 2.0 | 0.6 | 7 |
+| fondo | Yahoo | 272 | 100% | 1.8 | 0.3 | 192 |
+| fondo | gestora | 102 | 71% | 1.8 | 0.2 | 56 |
+| fondo | quefondos | 238 | 100% | 2.3 | 0.8 | 72 |
+| indice | Yahoo | 238 | 100% | 0.3 | 0.0 | 238 |
+| plan | Yahoo | 34 | 100% | 2.0 | 0.1 | 29 |
+| plan | quefondos | 34 | 100% | 2.6 | 0.8 | 17 |
